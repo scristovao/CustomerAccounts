@@ -1,64 +1,229 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="CustomerAccountsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Client">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <NavigationProperty Name="Accounts" Relationship="CustomerAccountsModel.FK_ClientAccount" FromRole="Client" ToRole="Account" />
-  </EntityType>
-  <EntityType Name="Document">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Account_Id" Type="Int64" Nullable="false" />
-    <NavigationProperty Name="Account" Relationship="CustomerAccountsModel.FK_AccountDocument" FromRole="Document" ToRole="Account" />
-  </EntityType>
   <EntityContainer Name="CustomerAccountsEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Clients" EntityType="Self.Client" />
-    <EntitySet Name="Documents" EntityType="Self.Document" />
-    <EntitySet Name="Accounts" EntityType="CustomerAccountsModel.Account" />
-    <AssociationSet Name="FK_AccountDocument" Association="CustomerAccountsModel.FK_AccountDocument">
-      <End Role="Account" EntitySet="Accounts" />
-      <End Role="Document" EntitySet="Documents" />
-    </AssociationSet>
-    <AssociationSet Name="FK_ClientAccount" Association="CustomerAccountsModel.FK_ClientAccount">
-      <End Role="Client" EntitySet="Clients" />
-      <End Role="Account" EntitySet="Accounts" />
-    </AssociationSet>
+    <EntitySet Name="C_PACTP" EntityType="CustomerAccountsModel.C_PACTP" />
+    <EntitySet Name="C_PESTC" EntityType="CustomerAccountsModel.C_PESTC" />
+    <EntitySet Name="C_PHBLT" EntityType="CustomerAccountsModel.C_PHBLT" />
+    <EntitySet Name="C_PPAIS" EntityType="CustomerAccountsModel.C_PPAIS" />
+    <EntitySet Name="C_PPROF" EntityType="CustomerAccountsModel.C_PPROF" />
+    <EntitySet Name="GBTIT" EntityType="CustomerAccountsModel.GBTIT" />
+    <EntitySet Name="C_PREGC" EntityType="CustomerAccountsModel.C_PREGC" />
+    <EntitySet Name="C_PTIDD" EntityType="CustomerAccountsModel.C_PTIDD" />
+    <EntitySet Name="CTMOV_" EntityType="CustomerAccountsModel.CTMOV_" />
+    <EntitySet Name="FGCMB_" EntityType="CustomerAccountsModel.FGCMB_" />
+    <EntitySet Name="FGGCOT_" EntityType="CustomerAccountsModel.FGGCOT_" />
+    <EntitySet Name="GBCCO_" EntityType="CustomerAccountsModel.GBCCO_" />
+    <EntitySet Name="GBCCR_" EntityType="CustomerAccountsModel.GBCCR_" />
+    <EntitySet Name="GBCDO_" EntityType="CustomerAccountsModel.GBCDO_" />
+    <EntitySet Name="GBCDP_" EntityType="CustomerAccountsModel.GBCDP_" />
+    <EntitySet Name="GBCLI_" EntityType="CustomerAccountsModel.GBCLI_" />
+    <EntitySet Name="GBCNDM_" EntityType="CustomerAccountsModel.GBCNDM_" />
+    <EntitySet Name="GBCODOP_" EntityType="CustomerAccountsModel.GBCODOP_" />
+    <EntitySet Name="GBCRES" EntityType="CustomerAccountsModel.GBCRES" />
+    <EntitySet Name="GBCSTE" EntityType="CustomerAccountsModel.GBCSTE" />
+    <EntitySet Name="GBCSTR" EntityType="CustomerAccountsModel.GBCSTR" />
+    <EntitySet Name="GBLTIT_" EntityType="CustomerAccountsModel.GBLTIT_" />
+    <EntitySet Name="GBMVCC_" EntityType="CustomerAccountsModel.GBMVCC_" />
+    <EntitySet Name="GBMVCO_" EntityType="CustomerAccountsModel.GBMVCO_" />
+    <EntitySet Name="GBMVCR_" EntityType="CustomerAccountsModel.GBMVCR_" />
+    <EntitySet Name="GBMVDO_" EntityType="CustomerAccountsModel.GBMVDO_" />
+    <EntitySet Name="GBMVDP_" EntityType="CustomerAccountsModel.GBMVDP_" />
+    <EntitySet Name="GBNATR_" EntityType="CustomerAccountsModel.GBNATR_" />
+    <EntitySet Name="GBOPR_" EntityType="CustomerAccountsModel.GBOPR_" />
+    <EntitySet Name="GBTCLI_" EntityType="CustomerAccountsModel.GBTCLI_" />
+    <EntitySet Name="GBTPENT" EntityType="CustomerAccountsModel.GBTPENT" />
+    <EntitySet Name="GBTRCLI_" EntityType="CustomerAccountsModel.GBTRCLI_" />
   </EntityContainer>
-  <EntityType Name="Account">
+  <EntityType Name="C_PACTP">
     <Key>
-      <PropertyRef Name="Id" />
+      <PropertyRef Name="ID" />
     </Key>
-    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Client_Id" Type="Int64" Nullable="false" />
-    <NavigationProperty Name="Documents" Relationship="CustomerAccountsModel.FK_AccountDocument" FromRole="Account" ToRole="Document" />
-    <NavigationProperty Name="Client" Relationship="CustomerAccountsModel.FK_ClientAccount" FromRole="Account" ToRole="Client" />
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
-  <Association Name="FK_AccountDocument">
-    <End Type="CustomerAccountsModel.Account" Role="Account" Multiplicity="1" />
-    <End Type="CustomerAccountsModel.Document" Role="Document" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Document">
-        <PropertyRef Name="Account_Id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_ClientAccount">
-    <End Type="CustomerAccountsModel.Client" Role="Client" Multiplicity="1" />
-    <End Type="CustomerAccountsModel.Account" Role="Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Client">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="Client_Id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
+  <EntityType Name="C_PESTC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="C_PHBLT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="C_PPAIS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="C_PPROF">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBTIT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="C_PREGC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="C_PTIDD">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="CTMOV_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="FGCMB_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="FGGCOT_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCCO_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCCR_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCDO_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCDP_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCLI_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCNDM_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCODOP_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCRES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCSTE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCSTR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBLTIT_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBMVCC_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBMVCO_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBMVCR_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBMVDO_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBMVDP_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBNATR_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBOPR_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBTCLI_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBTPENT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBTRCLI_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
 </Schema>

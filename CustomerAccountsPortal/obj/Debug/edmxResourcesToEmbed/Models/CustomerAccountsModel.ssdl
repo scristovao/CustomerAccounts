@@ -1,60 +1,421 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="CustomerAccountsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="CustomerAccountsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.$PACTP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="$PACTP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.$PESTC' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="$PESTC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.$PHBLT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="$PHBLT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.$PPAIS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="$PPAIS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.$PPROF' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="$PPROF">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.$PREGC' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="$PREGC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.$PTIDD' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="$PTIDD">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.CTMOV ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CTMOV ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.FGCMB ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FGCMB ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.FGGCOT ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FGGCOT ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCCO ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCCO ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCCR ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCCR ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCDO ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCDO ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCDP ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCDP ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCLI ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCLI ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCNDM ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCNDM ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCODOP ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCODOP ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCRES' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCRES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCSTE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCSTE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCSTR' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCSTR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBLTIT ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBLTIT ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBMVCC ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBMVCC ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBMVCO ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBMVCO ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBMVCR ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBMVCR ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBMVDO ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBMVDO ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBMVDP ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBMVDP ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBNATR ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBNATR ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBOPR ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBOPR ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBTCLI ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBTCLI ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBTIT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBTIT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBTPENT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBTPENT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBTRCLI ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBTRCLI ">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
   <EntityContainer Name="CustomerAccountsModelStoreContainer">
-    <EntitySet Name="Clients" EntityType="CustomerAccountsModel.Store.Clients" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Documents" EntityType="CustomerAccountsModel.Store.Documents" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Accounts" EntityType="CustomerAccountsModel.Store.Accounts" store:Type="Tables" Schema="dbo" />
-    <AssociationSet Name="FK_AccountDocument" Association="CustomerAccountsModel.Store.FK_AccountDocument">
-      <End Role="Account" EntitySet="Accounts" />
-      <End Role="Document" EntitySet="Documents" />
-    </AssociationSet>
-    <AssociationSet Name="FK_ClientAccount" Association="CustomerAccountsModel.Store.FK_ClientAccount">
-      <End Role="Client" EntitySet="Clients" />
-      <End Role="Account" EntitySet="Accounts" />
-    </AssociationSet>
+    <EntitySet Name="$PACTP" EntityType="Self.$PACTP" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [$PACTP].[ID] AS [ID]
+    FROM [dbo].[$PACTP] AS [$PACTP]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="$PESTC" EntityType="Self.$PESTC" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [$PESTC].[ID] AS [ID]
+    FROM [dbo].[$PESTC] AS [$PESTC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="$PHBLT" EntityType="Self.$PHBLT" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [$PHBLT].[ID] AS [ID]
+    FROM [dbo].[$PHBLT] AS [$PHBLT]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="$PPAIS" EntityType="Self.$PPAIS" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [$PPAIS].[ID] AS [ID]
+    FROM [dbo].[$PPAIS] AS [$PPAIS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="$PPROF" EntityType="Self.$PPROF" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [$PPROF].[ID] AS [ID]
+    FROM [dbo].[$PPROF] AS [$PPROF]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="$PREGC" EntityType="Self.$PREGC" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [$PREGC].[ID] AS [ID]
+    FROM [dbo].[$PREGC] AS [$PREGC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="$PTIDD" EntityType="Self.$PTIDD" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [$PTIDD].[ID] AS [ID]
+    FROM [dbo].[$PTIDD] AS [$PTIDD]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CTMOV " EntityType="Self.CTMOV " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CTMOV ].[ID] AS [ID]
+    FROM [dbo].[CTMOV ] AS [CTMOV ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FGCMB " EntityType="Self.FGCMB " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FGCMB ].[ID] AS [ID]
+    FROM [dbo].[FGCMB ] AS [FGCMB ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FGGCOT " EntityType="Self.FGGCOT " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FGGCOT ].[ID] AS [ID]
+    FROM [dbo].[FGGCOT ] AS [FGGCOT ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCCO " EntityType="Self.GBCCO " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCCO ].[ID] AS [ID]
+    FROM [dbo].[GBCCO ] AS [GBCCO ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCCR " EntityType="Self.GBCCR " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCCR ].[ID] AS [ID]
+    FROM [dbo].[GBCCR ] AS [GBCCR ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCDO " EntityType="Self.GBCDO " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCDO ].[ID] AS [ID]
+    FROM [dbo].[GBCDO ] AS [GBCDO ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCDP " EntityType="Self.GBCDP " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCDP ].[ID] AS [ID]
+    FROM [dbo].[GBCDP ] AS [GBCDP ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCLI " EntityType="Self.GBCLI " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCLI ].[ID] AS [ID]
+    FROM [dbo].[GBCLI ] AS [GBCLI ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCNDM " EntityType="Self.GBCNDM " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCNDM ].[ID] AS [ID]
+    FROM [dbo].[GBCNDM ] AS [GBCNDM ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCODOP " EntityType="Self.GBCODOP " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCODOP ].[ID] AS [ID]
+    FROM [dbo].[GBCODOP ] AS [GBCODOP ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCRES" EntityType="Self.GBCRES" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCRES].[ID] AS [ID]
+    FROM [dbo].[GBCRES] AS [GBCRES]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCSTE" EntityType="Self.GBCSTE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCSTE].[ID] AS [ID]
+    FROM [dbo].[GBCSTE] AS [GBCSTE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCSTR" EntityType="Self.GBCSTR" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCSTR].[ID] AS [ID]
+    FROM [dbo].[GBCSTR] AS [GBCSTR]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBLTIT " EntityType="Self.GBLTIT " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBLTIT ].[ID] AS [ID]
+    FROM [dbo].[GBLTIT ] AS [GBLTIT ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBMVCC " EntityType="Self.GBMVCC " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBMVCC ].[ID] AS [ID]
+    FROM [dbo].[GBMVCC ] AS [GBMVCC ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBMVCO " EntityType="Self.GBMVCO " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBMVCO ].[ID] AS [ID]
+    FROM [dbo].[GBMVCO ] AS [GBMVCO ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBMVCR " EntityType="Self.GBMVCR " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBMVCR ].[ID] AS [ID]
+    FROM [dbo].[GBMVCR ] AS [GBMVCR ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBMVDO " EntityType="Self.GBMVDO " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBMVDO ].[ID] AS [ID]
+    FROM [dbo].[GBMVDO ] AS [GBMVDO ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBMVDP " EntityType="Self.GBMVDP " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBMVDP ].[ID] AS [ID]
+    FROM [dbo].[GBMVDP ] AS [GBMVDP ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBNATR " EntityType="Self.GBNATR " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBNATR ].[ID] AS [ID]
+    FROM [dbo].[GBNATR ] AS [GBNATR ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBOPR " EntityType="Self.GBOPR " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBOPR ].[ID] AS [ID]
+    FROM [dbo].[GBOPR ] AS [GBOPR ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBTCLI " EntityType="Self.GBTCLI " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBTCLI ].[ID] AS [ID]
+    FROM [dbo].[GBTCLI ] AS [GBTCLI ]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBTIT" EntityType="Self.GBTIT" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBTIT].[ID] AS [ID]
+    FROM [dbo].[GBTIT] AS [GBTIT]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBTPENT" EntityType="Self.GBTPENT" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBTPENT].[ID] AS [ID]
+    FROM [dbo].[GBTPENT] AS [GBTPENT]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBTRCLI " EntityType="Self.GBTRCLI " store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBTRCLI ].[ID] AS [ID]
+    FROM [dbo].[GBTRCLI ] AS [GBTRCLI ]</DefiningQuery>
+    </EntitySet>
   </EntityContainer>
-  <EntityType Name="Clients">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="Documents">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Account_Id" Type="bigint" Nullable="false" />
-  </EntityType>
-  <EntityType Name="Accounts">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Client_Id" Type="bigint" Nullable="false" />
-  </EntityType>
-  <Association Name="FK_AccountDocument">
-    <End Role="Account" Type="CustomerAccountsModel.Store.Accounts" Multiplicity="1" />
-    <End Role="Document" Type="CustomerAccountsModel.Store.Documents" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Document">
-        <PropertyRef Name="Account_Id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_ClientAccount">
-    <End Role="Client" Type="CustomerAccountsModel.Store.Clients" Multiplicity="1" />
-    <End Role="Account" Type="CustomerAccountsModel.Store.Accounts" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Client">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="Client_Id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
 </Schema>

@@ -5,11 +5,38 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="3112b49490734343af756f9d36acb5a1" Name="Diagram1">
-        <EntityTypeShape EntityType="CustomerAccountsModel.Client" Width="1.5" PointX="1" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.Document" Width="1.5" PointX="5" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.Account" Width="1.5" PointX="3" PointY="1" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_AccountDocument" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_ClientAccount" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.C_PACTP" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.C_PESTC" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.C_PHBLT" Width="1.5" PointX="0.75" PointY="2.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.C_PPAIS" Width="1.5" PointX="2.75" PointY="2.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.C_PPROF" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBTIT" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.C_PREGC" Width="1.5" PointX="3.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.C_PTIDD" Width="1.5" PointX="5.75" PointY="2.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.CTMOV_" Width="1.5" PointX="5.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.FGCMB_" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.FGGCOT_" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCCO_" Width="1.5" PointX="4.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCCR_" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCDO_" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCDP_" Width="1.5" PointX="7.75" PointY="2.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCLI_" Width="1.5" PointX="7.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCNDM_" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCODOP_" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCRES" Width="1.5" PointX="4.75" PointY="8.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCSTE" Width="1.5" PointX="8.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCSTR" Width="1.5" PointX="6.75" PointY="8.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBLTIT_" Width="1.5" PointX="8.75" PointY="8.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVCC_" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVCO_" Width="1.5" PointX="9.75" PointY="2.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVCR_" Width="1.5" PointX="9.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVDO_" Width="1.5" PointX="0.75" PointY="10.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVDP_" Width="1.5" PointX="2.75" PointY="10.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBNATR_" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBOPR_" Width="1.5" PointX="10.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBTCLI_" Width="1.5" PointX="6.75" PointY="10.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBTPENT" Width="1.5" PointX="10.75" PointY="8.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBTRCLI_" Width="1.5" PointX="8.75" PointY="10.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

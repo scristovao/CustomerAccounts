@@ -25,8 +25,37 @@ namespace CustomerAccountsPortal.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Client> Clients { get; set; }
-        public virtual DbSet<Document> Documents { get; set; }
-        public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<C_PACTP> C_PACTP { get; set; }
+        public virtual DbSet<C_PESTC> C_PESTC { get; set; }
+        public virtual DbSet<C_PHBLT> C_PHBLT { get; set; }
+        public virtual DbSet<C_PPAIS> C_PPAIS { get; set; }
+        public virtual DbSet<C_PPROF> C_PPROF { get; set; }
+        public virtual DbSet<GBTIT> GBTIT { get; set; }
+        public virtual DbSet<C_PREGC> C_PREGC { get; set; }
+        public virtual DbSet<C_PTIDD> C_PTIDD { get; set; }
+        public virtual DbSet<CTMOV_> CTMOV_ { get; set; }
+        public virtual DbSet<FGCMB_> FGCMB_ { get; set; }
+        public virtual DbSet<FGGCOT_> FGGCOT_ { get; set; }
+        public virtual DbSet<GBCCO_> GBCCO_ { get; set; }
+        public virtual DbSet<GBCCR_> GBCCR_ { get; set; }
+        public virtual DbSet<GBCDO_> GBCDO_ { get; set; }
+        public virtual DbSet<GBCDP_> GBCDP_ { get; set; }
+        public virtual DbSet<GBCLI_> GBCLI_ { get; set; }
+        public virtual DbSet<GBCNDM_> GBCNDM_ { get; set; }
+        public virtual DbSet<GBCODOP_> GBCODOP_ { get; set; }
+        public virtual DbSet<GBCRES> GBCRES { get; set; }
+        public virtual DbSet<GBCSTE> GBCSTE { get; set; }
+        public virtual DbSet<GBCSTR> GBCSTR { get; set; }
+        public virtual DbSet<GBLTIT_> GBLTIT_ { get; set; }
+        public virtual DbSet<GBMVCC_> GBMVCC_ { get; set; }
+        public virtual DbSet<GBMVCO_> GBMVCO_ { get; set; }
+        public virtual DbSet<GBMVCR_> GBMVCR_ { get; set; }
+        public virtual DbSet<GBMVDO_> GBMVDO_ { get; set; }
+        public virtual DbSet<GBMVDP_> GBMVDP_ { get; set; }
+        public virtual DbSet<GBNATR_> GBNATR_ { get; set; }
+        public virtual DbSet<GBOPR_> GBOPR_ { get; set; }
+        public virtual DbSet<GBTCLI_> GBTCLI_ { get; set; }
+        public virtual DbSet<GBTPENT> GBTPENT { get; set; }
+        public virtual DbSet<GBTRCLI_> GBTRCLI_ { get; set; }
     }
 }

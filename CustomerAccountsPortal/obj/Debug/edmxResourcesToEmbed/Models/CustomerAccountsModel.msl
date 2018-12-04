@@ -1,26 +1,227 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="CustomerAccountsModelStoreContainer" CdmEntityContainer="CustomerAccountsEntities">
-    <EntitySetMapping Name="Clients">
-      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.Client)">
-        <MappingFragment StoreEntitySet="Clients">
-          <ScalarProperty Name="Id" ColumnName="Id" />
+    <EntitySetMapping Name="C_PACTP">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PACTP">
+        <MappingFragment StoreEntitySet="$PACTP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Documents">
-      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.Document)">
-        <MappingFragment StoreEntitySet="Documents">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Account_Id" ColumnName="Account_Id" />
+    <EntitySetMapping Name="C_PESTC">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PESTC">
+        <MappingFragment StoreEntitySet="$PESTC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Accounts">
-      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.Account)">
-        <MappingFragment StoreEntitySet="Accounts">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Client_Id" ColumnName="Client_Id" />
+    <EntitySetMapping Name="C_PHBLT">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PHBLT">
+        <MappingFragment StoreEntitySet="$PHBLT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_PPAIS">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PPAIS">
+        <MappingFragment StoreEntitySet="$PPAIS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_PPROF">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PPROF">
+        <MappingFragment StoreEntitySet="$PPROF">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBTIT">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTIT">
+        <MappingFragment StoreEntitySet="GBTIT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_PREGC">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PREGC">
+        <MappingFragment StoreEntitySet="$PREGC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_PTIDD">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PTIDD">
+        <MappingFragment StoreEntitySet="$PTIDD">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTMOV_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.CTMOV_">
+        <MappingFragment StoreEntitySet="CTMOV ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FGCMB_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.FGCMB_">
+        <MappingFragment StoreEntitySet="FGCMB ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FGGCOT_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.FGGCOT_">
+        <MappingFragment StoreEntitySet="FGGCOT ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCCO_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCCO_">
+        <MappingFragment StoreEntitySet="GBCCO ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCCR_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCCR_">
+        <MappingFragment StoreEntitySet="GBCCR ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCDO_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCDO_">
+        <MappingFragment StoreEntitySet="GBCDO ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCDP_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCDP_">
+        <MappingFragment StoreEntitySet="GBCDP ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCLI_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCLI_">
+        <MappingFragment StoreEntitySet="GBCLI ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCNDM_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCNDM_">
+        <MappingFragment StoreEntitySet="GBCNDM ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCODOP_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCODOP_">
+        <MappingFragment StoreEntitySet="GBCODOP ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCRES">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCRES">
+        <MappingFragment StoreEntitySet="GBCRES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCSTE">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCSTE">
+        <MappingFragment StoreEntitySet="GBCSTE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCSTR">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCSTR">
+        <MappingFragment StoreEntitySet="GBCSTR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBLTIT_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBLTIT_">
+        <MappingFragment StoreEntitySet="GBLTIT ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVCC_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCC_">
+        <MappingFragment StoreEntitySet="GBMVCC ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVCO_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCO_">
+        <MappingFragment StoreEntitySet="GBMVCO ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVCR_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCR_">
+        <MappingFragment StoreEntitySet="GBMVCR ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVDO_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVDO_">
+        <MappingFragment StoreEntitySet="GBMVDO ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVDP_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVDP_">
+        <MappingFragment StoreEntitySet="GBMVDP ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBNATR_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBNATR_">
+        <MappingFragment StoreEntitySet="GBNATR ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBOPR_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBOPR_">
+        <MappingFragment StoreEntitySet="GBOPR ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBTCLI_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTCLI_">
+        <MappingFragment StoreEntitySet="GBTCLI ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBTPENT">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTPENT">
+        <MappingFragment StoreEntitySet="GBTPENT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBTRCLI_">
+      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTRCLI_">
+        <MappingFragment StoreEntitySet="GBTRCLI ">
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -12,11 +12,8 @@ namespace CustomerAccountsPortal.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Document
+    public partial class GBCDO_
     {
-        public long Id { get; set; }
-        public long Account_Id { get; set; }
-    
-        public virtual Account Account { get; set; }
+        public long ID { get; set; }
     }
 }

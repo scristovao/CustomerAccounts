@@ -131,20 +131,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ClientsController.cs" />
-    <Compile Include="Controllers\DocumentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Account.cs">
-      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Client.cs">
+    <Compile Include="Models\CTMOV_.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CustomerAccountsModel.Context.cs">
@@ -162,7 +156,97 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CustomerAccountsModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Document.cs">
+    <Compile Include="Models\C_PACTP.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C_PESTC.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C_PHBLT.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C_PPAIS.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C_PPROF.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C_PREGC.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C_PTIDD.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FGCMB_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FGGCOT_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBCCO_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBCCR_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBCDO_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBCDP_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBCLI_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBCNDM_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBCODOP_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBCRES.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBCSTE.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBCSTR.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBLTIT_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBMVCC_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBMVCO_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBMVCR_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBMVDO_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBMVDP_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBNATR_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBOPR_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBTCLI_.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBTIT.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBTPENT.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GBTRCLI_.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -221,24 +305,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Clients\Create.cshtml" />
-    <Content Include="Views\Clients\Delete.cshtml" />
-    <Content Include="Views\Clients\Details.cshtml" />
-    <Content Include="Views\Clients\Edit.cshtml" />
-    <Content Include="Views\Clients\Index.cshtml" />
-    <Content Include="Views\Accounts\Create.cshtml" />
-    <Content Include="Views\Accounts\Delete.cshtml" />
-    <Content Include="Views\Accounts\Details.cshtml" />
-    <Content Include="Views\Accounts\Edit.cshtml" />
-    <Content Include="Views\Accounts\Index.cshtml" />
-    <Content Include="Views\Documents\Create.cshtml" />
-    <Content Include="Views\Documents\Delete.cshtml" />
-    <Content Include="Views\Documents\Details.cshtml" />
-    <Content Include="Views\Documents\Edit.cshtml" />
-    <Content Include="Views\Documents\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
