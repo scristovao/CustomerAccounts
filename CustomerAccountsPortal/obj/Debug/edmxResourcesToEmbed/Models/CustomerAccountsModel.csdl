@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CustomerAccountsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Accounts" Relationship="CustomerAccountsModel.FK_ClientAccount" FromRole="Client" ToRole="Account" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Account_Id" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Account" Relationship="CustomerAccountsModel.FK_AccountDocument" FromRole="Document" ToRole="Account" />
+  </EntityType>
+  <EntityContainer Name="CustomerAccountsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clients" EntityType="Self.Client" />
+    <EntitySet Name="Documents" EntityType="Self.Document" />
+    <EntitySet Name="Accounts" EntityType="CustomerAccountsModel.Account" />
+    <AssociationSet Name="FK_AccountDocument" Association="CustomerAccountsModel.FK_AccountDocument">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="Document" EntitySet="Documents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientAccount" Association="CustomerAccountsModel.FK_ClientAccount">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Account" EntitySet="Accounts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Client_Id" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Documents" Relationship="CustomerAccountsModel.FK_AccountDocument" FromRole="Account" ToRole="Document" />
+    <NavigationProperty Name="Client" Relationship="CustomerAccountsModel.FK_ClientAccount" FromRole="Account" ToRole="Client" />
+  </EntityType>
+  <Association Name="FK_AccountDocument">
+    <End Type="CustomerAccountsModel.Account" Role="Account" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.Document" Role="Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="Account_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientAccount">
+    <End Type="CustomerAccountsModel.Client" Role="Client" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.Account" Role="Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="Client_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

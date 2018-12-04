@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CustomerAccountsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CustomerAccountsModelStoreContainer">
+    <EntitySet Name="Clients" EntityType="CustomerAccountsModel.Store.Clients" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Documents" EntityType="CustomerAccountsModel.Store.Documents" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts" EntityType="CustomerAccountsModel.Store.Accounts" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AccountDocument" Association="CustomerAccountsModel.Store.FK_AccountDocument">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="Document" EntitySet="Documents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientAccount" Association="CustomerAccountsModel.Store.FK_ClientAccount">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Account" EntitySet="Accounts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Documents">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Account_Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Client_Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AccountDocument">
+    <End Role="Account" Type="CustomerAccountsModel.Store.Accounts" Multiplicity="1" />
+    <End Role="Document" Type="CustomerAccountsModel.Store.Documents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="Account_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientAccount">
+    <End Role="Client" Type="CustomerAccountsModel.Store.Clients" Multiplicity="1" />
+    <End Role="Account" Type="CustomerAccountsModel.Store.Accounts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="Client_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

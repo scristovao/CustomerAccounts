@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CustomerAccountsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CustomerAccountsModelStoreContainer">
+    <EntitySet Name="Clients" EntityType="CustomerAccountsModel.Store.Clients" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Documents" EntityType="CustomerAccountsModel.Store.Documents" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Accounts" EntityType="CustomerAccountsModel.Store.Accounts" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AccountDocument" Association="CustomerAccountsModel.Store.FK_AccountDocument">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="Document" EntitySet="Documents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientAccount" Association="CustomerAccountsModel.Store.FK_ClientAccount">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Account" EntitySet="Accounts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Documents">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Account_Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Client_Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AccountDocument">
+    <End Role="Account" Type="CustomerAccountsModel.Store.Accounts" Multiplicity="1" />
+    <End Role="Document" Type="CustomerAccountsModel.Store.Documents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="Account_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientAccount">
+    <End Role="Client" Type="CustomerAccountsModel.Store.Clients" Multiplicity="1" />
+    <End Role="Account" Type="CustomerAccountsModel.Store.Accounts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="Client_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CustomerAccountsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Client">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Accounts" Relationship="CustomerAccountsModel.FK_ClientAccount" FromRole="Client" ToRole="Account" />
+        </EntityType>
+        <EntityType Name="Document">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Account_Id" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Account" Relationship="CustomerAccountsModel.FK_AccountDocument" FromRole="Document" ToRole="Account" />
+        </EntityType>
+        <EntityContainer Name="CustomerAccountsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clients" EntityType="Self.Client" />
+          <EntitySet Name="Documents" EntityType="Self.Document" />
+          <EntitySet Name="Accounts" EntityType="CustomerAccountsModel.Account" />
+          <AssociationSet Name="FK_AccountDocument" Association="CustomerAccountsModel.FK_AccountDocument">
+            <End Role="Account" EntitySet="Accounts" />
+            <End Role="Document" EntitySet="Documents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClientAccount" Association="CustomerAccountsModel.FK_ClientAccount">
+            <End Role="Client" EntitySet="Clients" />
+            <End Role="Account" EntitySet="Accounts" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Client_Id" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="Documents" Relationship="CustomerAccountsModel.FK_AccountDocument" FromRole="Account" ToRole="Document" />
+          <NavigationProperty Name="Client" Relationship="CustomerAccountsModel.FK_ClientAccount" FromRole="Account" ToRole="Client" />
+        </EntityType>
+        <Association Name="FK_AccountDocument">
+          <End Type="CustomerAccountsModel.Account" Role="Account" Multiplicity="1" />
+          <End Type="CustomerAccountsModel.Document" Role="Document" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Document">
+              <PropertyRef Name="Account_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ClientAccount">
+          <End Type="CustomerAccountsModel.Client" Role="Client" Multiplicity="1" />
+          <End Type="CustomerAccountsModel.Account" Role="Account" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Client">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Account">
+              <PropertyRef Name="Client_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CustomerAccountsModelStoreContainer" CdmEntityContainer="CustomerAccountsEntities">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.Client)">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documents">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.Document)">
+        <MappingFragment StoreEntitySet="Documents">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Account_Id" ColumnName="Account_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.Account)">
+        <MappingFragment StoreEntitySet="Accounts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Client_Id" ColumnName="Client_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
