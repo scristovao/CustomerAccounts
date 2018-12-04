@@ -12,7 +12,7 @@ namespace CustomerAccountsPortal.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class FGCMB_
+    public partial class GBCCC
     {
         public long ID { get; set; }
     }

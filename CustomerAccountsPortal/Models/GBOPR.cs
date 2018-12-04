@@ -12,7 +12,7 @@ namespace CustomerAccountsPortal.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class GBMVDP_
+    public partial class GBOPR
     {
         public long ID { get; set; }
     }

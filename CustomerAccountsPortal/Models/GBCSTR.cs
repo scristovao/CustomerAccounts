@@ -15,5 +15,10 @@ namespace CustomerAccountsPortal.Models
     public partial class GBCSTR
     {
         public long ID { get; set; }
+        public string SRCST { get; set; }
+        public string SRSLT { get; set; }
+        public string SRDESC { get; set; }
+        public string SROCPA { get; set; }
+        public string SRVALE { get; set; }
     }
 }

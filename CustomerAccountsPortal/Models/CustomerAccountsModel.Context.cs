@@ -33,29 +33,31 @@ namespace CustomerAccountsPortal.Models
         public virtual DbSet<GBTIT> GBTIT { get; set; }
         public virtual DbSet<C_PREGC> C_PREGC { get; set; }
         public virtual DbSet<C_PTIDD> C_PTIDD { get; set; }
-        public virtual DbSet<CTMOV_> CTMOV_ { get; set; }
-        public virtual DbSet<FGCMB_> FGCMB_ { get; set; }
-        public virtual DbSet<FGGCOT_> FGGCOT_ { get; set; }
-        public virtual DbSet<GBCCO_> GBCCO_ { get; set; }
-        public virtual DbSet<GBCCR_> GBCCR_ { get; set; }
-        public virtual DbSet<GBCDO_> GBCDO_ { get; set; }
-        public virtual DbSet<GBCDP_> GBCDP_ { get; set; }
-        public virtual DbSet<GBCLI_> GBCLI_ { get; set; }
-        public virtual DbSet<GBCNDM_> GBCNDM_ { get; set; }
-        public virtual DbSet<GBCODOP_> GBCODOP_ { get; set; }
         public virtual DbSet<GBCRES> GBCRES { get; set; }
         public virtual DbSet<GBCSTE> GBCSTE { get; set; }
         public virtual DbSet<GBCSTR> GBCSTR { get; set; }
-        public virtual DbSet<GBLTIT_> GBLTIT_ { get; set; }
-        public virtual DbSet<GBMVCC_> GBMVCC_ { get; set; }
-        public virtual DbSet<GBMVCO_> GBMVCO_ { get; set; }
-        public virtual DbSet<GBMVCR_> GBMVCR_ { get; set; }
-        public virtual DbSet<GBMVDO_> GBMVDO_ { get; set; }
-        public virtual DbSet<GBMVDP_> GBMVDP_ { get; set; }
-        public virtual DbSet<GBNATR_> GBNATR_ { get; set; }
-        public virtual DbSet<GBOPR_> GBOPR_ { get; set; }
-        public virtual DbSet<GBTCLI_> GBTCLI_ { get; set; }
         public virtual DbSet<GBTPENT> GBTPENT { get; set; }
-        public virtual DbSet<GBTRCLI_> GBTRCLI_ { get; set; }
+        public virtual DbSet<CTMOV> CTMOV { get; set; }
+        public virtual DbSet<FGCMB> FGCMB { get; set; }
+        public virtual DbSet<FGGCOT> FGGCOT { get; set; }
+        public virtual DbSet<GBCCC> GBCCC { get; set; }
+        public virtual DbSet<GBCCO> GBCCO { get; set; }
+        public virtual DbSet<GBCCR> GBCCR { get; set; }
+        public virtual DbSet<GBCDO> GBCDO { get; set; }
+        public virtual DbSet<GBCDP> GBCDP { get; set; }
+        public virtual DbSet<GBCLI> GBCLI { get; set; }
+        public virtual DbSet<GBCNDM> GBCNDM { get; set; }
+        public virtual DbSet<GBCODOP> GBCODOP { get; set; }
+        public virtual DbSet<GBLTIT> GBLTIT { get; set; }
+        public virtual DbSet<GBMORD> GBMORD { get; set; }
+        public virtual DbSet<GBMVCC> GBMVCC { get; set; }
+        public virtual DbSet<GBMVCO> GBMVCO { get; set; }
+        public virtual DbSet<GBMVCR> GBMVCR { get; set; }
+        public virtual DbSet<GBMVDO> GBMVDO { get; set; }
+        public virtual DbSet<GBMVDP> GBMVDP { get; set; }
+        public virtual DbSet<GBNATR> GBNATR { get; set; }
+        public virtual DbSet<GBOPR> GBOPR { get; set; }
+        public virtual DbSet<GBTCLI> GBTCLI { get; set; }
+        public virtual DbSet<GBTRCLI> GBTRCLI { get; set; }
     }
 }

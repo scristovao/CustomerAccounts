@@ -15,5 +15,7 @@ namespace CustomerAccountsPortal.Models
     public partial class C_PREGC
     {
         public long ID { get; set; }
+        public string C_CRCAS { get; set; }
+        public string C_CDCAS { get; set; }
     }
 }

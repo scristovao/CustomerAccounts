@@ -15,5 +15,7 @@ namespace CustomerAccountsPortal.Models
     public partial class GBCRES
     {
         public long ID { get; set; }
+        public string RECRES { get; set; }
+        public string REDESC { get; set; }
     }
 }

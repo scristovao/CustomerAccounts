@@ -2,225 +2,353 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="CustomerAccountsModelStoreContainer" CdmEntityContainer="CustomerAccountsEntities">
     <EntitySetMapping Name="C_PACTP">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PACTP">
-        <MappingFragment StoreEntitySet="$PACTP">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PACTP)">
+        <MappingFragment StoreEntitySet="C_PACTP">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_PACTV" ColumnName="C_PACTV" />
+          <ScalarProperty Name="C_PACDC" ColumnName="C_PACDC" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="C_PESTC">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PESTC">
-        <MappingFragment StoreEntitySet="$PESTC">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PESTC)">
+        <MappingFragment StoreEntitySet="C_PESTC">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_EECIV" ColumnName="C_EECIV" />
+          <ScalarProperty Name="C_EDCIV" ColumnName="C_EDCIV" />
+          <ScalarProperty Name="C_ERCAV" ColumnName="C_ERCAV" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="C_PHBLT">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PHBLT">
-        <MappingFragment StoreEntitySet="$PHBLT">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PHBLT)">
+        <MappingFragment StoreEntitySet="C_PHBLT">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_9HBTP" ColumnName="C_9HBTP" />
+          <ScalarProperty Name="C_9HBDC" ColumnName="C_9HBDC" />
+          <ScalarProperty Name="C_9SITU" ColumnName="C_9SITU" />
+          <ScalarProperty Name="C_9USCR" ColumnName="C_9USCR" />
+          <ScalarProperty Name="C_9DTCR" ColumnName="C_9DTCR" />
+          <ScalarProperty Name="C_9HOCR" ColumnName="C_9HOCR" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="C_PPAIS">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PPAIS">
-        <MappingFragment StoreEntitySet="$PPAIS">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PPAIS)">
+        <MappingFragment StoreEntitySet="C_PPAIS">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_ASPAI" ColumnName="C_ASPAI" />
+          <ScalarProperty Name="C_ACPAI" ColumnName="C_ACPAI" />
+          <ScalarProperty Name="C_ANPAI" ColumnName="C_ANPAI" />
+          <ScalarProperty Name="C_ADPAI" ColumnName="C_ADPAI" />
+          <ScalarProperty Name="C_AINDI" ColumnName="C_AINDI" />
+          <ScalarProperty Name="C_ACID1" ColumnName="C_ACID1" />
+          <ScalarProperty Name="C_ACID2" ColumnName="C_ACID2" />
+          <ScalarProperty Name="C_ACID3" ColumnName="C_ACID3" />
+          <ScalarProperty Name="C_ASITU" ColumnName="C_ASITU" />
+          <ScalarProperty Name="C_AUSCR" ColumnName="C_AUSCR" />
+          <ScalarProperty Name="C_ADTCR" ColumnName="C_ADTCR" />
+          <ScalarProperty Name="C_AHOCR" ColumnName="C_AHOCR" />
+          <ScalarProperty Name="C_AUSDE" ColumnName="C_AUSDE" />
+          <ScalarProperty Name="C_ADTDE" ColumnName="C_ADTDE" />
+          <ScalarProperty Name="C_AHODE" ColumnName="C_AHODE" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="C_PPROF">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PPROF">
-        <MappingFragment StoreEntitySet="$PPROF">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PPROF)">
+        <MappingFragment StoreEntitySet="C_PPROF">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_PPRPROF" ColumnName="C_PPRPROF" />
+          <ScalarProperty Name="C_PPRDESC" ColumnName="C_PPRDESC" />
+          <ScalarProperty Name="C_PPRACTV" ColumnName="C_PPRACTV" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBTIT">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTIT">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTIT)">
         <MappingFragment StoreEntitySet="GBTIT">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TTNUMT" ColumnName="TTNUMT" />
+          <ScalarProperty Name="TTTIPT" ColumnName="TTTIPT" />
+          <ScalarProperty Name="TTNOMT" ColumnName="TTNOMT" />
+          <ScalarProperty Name="TTNOME" ColumnName="TTNOME" />
+          <ScalarProperty Name="TTNOMR" ColumnName="TTNOMR" />
+          <ScalarProperty Name="TTDNSC" ColumnName="TTDNSC" />
+          <ScalarProperty Name="TTSEXO" ColumnName="TTSEXO" />
+          <ScalarProperty Name="TTHABL" ColumnName="TTHABL" />
+          <ScalarProperty Name="TTACTP" ColumnName="TTACTP" />
+          <ScalarProperty Name="GBTTPROF" ColumnName="GBTTPROF" />
+          <ScalarProperty Name="GBTTTIPIDF" ColumnName="GBTTTIPIDF" />
+          <ScalarProperty Name="TTNIF" ColumnName="TTNIF" />
+          <ScalarProperty Name="TTBAIR" ColumnName="TTBAIR" />
+          <ScalarProperty Name="GBTTCTGFSC" ColumnName="GBTTCTGFSC" />
+          <ScalarProperty Name="TTTIDE" ColumnName="TTTIDE" />
+          <ScalarProperty Name="TTNIDE" ColumnName="TTNIDE" />
+          <ScalarProperty Name="GBTTCKDGID" ColumnName="GBTTCKDGID" />
+          <ScalarProperty Name="TTLOCA" ColumnName="TTLOCA" />
+          <ScalarProperty Name="TTDTEI" ColumnName="TTDTEI" />
+          <ScalarProperty Name="GBTTDTVAL" ColumnName="GBTTDTVAL" />
+          <ScalarProperty Name="GBTTNUMACO" ColumnName="GBTTNUMACO" />
+          <ScalarProperty Name="GBTTNOCONS" ColumnName="GBTTNOCONS" />
+          <ScalarProperty Name="GBTTNUPBDO" ColumnName="GBTTNUPBDO" />
+          <ScalarProperty Name="TTNAC" ColumnName="TTNAC" />
+          <ScalarProperty Name="TTNATU" ColumnName="TTNATU" />
+          <ScalarProperty Name="TTECIV" ColumnName="TTECIV" />
+          <ScalarProperty Name="TTRCAS" ColumnName="TTRCAS" />
+          <ScalarProperty Name="TTPAI" ColumnName="TTPAI" />
+          <ScalarProperty Name="TTMAE" ColumnName="TTMAE" />
+          <ScalarProperty Name="TTENTP" ColumnName="TTENTP" />
+          <ScalarProperty Name="TTFUCA" ColumnName="TTFUCA" />
+          <ScalarProperty Name="TTDTAD" ColumnName="TTDTAD" />
+          <ScalarProperty Name="TTTSOC" ColumnName="TTTSOC" />
+          <ScalarProperty Name="TTCAE" ColumnName="TTCAE" />
+          <ScalarProperty Name="GBTTCAESC" ColumnName="GBTTCAESC" />
+          <ScalarProperty Name="TTDTCT" ColumnName="TTDTCT" />
+          <ScalarProperty Name="TTDTPB" ColumnName="TTDTPB" />
+          <ScalarProperty Name="TTSEDE" ColumnName="TTSEDE" />
+          <ScalarProperty Name="TTCSRA" ColumnName="TTCSRA" />
+          <ScalarProperty Name="TTMOED" ColumnName="TTMOED" />
+          <ScalarProperty Name="TTVINC" ColumnName="TTVINC" />
+          <ScalarProperty Name="TTNCTR" ColumnName="TTNCTR" />
+          <ScalarProperty Name="TTCRES" ColumnName="TTCRES" />
+          <ScalarProperty Name="TTCST" ColumnName="TTCST" />
+          <ScalarProperty Name="TTPAIS" ColumnName="TTPAIS" />
+          <ScalarProperty Name="TTTPEN" ColumnName="TTTPEN" />
+          <ScalarProperty Name="TTBLOQ" ColumnName="TTBLOQ" />
+          <ScalarProperty Name="GBTTALER" ColumnName="GBTTALER" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="C_PREGC">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PREGC">
-        <MappingFragment StoreEntitySet="$PREGC">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PREGC)">
+        <MappingFragment StoreEntitySet="C_PREGC">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_CRCAS" ColumnName="C_CRCAS" />
+          <ScalarProperty Name="C_CDCAS" ColumnName="C_CDCAS" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="C_PTIDD">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.C_PTIDD">
-        <MappingFragment StoreEntitySet="$PTIDD">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PTIDD)">
+        <MappingFragment StoreEntitySet="C_PTIDD">
           <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="CTMOV_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.CTMOV_">
-        <MappingFragment StoreEntitySet="CTMOV ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="FGCMB_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.FGCMB_">
-        <MappingFragment StoreEntitySet="FGCMB ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="FGGCOT_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.FGGCOT_">
-        <MappingFragment StoreEntitySet="FGGCOT ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBCCO_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCCO_">
-        <MappingFragment StoreEntitySet="GBCCO ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBCCR_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCCR_">
-        <MappingFragment StoreEntitySet="GBCCR ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBCDO_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCDO_">
-        <MappingFragment StoreEntitySet="GBCDO ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBCDP_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCDP_">
-        <MappingFragment StoreEntitySet="GBCDP ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBCLI_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCLI_">
-        <MappingFragment StoreEntitySet="GBCLI ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBCNDM_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCNDM_">
-        <MappingFragment StoreEntitySet="GBCNDM ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBCODOP_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCODOP_">
-        <MappingFragment StoreEntitySet="GBCODOP ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_PTITP" ColumnName="C_PTITP" />
+          <ScalarProperty Name="C_PTIDC" ColumnName="C_PTIDC" />
+          <ScalarProperty Name="C_POLOC" ColumnName="C_POLOC" />
+          <ScalarProperty Name="C_PSITU" ColumnName="C_PSITU" />
+          <ScalarProperty Name="C_PPASD" ColumnName="C_PPASD" />
+          <ScalarProperty Name="C_PIDTIPUTL" ColumnName="C_PIDTIPUTL" />
+          <ScalarProperty Name="C_PIDRCLCKD" ColumnName="C_PIDRCLCKD" />
+          <ScalarProperty Name="C_PIDPARM1" ColumnName="C_PIDPARM1" />
+          <ScalarProperty Name="C_PIDPARM2" ColumnName="C_PIDPARM2" />
+          <ScalarProperty Name="C_PIDTRCKDG" ColumnName="C_PIDTRCKDG" />
+          <ScalarProperty Name="C_PIDCARMIN" ColumnName="C_PIDCARMIN" />
+          <ScalarProperty Name="C_PIDCARMAX" ColumnName="C_PIDCARMAX" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCRES">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCRES">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCRES)">
         <MappingFragment StoreEntitySet="GBCRES">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RECRES" ColumnName="RECRES" />
+          <ScalarProperty Name="REDESC" ColumnName="REDESC" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCSTE">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCSTE">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCSTE)">
         <MappingFragment StoreEntitySet="GBCSTE">
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SECST" ColumnName="SECST" />
+          <ScalarProperty Name="SESLT" ColumnName="SESLT" />
+          <ScalarProperty Name="SEDESC" ColumnName="SEDESC" />
+          <ScalarProperty Name="SEOCPA" ColumnName="SEOCPA" />
+          <ScalarProperty Name="SEVALE" ColumnName="SEVALE" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCSTR">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCSTR">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCSTR)">
         <MappingFragment StoreEntitySet="GBCSTR">
           <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBLTIT_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBLTIT_">
-        <MappingFragment StoreEntitySet="GBLTIT ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBMVCC_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCC_">
-        <MappingFragment StoreEntitySet="GBMVCC ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBMVCO_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCO_">
-        <MappingFragment StoreEntitySet="GBMVCO ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBMVCR_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCR_">
-        <MappingFragment StoreEntitySet="GBMVCR ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBMVDO_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVDO_">
-        <MappingFragment StoreEntitySet="GBMVDO ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBMVDP_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVDP_">
-        <MappingFragment StoreEntitySet="GBMVDP ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBNATR_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBNATR_">
-        <MappingFragment StoreEntitySet="GBNATR ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBOPR_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBOPR_">
-        <MappingFragment StoreEntitySet="GBOPR ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GBTCLI_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTCLI_">
-        <MappingFragment StoreEntitySet="GBTCLI ">
-          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SRCST" ColumnName="SRCST" />
+          <ScalarProperty Name="SRSLT" ColumnName="SRSLT" />
+          <ScalarProperty Name="SRDESC" ColumnName="SRDESC" />
+          <ScalarProperty Name="SROCPA" ColumnName="SROCPA" />
+          <ScalarProperty Name="SRVALE" ColumnName="SRVALE" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBTPENT">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTPENT">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTPENT)">
         <MappingFragment StoreEntitySet="GBTPENT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NITPEN" ColumnName="NITPEN" />
+          <ScalarProperty Name="NIDTPE" ColumnName="NIDTPE" />
+          <ScalarProperty Name="NIPRCV" ColumnName="NIPRCV" />
+          <ScalarProperty Name="NICOUR" ColumnName="NICOUR" />
+          <ScalarProperty Name="NICOCR" ColumnName="NICOCR" />
+          <ScalarProperty Name="GBNIIDMIN" ColumnName="GBNIIDMIN" />
+          <ScalarProperty Name="GBNIIDMAX" ColumnName="GBNIIDMAX" />
+          <ScalarProperty Name="NIUSCR" ColumnName="NIUSCR" />
+          <ScalarProperty Name="NIDTCR" ColumnName="NIDTCR" />
+          <ScalarProperty Name="NIHOCR" ColumnName="NIHOCR" />
+          <ScalarProperty Name="NISITU" ColumnName="NISITU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTMOV">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.CTMOV)">
+        <MappingFragment StoreEntitySet="CTMOV">
           <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="GBTRCLI_">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTRCLI_">
-        <MappingFragment StoreEntitySet="GBTRCLI ">
+    <EntitySetMapping Name="FGCMB">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.FGCMB)">
+        <MappingFragment StoreEntitySet="FGCMB">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FGGCOT">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.FGGCOT)">
+        <MappingFragment StoreEntitySet="FGGCOT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCCC">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCCC)">
+        <MappingFragment StoreEntitySet="GBCCC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCCO">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCCO)">
+        <MappingFragment StoreEntitySet="GBCCO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCCR">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCCR)">
+        <MappingFragment StoreEntitySet="GBCCR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCDO">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCDO)">
+        <MappingFragment StoreEntitySet="GBCDO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCDP">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCDP)">
+        <MappingFragment StoreEntitySet="GBCDP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCLI">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCLI)">
+        <MappingFragment StoreEntitySet="GBCLI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCNDM">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCNDM)">
+        <MappingFragment StoreEntitySet="GBCNDM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCODOP">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCODOP)">
+        <MappingFragment StoreEntitySet="GBCODOP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBLTIT">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBLTIT)">
+        <MappingFragment StoreEntitySet="GBLTIT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMORD">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMORD)">
+        <MappingFragment StoreEntitySet="GBMORD">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVCC">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVCC)">
+        <MappingFragment StoreEntitySet="GBMVCC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVCO">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVCO)">
+        <MappingFragment StoreEntitySet="GBMVCO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVCR">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVCR)">
+        <MappingFragment StoreEntitySet="GBMVCR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVDO">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVDO)">
+        <MappingFragment StoreEntitySet="GBMVDO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVDP">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVDP)">
+        <MappingFragment StoreEntitySet="GBMVDP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBNATR">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBNATR)">
+        <MappingFragment StoreEntitySet="GBNATR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBOPR">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBOPR)">
+        <MappingFragment StoreEntitySet="GBOPR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBTCLI">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTCLI)">
+        <MappingFragment StoreEntitySet="GBTCLI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBTRCLI">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTRCLI)">
+        <MappingFragment StoreEntitySet="GBTRCLI">
           <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>

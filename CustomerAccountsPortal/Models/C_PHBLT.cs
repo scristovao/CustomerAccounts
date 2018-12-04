@@ -15,5 +15,11 @@ namespace CustomerAccountsPortal.Models
     public partial class C_PHBLT
     {
         public long ID { get; set; }
+        public string C_9HBTP { get; set; }
+        public string C_9HBDC { get; set; }
+        public string C_9SITU { get; set; }
+        public string C_9USCR { get; set; }
+        public Nullable<System.DateTime> C_9DTCR { get; set; }
+        public Nullable<System.DateTime> C_9HOCR { get; set; }
     }
 }

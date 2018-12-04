@@ -4,426 +4,362 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="CustomerAccountsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.$PACTP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="$PACTP">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.$PESTC' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="$PESTC">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.$PHBLT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="$PHBLT">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.$PPAIS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="$PPAIS">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.$PPROF' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="$PPROF">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.$PREGC' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="$PREGC">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.$PTIDD' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="$PTIDD">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.CTMOV ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="CTMOV ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.FGCMB ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="FGCMB ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.FGGCOT ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="FGGCOT ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBCCO ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBCCO ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBCCR ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBCCR ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBCDO ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBCDO ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBCDP ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBCDP ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBCLI ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBCLI ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBCNDM ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBCNDM ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBCODOP ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBCODOP ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBCRES' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBCRES">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBCSTE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBCSTE">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBCSTR' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBCSTR">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBLTIT ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBLTIT ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBMVCC ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBMVCC ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBMVCO ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBMVCO ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBMVCR ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBMVCR ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBMVDO ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBMVDO ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBMVDP ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBMVDP ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBNATR ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBNATR ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBOPR ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBOPR ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBTCLI ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBTCLI ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBTIT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBTIT">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBTPENT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBTPENT">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'CustomerAccounts.dbo.GBTRCLI ' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="GBTRCLI ">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-        </EntityType>
-        <EntityContainer Name="CustomerAccountsModelStoreContainer">
-          <EntitySet Name="$PACTP" EntityType="Self.$PACTP" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [$PACTP].[ID] AS [ID]
-    FROM [dbo].[$PACTP] AS [$PACTP]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="$PESTC" EntityType="Self.$PESTC" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [$PESTC].[ID] AS [ID]
-    FROM [dbo].[$PESTC] AS [$PESTC]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="$PHBLT" EntityType="Self.$PHBLT" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [$PHBLT].[ID] AS [ID]
-    FROM [dbo].[$PHBLT] AS [$PHBLT]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="$PPAIS" EntityType="Self.$PPAIS" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [$PPAIS].[ID] AS [ID]
-    FROM [dbo].[$PPAIS] AS [$PPAIS]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="$PPROF" EntityType="Self.$PPROF" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [$PPROF].[ID] AS [ID]
-    FROM [dbo].[$PPROF] AS [$PPROF]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="$PREGC" EntityType="Self.$PREGC" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [$PREGC].[ID] AS [ID]
-    FROM [dbo].[$PREGC] AS [$PREGC]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="$PTIDD" EntityType="Self.$PTIDD" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [$PTIDD].[ID] AS [ID]
-    FROM [dbo].[$PTIDD] AS [$PTIDD]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="CTMOV " EntityType="Self.CTMOV " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [CTMOV ].[ID] AS [ID]
-    FROM [dbo].[CTMOV ] AS [CTMOV ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="FGCMB " EntityType="Self.FGCMB " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [FGCMB ].[ID] AS [ID]
-    FROM [dbo].[FGCMB ] AS [FGCMB ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="FGGCOT " EntityType="Self.FGGCOT " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [FGGCOT ].[ID] AS [ID]
-    FROM [dbo].[FGGCOT ] AS [FGGCOT ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBCCO " EntityType="Self.GBCCO " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBCCO ].[ID] AS [ID]
-    FROM [dbo].[GBCCO ] AS [GBCCO ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBCCR " EntityType="Self.GBCCR " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBCCR ].[ID] AS [ID]
-    FROM [dbo].[GBCCR ] AS [GBCCR ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBCDO " EntityType="Self.GBCDO " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBCDO ].[ID] AS [ID]
-    FROM [dbo].[GBCDO ] AS [GBCDO ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBCDP " EntityType="Self.GBCDP " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBCDP ].[ID] AS [ID]
-    FROM [dbo].[GBCDP ] AS [GBCDP ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBCLI " EntityType="Self.GBCLI " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBCLI ].[ID] AS [ID]
-    FROM [dbo].[GBCLI ] AS [GBCLI ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBCNDM " EntityType="Self.GBCNDM " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBCNDM ].[ID] AS [ID]
-    FROM [dbo].[GBCNDM ] AS [GBCNDM ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBCODOP " EntityType="Self.GBCODOP " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBCODOP ].[ID] AS [ID]
-    FROM [dbo].[GBCODOP ] AS [GBCODOP ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBCRES" EntityType="Self.GBCRES" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBCRES].[ID] AS [ID]
-    FROM [dbo].[GBCRES] AS [GBCRES]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBCSTE" EntityType="Self.GBCSTE" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBCSTE].[ID] AS [ID]
-    FROM [dbo].[GBCSTE] AS [GBCSTE]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBCSTR" EntityType="Self.GBCSTR" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBCSTR].[ID] AS [ID]
-    FROM [dbo].[GBCSTR] AS [GBCSTR]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBLTIT " EntityType="Self.GBLTIT " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBLTIT ].[ID] AS [ID]
-    FROM [dbo].[GBLTIT ] AS [GBLTIT ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBMVCC " EntityType="Self.GBMVCC " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBMVCC ].[ID] AS [ID]
-    FROM [dbo].[GBMVCC ] AS [GBMVCC ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBMVCO " EntityType="Self.GBMVCO " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBMVCO ].[ID] AS [ID]
-    FROM [dbo].[GBMVCO ] AS [GBMVCO ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBMVCR " EntityType="Self.GBMVCR " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBMVCR ].[ID] AS [ID]
-    FROM [dbo].[GBMVCR ] AS [GBMVCR ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBMVDO " EntityType="Self.GBMVDO " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBMVDO ].[ID] AS [ID]
-    FROM [dbo].[GBMVDO ] AS [GBMVDO ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBMVDP " EntityType="Self.GBMVDP " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBMVDP ].[ID] AS [ID]
-    FROM [dbo].[GBMVDP ] AS [GBMVDP ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBNATR " EntityType="Self.GBNATR " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBNATR ].[ID] AS [ID]
-    FROM [dbo].[GBNATR ] AS [GBNATR ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBOPR " EntityType="Self.GBOPR " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBOPR ].[ID] AS [ID]
-    FROM [dbo].[GBOPR ] AS [GBOPR ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBTCLI " EntityType="Self.GBTCLI " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBTCLI ].[ID] AS [ID]
-    FROM [dbo].[GBTCLI ] AS [GBTCLI ]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBTIT" EntityType="Self.GBTIT" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBTIT].[ID] AS [ID]
-    FROM [dbo].[GBTIT] AS [GBTIT]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBTPENT" EntityType="Self.GBTPENT" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBTPENT].[ID] AS [ID]
-    FROM [dbo].[GBTPENT] AS [GBTPENT]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="GBTRCLI " EntityType="Self.GBTRCLI " store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GBTRCLI ].[ID] AS [ID]
-    FROM [dbo].[GBTRCLI ] AS [GBTRCLI ]</DefiningQuery>
-          </EntitySet>
-        </EntityContainer>
-      </Schema></edmx:StorageModels>
+    <Schema Namespace="CustomerAccountsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CustomerAccountsModelStoreContainer">
+    <EntitySet Name="C_PACTP" EntityType="CustomerAccountsModel.Store.C_PACTP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="C_PESTC" EntityType="CustomerAccountsModel.Store.C_PESTC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="C_PHBLT" EntityType="CustomerAccountsModel.Store.C_PHBLT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="C_PPAIS" EntityType="CustomerAccountsModel.Store.C_PPAIS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="C_PPROF" EntityType="CustomerAccountsModel.Store.C_PPROF" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBTIT" EntityType="CustomerAccountsModel.Store.GBTIT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="C_PREGC" EntityType="CustomerAccountsModel.Store.C_PREGC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="C_PTIDD" EntityType="CustomerAccountsModel.Store.C_PTIDD" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBCRES" EntityType="CustomerAccountsModel.Store.GBCRES" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBCSTE" EntityType="CustomerAccountsModel.Store.GBCSTE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBCSTR" EntityType="CustomerAccountsModel.Store.GBCSTR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBTPENT" EntityType="CustomerAccountsModel.Store.GBTPENT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CTMOV" EntityType="CustomerAccountsModel.Store.CTMOV" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FGCMB" EntityType="CustomerAccountsModel.Store.FGCMB" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FGGCOT" EntityType="CustomerAccountsModel.Store.FGGCOT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBCCC" EntityType="CustomerAccountsModel.Store.GBCCC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBCCO" EntityType="CustomerAccountsModel.Store.GBCCO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBCCR" EntityType="CustomerAccountsModel.Store.GBCCR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBCDO" EntityType="CustomerAccountsModel.Store.GBCDO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBCDP" EntityType="CustomerAccountsModel.Store.GBCDP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBCLI" EntityType="CustomerAccountsModel.Store.GBCLI" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBCNDM" EntityType="CustomerAccountsModel.Store.GBCNDM" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBCODOP" EntityType="CustomerAccountsModel.Store.GBCODOP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBLTIT" EntityType="CustomerAccountsModel.Store.GBLTIT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBMORD" EntityType="CustomerAccountsModel.Store.GBMORD" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBMVCC" EntityType="CustomerAccountsModel.Store.GBMVCC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBMVCO" EntityType="CustomerAccountsModel.Store.GBMVCO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBMVCR" EntityType="CustomerAccountsModel.Store.GBMVCR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBMVDO" EntityType="CustomerAccountsModel.Store.GBMVDO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBMVDP" EntityType="CustomerAccountsModel.Store.GBMVDP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBNATR" EntityType="CustomerAccountsModel.Store.GBNATR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBOPR" EntityType="CustomerAccountsModel.Store.GBOPR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBTCLI" EntityType="CustomerAccountsModel.Store.GBTCLI" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GBTRCLI" EntityType="CustomerAccountsModel.Store.GBTRCLI" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="C_PACTP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="C_PACTV" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="C_PACDC" Type="varchar" Nullable="true" MaxLength="35" />
+  </EntityType>
+  <EntityType Name="C_PESTC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="C_EECIV" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="C_EDCIV" Type="varchar" Nullable="true" MaxLength="15" />
+    <Property Name="C_ERCAV" Type="varchar" Nullable="true" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="C_PHBLT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="C_9HBTP" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="C_9HBDC" Type="varchar" Nullable="true" MaxLength="35" />
+    <Property Name="C_9SITU" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="C_9USCR" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="C_9DTCR" Type="datetime" Nullable="true" />
+    <Property Name="C_9HOCR" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="C_PPAIS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="C_ASPAI" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="C_ACPAI" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="C_ANPAI" Type="int" Nullable="true" />
+    <Property Name="C_ADPAI" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="C_AINDI" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="C_ACID1" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="C_ACID2" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="C_ACID3" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="C_ASITU" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="C_AUSCR" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="C_ADTCR" Type="int" Nullable="true" />
+    <Property Name="C_AHOCR" Type="int" Nullable="true" />
+    <Property Name="C_AUSDE" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="C_ADTDE" Type="int" Nullable="true" />
+    <Property Name="C_AHODE" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="C_PPROF">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="C_PPRPROF" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="C_PPRDESC" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="C_PPRACTV" Type="varchar" Nullable="true" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="GBTIT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TTNUMT" Type="int" Nullable="true" />
+    <Property Name="TTTIPT" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="TTNOMT" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="TTNOME" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="TTNOMR" Type="varchar" Nullable="true" MaxLength="14" />
+    <Property Name="TTDNSC" Type="int" Nullable="true" />
+    <Property Name="TTSEXO" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="TTHABL" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="TTACTP" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="GBTTPROF" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="GBTTTIPIDF" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="TTNIF" Type="varchar" Nullable="true" MaxLength="15" />
+    <Property Name="TTBAIR" Type="int" Nullable="true" />
+    <Property Name="GBTTCTGFSC" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="TTTIDE" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="TTNIDE" Type="varchar" Nullable="true" MaxLength="15" />
+    <Property Name="GBTTCKDGID" Type="int" Nullable="true" />
+    <Property Name="TTLOCA" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="TTDTEI" Type="int" Nullable="true" />
+    <Property Name="GBTTDTVAL" Type="int" Nullable="true" />
+    <Property Name="GBTTNUMACO" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="GBTTNOCONS" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="GBTTNUPBDO" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="TTNAC" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="TTNATU" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="TTECIV" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="TTRCAS" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="TTPAI" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="TTMAE" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="TTENTP" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="TTFUCA" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="TTDTAD" Type="int" Nullable="true" />
+    <Property Name="TTTSOC" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="TTCAE" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="GBTTCAESC" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="TTDTCT" Type="int" Nullable="true" />
+    <Property Name="TTDTPB" Type="int" Nullable="true" />
+    <Property Name="TTSEDE" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="TTCSRA" Type="int" Nullable="true" />
+    <Property Name="TTMOED" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="TTVINC" Type="varchar" Nullable="true" MaxLength="2" />
+    <Property Name="TTNCTR" Type="int" Nullable="true" />
+    <Property Name="TTCRES" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="TTCST" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="TTPAIS" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="TTTPEN" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="TTBLOQ" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="GBTTALER" Type="varchar" Nullable="true" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="C_PREGC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="C_CRCAS" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="C_CDCAS" Type="varchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="C_PTIDD">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="C_PTITP" Type="varchar" Nullable="true" MaxLength="3" />
+    <Property Name="C_PTIDC" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="C_POLOC" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="C_PSITU" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="C_PPASD" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="C_PIDTIPUTL" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="C_PIDRCLCKD" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="C_PIDPARM1" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="C_PIDPARM2" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="C_PIDTRCKDG" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="C_PIDCARMIN" Type="int" Nullable="true" />
+    <Property Name="C_PIDCARMAX" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="GBCRES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RECRES" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="REDESC" Type="varchar" Nullable="true" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="GBCSTE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SECST" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="SESLT" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="SEDESC" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="SEOCPA" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="SEVALE" Type="varchar" Nullable="true" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GBCSTR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SRCST" Type="varchar" Nullable="true" MaxLength="6" />
+    <Property Name="SRSLT" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="SRDESC" Type="varchar" Nullable="true" MaxLength="40" />
+    <Property Name="SROCPA" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="SRVALE" Type="varchar" Nullable="true" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GBTPENT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NITPEN" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="NIDTPE" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="NIPRCV" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="NICOUR" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="NICOCR" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="GBNIIDMIN" Type="int" Nullable="true" />
+    <Property Name="GBNIIDMAX" Type="int" Nullable="true" />
+    <Property Name="NIUSCR" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="NIDTCR" Type="int" Nullable="true" />
+    <Property Name="NIHOCR" Type="int" Nullable="true" />
+    <Property Name="NISITU" Type="varchar" Nullable="true" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="CTMOV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FGCMB">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FGGCOT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBCCC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBCCO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBCCR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBCDO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBCDP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBCLI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBCNDM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBCODOP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBLTIT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBMORD">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBMVCC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBMVCO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBMVCR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBMVDO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBMVDP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBNATR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBOPR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBTCLI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GBTRCLI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+</Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CustomerAccountsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -436,218 +372,346 @@ warning 6002: The table/view 'CustomerAccounts.dbo.GBTRCLI ' does not have a pri
           <EntitySet Name="GBTIT" EntityType="CustomerAccountsModel.GBTIT" />
           <EntitySet Name="C_PREGC" EntityType="CustomerAccountsModel.C_PREGC" />
           <EntitySet Name="C_PTIDD" EntityType="CustomerAccountsModel.C_PTIDD" />
-          <EntitySet Name="CTMOV_" EntityType="CustomerAccountsModel.CTMOV_" />
-          <EntitySet Name="FGCMB_" EntityType="CustomerAccountsModel.FGCMB_" />
-          <EntitySet Name="FGGCOT_" EntityType="CustomerAccountsModel.FGGCOT_" />
-          <EntitySet Name="GBCCO_" EntityType="CustomerAccountsModel.GBCCO_" />
-          <EntitySet Name="GBCCR_" EntityType="CustomerAccountsModel.GBCCR_" />
-          <EntitySet Name="GBCDO_" EntityType="CustomerAccountsModel.GBCDO_" />
-          <EntitySet Name="GBCDP_" EntityType="CustomerAccountsModel.GBCDP_" />
-          <EntitySet Name="GBCLI_" EntityType="CustomerAccountsModel.GBCLI_" />
-          <EntitySet Name="GBCNDM_" EntityType="CustomerAccountsModel.GBCNDM_" />
-          <EntitySet Name="GBCODOP_" EntityType="CustomerAccountsModel.GBCODOP_" />
           <EntitySet Name="GBCRES" EntityType="CustomerAccountsModel.GBCRES" />
           <EntitySet Name="GBCSTE" EntityType="CustomerAccountsModel.GBCSTE" />
           <EntitySet Name="GBCSTR" EntityType="CustomerAccountsModel.GBCSTR" />
-          <EntitySet Name="GBLTIT_" EntityType="CustomerAccountsModel.GBLTIT_" />
-          <EntitySet Name="GBMVCC_" EntityType="CustomerAccountsModel.GBMVCC_" />
-          <EntitySet Name="GBMVCO_" EntityType="CustomerAccountsModel.GBMVCO_" />
-          <EntitySet Name="GBMVCR_" EntityType="CustomerAccountsModel.GBMVCR_" />
-          <EntitySet Name="GBMVDO_" EntityType="CustomerAccountsModel.GBMVDO_" />
-          <EntitySet Name="GBMVDP_" EntityType="CustomerAccountsModel.GBMVDP_" />
-          <EntitySet Name="GBNATR_" EntityType="CustomerAccountsModel.GBNATR_" />
-          <EntitySet Name="GBOPR_" EntityType="CustomerAccountsModel.GBOPR_" />
-          <EntitySet Name="GBTCLI_" EntityType="CustomerAccountsModel.GBTCLI_" />
           <EntitySet Name="GBTPENT" EntityType="CustomerAccountsModel.GBTPENT" />
-          <EntitySet Name="GBTRCLI_" EntityType="CustomerAccountsModel.GBTRCLI_" />
+          <EntitySet Name="CTMOV" EntityType="CustomerAccountsModel.CTMOV" />
+          <EntitySet Name="FGCMB" EntityType="CustomerAccountsModel.FGCMB" />
+          <EntitySet Name="FGGCOT" EntityType="CustomerAccountsModel.FGGCOT" />
+          <EntitySet Name="GBCCC" EntityType="CustomerAccountsModel.GBCCC" />
+          <EntitySet Name="GBCCO" EntityType="CustomerAccountsModel.GBCCO" />
+          <EntitySet Name="GBCCR" EntityType="CustomerAccountsModel.GBCCR" />
+          <EntitySet Name="GBCDO" EntityType="CustomerAccountsModel.GBCDO" />
+          <EntitySet Name="GBCDP" EntityType="CustomerAccountsModel.GBCDP" />
+          <EntitySet Name="GBCLI" EntityType="CustomerAccountsModel.GBCLI" />
+          <EntitySet Name="GBCNDM" EntityType="CustomerAccountsModel.GBCNDM" />
+          <EntitySet Name="GBCODOP" EntityType="CustomerAccountsModel.GBCODOP" />
+          <EntitySet Name="GBLTIT" EntityType="CustomerAccountsModel.GBLTIT" />
+          <EntitySet Name="GBMORD" EntityType="CustomerAccountsModel.GBMORD" />
+          <EntitySet Name="GBMVCC" EntityType="CustomerAccountsModel.GBMVCC" />
+          <EntitySet Name="GBMVCO" EntityType="CustomerAccountsModel.GBMVCO" />
+          <EntitySet Name="GBMVCR" EntityType="CustomerAccountsModel.GBMVCR" />
+          <EntitySet Name="GBMVDO" EntityType="CustomerAccountsModel.GBMVDO" />
+          <EntitySet Name="GBMVDP" EntityType="CustomerAccountsModel.GBMVDP" />
+          <EntitySet Name="GBNATR" EntityType="CustomerAccountsModel.GBNATR" />
+          <EntitySet Name="GBOPR" EntityType="CustomerAccountsModel.GBOPR" />
+          <EntitySet Name="GBTCLI" EntityType="CustomerAccountsModel.GBTCLI" />
+          <EntitySet Name="GBTRCLI" EntityType="CustomerAccountsModel.GBTRCLI" />
         </EntityContainer>
         <EntityType Name="C_PACTP">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="C_PACTV" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="C_PACDC" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="C_PESTC">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="C_EECIV" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="C_EDCIV" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="C_ERCAV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="C_PHBLT">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="C_9HBTP" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="C_9HBDC" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+          <Property Name="C_9SITU" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="C_9USCR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="C_9DTCR" Type="DateTime" Precision="3" />
+          <Property Name="C_9HOCR" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="C_PPAIS">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="C_ASPAI" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="C_ACPAI" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="C_ANPAI" Type="Int32" />
+          <Property Name="C_ADPAI" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="C_AINDI" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="C_ACID1" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="C_ACID2" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="C_ACID3" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="C_ASITU" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="C_AUSCR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="C_ADTCR" Type="Int32" />
+          <Property Name="C_AHOCR" Type="Int32" />
+          <Property Name="C_AUSDE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="C_ADTDE" Type="Int32" />
+          <Property Name="C_AHODE" Type="Int32" />
         </EntityType>
         <EntityType Name="C_PPROF">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="C_PPRPROF" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="C_PPRDESC" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="C_PPRACTV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="GBTIT">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TTNUMT" Type="Int32" />
+          <Property Name="TTTIPT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TTNOMT" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="TTNOME" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="TTNOMR" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="TTDNSC" Type="Int32" />
+          <Property Name="TTSEXO" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TTHABL" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TTACTP" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="GBTTPROF" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="GBTTTIPIDF" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="TTNIF" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="TTBAIR" Type="Int32" />
+          <Property Name="GBTTCTGFSC" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TTTIDE" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="TTNIDE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GBTTCKDGID" Type="Int32" />
+          <Property Name="TTLOCA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TTDTEI" Type="Int32" />
+          <Property Name="GBTTDTVAL" Type="Int32" />
+          <Property Name="GBTTNUMACO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="GBTTNOCONS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="GBTTNUPBDO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TTNAC" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="TTNATU" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="TTECIV" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TTRCAS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TTPAI" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="TTMAE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="TTENTP" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="TTFUCA" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="TTDTAD" Type="Int32" />
+          <Property Name="TTTSOC" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TTCAE" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="GBTTCAESC" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="TTDTCT" Type="Int32" />
+          <Property Name="TTDTPB" Type="Int32" />
+          <Property Name="TTSEDE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="TTCSRA" Type="Int32" />
+          <Property Name="TTMOED" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="TTVINC" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="TTNCTR" Type="Int32" />
+          <Property Name="TTCRES" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TTCST" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="TTPAIS" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="TTTPEN" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TTBLOQ" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="GBTTALER" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="C_PREGC">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="C_CRCAS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="C_CDCAS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="C_PTIDD">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="CTMOV_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="FGCMB_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="FGGCOT_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBCCO_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBCCR_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBCDO_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBCDP_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBCLI_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBCNDM_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBCODOP_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="C_PTITP" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="C_PTIDC" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="C_POLOC" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="C_PSITU" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="C_PPASD" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="C_PIDTIPUTL" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="C_PIDRCLCKD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="C_PIDPARM1" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="C_PIDPARM2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="C_PIDTRCKDG" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="C_PIDCARMIN" Type="Int32" />
+          <Property Name="C_PIDCARMAX" Type="Int32" />
         </EntityType>
         <EntityType Name="GBCRES">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RECRES" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="REDESC" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="GBCSTE">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SECST" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="SESLT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="SEDESC" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="SEOCPA" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="SEVALE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="GBCSTR">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBLTIT_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBMVCC_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBMVCO_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBMVCR_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBMVDO_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBMVDP_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBNATR_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBOPR_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="GBTCLI_">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SRCST" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="SRSLT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="SRDESC" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="SROCPA" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="SRVALE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="GBTPENT">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NITPEN" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="NIDTPE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="NIPRCV" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="NICOUR" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="NICOCR" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="GBNIIDMIN" Type="Int32" />
+          <Property Name="GBNIIDMAX" Type="Int32" />
+          <Property Name="NIUSCR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="NIDTCR" Type="Int32" />
+          <Property Name="NIHOCR" Type="Int32" />
+          <Property Name="NISITU" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityType Name="GBTRCLI_">
+        <EntityType Name="CTMOV">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="FGCMB">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="FGGCOT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBCCC">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBCCO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBCCR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBCDO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBCDP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBCLI">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBCNDM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBCODOP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBLTIT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBMORD">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBMVCC">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBMVCO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBMVCR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBMVDO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBMVDP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBNATR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBOPR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBTCLI">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="GBTRCLI">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
@@ -659,231 +723,359 @@ warning 6002: The table/view 'CustomerAccounts.dbo.GBTRCLI ' does not have a pri
     <edmx:Mappings>
     <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="CustomerAccountsModelStoreContainer" CdmEntityContainer="CustomerAccountsEntities">
-          <EntitySetMapping Name="C_PACTP">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.C_PACTP">
-              <MappingFragment StoreEntitySet="$PACTP">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="C_PESTC">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.C_PESTC">
-              <MappingFragment StoreEntitySet="$PESTC">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="C_PHBLT">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.C_PHBLT">
-              <MappingFragment StoreEntitySet="$PHBLT">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="C_PPAIS">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.C_PPAIS">
-              <MappingFragment StoreEntitySet="$PPAIS">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="C_PPROF">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.C_PPROF">
-              <MappingFragment StoreEntitySet="$PPROF">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBTIT">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBTIT">
-              <MappingFragment StoreEntitySet="GBTIT">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="C_PREGC">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.C_PREGC">
-              <MappingFragment StoreEntitySet="$PREGC">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="C_PTIDD">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.C_PTIDD">
-              <MappingFragment StoreEntitySet="$PTIDD">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="CTMOV_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.CTMOV_">
-              <MappingFragment StoreEntitySet="CTMOV ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="FGCMB_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.FGCMB_">
-              <MappingFragment StoreEntitySet="FGCMB ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="FGGCOT_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.FGGCOT_">
-              <MappingFragment StoreEntitySet="FGGCOT ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBCCO_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBCCO_">
-              <MappingFragment StoreEntitySet="GBCCO ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBCCR_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBCCR_">
-              <MappingFragment StoreEntitySet="GBCCR ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBCDO_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBCDO_">
-              <MappingFragment StoreEntitySet="GBCDO ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBCDP_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBCDP_">
-              <MappingFragment StoreEntitySet="GBCDP ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBCLI_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBCLI_">
-              <MappingFragment StoreEntitySet="GBCLI ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBCNDM_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBCNDM_">
-              <MappingFragment StoreEntitySet="GBCNDM ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBCODOP_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBCODOP_">
-              <MappingFragment StoreEntitySet="GBCODOP ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBCRES">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBCRES">
-              <MappingFragment StoreEntitySet="GBCRES">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBCSTE">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBCSTE">
-              <MappingFragment StoreEntitySet="GBCSTE">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBCSTR">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBCSTR">
-              <MappingFragment StoreEntitySet="GBCSTR">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBLTIT_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBLTIT_">
-              <MappingFragment StoreEntitySet="GBLTIT ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBMVCC_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCC_">
-              <MappingFragment StoreEntitySet="GBMVCC ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBMVCO_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCO_">
-              <MappingFragment StoreEntitySet="GBMVCO ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBMVCR_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCR_">
-              <MappingFragment StoreEntitySet="GBMVCR ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBMVDO_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVDO_">
-              <MappingFragment StoreEntitySet="GBMVDO ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBMVDP_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVDP_">
-              <MappingFragment StoreEntitySet="GBMVDP ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBNATR_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBNATR_">
-              <MappingFragment StoreEntitySet="GBNATR ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBOPR_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBOPR_">
-              <MappingFragment StoreEntitySet="GBOPR ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBTCLI_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBTCLI_">
-              <MappingFragment StoreEntitySet="GBTCLI ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBTPENT">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBTPENT">
-              <MappingFragment StoreEntitySet="GBTPENT">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="GBTRCLI_">
-            <EntityTypeMapping TypeName="CustomerAccountsModel.GBTRCLI_">
-              <MappingFragment StoreEntitySet="GBTRCLI ">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-        </EntityContainerMapping>
+    <EntitySetMapping Name="C_PACTP">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PACTP)">
+        <MappingFragment StoreEntitySet="C_PACTP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_PACTV" ColumnName="C_PACTV" />
+          <ScalarProperty Name="C_PACDC" ColumnName="C_PACDC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_PESTC">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PESTC)">
+        <MappingFragment StoreEntitySet="C_PESTC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_EECIV" ColumnName="C_EECIV" />
+          <ScalarProperty Name="C_EDCIV" ColumnName="C_EDCIV" />
+          <ScalarProperty Name="C_ERCAV" ColumnName="C_ERCAV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_PHBLT">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PHBLT)">
+        <MappingFragment StoreEntitySet="C_PHBLT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_9HBTP" ColumnName="C_9HBTP" />
+          <ScalarProperty Name="C_9HBDC" ColumnName="C_9HBDC" />
+          <ScalarProperty Name="C_9SITU" ColumnName="C_9SITU" />
+          <ScalarProperty Name="C_9USCR" ColumnName="C_9USCR" />
+          <ScalarProperty Name="C_9DTCR" ColumnName="C_9DTCR" />
+          <ScalarProperty Name="C_9HOCR" ColumnName="C_9HOCR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_PPAIS">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PPAIS)">
+        <MappingFragment StoreEntitySet="C_PPAIS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_ASPAI" ColumnName="C_ASPAI" />
+          <ScalarProperty Name="C_ACPAI" ColumnName="C_ACPAI" />
+          <ScalarProperty Name="C_ANPAI" ColumnName="C_ANPAI" />
+          <ScalarProperty Name="C_ADPAI" ColumnName="C_ADPAI" />
+          <ScalarProperty Name="C_AINDI" ColumnName="C_AINDI" />
+          <ScalarProperty Name="C_ACID1" ColumnName="C_ACID1" />
+          <ScalarProperty Name="C_ACID2" ColumnName="C_ACID2" />
+          <ScalarProperty Name="C_ACID3" ColumnName="C_ACID3" />
+          <ScalarProperty Name="C_ASITU" ColumnName="C_ASITU" />
+          <ScalarProperty Name="C_AUSCR" ColumnName="C_AUSCR" />
+          <ScalarProperty Name="C_ADTCR" ColumnName="C_ADTCR" />
+          <ScalarProperty Name="C_AHOCR" ColumnName="C_AHOCR" />
+          <ScalarProperty Name="C_AUSDE" ColumnName="C_AUSDE" />
+          <ScalarProperty Name="C_ADTDE" ColumnName="C_ADTDE" />
+          <ScalarProperty Name="C_AHODE" ColumnName="C_AHODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_PPROF">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PPROF)">
+        <MappingFragment StoreEntitySet="C_PPROF">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_PPRPROF" ColumnName="C_PPRPROF" />
+          <ScalarProperty Name="C_PPRDESC" ColumnName="C_PPRDESC" />
+          <ScalarProperty Name="C_PPRACTV" ColumnName="C_PPRACTV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBTIT">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTIT)">
+        <MappingFragment StoreEntitySet="GBTIT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TTNUMT" ColumnName="TTNUMT" />
+          <ScalarProperty Name="TTTIPT" ColumnName="TTTIPT" />
+          <ScalarProperty Name="TTNOMT" ColumnName="TTNOMT" />
+          <ScalarProperty Name="TTNOME" ColumnName="TTNOME" />
+          <ScalarProperty Name="TTNOMR" ColumnName="TTNOMR" />
+          <ScalarProperty Name="TTDNSC" ColumnName="TTDNSC" />
+          <ScalarProperty Name="TTSEXO" ColumnName="TTSEXO" />
+          <ScalarProperty Name="TTHABL" ColumnName="TTHABL" />
+          <ScalarProperty Name="TTACTP" ColumnName="TTACTP" />
+          <ScalarProperty Name="GBTTPROF" ColumnName="GBTTPROF" />
+          <ScalarProperty Name="GBTTTIPIDF" ColumnName="GBTTTIPIDF" />
+          <ScalarProperty Name="TTNIF" ColumnName="TTNIF" />
+          <ScalarProperty Name="TTBAIR" ColumnName="TTBAIR" />
+          <ScalarProperty Name="GBTTCTGFSC" ColumnName="GBTTCTGFSC" />
+          <ScalarProperty Name="TTTIDE" ColumnName="TTTIDE" />
+          <ScalarProperty Name="TTNIDE" ColumnName="TTNIDE" />
+          <ScalarProperty Name="GBTTCKDGID" ColumnName="GBTTCKDGID" />
+          <ScalarProperty Name="TTLOCA" ColumnName="TTLOCA" />
+          <ScalarProperty Name="TTDTEI" ColumnName="TTDTEI" />
+          <ScalarProperty Name="GBTTDTVAL" ColumnName="GBTTDTVAL" />
+          <ScalarProperty Name="GBTTNUMACO" ColumnName="GBTTNUMACO" />
+          <ScalarProperty Name="GBTTNOCONS" ColumnName="GBTTNOCONS" />
+          <ScalarProperty Name="GBTTNUPBDO" ColumnName="GBTTNUPBDO" />
+          <ScalarProperty Name="TTNAC" ColumnName="TTNAC" />
+          <ScalarProperty Name="TTNATU" ColumnName="TTNATU" />
+          <ScalarProperty Name="TTECIV" ColumnName="TTECIV" />
+          <ScalarProperty Name="TTRCAS" ColumnName="TTRCAS" />
+          <ScalarProperty Name="TTPAI" ColumnName="TTPAI" />
+          <ScalarProperty Name="TTMAE" ColumnName="TTMAE" />
+          <ScalarProperty Name="TTENTP" ColumnName="TTENTP" />
+          <ScalarProperty Name="TTFUCA" ColumnName="TTFUCA" />
+          <ScalarProperty Name="TTDTAD" ColumnName="TTDTAD" />
+          <ScalarProperty Name="TTTSOC" ColumnName="TTTSOC" />
+          <ScalarProperty Name="TTCAE" ColumnName="TTCAE" />
+          <ScalarProperty Name="GBTTCAESC" ColumnName="GBTTCAESC" />
+          <ScalarProperty Name="TTDTCT" ColumnName="TTDTCT" />
+          <ScalarProperty Name="TTDTPB" ColumnName="TTDTPB" />
+          <ScalarProperty Name="TTSEDE" ColumnName="TTSEDE" />
+          <ScalarProperty Name="TTCSRA" ColumnName="TTCSRA" />
+          <ScalarProperty Name="TTMOED" ColumnName="TTMOED" />
+          <ScalarProperty Name="TTVINC" ColumnName="TTVINC" />
+          <ScalarProperty Name="TTNCTR" ColumnName="TTNCTR" />
+          <ScalarProperty Name="TTCRES" ColumnName="TTCRES" />
+          <ScalarProperty Name="TTCST" ColumnName="TTCST" />
+          <ScalarProperty Name="TTPAIS" ColumnName="TTPAIS" />
+          <ScalarProperty Name="TTTPEN" ColumnName="TTTPEN" />
+          <ScalarProperty Name="TTBLOQ" ColumnName="TTBLOQ" />
+          <ScalarProperty Name="GBTTALER" ColumnName="GBTTALER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_PREGC">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PREGC)">
+        <MappingFragment StoreEntitySet="C_PREGC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_CRCAS" ColumnName="C_CRCAS" />
+          <ScalarProperty Name="C_CDCAS" ColumnName="C_CDCAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_PTIDD">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.C_PTIDD)">
+        <MappingFragment StoreEntitySet="C_PTIDD">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="C_PTITP" ColumnName="C_PTITP" />
+          <ScalarProperty Name="C_PTIDC" ColumnName="C_PTIDC" />
+          <ScalarProperty Name="C_POLOC" ColumnName="C_POLOC" />
+          <ScalarProperty Name="C_PSITU" ColumnName="C_PSITU" />
+          <ScalarProperty Name="C_PPASD" ColumnName="C_PPASD" />
+          <ScalarProperty Name="C_PIDTIPUTL" ColumnName="C_PIDTIPUTL" />
+          <ScalarProperty Name="C_PIDRCLCKD" ColumnName="C_PIDRCLCKD" />
+          <ScalarProperty Name="C_PIDPARM1" ColumnName="C_PIDPARM1" />
+          <ScalarProperty Name="C_PIDPARM2" ColumnName="C_PIDPARM2" />
+          <ScalarProperty Name="C_PIDTRCKDG" ColumnName="C_PIDTRCKDG" />
+          <ScalarProperty Name="C_PIDCARMIN" ColumnName="C_PIDCARMIN" />
+          <ScalarProperty Name="C_PIDCARMAX" ColumnName="C_PIDCARMAX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCRES">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCRES)">
+        <MappingFragment StoreEntitySet="GBCRES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RECRES" ColumnName="RECRES" />
+          <ScalarProperty Name="REDESC" ColumnName="REDESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCSTE">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCSTE)">
+        <MappingFragment StoreEntitySet="GBCSTE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SECST" ColumnName="SECST" />
+          <ScalarProperty Name="SESLT" ColumnName="SESLT" />
+          <ScalarProperty Name="SEDESC" ColumnName="SEDESC" />
+          <ScalarProperty Name="SEOCPA" ColumnName="SEOCPA" />
+          <ScalarProperty Name="SEVALE" ColumnName="SEVALE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCSTR">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCSTR)">
+        <MappingFragment StoreEntitySet="GBCSTR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SRCST" ColumnName="SRCST" />
+          <ScalarProperty Name="SRSLT" ColumnName="SRSLT" />
+          <ScalarProperty Name="SRDESC" ColumnName="SRDESC" />
+          <ScalarProperty Name="SROCPA" ColumnName="SROCPA" />
+          <ScalarProperty Name="SRVALE" ColumnName="SRVALE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBTPENT">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTPENT)">
+        <MappingFragment StoreEntitySet="GBTPENT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NITPEN" ColumnName="NITPEN" />
+          <ScalarProperty Name="NIDTPE" ColumnName="NIDTPE" />
+          <ScalarProperty Name="NIPRCV" ColumnName="NIPRCV" />
+          <ScalarProperty Name="NICOUR" ColumnName="NICOUR" />
+          <ScalarProperty Name="NICOCR" ColumnName="NICOCR" />
+          <ScalarProperty Name="GBNIIDMIN" ColumnName="GBNIIDMIN" />
+          <ScalarProperty Name="GBNIIDMAX" ColumnName="GBNIIDMAX" />
+          <ScalarProperty Name="NIUSCR" ColumnName="NIUSCR" />
+          <ScalarProperty Name="NIDTCR" ColumnName="NIDTCR" />
+          <ScalarProperty Name="NIHOCR" ColumnName="NIHOCR" />
+          <ScalarProperty Name="NISITU" ColumnName="NISITU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTMOV">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.CTMOV)">
+        <MappingFragment StoreEntitySet="CTMOV">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FGCMB">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.FGCMB)">
+        <MappingFragment StoreEntitySet="FGCMB">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FGGCOT">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.FGGCOT)">
+        <MappingFragment StoreEntitySet="FGGCOT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCCC">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCCC)">
+        <MappingFragment StoreEntitySet="GBCCC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCCO">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCCO)">
+        <MappingFragment StoreEntitySet="GBCCO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCCR">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCCR)">
+        <MappingFragment StoreEntitySet="GBCCR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCDO">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCDO)">
+        <MappingFragment StoreEntitySet="GBCDO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCDP">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCDP)">
+        <MappingFragment StoreEntitySet="GBCDP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCLI">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCLI)">
+        <MappingFragment StoreEntitySet="GBCLI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCNDM">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCNDM)">
+        <MappingFragment StoreEntitySet="GBCNDM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBCODOP">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCODOP)">
+        <MappingFragment StoreEntitySet="GBCODOP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBLTIT">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBLTIT)">
+        <MappingFragment StoreEntitySet="GBLTIT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMORD">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMORD)">
+        <MappingFragment StoreEntitySet="GBMORD">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVCC">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVCC)">
+        <MappingFragment StoreEntitySet="GBMVCC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVCO">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVCO)">
+        <MappingFragment StoreEntitySet="GBMVCO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVCR">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVCR)">
+        <MappingFragment StoreEntitySet="GBMVCR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVDO">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVDO)">
+        <MappingFragment StoreEntitySet="GBMVDO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBMVDP">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVDP)">
+        <MappingFragment StoreEntitySet="GBMVDP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBNATR">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBNATR)">
+        <MappingFragment StoreEntitySet="GBNATR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBOPR">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBOPR)">
+        <MappingFragment StoreEntitySet="GBOPR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBTCLI">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTCLI)">
+        <MappingFragment StoreEntitySet="GBTCLI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GBTRCLI">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTRCLI)">
+        <MappingFragment StoreEntitySet="GBTRCLI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
 </Mapping></edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->

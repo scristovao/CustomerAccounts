@@ -15,5 +15,7 @@ namespace CustomerAccountsPortal.Models
     public partial class C_PACTP
     {
         public long ID { get; set; }
+        public string C_PACTV { get; set; }
+        public string C_PACDC { get; set; }
     }
 }

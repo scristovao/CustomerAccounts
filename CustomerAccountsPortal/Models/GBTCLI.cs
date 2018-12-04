@@ -12,11 +12,8 @@ namespace CustomerAccountsPortal.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class C_PESTC
+    public partial class GBTCLI
     {
         public long ID { get; set; }
-        public string C_EECIV { get; set; }
-        public string C_EDCIV { get; set; }
-        public string C_ERCAV { get; set; }
     }
 }

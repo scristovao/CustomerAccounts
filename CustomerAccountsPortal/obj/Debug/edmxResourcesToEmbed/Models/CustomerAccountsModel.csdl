@@ -9,218 +9,346 @@
     <EntitySet Name="GBTIT" EntityType="CustomerAccountsModel.GBTIT" />
     <EntitySet Name="C_PREGC" EntityType="CustomerAccountsModel.C_PREGC" />
     <EntitySet Name="C_PTIDD" EntityType="CustomerAccountsModel.C_PTIDD" />
-    <EntitySet Name="CTMOV_" EntityType="CustomerAccountsModel.CTMOV_" />
-    <EntitySet Name="FGCMB_" EntityType="CustomerAccountsModel.FGCMB_" />
-    <EntitySet Name="FGGCOT_" EntityType="CustomerAccountsModel.FGGCOT_" />
-    <EntitySet Name="GBCCO_" EntityType="CustomerAccountsModel.GBCCO_" />
-    <EntitySet Name="GBCCR_" EntityType="CustomerAccountsModel.GBCCR_" />
-    <EntitySet Name="GBCDO_" EntityType="CustomerAccountsModel.GBCDO_" />
-    <EntitySet Name="GBCDP_" EntityType="CustomerAccountsModel.GBCDP_" />
-    <EntitySet Name="GBCLI_" EntityType="CustomerAccountsModel.GBCLI_" />
-    <EntitySet Name="GBCNDM_" EntityType="CustomerAccountsModel.GBCNDM_" />
-    <EntitySet Name="GBCODOP_" EntityType="CustomerAccountsModel.GBCODOP_" />
     <EntitySet Name="GBCRES" EntityType="CustomerAccountsModel.GBCRES" />
     <EntitySet Name="GBCSTE" EntityType="CustomerAccountsModel.GBCSTE" />
     <EntitySet Name="GBCSTR" EntityType="CustomerAccountsModel.GBCSTR" />
-    <EntitySet Name="GBLTIT_" EntityType="CustomerAccountsModel.GBLTIT_" />
-    <EntitySet Name="GBMVCC_" EntityType="CustomerAccountsModel.GBMVCC_" />
-    <EntitySet Name="GBMVCO_" EntityType="CustomerAccountsModel.GBMVCO_" />
-    <EntitySet Name="GBMVCR_" EntityType="CustomerAccountsModel.GBMVCR_" />
-    <EntitySet Name="GBMVDO_" EntityType="CustomerAccountsModel.GBMVDO_" />
-    <EntitySet Name="GBMVDP_" EntityType="CustomerAccountsModel.GBMVDP_" />
-    <EntitySet Name="GBNATR_" EntityType="CustomerAccountsModel.GBNATR_" />
-    <EntitySet Name="GBOPR_" EntityType="CustomerAccountsModel.GBOPR_" />
-    <EntitySet Name="GBTCLI_" EntityType="CustomerAccountsModel.GBTCLI_" />
     <EntitySet Name="GBTPENT" EntityType="CustomerAccountsModel.GBTPENT" />
-    <EntitySet Name="GBTRCLI_" EntityType="CustomerAccountsModel.GBTRCLI_" />
+    <EntitySet Name="CTMOV" EntityType="CustomerAccountsModel.CTMOV" />
+    <EntitySet Name="FGCMB" EntityType="CustomerAccountsModel.FGCMB" />
+    <EntitySet Name="FGGCOT" EntityType="CustomerAccountsModel.FGGCOT" />
+    <EntitySet Name="GBCCC" EntityType="CustomerAccountsModel.GBCCC" />
+    <EntitySet Name="GBCCO" EntityType="CustomerAccountsModel.GBCCO" />
+    <EntitySet Name="GBCCR" EntityType="CustomerAccountsModel.GBCCR" />
+    <EntitySet Name="GBCDO" EntityType="CustomerAccountsModel.GBCDO" />
+    <EntitySet Name="GBCDP" EntityType="CustomerAccountsModel.GBCDP" />
+    <EntitySet Name="GBCLI" EntityType="CustomerAccountsModel.GBCLI" />
+    <EntitySet Name="GBCNDM" EntityType="CustomerAccountsModel.GBCNDM" />
+    <EntitySet Name="GBCODOP" EntityType="CustomerAccountsModel.GBCODOP" />
+    <EntitySet Name="GBLTIT" EntityType="CustomerAccountsModel.GBLTIT" />
+    <EntitySet Name="GBMORD" EntityType="CustomerAccountsModel.GBMORD" />
+    <EntitySet Name="GBMVCC" EntityType="CustomerAccountsModel.GBMVCC" />
+    <EntitySet Name="GBMVCO" EntityType="CustomerAccountsModel.GBMVCO" />
+    <EntitySet Name="GBMVCR" EntityType="CustomerAccountsModel.GBMVCR" />
+    <EntitySet Name="GBMVDO" EntityType="CustomerAccountsModel.GBMVDO" />
+    <EntitySet Name="GBMVDP" EntityType="CustomerAccountsModel.GBMVDP" />
+    <EntitySet Name="GBNATR" EntityType="CustomerAccountsModel.GBNATR" />
+    <EntitySet Name="GBOPR" EntityType="CustomerAccountsModel.GBOPR" />
+    <EntitySet Name="GBTCLI" EntityType="CustomerAccountsModel.GBTCLI" />
+    <EntitySet Name="GBTRCLI" EntityType="CustomerAccountsModel.GBTRCLI" />
   </EntityContainer>
   <EntityType Name="C_PACTP">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="C_PACTV" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="C_PACDC" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="C_PESTC">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="C_EECIV" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_EDCIV" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="C_ERCAV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="C_PHBLT">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="C_9HBTP" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_9HBDC" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="C_9SITU" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_9USCR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="C_9DTCR" Type="DateTime" Precision="3" />
+    <Property Name="C_9HOCR" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="C_PPAIS">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="C_ASPAI" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="C_ACPAI" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="C_ANPAI" Type="Int32" />
+    <Property Name="C_ADPAI" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="C_AINDI" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="C_ACID1" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="C_ACID2" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="C_ACID3" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="C_ASITU" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_AUSCR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="C_ADTCR" Type="Int32" />
+    <Property Name="C_AHOCR" Type="Int32" />
+    <Property Name="C_AUSDE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="C_ADTDE" Type="Int32" />
+    <Property Name="C_AHODE" Type="Int32" />
   </EntityType>
   <EntityType Name="C_PPROF">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="C_PPRPROF" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="C_PPRDESC" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="C_PPRACTV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="GBTIT">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TTNUMT" Type="Int32" />
+    <Property Name="TTTIPT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TTNOMT" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="TTNOME" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="TTNOMR" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="TTDNSC" Type="Int32" />
+    <Property Name="TTSEXO" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TTHABL" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TTACTP" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="GBTTPROF" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="GBTTTIPIDF" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="TTNIF" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TTBAIR" Type="Int32" />
+    <Property Name="GBTTCTGFSC" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TTTIDE" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="TTNIDE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="GBTTCKDGID" Type="Int32" />
+    <Property Name="TTLOCA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TTDTEI" Type="Int32" />
+    <Property Name="GBTTDTVAL" Type="Int32" />
+    <Property Name="GBTTNUMACO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="GBTTNOCONS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="GBTTNUPBDO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TTNAC" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="TTNATU" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="TTECIV" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TTRCAS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TTPAI" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="TTMAE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="TTENTP" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="TTFUCA" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="TTDTAD" Type="Int32" />
+    <Property Name="TTTSOC" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TTCAE" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="GBTTCAESC" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="TTDTCT" Type="Int32" />
+    <Property Name="TTDTPB" Type="Int32" />
+    <Property Name="TTSEDE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TTCSRA" Type="Int32" />
+    <Property Name="TTMOED" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="TTVINC" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="TTNCTR" Type="Int32" />
+    <Property Name="TTCRES" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TTCST" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="TTPAIS" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="TTTPEN" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TTBLOQ" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="GBTTALER" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="C_PREGC">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="C_CRCAS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_CDCAS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="C_PTIDD">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="CTMOV_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="FGCMB_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="FGGCOT_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBCCO_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBCCR_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBCDO_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBCDP_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBCLI_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBCNDM_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBCODOP_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="C_PTITP" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="C_PTIDC" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="C_POLOC" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_PSITU" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_PPASD" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_PIDTIPUTL" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_PIDRCLCKD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="C_PIDPARM1" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="C_PIDPARM2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="C_PIDTRCKDG" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="C_PIDCARMIN" Type="Int32" />
+    <Property Name="C_PIDCARMAX" Type="Int32" />
   </EntityType>
   <EntityType Name="GBCRES">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RECRES" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="REDESC" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="GBCSTE">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SECST" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="SESLT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SEDESC" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="SEOCPA" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SEVALE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="GBCSTR">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBLTIT_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBMVCC_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBMVCO_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBMVCR_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBMVDO_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBMVDP_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBNATR_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBOPR_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-  </EntityType>
-  <EntityType Name="GBTCLI_">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SRCST" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="SRSLT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SRDESC" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="SROCPA" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SRVALE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="GBTPENT">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NITPEN" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="NIDTPE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="NIPRCV" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="NICOUR" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="NICOCR" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="GBNIIDMIN" Type="Int32" />
+    <Property Name="GBNIIDMAX" Type="Int32" />
+    <Property Name="NIUSCR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NIDTCR" Type="Int32" />
+    <Property Name="NIHOCR" Type="Int32" />
+    <Property Name="NISITU" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
   </EntityType>
-  <EntityType Name="GBTRCLI_">
+  <EntityType Name="CTMOV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="FGCMB">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="FGGCOT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCCC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCCO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCCR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCDO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCDP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCLI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCNDM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBCODOP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBLTIT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBMORD">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBMVCC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBMVCO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBMVCR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBMVDO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBMVDP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBNATR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBOPR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBTCLI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="GBTRCLI">
     <Key>
       <PropertyRef Name="ID" />
     </Key>

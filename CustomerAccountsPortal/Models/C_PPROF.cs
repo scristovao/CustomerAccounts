@@ -15,5 +15,8 @@ namespace CustomerAccountsPortal.Models
     public partial class C_PPROF
     {
         public long ID { get; set; }
+        public string C_PPRPROF { get; set; }
+        public string C_PPRDESC { get; set; }
+        public string C_PPRACTV { get; set; }
     }
 }

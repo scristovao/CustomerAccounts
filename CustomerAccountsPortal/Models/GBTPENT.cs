@@ -15,5 +15,16 @@ namespace CustomerAccountsPortal.Models
     public partial class GBTPENT
     {
         public long ID { get; set; }
+        public string NITPEN { get; set; }
+        public string NIDTPE { get; set; }
+        public string NIPRCV { get; set; }
+        public string NICOUR { get; set; }
+        public string NICOCR { get; set; }
+        public Nullable<int> GBNIIDMIN { get; set; }
+        public Nullable<int> GBNIIDMAX { get; set; }
+        public string NIUSCR { get; set; }
+        public Nullable<int> NIDTCR { get; set; }
+        public Nullable<int> NIHOCR { get; set; }
+        public string NISITU { get; set; }
     }
 }

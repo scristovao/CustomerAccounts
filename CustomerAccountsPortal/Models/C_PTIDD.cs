@@ -15,5 +15,17 @@ namespace CustomerAccountsPortal.Models
     public partial class C_PTIDD
     {
         public long ID { get; set; }
+        public string C_PTITP { get; set; }
+        public string C_PTIDC { get; set; }
+        public string C_POLOC { get; set; }
+        public string C_PSITU { get; set; }
+        public string C_PPASD { get; set; }
+        public string C_PIDTIPUTL { get; set; }
+        public string C_PIDRCLCKD { get; set; }
+        public string C_PIDPARM1 { get; set; }
+        public string C_PIDPARM2 { get; set; }
+        public string C_PIDTRCKDG { get; set; }
+        public Nullable<int> C_PIDCARMIN { get; set; }
+        public Nullable<int> C_PIDCARMAX { get; set; }
     }
 }

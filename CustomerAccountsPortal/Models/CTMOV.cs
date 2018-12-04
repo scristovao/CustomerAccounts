@@ -12,7 +12,7 @@ namespace CustomerAccountsPortal.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class CTMOV_
+    public partial class CTMOV
     {
         public long ID { get; set; }
     }

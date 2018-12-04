@@ -15,5 +15,10 @@ namespace CustomerAccountsPortal.Models
     public partial class GBCSTE
     {
         public long ID { get; set; }
+        public string SECST { get; set; }
+        public string SESLT { get; set; }
+        public string SEDESC { get; set; }
+        public string SEOCPA { get; set; }
+        public string SEVALE { get; set; }
     }
 }
