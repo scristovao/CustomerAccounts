@@ -1,357 +1,688 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="CustomerAccountsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="CustomerAccountsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.CTMOV_MovimentosAM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CTMOV_MovimentosAM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.FGCMB_Divisas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FGCMB_Divisas">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.FGGCOT_GeracaoCotacoes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FGGCOT_GeracaoCotacoes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCCC_ContasCaucionadas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCCC_ContasCaucionadas">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCCO_ContasContabilisticas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCCO_ContasContabilisticas">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCCR_ContasCredito' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCCR_ContasCredito">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCDO_ContasDepositosOrdem' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCDO_ContasDepositosOrdem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCDP_ContasDepositosPrazo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCDP_ContasDepositosPrazo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCLI_Clientes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCLI_Clientes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCNDM_CondicoesMovimentacaoConta' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCNDM_CondicoesMovimentacaoConta">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCODOP_CodigosOperacao' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCODOP_CodigosOperacao">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCRES_CodigosResidencia' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCRES_CodigosResidencia">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RECRES_CodigoResidencia" Type="varchar" MaxLength="1" />
+    <Property Name="REDESC_Descritivo" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCSTE_CodigosSectoriaisNaoResidentes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCSTE_CodigosSectoriaisNaoResidentes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SECST_CodigoSectorial" Type="varchar" MaxLength="6" />
+    <Property Name="SESLT_Seleccionavel" Type="varchar" MaxLength="1" />
+    <Property Name="SEDESC_Descritivo" Type="varchar" MaxLength="40" />
+    <Property Name="SEOCPA_ObrigatorioCdgPais" Type="varchar" MaxLength="1" />
+    <Property Name="SEVALE_ValidoEm" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBCSTR_CodigosSectoriaisResidentes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBCSTR_CodigosSectoriaisResidentes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SRCST_CodigoSectorial" Type="varchar" MaxLength="6" />
+    <Property Name="SRSLT_Seleccionavel" Type="varchar" MaxLength="1" />
+    <Property Name="SRDESC_Descritivo" Type="varchar" MaxLength="40" />
+    <Property Name="SROCPA_ObrigatorioCdgPais" Type="varchar" MaxLength="1" />
+    <Property Name="SRVALE_ValidoEm" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBDOC_Documentos' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBDOC_Documentos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBLTIT_LigacaoClientesEntidades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBLTIT_LigacaoClientesEntidades">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBMORD_Moradas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBMORD_Moradas">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBMVCC_MovimentosContasCaucionadas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBMVCC_MovimentosContasCaucionadas">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBMVCO_MovimentosContasContabilisticas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBMVCO_MovimentosContasContabilisticas">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBMVCR_MovimentosContasCredito' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBMVCR_MovimentosContasCredito">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBMVDO_MovimentosContasDepositosOrdem' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBMVDO_MovimentosContasDepositosOrdem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBMVDP_MovimentosContasDepositosPrazo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBMVDP_MovimentosContasDepositosPrazo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBNATR_NaturezasContas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBNATR_NaturezasContas">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBOPR_Operacoes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBOPR_Operacoes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBTCLI_SegmentoCliente' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBTCLI_SegmentoCliente">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBTIT_Entidade' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBTIT_Entidade">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TTNUMT_NrEntidade" Type="int" />
+    <Property Name="TTTIPT_EmpresaOuParticular" Type="varchar" MaxLength="1" />
+    <Property Name="TTNOMT_NomeEntidade" Type="varchar" MaxLength="40" />
+    <Property Name="TTNOME_NomeSemTitulo" Type="varchar" MaxLength="40" />
+    <Property Name="TTNOMR_NomeReduzido" Type="varchar" MaxLength="14" />
+    <Property Name="TTDNSC_DataNascimento" Type="int" />
+    <Property Name="TTSEXO_Sexo" Type="varchar" MaxLength="1" />
+    <Property Name="TTHABL_Habilitacoes" Type="varchar" MaxLength="1" />
+    <Property Name="TTACTP_ActividadeProfissional" Type="varchar" MaxLength="2" />
+    <Property Name="GBTTPROF_Profissao" Type="varchar" MaxLength="3" />
+    <Property Name="GBTTTIPIDF_TipoIdentificacaoFiscal" Type="varchar" MaxLength="3" />
+    <Property Name="TTNIF_NrIdentificacaoFiscal" Type="varchar" MaxLength="15" />
+    <Property Name="TTBAIR_ReparticaoFiscal" Type="int" />
+    <Property Name="GBTTCTGFSC_CategoriaFiscal" Type="varchar" MaxLength="1" />
+    <Property Name="TTTIDE_TipoIdentificacao" Type="varchar" MaxLength="3" />
+    <Property Name="TTNIDE_NrIdentificacao" Type="varchar" MaxLength="15" />
+    <Property Name="GBTTCKDGID_CheckDigitIdentificacao" Type="int" />
+    <Property Name="TTLOCA_LocalEmissao" Type="varchar" MaxLength="20" />
+    <Property Name="TTDTEI_DataEmissao" Type="int" />
+    <Property Name="GBTTDTVAL_DataValidadeDocumento" Type="int" />
+    <Property Name="GBTTNUMACO_NrMatriculaConservatoria" Type="varchar" MaxLength="20" />
+    <Property Name="GBTTNOCONS_NomeConservatoria" Type="varchar" MaxLength="20" />
+    <Property Name="GBTTNUPBDO_NrPublicacaoDiarioOficial" Type="varchar" MaxLength="20" />
+    <Property Name="TTNAC_Nacionalidade" Type="varchar" MaxLength="3" />
+    <Property Name="TTNATU_Naturalidade" Type="varchar" MaxLength="25" />
+    <Property Name="TTECIV_EstadoCivil" Type="varchar" MaxLength="1" />
+    <Property Name="TTRCAS_RegimeCasamento" Type="varchar" MaxLength="1" />
+    <Property Name="TTPAI_NomePai" Type="varchar" MaxLength="40" />
+    <Property Name="TTMAE_NomeMae" Type="varchar" MaxLength="40" />
+    <Property Name="TTENTP_EntidadePatronal" Type="varchar" MaxLength="40" />
+    <Property Name="TTFUCA_FuncaoOuCargo" Type="varchar" MaxLength="40" />
+    <Property Name="TTDTAD_DataAdmissao" Type="int" />
+    <Property Name="TTTSOC_TipoSociedade" Type="varchar" MaxLength="1" />
+    <Property Name="TTCAE_CodigoActividadeEconomica" Type="varchar" MaxLength="6" />
+    <Property Name="GBTTCAESC_CodigoActividadeEconomicaSecundario" Type="varchar" MaxLength="6" />
+    <Property Name="TTDTCT_DataConstituicao" Type="int" />
+    <Property Name="TTDTPB_DataPublicacao" Type="int" />
+    <Property Name="TTSEDE_DomicilioOuSede" Type="varchar" MaxLength="30" />
+    <Property Name="TTCSRA_CapitalSocialOuRendimentoAnual" Type="bigint" />
+    <Property Name="TTMOED_MoedaCsra" Type="varchar" MaxLength="3" />
+    <Property Name="TTVINC_VinculoComoutras" Type="varchar" MaxLength="2" />
+    <Property Name="TTNCTR_NrCentralRisco" Type="bigint" />
+    <Property Name="TTCRES_CodigoResidencia" Type="varchar" MaxLength="1" />
+    <Property Name="TTCST_CodigoSectorial" Type="varchar" MaxLength="6" />
+    <Property Name="TTPAIS_CodigoPais" Type="varchar" MaxLength="3" />
+    <Property Name="TTTPEN_TipoEntidade" Type="varchar" MaxLength="1" />
+    <Property Name="TTBLOQ_ComBloqueios" Type="varchar" MaxLength="1" />
+    <Property Name="GBTTALER_ComAlertas" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBTPENT_TiposEntidades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBTPENT_TiposEntidades">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NITPEN_TipoEntidade" Type="varchar" MaxLength="1" />
+    <Property Name="NIDTPE_Descritivo" Type="varchar" MaxLength="30" />
+    <Property Name="NIPRCV_ProcessoValido" Type="varchar" MaxLength="1" />
+    <Property Name="NICOUR_ComunicaParaUtilizadoresRisco" Type="varchar" MaxLength="1" />
+    <Property Name="NICOCR_ComunicaParaCentralRisco" Type="varchar" MaxLength="1" />
+    <Property Name="GBNIIDMIN_IdadeMinima" Type="int" />
+    <Property Name="GBNIIDMAX_IdadeMaxima" Type="int" />
+    <Property Name="NIUSCR_UtilizadorCriacao" Type="varchar" MaxLength="10" />
+    <Property Name="NIDTCR_DataCriacao" Type="int" />
+    <Property Name="NIHOCR_HoraCriacao" Type="int" />
+    <Property Name="NISITU_Situacao" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.GBTRCLI_TiposRelacoesEntidadesClientes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GBTRCLI_TiposRelacoesEntidadesClientes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.PACTP_ActividadeProfissional' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PACTP_ActividadeProfissional">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PACTV_Actividade" Type="varchar" MaxLength="2" />
+    <Property Name="PACDC_Descritivo" Type="varchar" MaxLength="35" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.PESTC_EstadoCivil' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PESTC_EstadoCivil">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EECIV_EstadoCivil" Type="varchar" MaxLength="1" />
+    <Property Name="EDCIV_Descritivo" Type="varchar" MaxLength="15" />
+    <Property Name="ERCAV_RegimesCasamentoValidos" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.PHBLT_HabilitacoesLiterarias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PHBLT_HabilitacoesLiterarias">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="9HBTP_Habilitacoes" Type="varchar" MaxLength="1" />
+    <Property Name="9HBDC_Descritivo" Type="varchar" MaxLength="35" />
+    <Property Name="9SITU_Situacao" Type="varchar" MaxLength="1" />
+    <Property Name="9USCR_UtilizadorCriacao" Type="varchar" MaxLength="10" />
+    <Property Name="9DTCR_DataCriacao" Type="datetime" />
+    <Property Name="9HOCR_HoraCriacao" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.PPAIS_Paises' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PPAIS_Paises">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ASPAI_SiglaPais" Type="varchar" MaxLength="2" />
+    <Property Name="ACPAI_CodigoPais" Type="varchar" MaxLength="3" />
+    <Property Name="ANPAI_NumeroPais" Type="int" />
+    <Property Name="ADPAI_DescricaoPais" Type="varchar" MaxLength="40" />
+    <Property Name="AINDI_IndicativoInternacional" Type="varchar" MaxLength="3" />
+    <Property Name="ACID1_CodigoIdioma1" Type="varchar" MaxLength="3" />
+    <Property Name="ACID2_CodigoIdioma2" Type="varchar" MaxLength="3" />
+    <Property Name="ACID3_CodigoIdioma3" Type="varchar" MaxLength="3" />
+    <Property Name="ASITU_Situacao" Type="varchar" MaxLength="1" />
+    <Property Name="AUSCR_UtilizadorCriacao" Type="varchar" MaxLength="10" />
+    <Property Name="ADTCR_DataCriacao" Type="int" />
+    <Property Name="AHOCR_HoraCriacao" Type="int" />
+    <Property Name="AUSDE_UtilizadorDesactivacao" Type="varchar" MaxLength="10" />
+    <Property Name="ADTDE_DataDesactivacao" Type="int" />
+    <Property Name="AHODE_HoraDesactivacao" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.PPROF_Profissoes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PPROF_Profissoes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PPRPROF_CodigoProfissao" Type="varchar" MaxLength="3" />
+    <Property Name="PPRDESC_Descritivo" Type="varchar" MaxLength="30" />
+    <Property Name="PPRACTV_CdgActividadeValidos" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.PREGC_RegimesCasamento' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PREGC_RegimesCasamento">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CRCAS_RegimeCasamento" Type="varchar" MaxLength="1" />
+    <Property Name="CDCAS_Descritivo" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CustomerAccounts.dbo.PTIDD_TiposIdentificacao' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PTIDD_TiposIdentificacao">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PTITP_TipoIdentificacao" Type="varchar" MaxLength="3" />
+    <Property Name="PTIDC_Descritivo" Type="varchar" MaxLength="30" />
+    <Property Name="POLOC_ObrigaLocalEmissao" Type="varchar" MaxLength="1" />
+    <Property Name="PSITU_Situacao" Type="varchar" MaxLength="1" />
+    <Property Name="PPASD_PermiteAssociarSeDesactivado" Type="varchar" MaxLength="1" />
+    <Property Name="PIDTIPUTL_TipoUtilizacao" Type="varchar" MaxLength="1" />
+    <Property Name="PIDRCLCKD_RotinaCalculoCheckDigit" Type="varchar" MaxLength="10" />
+    <Property Name="PIDPARM1_Parametro1ParaRotina" Type="varchar" MaxLength="40" />
+    <Property Name="PIDPARM2_Parametro2ParaRotina" Type="varchar" MaxLength="40" />
+    <Property Name="PIDTRCKDG_TratamentoParaCheckDigit" Type="varchar" MaxLength="1" />
+    <Property Name="PIDCARMIN_NrMinimoCaracteres" Type="int" />
+    <Property Name="PIDCARMAX_NrMaximoCaracteres" Type="int" />
+  </EntityType>
   <EntityContainer Name="CustomerAccountsModelStoreContainer">
-    <EntitySet Name="C_PACTP" EntityType="CustomerAccountsModel.Store.C_PACTP" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="C_PESTC" EntityType="CustomerAccountsModel.Store.C_PESTC" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="C_PHBLT" EntityType="CustomerAccountsModel.Store.C_PHBLT" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="C_PPAIS" EntityType="CustomerAccountsModel.Store.C_PPAIS" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="C_PPROF" EntityType="CustomerAccountsModel.Store.C_PPROF" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBTIT" EntityType="CustomerAccountsModel.Store.GBTIT" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="C_PREGC" EntityType="CustomerAccountsModel.Store.C_PREGC" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="C_PTIDD" EntityType="CustomerAccountsModel.Store.C_PTIDD" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBCRES" EntityType="CustomerAccountsModel.Store.GBCRES" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBCSTE" EntityType="CustomerAccountsModel.Store.GBCSTE" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBCSTR" EntityType="CustomerAccountsModel.Store.GBCSTR" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBTPENT" EntityType="CustomerAccountsModel.Store.GBTPENT" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="CTMOV" EntityType="CustomerAccountsModel.Store.CTMOV" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="FGCMB" EntityType="CustomerAccountsModel.Store.FGCMB" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="FGGCOT" EntityType="CustomerAccountsModel.Store.FGGCOT" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBCCC" EntityType="CustomerAccountsModel.Store.GBCCC" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBCCO" EntityType="CustomerAccountsModel.Store.GBCCO" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBCCR" EntityType="CustomerAccountsModel.Store.GBCCR" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBCDO" EntityType="CustomerAccountsModel.Store.GBCDO" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBCDP" EntityType="CustomerAccountsModel.Store.GBCDP" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBCLI" EntityType="CustomerAccountsModel.Store.GBCLI" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBCNDM" EntityType="CustomerAccountsModel.Store.GBCNDM" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBCODOP" EntityType="CustomerAccountsModel.Store.GBCODOP" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBLTIT" EntityType="CustomerAccountsModel.Store.GBLTIT" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBMORD" EntityType="CustomerAccountsModel.Store.GBMORD" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBMVCC" EntityType="CustomerAccountsModel.Store.GBMVCC" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBMVCO" EntityType="CustomerAccountsModel.Store.GBMVCO" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBMVCR" EntityType="CustomerAccountsModel.Store.GBMVCR" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBMVDO" EntityType="CustomerAccountsModel.Store.GBMVDO" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBMVDP" EntityType="CustomerAccountsModel.Store.GBMVDP" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBNATR" EntityType="CustomerAccountsModel.Store.GBNATR" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBOPR" EntityType="CustomerAccountsModel.Store.GBOPR" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBTCLI" EntityType="CustomerAccountsModel.Store.GBTCLI" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="GBTRCLI" EntityType="CustomerAccountsModel.Store.GBTRCLI" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CTMOV_MovimentosAM" EntityType="Self.CTMOV_MovimentosAM" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CTMOV_MovimentosAM].[ID] AS [ID]
+    FROM [dbo].[CTMOV_MovimentosAM] AS [CTMOV_MovimentosAM]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FGCMB_Divisas" EntityType="Self.FGCMB_Divisas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FGCMB_Divisas].[ID] AS [ID]
+    FROM [dbo].[FGCMB_Divisas] AS [FGCMB_Divisas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FGGCOT_GeracaoCotacoes" EntityType="Self.FGGCOT_GeracaoCotacoes" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FGGCOT_GeracaoCotacoes].[ID] AS [ID]
+    FROM [dbo].[FGGCOT_GeracaoCotacoes] AS [FGGCOT_GeracaoCotacoes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCCC_ContasCaucionadas" EntityType="Self.GBCCC_ContasCaucionadas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCCC_ContasCaucionadas].[ID] AS [ID]
+    FROM [dbo].[GBCCC_ContasCaucionadas] AS [GBCCC_ContasCaucionadas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCCO_ContasContabilisticas" EntityType="Self.GBCCO_ContasContabilisticas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCCO_ContasContabilisticas].[ID] AS [ID]
+    FROM [dbo].[GBCCO_ContasContabilisticas] AS [GBCCO_ContasContabilisticas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCCR_ContasCredito" EntityType="Self.GBCCR_ContasCredito" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCCR_ContasCredito].[ID] AS [ID]
+    FROM [dbo].[GBCCR_ContasCredito] AS [GBCCR_ContasCredito]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCDO_ContasDepositosOrdem" EntityType="Self.GBCDO_ContasDepositosOrdem" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCDO_ContasDepositosOrdem].[ID] AS [ID]
+    FROM [dbo].[GBCDO_ContasDepositosOrdem] AS [GBCDO_ContasDepositosOrdem]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCDP_ContasDepositosPrazo" EntityType="Self.GBCDP_ContasDepositosPrazo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCDP_ContasDepositosPrazo].[ID] AS [ID]
+    FROM [dbo].[GBCDP_ContasDepositosPrazo] AS [GBCDP_ContasDepositosPrazo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCLI_Clientes" EntityType="Self.GBCLI_Clientes" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCLI_Clientes].[ID] AS [ID]
+    FROM [dbo].[GBCLI_Clientes] AS [GBCLI_Clientes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCNDM_CondicoesMovimentacaoConta" EntityType="Self.GBCNDM_CondicoesMovimentacaoConta" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCNDM_CondicoesMovimentacaoConta].[ID] AS [ID]
+    FROM [dbo].[GBCNDM_CondicoesMovimentacaoConta] AS [GBCNDM_CondicoesMovimentacaoConta]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCODOP_CodigosOperacao" EntityType="Self.GBCODOP_CodigosOperacao" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCODOP_CodigosOperacao].[ID] AS [ID]
+    FROM [dbo].[GBCODOP_CodigosOperacao] AS [GBCODOP_CodigosOperacao]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCRES_CodigosResidencia" EntityType="Self.GBCRES_CodigosResidencia" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCRES_CodigosResidencia].[ID] AS [ID], 
+    [GBCRES_CodigosResidencia].[RECRES_CodigoResidencia] AS [RECRES_CodigoResidencia], 
+    [GBCRES_CodigosResidencia].[REDESC_Descritivo] AS [REDESC_Descritivo]
+    FROM [dbo].[GBCRES_CodigosResidencia] AS [GBCRES_CodigosResidencia]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCSTE_CodigosSectoriaisNaoResidentes" EntityType="Self.GBCSTE_CodigosSectoriaisNaoResidentes" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCSTE_CodigosSectoriaisNaoResidentes].[ID] AS [ID], 
+    [GBCSTE_CodigosSectoriaisNaoResidentes].[SECST_CodigoSectorial] AS [SECST_CodigoSectorial], 
+    [GBCSTE_CodigosSectoriaisNaoResidentes].[SESLT_Seleccionavel] AS [SESLT_Seleccionavel], 
+    [GBCSTE_CodigosSectoriaisNaoResidentes].[SEDESC_Descritivo] AS [SEDESC_Descritivo], 
+    [GBCSTE_CodigosSectoriaisNaoResidentes].[SEOCPA_ObrigatorioCdgPais] AS [SEOCPA_ObrigatorioCdgPais], 
+    [GBCSTE_CodigosSectoriaisNaoResidentes].[SEVALE_ValidoEm] AS [SEVALE_ValidoEm]
+    FROM [dbo].[GBCSTE_CodigosSectoriaisNaoResidentes] AS [GBCSTE_CodigosSectoriaisNaoResidentes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBCSTR_CodigosSectoriaisResidentes" EntityType="Self.GBCSTR_CodigosSectoriaisResidentes" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBCSTR_CodigosSectoriaisResidentes].[ID] AS [ID], 
+    [GBCSTR_CodigosSectoriaisResidentes].[SRCST_CodigoSectorial] AS [SRCST_CodigoSectorial], 
+    [GBCSTR_CodigosSectoriaisResidentes].[SRSLT_Seleccionavel] AS [SRSLT_Seleccionavel], 
+    [GBCSTR_CodigosSectoriaisResidentes].[SRDESC_Descritivo] AS [SRDESC_Descritivo], 
+    [GBCSTR_CodigosSectoriaisResidentes].[SROCPA_ObrigatorioCdgPais] AS [SROCPA_ObrigatorioCdgPais], 
+    [GBCSTR_CodigosSectoriaisResidentes].[SRVALE_ValidoEm] AS [SRVALE_ValidoEm]
+    FROM [dbo].[GBCSTR_CodigosSectoriaisResidentes] AS [GBCSTR_CodigosSectoriaisResidentes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBDOC_Documentos" EntityType="Self.GBDOC_Documentos" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBDOC_Documentos].[ID] AS [ID]
+    FROM [dbo].[GBDOC_Documentos] AS [GBDOC_Documentos]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBLTIT_LigacaoClientesEntidades" EntityType="Self.GBLTIT_LigacaoClientesEntidades" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBLTIT_LigacaoClientesEntidades].[ID] AS [ID]
+    FROM [dbo].[GBLTIT_LigacaoClientesEntidades] AS [GBLTIT_LigacaoClientesEntidades]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBMORD_Moradas" EntityType="Self.GBMORD_Moradas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBMORD_Moradas].[ID] AS [ID]
+    FROM [dbo].[GBMORD_Moradas] AS [GBMORD_Moradas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBMVCC_MovimentosContasCaucionadas" EntityType="Self.GBMVCC_MovimentosContasCaucionadas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBMVCC_MovimentosContasCaucionadas].[ID] AS [ID]
+    FROM [dbo].[GBMVCC_MovimentosContasCaucionadas] AS [GBMVCC_MovimentosContasCaucionadas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBMVCO_MovimentosContasContabilisticas" EntityType="Self.GBMVCO_MovimentosContasContabilisticas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBMVCO_MovimentosContasContabilisticas].[ID] AS [ID]
+    FROM [dbo].[GBMVCO_MovimentosContasContabilisticas] AS [GBMVCO_MovimentosContasContabilisticas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBMVCR_MovimentosContasCredito" EntityType="Self.GBMVCR_MovimentosContasCredito" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBMVCR_MovimentosContasCredito].[ID] AS [ID]
+    FROM [dbo].[GBMVCR_MovimentosContasCredito] AS [GBMVCR_MovimentosContasCredito]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBMVDO_MovimentosContasDepositosOrdem" EntityType="Self.GBMVDO_MovimentosContasDepositosOrdem" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBMVDO_MovimentosContasDepositosOrdem].[ID] AS [ID]
+    FROM [dbo].[GBMVDO_MovimentosContasDepositosOrdem] AS [GBMVDO_MovimentosContasDepositosOrdem]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBMVDP_MovimentosContasDepositosPrazo" EntityType="Self.GBMVDP_MovimentosContasDepositosPrazo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBMVDP_MovimentosContasDepositosPrazo].[ID] AS [ID]
+    FROM [dbo].[GBMVDP_MovimentosContasDepositosPrazo] AS [GBMVDP_MovimentosContasDepositosPrazo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBNATR_NaturezasContas" EntityType="Self.GBNATR_NaturezasContas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBNATR_NaturezasContas].[ID] AS [ID]
+    FROM [dbo].[GBNATR_NaturezasContas] AS [GBNATR_NaturezasContas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBOPR_Operacoes" EntityType="Self.GBOPR_Operacoes" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBOPR_Operacoes].[ID] AS [ID]
+    FROM [dbo].[GBOPR_Operacoes] AS [GBOPR_Operacoes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBTCLI_SegmentoCliente" EntityType="Self.GBTCLI_SegmentoCliente" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBTCLI_SegmentoCliente].[ID] AS [ID]
+    FROM [dbo].[GBTCLI_SegmentoCliente] AS [GBTCLI_SegmentoCliente]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBTIT_Entidade" EntityType="Self.GBTIT_Entidade" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBTIT_Entidade].[ID] AS [ID], 
+    [GBTIT_Entidade].[TTNUMT_NrEntidade] AS [TTNUMT_NrEntidade], 
+    [GBTIT_Entidade].[TTTIPT_EmpresaOuParticular] AS [TTTIPT_EmpresaOuParticular], 
+    [GBTIT_Entidade].[TTNOMT_NomeEntidade] AS [TTNOMT_NomeEntidade], 
+    [GBTIT_Entidade].[TTNOME_NomeSemTitulo] AS [TTNOME_NomeSemTitulo], 
+    [GBTIT_Entidade].[TTNOMR_NomeReduzido] AS [TTNOMR_NomeReduzido], 
+    [GBTIT_Entidade].[TTDNSC_DataNascimento] AS [TTDNSC_DataNascimento], 
+    [GBTIT_Entidade].[TTSEXO_Sexo] AS [TTSEXO_Sexo], 
+    [GBTIT_Entidade].[TTHABL_Habilitacoes] AS [TTHABL_Habilitacoes], 
+    [GBTIT_Entidade].[TTACTP_ActividadeProfissional] AS [TTACTP_ActividadeProfissional], 
+    [GBTIT_Entidade].[GBTTPROF_Profissao] AS [GBTTPROF_Profissao], 
+    [GBTIT_Entidade].[GBTTTIPIDF_TipoIdentificacaoFiscal] AS [GBTTTIPIDF_TipoIdentificacaoFiscal], 
+    [GBTIT_Entidade].[TTNIF_NrIdentificacaoFiscal] AS [TTNIF_NrIdentificacaoFiscal], 
+    [GBTIT_Entidade].[TTBAIR_ReparticaoFiscal] AS [TTBAIR_ReparticaoFiscal], 
+    [GBTIT_Entidade].[GBTTCTGFSC_CategoriaFiscal] AS [GBTTCTGFSC_CategoriaFiscal], 
+    [GBTIT_Entidade].[TTTIDE_TipoIdentificacao] AS [TTTIDE_TipoIdentificacao], 
+    [GBTIT_Entidade].[TTNIDE_NrIdentificacao] AS [TTNIDE_NrIdentificacao], 
+    [GBTIT_Entidade].[GBTTCKDGID_CheckDigitIdentificacao] AS [GBTTCKDGID_CheckDigitIdentificacao], 
+    [GBTIT_Entidade].[TTLOCA_LocalEmissao] AS [TTLOCA_LocalEmissao], 
+    [GBTIT_Entidade].[TTDTEI_DataEmissao] AS [TTDTEI_DataEmissao], 
+    [GBTIT_Entidade].[GBTTDTVAL_DataValidadeDocumento] AS [GBTTDTVAL_DataValidadeDocumento], 
+    [GBTIT_Entidade].[GBTTNUMACO_NrMatriculaConservatoria] AS [GBTTNUMACO_NrMatriculaConservatoria], 
+    [GBTIT_Entidade].[GBTTNOCONS_NomeConservatoria] AS [GBTTNOCONS_NomeConservatoria], 
+    [GBTIT_Entidade].[GBTTNUPBDO_NrPublicacaoDiarioOficial] AS [GBTTNUPBDO_NrPublicacaoDiarioOficial], 
+    [GBTIT_Entidade].[TTNAC_Nacionalidade] AS [TTNAC_Nacionalidade], 
+    [GBTIT_Entidade].[TTNATU_Naturalidade] AS [TTNATU_Naturalidade], 
+    [GBTIT_Entidade].[TTECIV_EstadoCivil] AS [TTECIV_EstadoCivil], 
+    [GBTIT_Entidade].[TTRCAS_RegimeCasamento] AS [TTRCAS_RegimeCasamento], 
+    [GBTIT_Entidade].[TTPAI_NomePai] AS [TTPAI_NomePai], 
+    [GBTIT_Entidade].[TTMAE_NomeMae] AS [TTMAE_NomeMae], 
+    [GBTIT_Entidade].[TTENTP_EntidadePatronal] AS [TTENTP_EntidadePatronal], 
+    [GBTIT_Entidade].[TTFUCA_FuncaoOuCargo] AS [TTFUCA_FuncaoOuCargo], 
+    [GBTIT_Entidade].[TTDTAD_DataAdmissao] AS [TTDTAD_DataAdmissao], 
+    [GBTIT_Entidade].[TTTSOC_TipoSociedade] AS [TTTSOC_TipoSociedade], 
+    [GBTIT_Entidade].[TTCAE_CodigoActividadeEconomica] AS [TTCAE_CodigoActividadeEconomica], 
+    [GBTIT_Entidade].[GBTTCAESC_CodigoActividadeEconomicaSecundario] AS [GBTTCAESC_CodigoActividadeEconomicaSecundario], 
+    [GBTIT_Entidade].[TTDTCT_DataConstituicao] AS [TTDTCT_DataConstituicao], 
+    [GBTIT_Entidade].[TTDTPB_DataPublicacao] AS [TTDTPB_DataPublicacao], 
+    [GBTIT_Entidade].[TTSEDE_DomicilioOuSede] AS [TTSEDE_DomicilioOuSede], 
+    [GBTIT_Entidade].[TTCSRA_CapitalSocialOuRendimentoAnual] AS [TTCSRA_CapitalSocialOuRendimentoAnual], 
+    [GBTIT_Entidade].[TTMOED_MoedaCsra] AS [TTMOED_MoedaCsra], 
+    [GBTIT_Entidade].[TTVINC_VinculoComoutras] AS [TTVINC_VinculoComoutras], 
+    [GBTIT_Entidade].[TTNCTR_NrCentralRisco] AS [TTNCTR_NrCentralRisco], 
+    [GBTIT_Entidade].[TTCRES_CodigoResidencia] AS [TTCRES_CodigoResidencia], 
+    [GBTIT_Entidade].[TTCST_CodigoSectorial] AS [TTCST_CodigoSectorial], 
+    [GBTIT_Entidade].[TTPAIS_CodigoPais] AS [TTPAIS_CodigoPais], 
+    [GBTIT_Entidade].[TTTPEN_TipoEntidade] AS [TTTPEN_TipoEntidade], 
+    [GBTIT_Entidade].[TTBLOQ_ComBloqueios] AS [TTBLOQ_ComBloqueios], 
+    [GBTIT_Entidade].[GBTTALER_ComAlertas] AS [GBTTALER_ComAlertas]
+    FROM [dbo].[GBTIT_Entidade] AS [GBTIT_Entidade]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBTPENT_TiposEntidades" EntityType="Self.GBTPENT_TiposEntidades" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBTPENT_TiposEntidades].[ID] AS [ID], 
+    [GBTPENT_TiposEntidades].[NITPEN_TipoEntidade] AS [NITPEN_TipoEntidade], 
+    [GBTPENT_TiposEntidades].[NIDTPE_Descritivo] AS [NIDTPE_Descritivo], 
+    [GBTPENT_TiposEntidades].[NIPRCV_ProcessoValido] AS [NIPRCV_ProcessoValido], 
+    [GBTPENT_TiposEntidades].[NICOUR_ComunicaParaUtilizadoresRisco] AS [NICOUR_ComunicaParaUtilizadoresRisco], 
+    [GBTPENT_TiposEntidades].[NICOCR_ComunicaParaCentralRisco] AS [NICOCR_ComunicaParaCentralRisco], 
+    [GBTPENT_TiposEntidades].[GBNIIDMIN_IdadeMinima] AS [GBNIIDMIN_IdadeMinima], 
+    [GBTPENT_TiposEntidades].[GBNIIDMAX_IdadeMaxima] AS [GBNIIDMAX_IdadeMaxima], 
+    [GBTPENT_TiposEntidades].[NIUSCR_UtilizadorCriacao] AS [NIUSCR_UtilizadorCriacao], 
+    [GBTPENT_TiposEntidades].[NIDTCR_DataCriacao] AS [NIDTCR_DataCriacao], 
+    [GBTPENT_TiposEntidades].[NIHOCR_HoraCriacao] AS [NIHOCR_HoraCriacao], 
+    [GBTPENT_TiposEntidades].[NISITU_Situacao] AS [NISITU_Situacao]
+    FROM [dbo].[GBTPENT_TiposEntidades] AS [GBTPENT_TiposEntidades]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GBTRCLI_TiposRelacoesEntidadesClientes" EntityType="Self.GBTRCLI_TiposRelacoesEntidadesClientes" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GBTRCLI_TiposRelacoesEntidadesClientes].[ID] AS [ID]
+    FROM [dbo].[GBTRCLI_TiposRelacoesEntidadesClientes] AS [GBTRCLI_TiposRelacoesEntidadesClientes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PACTP_ActividadeProfissional" EntityType="Self.PACTP_ActividadeProfissional" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PACTP_ActividadeProfissional].[ID] AS [ID], 
+    [PACTP_ActividadeProfissional].[PACTV_Actividade] AS [PACTV_Actividade], 
+    [PACTP_ActividadeProfissional].[PACDC_Descritivo] AS [PACDC_Descritivo]
+    FROM [dbo].[PACTP_ActividadeProfissional] AS [PACTP_ActividadeProfissional]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PESTC_EstadoCivil" EntityType="Self.PESTC_EstadoCivil" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PESTC_EstadoCivil].[ID] AS [ID], 
+    [PESTC_EstadoCivil].[EECIV_EstadoCivil] AS [EECIV_EstadoCivil], 
+    [PESTC_EstadoCivil].[EDCIV_Descritivo] AS [EDCIV_Descritivo], 
+    [PESTC_EstadoCivil].[ERCAV_RegimesCasamentoValidos] AS [ERCAV_RegimesCasamentoValidos]
+    FROM [dbo].[PESTC_EstadoCivil] AS [PESTC_EstadoCivil]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PHBLT_HabilitacoesLiterarias" EntityType="Self.PHBLT_HabilitacoesLiterarias" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PHBLT_HabilitacoesLiterarias].[ID] AS [ID], 
+    [PHBLT_HabilitacoesLiterarias].[9HBTP_Habilitacoes] AS [9HBTP_Habilitacoes], 
+    [PHBLT_HabilitacoesLiterarias].[9HBDC_Descritivo] AS [9HBDC_Descritivo], 
+    [PHBLT_HabilitacoesLiterarias].[9SITU_Situacao] AS [9SITU_Situacao], 
+    [PHBLT_HabilitacoesLiterarias].[9USCR_UtilizadorCriacao] AS [9USCR_UtilizadorCriacao], 
+    [PHBLT_HabilitacoesLiterarias].[9DTCR_DataCriacao] AS [9DTCR_DataCriacao], 
+    [PHBLT_HabilitacoesLiterarias].[9HOCR_HoraCriacao] AS [9HOCR_HoraCriacao]
+    FROM [dbo].[PHBLT_HabilitacoesLiterarias] AS [PHBLT_HabilitacoesLiterarias]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PPAIS_Paises" EntityType="Self.PPAIS_Paises" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PPAIS_Paises].[ID] AS [ID], 
+    [PPAIS_Paises].[ASPAI_SiglaPais] AS [ASPAI_SiglaPais], 
+    [PPAIS_Paises].[ACPAI_CodigoPais] AS [ACPAI_CodigoPais], 
+    [PPAIS_Paises].[ANPAI_NumeroPais] AS [ANPAI_NumeroPais], 
+    [PPAIS_Paises].[ADPAI_DescricaoPais] AS [ADPAI_DescricaoPais], 
+    [PPAIS_Paises].[AINDI_IndicativoInternacional] AS [AINDI_IndicativoInternacional], 
+    [PPAIS_Paises].[ACID1_CodigoIdioma1] AS [ACID1_CodigoIdioma1], 
+    [PPAIS_Paises].[ACID2_CodigoIdioma2] AS [ACID2_CodigoIdioma2], 
+    [PPAIS_Paises].[ACID3_CodigoIdioma3] AS [ACID3_CodigoIdioma3], 
+    [PPAIS_Paises].[ASITU_Situacao] AS [ASITU_Situacao], 
+    [PPAIS_Paises].[AUSCR_UtilizadorCriacao] AS [AUSCR_UtilizadorCriacao], 
+    [PPAIS_Paises].[ADTCR_DataCriacao] AS [ADTCR_DataCriacao], 
+    [PPAIS_Paises].[AHOCR_HoraCriacao] AS [AHOCR_HoraCriacao], 
+    [PPAIS_Paises].[AUSDE_UtilizadorDesactivacao] AS [AUSDE_UtilizadorDesactivacao], 
+    [PPAIS_Paises].[ADTDE_DataDesactivacao] AS [ADTDE_DataDesactivacao], 
+    [PPAIS_Paises].[AHODE_HoraDesactivacao] AS [AHODE_HoraDesactivacao]
+    FROM [dbo].[PPAIS_Paises] AS [PPAIS_Paises]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PPROF_Profissoes" EntityType="Self.PPROF_Profissoes" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PPROF_Profissoes].[ID] AS [ID], 
+    [PPROF_Profissoes].[PPRPROF_CodigoProfissao] AS [PPRPROF_CodigoProfissao], 
+    [PPROF_Profissoes].[PPRDESC_Descritivo] AS [PPRDESC_Descritivo], 
+    [PPROF_Profissoes].[PPRACTV_CdgActividadeValidos] AS [PPRACTV_CdgActividadeValidos]
+    FROM [dbo].[PPROF_Profissoes] AS [PPROF_Profissoes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PREGC_RegimesCasamento" EntityType="Self.PREGC_RegimesCasamento" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PREGC_RegimesCasamento].[ID] AS [ID], 
+    [PREGC_RegimesCasamento].[CRCAS_RegimeCasamento] AS [CRCAS_RegimeCasamento], 
+    [PREGC_RegimesCasamento].[CDCAS_Descritivo] AS [CDCAS_Descritivo]
+    FROM [dbo].[PREGC_RegimesCasamento] AS [PREGC_RegimesCasamento]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PTIDD_TiposIdentificacao" EntityType="Self.PTIDD_TiposIdentificacao" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PTIDD_TiposIdentificacao].[ID] AS [ID], 
+    [PTIDD_TiposIdentificacao].[PTITP_TipoIdentificacao] AS [PTITP_TipoIdentificacao], 
+    [PTIDD_TiposIdentificacao].[PTIDC_Descritivo] AS [PTIDC_Descritivo], 
+    [PTIDD_TiposIdentificacao].[POLOC_ObrigaLocalEmissao] AS [POLOC_ObrigaLocalEmissao], 
+    [PTIDD_TiposIdentificacao].[PSITU_Situacao] AS [PSITU_Situacao], 
+    [PTIDD_TiposIdentificacao].[PPASD_PermiteAssociarSeDesactivado] AS [PPASD_PermiteAssociarSeDesactivado], 
+    [PTIDD_TiposIdentificacao].[PIDTIPUTL_TipoUtilizacao] AS [PIDTIPUTL_TipoUtilizacao], 
+    [PTIDD_TiposIdentificacao].[PIDRCLCKD_RotinaCalculoCheckDigit] AS [PIDRCLCKD_RotinaCalculoCheckDigit], 
+    [PTIDD_TiposIdentificacao].[PIDPARM1_Parametro1ParaRotina] AS [PIDPARM1_Parametro1ParaRotina], 
+    [PTIDD_TiposIdentificacao].[PIDPARM2_Parametro2ParaRotina] AS [PIDPARM2_Parametro2ParaRotina], 
+    [PTIDD_TiposIdentificacao].[PIDTRCKDG_TratamentoParaCheckDigit] AS [PIDTRCKDG_TratamentoParaCheckDigit], 
+    [PTIDD_TiposIdentificacao].[PIDCARMIN_NrMinimoCaracteres] AS [PIDCARMIN_NrMinimoCaracteres], 
+    [PTIDD_TiposIdentificacao].[PIDCARMAX_NrMaximoCaracteres] AS [PIDCARMAX_NrMaximoCaracteres]
+    FROM [dbo].[PTIDD_TiposIdentificacao] AS [PTIDD_TiposIdentificacao]</DefiningQuery>
+    </EntitySet>
   </EntityContainer>
-  <EntityType Name="C_PACTP">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="C_PACTV" Type="varchar" Nullable="true" MaxLength="2" />
-    <Property Name="C_PACDC" Type="varchar" Nullable="true" MaxLength="35" />
-  </EntityType>
-  <EntityType Name="C_PESTC">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="C_EECIV" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="C_EDCIV" Type="varchar" Nullable="true" MaxLength="15" />
-    <Property Name="C_ERCAV" Type="varchar" Nullable="true" MaxLength="10" />
-  </EntityType>
-  <EntityType Name="C_PHBLT">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="C_9HBTP" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="C_9HBDC" Type="varchar" Nullable="true" MaxLength="35" />
-    <Property Name="C_9SITU" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="C_9USCR" Type="varchar" Nullable="true" MaxLength="10" />
-    <Property Name="C_9DTCR" Type="datetime" Nullable="true" />
-    <Property Name="C_9HOCR" Type="datetime" Nullable="true" />
-  </EntityType>
-  <EntityType Name="C_PPAIS">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="C_ASPAI" Type="varchar" Nullable="true" MaxLength="2" />
-    <Property Name="C_ACPAI" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="C_ANPAI" Type="int" Nullable="true" />
-    <Property Name="C_ADPAI" Type="varchar" Nullable="true" MaxLength="40" />
-    <Property Name="C_AINDI" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="C_ACID1" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="C_ACID2" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="C_ACID3" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="C_ASITU" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="C_AUSCR" Type="varchar" Nullable="true" MaxLength="10" />
-    <Property Name="C_ADTCR" Type="int" Nullable="true" />
-    <Property Name="C_AHOCR" Type="int" Nullable="true" />
-    <Property Name="C_AUSDE" Type="varchar" Nullable="true" MaxLength="10" />
-    <Property Name="C_ADTDE" Type="int" Nullable="true" />
-    <Property Name="C_AHODE" Type="int" Nullable="true" />
-  </EntityType>
-  <EntityType Name="C_PPROF">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="C_PPRPROF" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="C_PPRDESC" Type="varchar" Nullable="true" MaxLength="30" />
-    <Property Name="C_PPRACTV" Type="varchar" Nullable="true" MaxLength="10" />
-  </EntityType>
-  <EntityType Name="GBTIT">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="TTNUMT" Type="int" Nullable="true" />
-    <Property Name="TTTIPT" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="TTNOMT" Type="varchar" Nullable="true" MaxLength="40" />
-    <Property Name="TTNOME" Type="varchar" Nullable="true" MaxLength="40" />
-    <Property Name="TTNOMR" Type="varchar" Nullable="true" MaxLength="14" />
-    <Property Name="TTDNSC" Type="int" Nullable="true" />
-    <Property Name="TTSEXO" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="TTHABL" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="TTACTP" Type="varchar" Nullable="true" MaxLength="2" />
-    <Property Name="GBTTPROF" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="GBTTTIPIDF" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="TTNIF" Type="varchar" Nullable="true" MaxLength="15" />
-    <Property Name="TTBAIR" Type="int" Nullable="true" />
-    <Property Name="GBTTCTGFSC" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="TTTIDE" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="TTNIDE" Type="varchar" Nullable="true" MaxLength="15" />
-    <Property Name="GBTTCKDGID" Type="int" Nullable="true" />
-    <Property Name="TTLOCA" Type="varchar" Nullable="true" MaxLength="20" />
-    <Property Name="TTDTEI" Type="int" Nullable="true" />
-    <Property Name="GBTTDTVAL" Type="int" Nullable="true" />
-    <Property Name="GBTTNUMACO" Type="varchar" Nullable="true" MaxLength="20" />
-    <Property Name="GBTTNOCONS" Type="varchar" Nullable="true" MaxLength="20" />
-    <Property Name="GBTTNUPBDO" Type="varchar" Nullable="true" MaxLength="20" />
-    <Property Name="TTNAC" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="TTNATU" Type="varchar" Nullable="true" MaxLength="25" />
-    <Property Name="TTECIV" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="TTRCAS" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="TTPAI" Type="varchar" Nullable="true" MaxLength="40" />
-    <Property Name="TTMAE" Type="varchar" Nullable="true" MaxLength="40" />
-    <Property Name="TTENTP" Type="varchar" Nullable="true" MaxLength="40" />
-    <Property Name="TTFUCA" Type="varchar" Nullable="true" MaxLength="40" />
-    <Property Name="TTDTAD" Type="int" Nullable="true" />
-    <Property Name="TTTSOC" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="TTCAE" Type="varchar" Nullable="true" MaxLength="6" />
-    <Property Name="GBTTCAESC" Type="varchar" Nullable="true" MaxLength="6" />
-    <Property Name="TTDTCT" Type="int" Nullable="true" />
-    <Property Name="TTDTPB" Type="int" Nullable="true" />
-    <Property Name="TTSEDE" Type="varchar" Nullable="true" MaxLength="30" />
-    <Property Name="TTCSRA" Type="int" Nullable="true" />
-    <Property Name="TTMOED" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="TTVINC" Type="varchar" Nullable="true" MaxLength="2" />
-    <Property Name="TTNCTR" Type="int" Nullable="true" />
-    <Property Name="TTCRES" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="TTCST" Type="varchar" Nullable="true" MaxLength="6" />
-    <Property Name="TTPAIS" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="TTTPEN" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="TTBLOQ" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="GBTTALER" Type="varchar" Nullable="true" MaxLength="1" />
-  </EntityType>
-  <EntityType Name="C_PREGC">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="C_CRCAS" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="C_CDCAS" Type="varchar" Nullable="true" MaxLength="20" />
-  </EntityType>
-  <EntityType Name="C_PTIDD">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="C_PTITP" Type="varchar" Nullable="true" MaxLength="3" />
-    <Property Name="C_PTIDC" Type="varchar" Nullable="true" MaxLength="30" />
-    <Property Name="C_POLOC" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="C_PSITU" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="C_PPASD" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="C_PIDTIPUTL" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="C_PIDRCLCKD" Type="varchar" Nullable="true" MaxLength="10" />
-    <Property Name="C_PIDPARM1" Type="varchar" Nullable="true" MaxLength="40" />
-    <Property Name="C_PIDPARM2" Type="varchar" Nullable="true" MaxLength="40" />
-    <Property Name="C_PIDTRCKDG" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="C_PIDCARMIN" Type="int" Nullable="true" />
-    <Property Name="C_PIDCARMAX" Type="int" Nullable="true" />
-  </EntityType>
-  <EntityType Name="GBCRES">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="RECRES" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="REDESC" Type="varchar" Nullable="true" MaxLength="25" />
-  </EntityType>
-  <EntityType Name="GBCSTE">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="SECST" Type="varchar" Nullable="true" MaxLength="6" />
-    <Property Name="SESLT" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="SEDESC" Type="varchar" Nullable="true" MaxLength="40" />
-    <Property Name="SEOCPA" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="SEVALE" Type="varchar" Nullable="true" MaxLength="1" />
-  </EntityType>
-  <EntityType Name="GBCSTR">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="SRCST" Type="varchar" Nullable="true" MaxLength="6" />
-    <Property Name="SRSLT" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="SRDESC" Type="varchar" Nullable="true" MaxLength="40" />
-    <Property Name="SROCPA" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="SRVALE" Type="varchar" Nullable="true" MaxLength="1" />
-  </EntityType>
-  <EntityType Name="GBTPENT">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="NITPEN" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="NIDTPE" Type="varchar" Nullable="true" MaxLength="30" />
-    <Property Name="NIPRCV" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="NICOUR" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="NICOCR" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="GBNIIDMIN" Type="int" Nullable="true" />
-    <Property Name="GBNIIDMAX" Type="int" Nullable="true" />
-    <Property Name="NIUSCR" Type="varchar" Nullable="true" MaxLength="10" />
-    <Property Name="NIDTCR" Type="int" Nullable="true" />
-    <Property Name="NIHOCR" Type="int" Nullable="true" />
-    <Property Name="NISITU" Type="varchar" Nullable="true" MaxLength="1" />
-  </EntityType>
-  <EntityType Name="CTMOV">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="FGCMB">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="FGGCOT">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBCCC">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBCCO">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBCCR">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBCDO">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBCDP">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBCLI">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBCNDM">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBCODOP">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBLTIT">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBMORD">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBMVCC">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBMVCO">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBMVCR">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBMVDO">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBMVDP">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBNATR">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBOPR">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBTCLI">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
-  <EntityType Name="GBTRCLI">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-  </EntityType>
 </Schema>

@@ -138,7 +138,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CTMOV.cs">
+    <Compile Include="Models\CTMOV_MovimentosAM.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CustomerAccountsModel.Context.cs">
@@ -156,103 +156,106 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CustomerAccountsModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\C_PACTP.cs">
+    <Compile Include="Models\FGCMB_Divisas.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\C_PESTC.cs">
+    <Compile Include="Models\FGGCOT_GeracaoCotacoes.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\C_PHBLT.cs">
+    <Compile Include="Models\GBCCC_ContasCaucionadas.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\C_PPAIS.cs">
+    <Compile Include="Models\GBCCO_ContasContabilisticas.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\C_PPROF.cs">
+    <Compile Include="Models\GBCCR_ContasCredito.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\C_PREGC.cs">
+    <Compile Include="Models\GBCDO_ContasDepositosOrdem.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\C_PTIDD.cs">
+    <Compile Include="Models\GBCDP_ContasDepositosPrazo.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\FGCMB.cs">
+    <Compile Include="Models\GBCLI_Clientes.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\FGGCOT.cs">
+    <Compile Include="Models\GBCNDM_CondicoesMovimentacaoConta.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBCCC.cs">
+    <Compile Include="Models\GBCODOP_CodigosOperacao.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBCCO.cs">
+    <Compile Include="Models\GBCRES_CodigosResidencia.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBCCR.cs">
+    <Compile Include="Models\GBCSTE_CodigosSectoriaisNaoResidentes.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBCDO.cs">
+    <Compile Include="Models\GBCSTR_CodigosSectoriaisResidentes.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBCDP.cs">
+    <Compile Include="Models\GBDOC_Documentos.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBCLI.cs">
+    <Compile Include="Models\GBLTIT_LigacaoClientesEntidades.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBCNDM.cs">
+    <Compile Include="Models\GBMORD_Moradas.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBCODOP.cs">
+    <Compile Include="Models\GBMVCC_MovimentosContasCaucionadas.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBCRES.cs">
+    <Compile Include="Models\GBMVCO_MovimentosContasContabilisticas.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBCSTE.cs">
+    <Compile Include="Models\GBMVCR_MovimentosContasCredito.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBCSTR.cs">
+    <Compile Include="Models\GBMVDO_MovimentosContasDepositosOrdem.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBLTIT.cs">
+    <Compile Include="Models\GBMVDP_MovimentosContasDepositosPrazo.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBMORD.cs">
+    <Compile Include="Models\GBNATR_NaturezasContas.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBMVCC.cs">
+    <Compile Include="Models\GBOPR_Operacoes.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBMVCO.cs">
+    <Compile Include="Models\GBTCLI_SegmentoCliente.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBMVCR.cs">
+    <Compile Include="Models\GBTIT_Entidade.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBMVDO.cs">
+    <Compile Include="Models\GBTPENT_TiposEntidades.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBMVDP.cs">
+    <Compile Include="Models\GBTRCLI_TiposRelacoesEntidadesClientes.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBNATR.cs">
+    <Compile Include="Models\PACTP_ActividadeProfissional.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBOPR.cs">
+    <Compile Include="Models\PESTC_EstadoCivil.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBTCLI.cs">
+    <Compile Include="Models\PHBLT_HabilitacoesLiterarias.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBTIT.cs">
+    <Compile Include="Models\PPAIS_Paises.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBTPENT.cs">
+    <Compile Include="Models\PPROF_Profissoes.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GBTRCLI.cs">
+    <Compile Include="Models\PREGC_RegimesCasamento.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PTIDD_TiposIdentificacao.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
