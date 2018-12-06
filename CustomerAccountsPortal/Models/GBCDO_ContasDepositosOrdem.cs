@@ -14,6 +14,66 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCDO_ContasDepositosOrdem
     {
-        public long ID { get; set; }
+        public int DONSEQ_Balcao { get; set; }
+        public int DOBAL_Balcao { get; set; }
+        public int DONCLI_NrCliente { get; set; }
+        public int DONATR_Natureza { get; set; }
+        public Nullable<decimal> DOSLD_Saldo { get; set; }
+        public Nullable<decimal> DOSLDV_SaldoPorDataValor { get; set; }
+        public Nullable<int> DONDDESC_DiasDescobertoSaldo { get; set; }
+        public Nullable<decimal> DOSALM_SaldoMedioPorSaldo { get; set; }
+        public Nullable<decimal> DOSALV_SaldoMedioDataValor { get; set; }
+        public Nullable<decimal> DOSALD_SaldoMedioDisponivel { get; set; }
+        public int DONDSM_NrDiasSaldoMedio { get; set; }
+        public Nullable<decimal> DOLIMD_LimiteDescoberto { get; set; }
+        public Nullable<decimal> DOSMIN_SaldoMinimo { get; set; }
+        public Nullable<int> DODLIM_DataExpirLimiteDesc { get; set; }
+        public string DOTEXT_TipoExtracto { get; set; }
+        public string DOPERE_PeriodicidadeExtracto { get; set; }
+        public Nullable<decimal> DONUMP_NumerosPretos { get; set; }
+        public Nullable<decimal> DONUMV_NumerosVermelhos { get; set; }
+        public Nullable<decimal> DORUMP_RecalculoNrsPretos { get; set; }
+        public Nullable<decimal> DORUMV_RecalculoNrsVermelhos { get; set; }
+        public Nullable<int> DOMVNE_NrMovNaoSaidosExtr { get; set; }
+        public Nullable<int> DOUEXT_NrExtrOuLinhaCader { get; set; }
+        public int DODEXT_DataUltimoExtracto { get; set; }
+        public string DOSLAL_SaldoAlterado { get; set; }
+        public string DOTXCN_ComTaxasCredorasNegoc { get; set; }
+        public string DOTXDN_ComTaxasDevedorasNegoc { get; set; }
+        public int DODTAB_DataAbertura { get; set; }
+        public int DODUMV_DataUltimoMovimento { get; set; }
+        public int DODDJR_DataUltimoDebitoJuros { get; set; }
+        public int DODCJR_DataUltimoCreditoJuro { get; set; }
+        public string DOSITU_SituacaoConta { get; set; }
+        public int DODSIT_DataSituacao { get; set; }
+        public string DOECJ_ComEscalaJuros { get; set; }
+        public string DOMOED_Moeda { get; set; }
+        public int DONCLC_ClienteParaJurosCredores { get; set; }
+        public int DONATC_NaturezaParaJurosCredor { get; set; }
+        public int DONSEC_NrSeqParaJurosCredores { get; set; }
+        public Nullable<decimal> DONJDM_NrsJurosDevedDoMes { get; set; }
+        public Nullable<decimal> DONJCM_NrsJurosCredDoMes { get; set; }
+        public Nullable<decimal> DOTXMD_TaxaMediaDia { get; set; }
+        public int DONCLD_ClienteParaJurosDevedor { get; set; }
+        public int DONATD_NaturezaParaJurosDeved { get; set; }
+        public int DONSED_NrSeqParaJurosDevedor { get; set; }
+        public string DONIB_NIB { get; set; }
+        public Nullable<decimal> DOCTDB_CativosADebito { get; set; }
+        public Nullable<decimal> DOCTCR_CativosACredito { get; set; }
+        public Nullable<decimal> DOCTPD_CativosPendentes { get; set; }
+        public string DONCJC_CalculaJurosCredores { get; set; }
+        public string DONCJD_CalculaJurosDevedores { get; set; }
+        public Nullable<int> DOMCHM_NrMaximoChequesPorMes { get; set; }
+        public Nullable<int> DODTUR_DataUltimaRequisicao { get; set; }
+        public Nullable<int> DORCHM_NrChequesReqNoMes { get; set; }
+        public string DOSITP_SituacaoProtegida { get; set; }
+        public string DOMSIT_MotivoSituacao { get; set; }
+        public int DOBAJC_BaseAnualDiasJurosCr { get; set; }
+        public int DOBAJD_BaseAnualDiasJurosDv { get; set; }
+        public string DOCPRD_CodigoProduto { get; set; }
+        public string DOCCPR_CodigoComponente { get; set; }
+        public string DOCLCP_ClasseComponente { get; set; }
+        public string DOCCAS_CanalSubscricao { get; set; }
+        public string DOUSRS_UtilizadorSubscricao { get; set; }
     }
 }

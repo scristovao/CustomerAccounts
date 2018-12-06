@@ -14,7 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PACTP_ActividadeProfissional
     {
-        public long ID { get; set; }
         public string PACTV_Actividade { get; set; }
         public string PACDC_Descritivo { get; set; }
     }

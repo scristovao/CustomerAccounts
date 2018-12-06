@@ -14,8 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBTIT_Entidade
     {
-        public long ID { get; set; }
-        public Nullable<int> TTNUMT_NrEntidade { get; set; }
+        public int TTNUMT_NrEntidade { get; set; }
         public string TTTIPT_EmpresaOuParticular { get; set; }
         public string TTNOMT_NomeEntidade { get; set; }
         public string TTNOME_NomeSemTitulo { get; set; }
@@ -55,7 +54,7 @@ namespace CustomerAccountsPortal.Models
         public string TTSEDE_DomicilioOuSede { get; set; }
         public Nullable<long> TTCSRA_CapitalSocialOuRendimentoAnual { get; set; }
         public string TTMOED_MoedaCsra { get; set; }
-        public string TTVINC_VinculoComoutras { get; set; }
+        public string TTVINC_VinculoComOutras { get; set; }
         public Nullable<long> TTNCTR_NrCentralRisco { get; set; }
         public string TTCRES_CodigoResidencia { get; set; }
         public string TTCST_CodigoSectorial { get; set; }

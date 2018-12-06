@@ -14,6 +14,23 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMORD_Moradas
     {
-        public long ID { get; set; }
+        public int MONSEQ_NumeroCliente { get; set; }
+        public Nullable<int> MONCLI_NumeroCliente { get; set; }
+        public Nullable<int> MONATR_Natureza { get; set; }
+        public string MOTMOR_TipoMorada { get; set; }
+        public Nullable<int> MONTIT_NumeroEntidade { get; set; }
+        public string MOMORD_Morada { get; set; }
+        public string MOMOR1_Morada { get; set; }
+        public string MOCODX_CodigoPostalPais { get; set; }
+        public string MOTELF_Telefone1 { get; set; }
+        public string GBMOCONT_Contacto1 { get; set; }
+        public string MOTEL1_Telefone2 { get; set; }
+        public string GBMOCONT1_Contacto2 { get; set; }
+        public string MOTFAX_Telefax { get; set; }
+        public string GBMOSITMOR_SituacaoMorada { get; set; }
+        public string GBMOSITU_SituacaoRegisto { get; set; }
+        public string GBMOUSCR_UtilizadorCriacao { get; set; }
+        public Nullable<int> GBMODTCR_DataCriacao { get; set; }
+        public Nullable<int> GBMOHOCR_HoraCriacao { get; set; }
     }
 }

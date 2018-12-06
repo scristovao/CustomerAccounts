@@ -14,6 +14,11 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBOPR_Operacoes
     {
-        public long ID { get; set; }
+        public int X1NOPR_NumeroOperacao { get; set; }
+        public string X1TTTR_TipoTransaccao { get; set; }
+        public string X1SITU_SituacaoOperacao { get; set; }
+        public string X1MVES_MovimentosEstornados { get; set; }
+        public Nullable<int> X1HORA_HoraInicioExecucao { get; set; }
+        public Nullable<int> X1DTIN_DataInicioExecucao { get; set; }
     }
 }

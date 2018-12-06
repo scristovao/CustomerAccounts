@@ -14,6 +14,12 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBNATR_NaturezasContas
     {
-        public long ID { get; set; }
+        public int NTNATR_Natureza { get; set; }
+        public string NTDESC_Descritivo { get; set; }
+        public string NTDESR_DescritivoReduzido { get; set; }
+        public Nullable<int> NTNULC_NrMaximoContas { get; set; }
+        public string NTTSLD_TipoSaldo { get; set; }
+        public string NTCLCP_ClasseComponente { get; set; }
+        public string NTTNSC_TipoParaNatrSemContas { get; set; }
     }
 }

@@ -14,6 +14,8 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBTCLI_SegmentoCliente
     {
-        public long ID { get; set; }
+        public string TCTIPO_Tipo { get; set; }
+        public string TCDESC_Descritivo { get; set; }
+        public string TCPBAL_SoPermitidoNosBalcoes { get; set; }
     }
 }

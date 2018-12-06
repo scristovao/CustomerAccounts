@@ -14,7 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PPROF_Profissoes
     {
-        public long ID { get; set; }
         public string PPRPROF_CodigoProfissao { get; set; }
         public string PPRDESC_Descritivo { get; set; }
         public string PPRACTV_CdgActividadeValidos { get; set; }

@@ -14,7 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCSTR_CodigosSectoriaisResidentes
     {
-        public long ID { get; set; }
         public string SRCST_CodigoSectorial { get; set; }
         public string SRSLT_Seleccionavel { get; set; }
         public string SRDESC_Descritivo { get; set; }

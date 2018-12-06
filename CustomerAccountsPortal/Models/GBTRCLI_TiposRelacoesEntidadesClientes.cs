@@ -14,6 +14,18 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBTRCLI_TiposRelacoesEntidadesClientes
     {
-        public long ID { get; set; }
+        public string RTRCLI_RelacaoComCliente { get; set; }
+        public string RTSORD_SeqOrdenacao { get; set; }
+        public string RTDESC_Descritivo { get; set; }
+        public string RTVCPR_ValidoCliPart { get; set; }
+        public string RTVCEP_ValidoCliEmpresa { get; set; }
+        public string RTSLDT_InfluenciaSldTit { get; set; }
+        public string RTPRCH_PodeReqCheques { get; set; }
+        public string RTCOUR_ComunicaParaUtilRisco { get; set; }
+        public string RTCOCR_ComunicaParaCentRisco { get; set; }
+        public string RTSITU_Situacao { get; set; }
+        public Nullable<int> RTDTCR_DataCriacao { get; set; }
+        public Nullable<int> RTHOCR_HoraCriacao { get; set; }
+        public string RTUSCR_UtilizadorCriacao { get; set; }
     }
 }

@@ -14,7 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PESTC_EstadoCivil
     {
-        public long ID { get; set; }
         public string EECIV_EstadoCivil { get; set; }
         public string EDCIV_Descritivo { get; set; }
         public string ERCAV_RegimesCasamentoValidos { get; set; }

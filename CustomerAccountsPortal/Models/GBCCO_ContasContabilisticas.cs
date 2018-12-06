@@ -14,6 +14,33 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCCO_ContasContabilisticas
     {
-        public long ID { get; set; }
+        public int CSNSEQ_BalcaoContaContab { get; set; }
+        public int CSBALC_BalcaoContaContab { get; set; }
+        public string CSCCB_ContaContabilistica { get; set; }
+        public Nullable<int> CSBAL_Balcao { get; set; }
+        public Nullable<int> CSNCLI_NrCliente { get; set; }
+        public Nullable<int> CSNATR_Natureza { get; set; }
+        public Nullable<decimal> CSSLD_Saldo { get; set; }
+        public string CSMCX_CaixasMovimentam { get; set; }
+        public string CSMTRF_TransferencMovimentam { get; set; }
+        public string CSLMOV_LimpezaMovimentos { get; set; }
+        public string CSIBLC_ImprimeNoBalancete { get; set; }
+        public string CSTSLD_TipoSaldo { get; set; }
+        public string CSSLAL_SaldoAlterado { get; set; }
+        public string CSSLDA_SaldoActPelosMovim { get; set; }
+        public string CSMVCC_MovimEContabilizado { get; set; }
+        public string CSOBS_Observacoes { get; set; }
+        public int CSDTAB_DataAbertura { get; set; }
+        public string CSSITU_Situacao { get; set; }
+        public string CSMOED_Moeda { get; set; }
+        public string CSCRMV_RestricaoMovimentacao { get; set; }
+        public string CSRACE_RestricoesAcesso { get; set; }
+        public string CSCGRP_GrupoContasComCo { get; set; }
+        public string CSMSIT_MotivoSituacao { get; set; }
+        public string CSCPRD_CodigoProduto { get; set; }
+        public string CSCCPR_CodigoComponente { get; set; }
+        public string CSCLCP_ClasseComponente { get; set; }
+        public string CSCCAS_CanalSubscricao { get; set; }
+        public string CSUSRS_UtilizadorSubscricao { get; set; }
     }
 }

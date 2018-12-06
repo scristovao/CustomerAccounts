@@ -14,8 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PHBLT_HabilitacoesLiterarias
     {
-        public long ID { get; set; }
-        public string C9HBTP_Habilitacoes { get; set; }
+        public string PHBTP_HabilitacoesLiterarias { get; set; }
         public string C9HBDC_Descritivo { get; set; }
         public string C9SITU_Situacao { get; set; }
         public string C9USCR_UtilizadorCriacao { get; set; }

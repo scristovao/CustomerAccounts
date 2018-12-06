@@ -14,6 +14,9 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBDOC_Documentos
     {
-        public long ID { get; set; }
+        public int DCTDOC_TipoDocumento { get; set; }
+        public int DCNDOC_Documento { get; set; }
+        public string DCSITU_SituacaoDocumento { get; set; }
+        public int DCANOI_Ano { get; set; }
     }
 }

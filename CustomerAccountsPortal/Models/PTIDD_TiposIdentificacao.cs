@@ -14,7 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PTIDD_TiposIdentificacao
     {
-        public long ID { get; set; }
         public string PTITP_TipoIdentificacao { get; set; }
         public string PTIDC_Descritivo { get; set; }
         public string POLOC_ObrigaLocalEmissao { get; set; }

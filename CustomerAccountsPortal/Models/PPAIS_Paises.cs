@@ -14,9 +14,8 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PPAIS_Paises
     {
-        public long ID { get; set; }
+        public string ACPAI_SiglaPais { get; set; }
         public string ASPAI_SiglaPais { get; set; }
-        public string ACPAI_CodigoPais { get; set; }
         public Nullable<int> ANPAI_NumeroPais { get; set; }
         public string ADPAI_DescricaoPais { get; set; }
         public string AINDI_IndicativoInternacional { get; set; }

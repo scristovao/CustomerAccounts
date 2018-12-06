@@ -14,6 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCNDM_CondicoesMovimentacaoConta
     {
-        public long ID { get; set; }
+        public int ATCNDM_CondMovimentacao { get; set; }
+        public string ATDCND_Descritivo { get; set; }
     }
 }

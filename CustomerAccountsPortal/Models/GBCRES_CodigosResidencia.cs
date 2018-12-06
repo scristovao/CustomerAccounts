@@ -14,7 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCRES_CodigosResidencia
     {
-        public long ID { get; set; }
         public string RECRES_CodigoResidencia { get; set; }
         public string REDESC_Descritivo { get; set; }
     }

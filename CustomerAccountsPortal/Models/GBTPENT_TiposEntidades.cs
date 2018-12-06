@@ -14,7 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBTPENT_TiposEntidades
     {
-        public long ID { get; set; }
         public string NITPEN_TipoEntidade { get; set; }
         public string NIDTPE_Descritivo { get; set; }
         public string NIPRCV_ProcessoValido { get; set; }

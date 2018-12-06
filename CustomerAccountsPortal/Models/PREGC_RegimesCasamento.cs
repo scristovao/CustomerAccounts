@@ -14,7 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PREGC_RegimesCasamento
     {
-        public long ID { get; set; }
         public string CRCAS_RegimeCasamento { get; set; }
         public string CDCAS_Descritivo { get; set; }
     }

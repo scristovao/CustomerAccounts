@@ -14,6 +14,39 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMVCR_MovimentosContasCredito
     {
-        public long ID { get; set; }
+        public int MCNDOC_Balcao { get; set; }
+        public int MCBAL_Balcao { get; set; }
+        public int MCNCLI_NumeroCliente { get; set; }
+        public int MCNATR_Natureza { get; set; }
+        public int MCNSEQ_NumeroSequencial { get; set; }
+        public int MCTDOC_TipoDocumento { get; set; }
+        public int MCCOPE_CodigoOperacao { get; set; }
+        public decimal MCVLR_ValorMovimento { get; set; }
+        public Nullable<decimal> MCSALD_SaldoAposMovimento { get; set; }
+        public string MCUSER_LancadoPor { get; set; }
+        public Nullable<int> MCHORA_HoraLancamento { get; set; }
+        public int MCDATL_DataLancamento { get; set; }
+        public int MCDATV_DataValor { get; set; }
+        public string MCDRCX_DiarioOuCaixa { get; set; }
+        public string MCETRB_EstacaoLancamento { get; set; }
+        public Nullable<int> MCDTEE_DataEmissaoExtracto { get; set; }
+        public int MCBALM_BalcaoMovimento { get; set; }
+        public int MCBALC_BalcaoContaCcbMov { get; set; }
+        public string MCCCB_ContaCcbMovimento { get; set; }
+        public Nullable<int> MCNUAM_NrUtlzAmrtPer { get; set; }
+        public int MCNOPR_NrOperacao { get; set; }
+        public Nullable<int> MCNCX_NumeroCaixa { get; set; }
+        public Nullable<int> MCNTCX_NrTransaccaoCaixa { get; set; }
+        public int MCNORD_NrOrdemTransaccao { get; set; }
+        public string MCMINV_MovimentoInvisivel { get; set; }
+        public int MCDTCB_DataContabilistica { get; set; }
+        public string MCEXCT_ExecutorMovimento { get; set; }
+        public string MCMOED_Moeda { get; set; }
+        public string MCDMOV_DescritivoMovimento { get; set; }
+        public Nullable<decimal> MCTXA_TaxaAplicadaValorInc { get; set; }
+        public Nullable<decimal> MCVLRI_ValorIncidencia { get; set; }
+        public Nullable<long> MCAUTR_Autorizacao { get; set; }
+        public string MCTBON_TipoBonificacao { get; set; }
+        public string MCOBS_Observacoes { get; set; }
     }
 }

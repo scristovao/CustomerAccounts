@@ -15,5 +15,9 @@ namespace CustomerAccountsPortal.Models
     public partial class GBLTIT_LigacaoClientesEntidades
     {
         public long ID { get; set; }
+        public Nullable<int> LTNCLI_NumeroCliente { get; set; }
+        public Nullable<int> LTNTIT_NumeroEntidade { get; set; }
+        public string LTRCLI_RelacaoCliente { get; set; }
+        public string LTRCPE_RelacaoPrimeiraEntidade { get; set; }
     }
 }
