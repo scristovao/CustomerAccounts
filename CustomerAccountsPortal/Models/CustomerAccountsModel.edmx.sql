@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 12/06/2018 17:08:49
+-- Date Created: 12/06/2018 19:00:26
 -- Generated from EDMX file: C:\Users\sonia.cristovao\source\repos\CustomerAccountsPortal\CustomerAccountsPortal\Models\CustomerAccountsModel.edmx
 -- --------------------------------------------------
 
@@ -17,6 +17,9 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[GBTIT_Entidade] DROP CONSTRAINT [FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias];
+GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
@@ -965,11 +968,11 @@ GO
 -- Creating table 'PHBLT_HabilitacoesLiterarias'
 CREATE TABLE [dbo].[PHBLT_HabilitacoesLiterarias] (
     [PHBTP_HabilitacoesLiterarias] varchar(1)  NOT NULL,
-    [C9HBDC_Descritivo] varchar(35)  NULL,
-    [C9SITU_Situacao] varchar(1)  NULL,
-    [C9USCR_UtilizadorCriacao] varchar(10)  NULL,
-    [C9DTCR_DataCriacao] datetime  NULL,
-    [C9HOCR_HoraCriacao] datetime  NULL
+    [HBDC_Descritivo] varchar(35)  NULL,
+    [SITU_Situacao] varchar(1)  NULL,
+    [USCR_UtilizadorCriacao] varchar(10)  NULL,
+    [DTCR_DataCriacao] datetime  NULL,
+    [HOCR_HoraCriacao] datetime  NULL
 );
 GO
 
@@ -1224,6 +1227,21 @@ GO
 -- --------------------------------------------------
 -- Creating all FOREIGN KEY constraints
 -- --------------------------------------------------
+
+-- Creating foreign key on [TTHABL_Habilitacoes] in table 'GBTIT_Entidade'
+ALTER TABLE [dbo].[GBTIT_Entidade]
+ADD CONSTRAINT [FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias]
+    FOREIGN KEY ([TTHABL_Habilitacoes])
+    REFERENCES [dbo].[PHBLT_HabilitacoesLiterarias]
+        ([PHBTP_HabilitacoesLiterarias])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias'
+CREATE INDEX [IX_FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias]
+ON [dbo].[GBTIT_Entidade]
+    ([TTHABL_Habilitacoes]);
+GO
 
 -- --------------------------------------------------
 -- Script has ended

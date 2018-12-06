@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3112b49490734343af756f9d36acb5a1" Name="Diagram1" ZoomLevel="54">
+      <Diagram DiagramId="3112b49490734343af756f9d36acb5a1" Name="Diagram1" ZoomLevel="106">
         <EntityTypeShape EntityType="CustomerAccountsModel.GBCCC_ContasCaucionadas" Width="1.5" PointX="0.75" PointY="0.75" />
         <EntityTypeShape EntityType="CustomerAccountsModel.GBCCO_ContasContabilisticas" Width="1.5" PointX="2.75" PointY="0.75" />
         <EntityTypeShape EntityType="CustomerAccountsModel.GBCCR_ContasCredito" Width="1.5" PointX="4.75" PointY="0.75" />
@@ -32,11 +32,12 @@
         <EntityTypeShape EntityType="CustomerAccountsModel.GBTRCLI_TiposRelacoesEntidadesClientes" Width="1.5" PointX="18.75" PointY="4.75" />
         <EntityTypeShape EntityType="CustomerAccountsModel.PACTP_ActividadeProfissional" Width="1.5" PointX="18.75" PointY="9.75" />
         <EntityTypeShape EntityType="CustomerAccountsModel.PESTC_EstadoCivil" Width="1.5" PointX="18.75" PointY="12.75" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.PHBLT_HabilitacoesLiterarias" Width="1.5" PointX="18.75" PointY="15.75" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.PPAIS_Paises" Width="1.5" PointX="18.75" PointY="18.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.PHBLT_HabilitacoesLiterarias" Width="1.5" PointX="20" PointY="14.875" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.PPAIS_Paises" Width="1.5" PointX="21.375" PointY="18.5" />
         <EntityTypeShape EntityType="CustomerAccountsModel.PPROF_Profissoes" Width="1.5" PointX="20.75" PointY="0.75" />
         <EntityTypeShape EntityType="CustomerAccountsModel.PREGC_RegimesCasamento" Width="1.5" PointX="0.75" PointY="20.75" />
         <EntityTypeShape EntityType="CustomerAccountsModel.PTIDD_TiposIdentificacao" Width="1.5" PointX="2.75" PointY="20.75" />
+        <AssociationConnector Association="CustomerAccountsModel.FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -62,5 +62,7 @@ namespace CustomerAccountsPortal.Models
         public string TTTPEN_TipoEntidade { get; set; }
         public string TTBLOQ_ComBloqueios { get; set; }
         public string GBTTALER_ComAlertas { get; set; }
+    
+        public virtual PHBLT_HabilitacoesLiterarias PHBLT_HabilitacoesLiterarias { get; set; }
     }
 }

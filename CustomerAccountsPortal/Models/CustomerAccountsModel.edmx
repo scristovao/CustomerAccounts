@@ -38,6 +38,10 @@
     <EntitySet Name="PPROF_Profissoes" EntityType="CustomerAccountsModel.Store.PPROF_Profissoes" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="PREGC_RegimesCasamento" EntityType="CustomerAccountsModel.Store.PREGC_RegimesCasamento" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="PTIDD_TiposIdentificacao" EntityType="CustomerAccountsModel.Store.PTIDD_TiposIdentificacao" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias" Association="CustomerAccountsModel.Store.FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias">
+      <End Role="PHBLT_HabilitacoesLiterarias" EntitySet="PHBLT_HabilitacoesLiterarias" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="GBCCC_ContasCaucionadas">
     <Key>
@@ -883,11 +887,11 @@
       <PropertyRef Name="PHBTP_HabilitacoesLiterarias" />
     </Key>
     <Property Name="PHBTP_HabilitacoesLiterarias" Type="varchar" Nullable="false" MaxLength="1" />
-    <Property Name="C9HBDC_Descritivo" Type="varchar" Nullable="true" MaxLength="35" />
-    <Property Name="C9SITU_Situacao" Type="varchar" Nullable="true" MaxLength="1" />
-    <Property Name="C9USCR_UtilizadorCriacao" Type="varchar" Nullable="true" MaxLength="10" />
-    <Property Name="C9DTCR_DataCriacao" Type="datetime" Nullable="true" />
-    <Property Name="C9HOCR_HoraCriacao" Type="datetime" Nullable="true" />
+    <Property Name="HBDC_Descritivo" Type="varchar" Nullable="true" MaxLength="35" />
+    <Property Name="SITU_Situacao" Type="varchar" Nullable="true" MaxLength="1" />
+    <Property Name="USCR_UtilizadorCriacao" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="DTCR_DataCriacao" Type="datetime" Nullable="true" />
+    <Property Name="HOCR_HoraCriacao" Type="datetime" Nullable="true" />
   </EntityType>
   <EntityType Name="PPAIS_Paises">
     <Key>
@@ -941,6 +945,18 @@
     <Property Name="PIDCARMIN_NrMinimoCaracteres" Type="int" Nullable="true" />
     <Property Name="PIDCARMAX_NrMaximoCaracteres" Type="int" Nullable="true" />
   </EntityType>
+  <Association Name="FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias">
+    <End Role="PHBLT_HabilitacoesLiterarias" Type="CustomerAccountsModel.Store.PHBLT_HabilitacoesLiterarias" Multiplicity="0..1" />
+    <End Role="GBTIT_Entidade" Type="CustomerAccountsModel.Store.GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PHBLT_HabilitacoesLiterarias">
+        <PropertyRef Name="PHBTP_HabilitacoesLiterarias" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTHABL_Habilitacoes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
@@ -978,6 +994,10 @@
           <EntitySet Name="PPROF_Profissoes" EntityType="CustomerAccountsModel.PPROF_Profissoes" />
           <EntitySet Name="PREGC_RegimesCasamento" EntityType="CustomerAccountsModel.PREGC_RegimesCasamento" />
           <EntitySet Name="PTIDD_TiposIdentificacao" EntityType="CustomerAccountsModel.PTIDD_TiposIdentificacao" />
+          <AssociationSet Name="FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias" Association="CustomerAccountsModel.FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias">
+            <End Role="PHBLT_HabilitacoesLiterarias" EntitySet="PHBLT_HabilitacoesLiterarias" />
+            <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="GBCCC_ContasCaucionadas">
           <Key>
@@ -1768,6 +1788,7 @@
           <Property Name="TTTPEN_TipoEntidade" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
           <Property Name="TTBLOQ_ComBloqueios" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
           <Property Name="GBTTALER_ComAlertas" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PHBLT_HabilitacoesLiterarias" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias" FromRole="GBTIT_Entidade" ToRole="PHBLT_HabilitacoesLiterarias" />
         </EntityType>
         <EntityType Name="GBTPENT_TiposEntidades">
           <Key>
@@ -1823,11 +1844,12 @@
             <PropertyRef Name="PHBTP_HabilitacoesLiterarias" />
           </Key>
           <Property Name="PHBTP_HabilitacoesLiterarias" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
-          <Property Name="C9HBDC_Descritivo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
-          <Property Name="C9SITU_Situacao" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-          <Property Name="C9USCR_UtilizadorCriacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="C9DTCR_DataCriacao" Type="DateTime" Precision="3" />
-          <Property Name="C9HOCR_HoraCriacao" Type="DateTime" Precision="3" />
+          <Property Name="HBDC_Descritivo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+          <Property Name="SITU_Situacao" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="USCR_UtilizadorCriacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="DTCR_DataCriacao" Type="DateTime" Precision="3" />
+          <Property Name="HOCR_HoraCriacao" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias" FromRole="PHBLT_HabilitacoesLiterarias" ToRole="GBTIT_Entidade" />
         </EntityType>
         <EntityType Name="PPAIS_Paises">
           <Key>
@@ -1881,6 +1903,18 @@
           <Property Name="PIDCARMIN_NrMinimoCaracteres" Type="Int32" />
           <Property Name="PIDCARMAX_NrMaximoCaracteres" Type="Int32" />
         </EntityType>
+        <Association Name="FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias">
+          <End Type="CustomerAccountsModel.PHBLT_HabilitacoesLiterarias" Role="PHBLT_HabilitacoesLiterarias" Multiplicity="0..1" />
+          <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PHBLT_HabilitacoesLiterarias">
+              <PropertyRef Name="PHBTP_HabilitacoesLiterarias" />
+            </Principal>
+            <Dependent Role="GBTIT_Entidade">
+              <PropertyRef Name="TTHABL_Habilitacoes" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -2757,11 +2791,11 @@
       <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.PHBLT_HabilitacoesLiterarias)">
         <MappingFragment StoreEntitySet="PHBLT_HabilitacoesLiterarias">
           <ScalarProperty Name="PHBTP_HabilitacoesLiterarias" ColumnName="PHBTP_HabilitacoesLiterarias" />
-          <ScalarProperty Name="C9HBDC_Descritivo" ColumnName="C9HBDC_Descritivo" />
-          <ScalarProperty Name="C9SITU_Situacao" ColumnName="C9SITU_Situacao" />
-          <ScalarProperty Name="C9USCR_UtilizadorCriacao" ColumnName="C9USCR_UtilizadorCriacao" />
-          <ScalarProperty Name="C9DTCR_DataCriacao" ColumnName="C9DTCR_DataCriacao" />
-          <ScalarProperty Name="C9HOCR_HoraCriacao" ColumnName="C9HOCR_HoraCriacao" />
+          <ScalarProperty Name="HBDC_Descritivo" ColumnName="HBDC_Descritivo" />
+          <ScalarProperty Name="SITU_Situacao" ColumnName="SITU_Situacao" />
+          <ScalarProperty Name="USCR_UtilizadorCriacao" ColumnName="USCR_UtilizadorCriacao" />
+          <ScalarProperty Name="DTCR_DataCriacao" ColumnName="DTCR_DataCriacao" />
+          <ScalarProperty Name="HOCR_HoraCriacao" ColumnName="HOCR_HoraCriacao" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
