@@ -14,7 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCDO_ContasDepositosOrdem
     {
-        public int DONSEQ_Balcao { get; set; }
+        public int DONSEQ_NrSequencial { get; set; }
         public int DOBAL_Balcao { get; set; }
         public int DONCLI_NrCliente { get; set; }
         public int DONATR_Natureza { get; set; }

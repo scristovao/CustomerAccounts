@@ -14,7 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMVCO_MovimentosContasContabilisticas
     {
-        public int MRNDOC_BalcaoCcb { get; set; }
+        public int MRNDOC_NumeroDocumento { get; set; }
         public int MRBALC_BalcaoCcb { get; set; }
         public string MRCCB_ContaContabilistica { get; set; }
         public Nullable<int> MRBAL_Balcao { get; set; }

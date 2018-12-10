@@ -1,0 +1,171 @@
+﻿@model IEnumerable<CustomerAccountsPortal.Models.GBCLI_Clientes>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CLBAL_Balcao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLDTAB_DataAbertura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLCST_CodigoSectorial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLTTIT_TipoTitularidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLCORR_EnvioCorrespondencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLMSGP_ComMensagemPendente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLBLOQ_ComBloqueios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLNIVC_NivelConfidencial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLGERC_GestorCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLOBSV_Observacoes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLEPAR_EmpresaOuParticular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLPAIS_CodigoPais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLCIAC_ComIsencaoActiva)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLCSAC_CodigoServicoApoio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLPCNG_PerfilClienteNegociado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLRACE_RestricoesAcesso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBCLALER_ComAlertas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBCLEXTINT_ExtractoIntegrado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBCLDTUEXT_DataUltimoExtracto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBCLNUEXT_NumeroUltimoExtracto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBCLPEREXT_PeriodicidadeExtracto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBCNDM_CondicoesMovimentacaoConta.ATDCND_Descritivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBCRES_CodigosResidencia.REDESC_Descritivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTCLI_SegmentoCliente.TCDESC_Descritivo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLBAL_Balcao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLDTAB_DataAbertura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLCST_CodigoSectorial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLTTIT_TipoTitularidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLCORR_EnvioCorrespondencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLMSGP_ComMensagemPendente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLBLOQ_ComBloqueios)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLNIVC_NivelConfidencial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLGERC_GestorCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLOBSV_Observacoes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLEPAR_EmpresaOuParticular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLPAIS_CodigoPais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLCIAC_ComIsencaoActiva)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLCSAC_CodigoServicoApoio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLPCNG_PerfilClienteNegociado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLRACE_RestricoesAcesso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBCLALER_ComAlertas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBCLEXTINT_ExtractoIntegrado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBCLDTUEXT_DataUltimoExtracto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBCLNUEXT_NumeroUltimoExtracto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBCLPEREXT_PeriodicidadeExtracto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBCNDM_CondicoesMovimentacaoConta.ATDCND_Descritivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBCRES_CodigosResidencia.REDESC_Descritivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTCLI_SegmentoCliente.TCDESC_Descritivo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CLNCLI_NrCliente }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CLNCLI_NrCliente }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CLNCLI_NrCliente })
+        </td>
+    </tr>
+}
+
+</table>

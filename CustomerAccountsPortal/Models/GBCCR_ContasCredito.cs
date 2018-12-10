@@ -14,7 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCCR_ContasCredito
     {
-        public int CRNSEQ_Balcao { get; set; }
+        public int CRNSEQ_NrSequencial { get; set; }
         public int CRBAL_Balcao { get; set; }
         public int CRNCLI_NrCliente { get; set; }
         public int CRNATR_Natureza { get; set; }

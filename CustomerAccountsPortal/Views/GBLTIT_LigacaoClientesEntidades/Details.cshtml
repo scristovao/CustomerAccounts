@@ -1,0 +1,50 @@
+﻿@model CustomerAccountsPortal.Models.GBLTIT_LigacaoClientesEntidades
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>GBLTIT_LigacaoClientesEntidades</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LTRCPE_RelacaoPrimeiraEntidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LTRCPE_RelacaoPrimeiraEntidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBCLI_Clientes.CLCRES_CodigoResidencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBCLI_Clientes.CLCRES_CodigoResidencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTIT_Entidade.TTTIPT_EmpresaOuParticular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTIT_Entidade.TTTIPT_EmpresaOuParticular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTRCLI_TiposRelacoesEntidadesClientes.RTSORD_SeqOrdenacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTRCLI_TiposRelacoesEntidadesClientes.RTSORD_SeqOrdenacao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LTNCLI_LTNTIT }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

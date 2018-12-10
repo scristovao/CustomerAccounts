@@ -14,7 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCDP_ContasDepositosPrazo
     {
-        public int DPNSEQ_Balcao { get; set; }
+        public int DPNSEQ_NrSequencial { get; set; }
         public Nullable<int> DPBAL_Balcao { get; set; }
         public Nullable<int> DPNCLI_NrCliente { get; set; }
         public Nullable<int> DPNATR_Natureza { get; set; }

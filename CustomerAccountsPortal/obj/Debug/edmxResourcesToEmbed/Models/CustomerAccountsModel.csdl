@@ -33,16 +33,76 @@
     <EntitySet Name="PPROF_Profissoes" EntityType="CustomerAccountsModel.PPROF_Profissoes" />
     <EntitySet Name="PREGC_RegimesCasamento" EntityType="CustomerAccountsModel.PREGC_RegimesCasamento" />
     <EntitySet Name="PTIDD_TiposIdentificacao" EntityType="CustomerAccountsModel.PTIDD_TiposIdentificacao" />
+    <AssociationSet Name="FK_GBMVCC_MovimentosContasCaucionadas_GBCCC_ContasCaucionadas" Association="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCCC_ContasCaucionadas">
+      <End Role="GBCCC_ContasCaucionadas" EntitySet="GBCCC_ContasCaucionadas" />
+      <End Role="GBMVCC_MovimentosContasCaucionadas" EntitySet="GBMVCC_MovimentosContasCaucionadas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCLI_Clientes_GBCNDM_CondicoesMovimentacaoConta" Association="CustomerAccountsModel.FK_GBCLI_Clientes_GBCNDM_CondicoesMovimentacaoConta">
+      <End Role="GBCNDM_CondicoesMovimentacaoConta" EntitySet="GBCNDM_CondicoesMovimentacaoConta" />
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCLI_Clientes_GBCRES_CodigosResidencia" Association="CustomerAccountsModel.FK_GBCLI_Clientes_GBCRES_CodigosResidencia">
+      <End Role="GBCRES_CodigosResidencia" EntitySet="GBCRES_CodigosResidencia" />
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCLI_Clientes_GBTCLI_SegmentoCliente" Association="CustomerAccountsModel.FK_GBCLI_Clientes_GBTCLI_SegmentoCliente">
+      <End Role="GBTCLI_SegmentoCliente" EntitySet="GBTCLI_SegmentoCliente" />
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBLTIT_LigacaoClientesEntidades_GBCLI_Clientes" Association="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBCLI_Clientes">
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+      <End Role="GBLTIT_LigacaoClientesEntidades" EntitySet="GBLTIT_LigacaoClientesEntidades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCODOP_CodigosOperacao_GBCODOP_CodigosOperacao" Association="CustomerAccountsModel.FK_GBCODOP_CodigosOperacao_GBCODOP_CodigosOperacao">
+      <End Role="GBCODOP_CodigosOperacao" EntitySet="GBCODOP_CodigosOperacao" />
+      <End Role="GBCODOP_CodigosOperacao1" EntitySet="GBCODOP_CodigosOperacao" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVCC_MovimentosContasCaucionadas_GBCODOP_CodigosOperacao" Association="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCODOP_CodigosOperacao">
+      <End Role="GBCODOP_CodigosOperacao" EntitySet="GBCODOP_CodigosOperacao" />
+      <End Role="GBMVCC_MovimentosContasCaucionadas" EntitySet="GBMVCC_MovimentosContasCaucionadas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBTIT_Entidade_GBCRES_CodigosResidencia" Association="CustomerAccountsModel.FK_GBTIT_Entidade_GBCRES_CodigosResidencia">
+      <End Role="GBCRES_CodigosResidencia" EntitySet="GBCRES_CodigosResidencia" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBLTIT_LigacaoClientesEntidades_GBTIT_Entidade" Association="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBTIT_Entidade">
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+      <End Role="GBLTIT_LigacaoClientesEntidades" EntitySet="GBLTIT_LigacaoClientesEntidades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBLTIT_LigacaoClientesEntidades_GBTRCLI_TiposRelacoesEntidadesClientes" Association="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBTRCLI_TiposRelacoesEntidadesClientes">
+      <End Role="GBTRCLI_TiposRelacoesEntidadesClientes" EntitySet="GBTRCLI_TiposRelacoesEntidadesClientes" />
+      <End Role="GBLTIT_LigacaoClientesEntidades" EntitySet="GBLTIT_LigacaoClientesEntidades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBTIT_Entidade_GBTPENT_TiposEntidades" Association="CustomerAccountsModel.FK_GBTIT_Entidade_GBTPENT_TiposEntidades">
+      <End Role="GBTPENT_TiposEntidades" EntitySet="GBTPENT_TiposEntidades" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBTIT_Entidade_PACTP_ActividadeProfissional" Association="CustomerAccountsModel.FK_GBTIT_Entidade_PACTP_ActividadeProfissional">
+      <End Role="PACTP_ActividadeProfissional" EntitySet="PACTP_ActividadeProfissional" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBTIT_Entidade_PESTC_EstadoCivil" Association="CustomerAccountsModel.FK_GBTIT_Entidade_PESTC_EstadoCivil">
+      <End Role="PESTC_EstadoCivil" EntitySet="PESTC_EstadoCivil" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
     <AssociationSet Name="FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias" Association="CustomerAccountsModel.FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias">
       <End Role="PHBLT_HabilitacoesLiterarias" EntitySet="PHBLT_HabilitacoesLiterarias" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBTIT_Entidade_PPROF_Profissoes" Association="CustomerAccountsModel.FK_GBTIT_Entidade_PPROF_Profissoes">
+      <End Role="PPROF_Profissoes" EntitySet="PPROF_Profissoes" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBTIT_Entidade_PREGC_RegimesCasamento" Association="CustomerAccountsModel.FK_GBTIT_Entidade_PREGC_RegimesCasamento">
+      <End Role="PREGC_RegimesCasamento" EntitySet="PREGC_RegimesCasamento" />
       <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="GBCCC_ContasCaucionadas">
     <Key>
-      <PropertyRef Name="CCNSEQ_Balcao" />
+      <PropertyRef Name="CCNSEQ_NrSequencial" />
     </Key>
-    <Property Name="CCNSEQ_Balcao" Type="Int32" Nullable="false" />
+    <Property Name="CCNSEQ_NrSequencial" Type="Int32" Nullable="false" />
     <Property Name="CCBAL_Balcao" Type="Int32" Nullable="false" />
     <Property Name="CCNCLI_NrCliente" Type="Int32" Nullable="false" />
     <Property Name="CCNATR_Natureza" Type="Int32" Nullable="false" />
@@ -127,12 +187,13 @@
     <Property Name="CCSPDN_SpreadTaxaDescNeg" Type="Decimal" Precision="5" Scale="5" />
     <Property Name="CCMAPI_ModoAplicIndexante" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="CCMAIN_ModoAplicIndexNeg" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBMVCC_MovimentosContasCaucionadas" Relationship="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCCC_ContasCaucionadas" FromRole="GBCCC_ContasCaucionadas" ToRole="GBMVCC_MovimentosContasCaucionadas" />
   </EntityType>
   <EntityType Name="GBCCO_ContasContabilisticas">
     <Key>
-      <PropertyRef Name="CSNSEQ_BalcaoContaContab" />
+      <PropertyRef Name="CSNSEQ_NrSequencial" />
     </Key>
-    <Property Name="CSNSEQ_BalcaoContaContab" Type="Int32" Nullable="false" />
+    <Property Name="CSNSEQ_NrSequencial" Type="Int32" Nullable="false" />
     <Property Name="CSBALC_BalcaoContaContab" Type="Int32" Nullable="false" />
     <Property Name="CSCCB_ContaContabilistica" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="false" />
     <Property Name="CSBAL_Balcao" Type="Int32" />
@@ -163,9 +224,9 @@
   </EntityType>
   <EntityType Name="GBCCR_ContasCredito">
     <Key>
-      <PropertyRef Name="CRNSEQ_Balcao" />
+      <PropertyRef Name="CRNSEQ_NrSequencial" />
     </Key>
-    <Property Name="CRNSEQ_Balcao" Type="Int32" Nullable="false" />
+    <Property Name="CRNSEQ_NrSequencial" Type="Int32" Nullable="false" />
     <Property Name="CRBAL_Balcao" Type="Int32" Nullable="false" />
     <Property Name="CRNCLI_NrCliente" Type="Int32" Nullable="false" />
     <Property Name="CRNATR_Natureza" Type="Int32" Nullable="false" />
@@ -242,9 +303,9 @@
   </EntityType>
   <EntityType Name="GBCDO_ContasDepositosOrdem">
     <Key>
-      <PropertyRef Name="DONSEQ_Balcao" />
+      <PropertyRef Name="DONSEQ_NrSequencial" />
     </Key>
-    <Property Name="DONSEQ_Balcao" Type="Int32" Nullable="false" />
+    <Property Name="DONSEQ_NrSequencial" Type="Int32" Nullable="false" />
     <Property Name="DOBAL_Balcao" Type="Int32" Nullable="false" />
     <Property Name="DONCLI_NrCliente" Type="Int32" Nullable="false" />
     <Property Name="DONATR_Natureza" Type="Int32" Nullable="false" />
@@ -308,9 +369,9 @@
   </EntityType>
   <EntityType Name="GBCDP_ContasDepositosPrazo">
     <Key>
-      <PropertyRef Name="DPNSEQ_Balcao" />
+      <PropertyRef Name="DPNSEQ_NrSequencial" />
     </Key>
-    <Property Name="DPNSEQ_Balcao" Type="Int32" Nullable="false" />
+    <Property Name="DPNSEQ_NrSequencial" Type="Int32" Nullable="false" />
     <Property Name="DPBAL_Balcao" Type="Int32" />
     <Property Name="DPNCLI_NrCliente" Type="Int32" />
     <Property Name="DPNATR_Natureza" Type="Int32" />
@@ -366,9 +427,9 @@
   </EntityType>
   <EntityType Name="GBCLI_Clientes">
     <Key>
-      <PropertyRef Name="CLNCLI_Balcao" />
+      <PropertyRef Name="CLNCLI_NrCliente" />
     </Key>
-    <Property Name="CLNCLI_Balcao" Type="Int32" Nullable="false" />
+    <Property Name="CLNCLI_NrCliente" Type="Int32" Nullable="false" />
     <Property Name="CLBAL_Balcao" Type="Int32" />
     <Property Name="CLDTAB_DataAbertura" Type="Int32" />
     <Property Name="CLCRES_CodigoResidencia" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
@@ -393,6 +454,10 @@
     <Property Name="GBCLDTUEXT_DataUltimoExtracto" Type="Int32" />
     <Property Name="GBCLNUEXT_NumeroUltimoExtracto" Type="Int32" />
     <Property Name="GBCLPEREXT_PeriodicidadeExtracto" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCNDM_CondicoesMovimentacaoConta" Relationship="CustomerAccountsModel.FK_GBCLI_Clientes_GBCNDM_CondicoesMovimentacaoConta" FromRole="GBCLI_Clientes" ToRole="GBCNDM_CondicoesMovimentacaoConta" />
+    <NavigationProperty Name="GBCRES_CodigosResidencia" Relationship="CustomerAccountsModel.FK_GBCLI_Clientes_GBCRES_CodigosResidencia" FromRole="GBCLI_Clientes" ToRole="GBCRES_CodigosResidencia" />
+    <NavigationProperty Name="GBTCLI_SegmentoCliente" Relationship="CustomerAccountsModel.FK_GBCLI_Clientes_GBTCLI_SegmentoCliente" FromRole="GBCLI_Clientes" ToRole="GBTCLI_SegmentoCliente" />
+    <NavigationProperty Name="GBLTIT_LigacaoClientesEntidades" Relationship="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBCLI_Clientes" FromRole="GBCLI_Clientes" ToRole="GBLTIT_LigacaoClientesEntidades" />
   </EntityType>
   <EntityType Name="GBCNDM_CondicoesMovimentacaoConta">
     <Key>
@@ -400,6 +465,7 @@
     </Key>
     <Property Name="ATCNDM_CondMovimentacao" Type="Int32" Nullable="false" />
     <Property Name="ATDCND_Descritivo" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_GBCLI_Clientes_GBCNDM_CondicoesMovimentacaoConta" FromRole="GBCNDM_CondicoesMovimentacaoConta" ToRole="GBCLI_Clientes" />
   </EntityType>
   <EntityType Name="GBCODOP_CodigosOperacao">
     <Key>
@@ -461,6 +527,9 @@
     <Property Name="CODTSI_DataSituacao" Type="Int32" />
     <Property Name="COHOSI_HoraSituacao" Type="Int32" />
     <Property Name="GBCOCRMOV_ComRestricoesMov" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao1" Relationship="CustomerAccountsModel.FK_GBCODOP_CodigosOperacao_GBCODOP_CodigosOperacao" FromRole="GBCODOP_CodigosOperacao" ToRole="GBCODOP_CodigosOperacao1" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao2" Relationship="CustomerAccountsModel.FK_GBCODOP_CodigosOperacao_GBCODOP_CodigosOperacao" FromRole="GBCODOP_CodigosOperacao1" ToRole="GBCODOP_CodigosOperacao" />
+    <NavigationProperty Name="GBMVCC_MovimentosContasCaucionadas" Relationship="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCODOP_CodigosOperacao" FromRole="GBCODOP_CodigosOperacao" ToRole="GBMVCC_MovimentosContasCaucionadas" />
   </EntityType>
   <EntityType Name="GBCRES_CodigosResidencia">
     <Key>
@@ -468,6 +537,8 @@
     </Key>
     <Property Name="RECRES_CodigoResidencia" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="REDESC_Descritivo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_GBCLI_Clientes_GBCRES_CodigosResidencia" FromRole="GBCRES_CodigosResidencia" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_GBCRES_CodigosResidencia" FromRole="GBCRES_CodigosResidencia" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="GBCSTE_CodigosSectoriaisNaoResidentes">
     <Key>
@@ -500,19 +571,22 @@
   </EntityType>
   <EntityType Name="GBLTIT_LigacaoClientesEntidades">
     <Key>
-      <PropertyRef Name="ID" />
+      <PropertyRef Name="LTNCLI_LTNTIT" />
     </Key>
-    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="LTNCLI_LTNTIT" Type="Int64" Nullable="false" />
     <Property Name="LTNCLI_NumeroCliente" Type="Int32" />
     <Property Name="LTNTIT_NumeroEntidade" Type="Int32" />
     <Property Name="LTRCLI_RelacaoCliente" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="LTRCPE_RelacaoPrimeiraEntidade" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBCLI_Clientes" FromRole="GBLTIT_LigacaoClientesEntidades" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBTIT_Entidade" FromRole="GBLTIT_LigacaoClientesEntidades" ToRole="GBTIT_Entidade" />
+    <NavigationProperty Name="GBTRCLI_TiposRelacoesEntidadesClientes" Relationship="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBTRCLI_TiposRelacoesEntidadesClientes" FromRole="GBLTIT_LigacaoClientesEntidades" ToRole="GBTRCLI_TiposRelacoesEntidadesClientes" />
   </EntityType>
   <EntityType Name="GBMORD_Moradas">
     <Key>
-      <PropertyRef Name="MONSEQ_NumeroCliente" />
+      <PropertyRef Name="MONSEQ_NumeroSequencial" />
     </Key>
-    <Property Name="MONSEQ_NumeroCliente" Type="Int32" Nullable="false" />
+    <Property Name="MONSEQ_NumeroSequencial" Type="Int32" Nullable="false" />
     <Property Name="MONCLI_NumeroCliente" Type="Int32" />
     <Property Name="MONATR_Natureza" Type="Int32" />
     <Property Name="MOTMOR_TipoMorada" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
@@ -533,9 +607,9 @@
   </EntityType>
   <EntityType Name="GBMVCC_MovimentosContasCaucionadas">
     <Key>
-      <PropertyRef Name="MUNDOC_Balcao" />
+      <PropertyRef Name="MUNDOC_NumeroDocumento" />
     </Key>
-    <Property Name="MUNDOC_Balcao" Type="Int32" Nullable="false" />
+    <Property Name="MUNDOC_NumeroDocumento" Type="Int32" Nullable="false" />
     <Property Name="MUBAL_Balcao" Type="Int32" Nullable="false" />
     <Property Name="MUNCLI_NumeroCliente" Type="Int32" Nullable="false" />
     <Property Name="MUNATR_Natureza" Type="Int32" Nullable="false" />
@@ -569,12 +643,14 @@
     <Property Name="MUTOTV_TotalValores" Type="Decimal" Precision="8" Scale="2" />
     <Property Name="MUCDEV_CodigoDevolucao" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="MUOBS_Observacoes" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCCC_ContasCaucionadas" Relationship="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCCC_ContasCaucionadas" FromRole="GBMVCC_MovimentosContasCaucionadas" ToRole="GBCCC_ContasCaucionadas" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao" Relationship="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCODOP_CodigosOperacao" FromRole="GBMVCC_MovimentosContasCaucionadas" ToRole="GBCODOP_CodigosOperacao" />
   </EntityType>
   <EntityType Name="GBMVCO_MovimentosContasContabilisticas">
     <Key>
-      <PropertyRef Name="MRNDOC_BalcaoCcb" />
+      <PropertyRef Name="MRNDOC_NumeroDocumento" />
     </Key>
-    <Property Name="MRNDOC_BalcaoCcb" Type="Int32" Nullable="false" />
+    <Property Name="MRNDOC_NumeroDocumento" Type="Int32" Nullable="false" />
     <Property Name="MRBALC_BalcaoCcb" Type="Int32" Nullable="false" />
     <Property Name="MRCCB_ContaContabilistica" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="false" />
     <Property Name="MRBAL_Balcao" Type="Int32" />
@@ -614,9 +690,9 @@
   </EntityType>
   <EntityType Name="GBMVCR_MovimentosContasCredito">
     <Key>
-      <PropertyRef Name="MCNDOC_Balcao" />
+      <PropertyRef Name="MCNDOC_NumeroDocumento" />
     </Key>
-    <Property Name="MCNDOC_Balcao" Type="Int32" Nullable="false" />
+    <Property Name="MCNDOC_NumeroDocumento" Type="Int32" Nullable="false" />
     <Property Name="MCBAL_Balcao" Type="Int32" Nullable="false" />
     <Property Name="MCNCLI_NumeroCliente" Type="Int32" Nullable="false" />
     <Property Name="MCNATR_Natureza" Type="Int32" Nullable="false" />
@@ -653,9 +729,9 @@
   </EntityType>
   <EntityType Name="GBMVDO_MovimentosContasDepositosOrdem">
     <Key>
-      <PropertyRef Name="MVNDOC_Balcao" />
+      <PropertyRef Name="MVNDOC_NumeroDocumento" />
     </Key>
-    <Property Name="MVNDOC_Balcao" Type="Int32" Nullable="false" />
+    <Property Name="MVNDOC_NumeroDocumento" Type="Int32" Nullable="false" />
     <Property Name="MVBAL_Balcao" Type="Int32" Nullable="false" />
     <Property Name="MVNCLI_NumeroCliente" Type="Int32" Nullable="false" />
     <Property Name="MVNATR_Natureza" Type="Int32" Nullable="false" />
@@ -696,9 +772,9 @@
   </EntityType>
   <EntityType Name="GBMVDP_MovimentosContasDepositosPrazo">
     <Key>
-      <PropertyRef Name="MPNDOC_Balcao" />
+      <PropertyRef Name="MPNDOC_NumeroDocumento" />
     </Key>
-    <Property Name="MPNDOC_Balcao" Type="Decimal" Nullable="false" Precision="3" Scale="0" />
+    <Property Name="MPNDOC_NumeroDocumento" Type="Decimal" Nullable="false" Precision="3" Scale="0" />
     <Property Name="MPBAL_Balcao" Type="Decimal" Precision="3" Scale="0" />
     <Property Name="MPNCLI_NumeroCliente" Type="Decimal" Precision="5" Scale="0" />
     <Property Name="MPNATR_Natureza" Type="Decimal" Precision="2" Scale="0" />
@@ -774,6 +850,7 @@
     <Property Name="TCTIPO_Tipo" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="TCDESC_Descritivo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
     <Property Name="TCPBAL_SoPermitidoNosBalcoes" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_GBCLI_Clientes_GBTCLI_SegmentoCliente" FromRole="GBTCLI_SegmentoCliente" ToRole="GBCLI_Clientes" />
   </EntityType>
   <EntityType Name="GBTIT_Entidade">
     <Key>
@@ -827,7 +904,14 @@
     <Property Name="TTTPEN_TipoEntidade" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="TTBLOQ_ComBloqueios" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="GBTTALER_ComAlertas" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCRES_CodigosResidencia" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_GBCRES_CodigosResidencia" FromRole="GBTIT_Entidade" ToRole="GBCRES_CodigosResidencia" />
+    <NavigationProperty Name="GBLTIT_LigacaoClientesEntidades" Relationship="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBTIT_Entidade" FromRole="GBTIT_Entidade" ToRole="GBLTIT_LigacaoClientesEntidades" />
+    <NavigationProperty Name="GBTPENT_TiposEntidades" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_GBTPENT_TiposEntidades" FromRole="GBTIT_Entidade" ToRole="GBTPENT_TiposEntidades" />
+    <NavigationProperty Name="PACTP_ActividadeProfissional" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_PACTP_ActividadeProfissional" FromRole="GBTIT_Entidade" ToRole="PACTP_ActividadeProfissional" />
+    <NavigationProperty Name="PESTC_EstadoCivil" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_PESTC_EstadoCivil" FromRole="GBTIT_Entidade" ToRole="PESTC_EstadoCivil" />
     <NavigationProperty Name="PHBLT_HabilitacoesLiterarias" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias" FromRole="GBTIT_Entidade" ToRole="PHBLT_HabilitacoesLiterarias" />
+    <NavigationProperty Name="PPROF_Profissoes" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_PPROF_Profissoes" FromRole="GBTIT_Entidade" ToRole="PPROF_Profissoes" />
+    <NavigationProperty Name="PREGC_RegimesCasamento" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_PREGC_RegimesCasamento" FromRole="GBTIT_Entidade" ToRole="PREGC_RegimesCasamento" />
   </EntityType>
   <EntityType Name="GBTPENT_TiposEntidades">
     <Key>
@@ -844,6 +928,7 @@
     <Property Name="NIDTCR_DataCriacao" Type="Int32" />
     <Property Name="NIHOCR_HoraCriacao" Type="Int32" />
     <Property Name="NISITU_Situacao" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_GBTPENT_TiposEntidades" FromRole="GBTPENT_TiposEntidades" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="GBTRCLI_TiposRelacoesEntidadesClientes">
     <Key>
@@ -862,6 +947,7 @@
     <Property Name="RTDTCR_DataCriacao" Type="Int32" />
     <Property Name="RTHOCR_HoraCriacao" Type="Int32" />
     <Property Name="RTUSCR_UtilizadorCriacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBLTIT_LigacaoClientesEntidades" Relationship="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBTRCLI_TiposRelacoesEntidadesClientes" FromRole="GBTRCLI_TiposRelacoesEntidadesClientes" ToRole="GBLTIT_LigacaoClientesEntidades" />
   </EntityType>
   <EntityType Name="PACTP_ActividadeProfissional">
     <Key>
@@ -869,6 +955,7 @@
     </Key>
     <Property Name="PACTV_Actividade" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="PACDC_Descritivo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_PACTP_ActividadeProfissional" FromRole="PACTP_ActividadeProfissional" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="PESTC_EstadoCivil">
     <Key>
@@ -877,12 +964,13 @@
     <Property Name="EECIV_EstadoCivil" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="EDCIV_Descritivo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
     <Property Name="ERCAV_RegimesCasamentoValidos" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_PESTC_EstadoCivil" FromRole="PESTC_EstadoCivil" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="PHBLT_HabilitacoesLiterarias">
     <Key>
-      <PropertyRef Name="PHBTP_HabilitacoesLiterarias" />
+      <PropertyRef Name="PHBTP_Habilitacoes" />
     </Key>
-    <Property Name="PHBTP_HabilitacoesLiterarias" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="PHBTP_Habilitacoes" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="HBDC_Descritivo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
     <Property Name="SITU_Situacao" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="USCR_UtilizadorCriacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
@@ -892,9 +980,9 @@
   </EntityType>
   <EntityType Name="PPAIS_Paises">
     <Key>
-      <PropertyRef Name="ACPAI_SiglaPais" />
+      <PropertyRef Name="ACPAI_CodigoPais" />
     </Key>
-    <Property Name="ACPAI_SiglaPais" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ACPAI_CodigoPais" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="ASPAI_SiglaPais" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="ANPAI_NumeroPais" Type="Int32" />
     <Property Name="ADPAI_DescricaoPais" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
@@ -917,6 +1005,7 @@
     <Property Name="PPRPROF_CodigoProfissao" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
     <Property Name="PPRDESC_Descritivo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="PPRACTV_CdgActividadeValidos" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_PPROF_Profissoes" FromRole="PPROF_Profissoes" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="PREGC_RegimesCasamento">
     <Key>
@@ -924,6 +1013,7 @@
     </Key>
     <Property Name="CRCAS_RegimeCasamento" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="CDCAS_Descritivo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBTIT_Entidade_PREGC_RegimesCasamento" FromRole="PREGC_RegimesCasamento" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="PTIDD_TiposIdentificacao">
     <Key>
@@ -942,15 +1032,195 @@
     <Property Name="PIDCARMIN_NrMinimoCaracteres" Type="Int32" />
     <Property Name="PIDCARMAX_NrMaximoCaracteres" Type="Int32" />
   </EntityType>
+  <Association Name="FK_GBMVCC_MovimentosContasCaucionadas_GBCCC_ContasCaucionadas">
+    <End Type="CustomerAccountsModel.GBCCC_ContasCaucionadas" Role="GBCCC_ContasCaucionadas" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBMVCC_MovimentosContasCaucionadas" Role="GBMVCC_MovimentosContasCaucionadas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCCC_ContasCaucionadas">
+        <PropertyRef Name="CCNSEQ_NrSequencial" />
+      </Principal>
+      <Dependent Role="GBMVCC_MovimentosContasCaucionadas">
+        <PropertyRef Name="MUNSEQ_NumeroSequencial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCLI_Clientes_GBCNDM_CondicoesMovimentacaoConta">
+    <End Type="CustomerAccountsModel.GBCNDM_CondicoesMovimentacaoConta" Role="GBCNDM_CondicoesMovimentacaoConta" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCNDM_CondicoesMovimentacaoConta">
+        <PropertyRef Name="ATCNDM_CondMovimentacao" />
+      </Principal>
+      <Dependent Role="GBCLI_Clientes">
+        <PropertyRef Name="CLCNDM_CondicoesMovimentacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCLI_Clientes_GBCRES_CodigosResidencia">
+    <End Type="CustomerAccountsModel.GBCRES_CodigosResidencia" Role="GBCRES_CodigosResidencia" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCRES_CodigosResidencia">
+        <PropertyRef Name="RECRES_CodigoResidencia" />
+      </Principal>
+      <Dependent Role="GBCLI_Clientes">
+        <PropertyRef Name="CLCRES_CodigoResidencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCLI_Clientes_GBTCLI_SegmentoCliente">
+    <End Type="CustomerAccountsModel.GBTCLI_SegmentoCliente" Role="GBTCLI_SegmentoCliente" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBTCLI_SegmentoCliente">
+        <PropertyRef Name="TCTIPO_Tipo" />
+      </Principal>
+      <Dependent Role="GBCLI_Clientes">
+        <PropertyRef Name="CLTCLI_SegmentoCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBLTIT_LigacaoClientesEntidades_GBCLI_Clientes">
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBLTIT_LigacaoClientesEntidades" Role="GBLTIT_LigacaoClientesEntidades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCLI_Clientes">
+        <PropertyRef Name="CLNCLI_NrCliente" />
+      </Principal>
+      <Dependent Role="GBLTIT_LigacaoClientesEntidades">
+        <PropertyRef Name="LTNCLI_NumeroCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCODOP_CodigosOperacao_GBCODOP_CodigosOperacao">
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCODOP_CodigosOperacao">
+        <PropertyRef Name="COCOPE_CodigoOperacao" />
+      </Principal>
+      <Dependent Role="GBCODOP_CodigosOperacao1">
+        <PropertyRef Name="COCOPA_CdgOperacaoAnulacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVCC_MovimentosContasCaucionadas_GBCODOP_CodigosOperacao">
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBMVCC_MovimentosContasCaucionadas" Role="GBMVCC_MovimentosContasCaucionadas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCODOP_CodigosOperacao">
+        <PropertyRef Name="COCOPE_CodigoOperacao" />
+      </Principal>
+      <Dependent Role="GBMVCC_MovimentosContasCaucionadas">
+        <PropertyRef Name="MUCOPE_CodigoOperacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBTIT_Entidade_GBCRES_CodigosResidencia">
+    <End Type="CustomerAccountsModel.GBCRES_CodigosResidencia" Role="GBCRES_CodigosResidencia" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCRES_CodigosResidencia">
+        <PropertyRef Name="RECRES_CodigoResidencia" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTCRES_CodigoResidencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBLTIT_LigacaoClientesEntidades_GBTIT_Entidade">
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBLTIT_LigacaoClientesEntidades" Role="GBLTIT_LigacaoClientesEntidades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBTIT_Entidade">
+        <PropertyRef Name="TTNUMT_NrEntidade" />
+      </Principal>
+      <Dependent Role="GBLTIT_LigacaoClientesEntidades">
+        <PropertyRef Name="LTNTIT_NumeroEntidade" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBLTIT_LigacaoClientesEntidades_GBTRCLI_TiposRelacoesEntidadesClientes">
+    <End Type="CustomerAccountsModel.GBTRCLI_TiposRelacoesEntidadesClientes" Role="GBTRCLI_TiposRelacoesEntidadesClientes" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBLTIT_LigacaoClientesEntidades" Role="GBLTIT_LigacaoClientesEntidades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBTRCLI_TiposRelacoesEntidadesClientes">
+        <PropertyRef Name="RTRCLI_RelacaoComCliente" />
+      </Principal>
+      <Dependent Role="GBLTIT_LigacaoClientesEntidades">
+        <PropertyRef Name="LTRCLI_RelacaoCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBTIT_Entidade_GBTPENT_TiposEntidades">
+    <End Type="CustomerAccountsModel.GBTPENT_TiposEntidades" Role="GBTPENT_TiposEntidades" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBTPENT_TiposEntidades">
+        <PropertyRef Name="NITPEN_TipoEntidade" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTTPEN_TipoEntidade" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBTIT_Entidade_PACTP_ActividadeProfissional">
+    <End Type="CustomerAccountsModel.PACTP_ActividadeProfissional" Role="PACTP_ActividadeProfissional" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PACTP_ActividadeProfissional">
+        <PropertyRef Name="PACTV_Actividade" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTACTP_ActividadeProfissional" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBTIT_Entidade_PESTC_EstadoCivil">
+    <End Type="CustomerAccountsModel.PESTC_EstadoCivil" Role="PESTC_EstadoCivil" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PESTC_EstadoCivil">
+        <PropertyRef Name="EECIV_EstadoCivil" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTECIV_EstadoCivil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias">
     <End Type="CustomerAccountsModel.PHBLT_HabilitacoesLiterarias" Role="PHBLT_HabilitacoesLiterarias" Multiplicity="0..1" />
     <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PHBLT_HabilitacoesLiterarias">
-        <PropertyRef Name="PHBTP_HabilitacoesLiterarias" />
+        <PropertyRef Name="PHBTP_Habilitacoes" />
       </Principal>
       <Dependent Role="GBTIT_Entidade">
         <PropertyRef Name="TTHABL_Habilitacoes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBTIT_Entidade_PPROF_Profissoes">
+    <End Type="CustomerAccountsModel.PPROF_Profissoes" Role="PPROF_Profissoes" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPROF_Profissoes">
+        <PropertyRef Name="PPRPROF_CodigoProfissao" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="GBTTPROF_Profissao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBTIT_Entidade_PREGC_RegimesCasamento">
+    <End Type="CustomerAccountsModel.PREGC_RegimesCasamento" Role="PREGC_RegimesCasamento" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PREGC_RegimesCasamento">
+        <PropertyRef Name="CRCAS_RegimeCasamento" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTRCAS_RegimeCasamento" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

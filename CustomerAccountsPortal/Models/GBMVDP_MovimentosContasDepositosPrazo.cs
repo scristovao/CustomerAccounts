@@ -14,7 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMVDP_MovimentosContasDepositosPrazo
     {
-        public decimal MPNDOC_Balcao { get; set; }
+        public decimal MPNDOC_NumeroDocumento { get; set; }
         public Nullable<decimal> MPBAL_Balcao { get; set; }
         public Nullable<decimal> MPNCLI_NumeroCliente { get; set; }
         public Nullable<decimal> MPNATR_Natureza { get; set; }

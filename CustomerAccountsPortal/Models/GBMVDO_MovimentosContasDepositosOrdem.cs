@@ -14,7 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMVDO_MovimentosContasDepositosOrdem
     {
-        public int MVNDOC_Balcao { get; set; }
+        public int MVNDOC_NumeroDocumento { get; set; }
         public int MVBAL_Balcao { get; set; }
         public int MVNCLI_NumeroCliente { get; set; }
         public int MVNATR_Natureza { get; set; }

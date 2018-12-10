@@ -1,0 +1,51 @@
+﻿@model IEnumerable<CustomerAccountsPortal.Models.GBLTIT_LigacaoClientesEntidades>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LTRCPE_RelacaoPrimeiraEntidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBCLI_Clientes.CLCRES_CodigoResidencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTIT_Entidade.TTTIPT_EmpresaOuParticular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTRCLI_TiposRelacoesEntidadesClientes.RTSORD_SeqOrdenacao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LTRCPE_RelacaoPrimeiraEntidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBCLI_Clientes.CLCRES_CodigoResidencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTIT_Entidade.TTTIPT_EmpresaOuParticular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTRCLI_TiposRelacoesEntidadesClientes.RTSORD_SeqOrdenacao)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LTNCLI_LTNTIT }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LTNCLI_LTNTIT }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LTNCLI_LTNTIT })
+        </td>
+    </tr>
+}
+
+</table>

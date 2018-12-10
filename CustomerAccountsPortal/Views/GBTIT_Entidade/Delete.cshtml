@@ -1,0 +1,400 @@
+﻿@model CustomerAccountsPortal.Models.GBTIT_Entidade
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>GBTIT_Entidade</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TTTIPT_EmpresaOuParticular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTTIPT_EmpresaOuParticular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTNOMT_NomeEntidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTNOMT_NomeEntidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTNOME_NomeSemTitulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTNOME_NomeSemTitulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTNOMR_NomeReduzido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTNOMR_NomeReduzido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTDNSC_DataNascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTDNSC_DataNascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTSEXO_Sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTSEXO_Sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTTTIPIDF_TipoIdentificacaoFiscal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTTTIPIDF_TipoIdentificacaoFiscal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTNIF_NrIdentificacaoFiscal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTNIF_NrIdentificacaoFiscal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTBAIR_ReparticaoFiscal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTBAIR_ReparticaoFiscal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTTCTGFSC_CategoriaFiscal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTTCTGFSC_CategoriaFiscal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTTIDE_TipoIdentificacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTTIDE_TipoIdentificacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTNIDE_NrIdentificacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTNIDE_NrIdentificacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTTCKDGID_CheckDigitIdentificacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTTCKDGID_CheckDigitIdentificacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTLOCA_LocalEmissao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTLOCA_LocalEmissao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTDTEI_DataEmissao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTDTEI_DataEmissao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTTDTVAL_DataValidadeDocumento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTTDTVAL_DataValidadeDocumento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTTNUMACO_NrMatriculaConservatoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTTNUMACO_NrMatriculaConservatoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTTNOCONS_NomeConservatoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTTNOCONS_NomeConservatoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTTNUPBDO_NrPublicacaoDiarioOficial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTTNUPBDO_NrPublicacaoDiarioOficial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTNAC_Nacionalidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTNAC_Nacionalidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTNATU_Naturalidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTNATU_Naturalidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTPAI_NomePai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTPAI_NomePai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTMAE_NomeMae)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTMAE_NomeMae)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTENTP_EntidadePatronal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTENTP_EntidadePatronal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTFUCA_FuncaoOuCargo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTFUCA_FuncaoOuCargo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTDTAD_DataAdmissao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTDTAD_DataAdmissao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTTSOC_TipoSociedade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTTSOC_TipoSociedade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTCAE_CodigoActividadeEconomica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTCAE_CodigoActividadeEconomica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTTCAESC_CodigoActividadeEconomicaSecundario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTTCAESC_CodigoActividadeEconomicaSecundario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTDTCT_DataConstituicao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTDTCT_DataConstituicao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTDTPB_DataPublicacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTDTPB_DataPublicacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTSEDE_DomicilioOuSede)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTSEDE_DomicilioOuSede)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTCSRA_CapitalSocialOuRendimentoAnual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTCSRA_CapitalSocialOuRendimentoAnual)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTMOED_MoedaCsra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTMOED_MoedaCsra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTVINC_VinculoComOutras)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTVINC_VinculoComOutras)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTNCTR_NrCentralRisco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTNCTR_NrCentralRisco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTCST_CodigoSectorial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTCST_CodigoSectorial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTPAIS_CodigoPais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTPAIS_CodigoPais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TTBLOQ_ComBloqueios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TTBLOQ_ComBloqueios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTTALER_ComAlertas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTTALER_ComAlertas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBCRES_CodigosResidencia.REDESC_Descritivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBCRES_CodigosResidencia.REDESC_Descritivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GBTPENT_TiposEntidades.NIDTPE_Descritivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GBTPENT_TiposEntidades.NIDTPE_Descritivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PACTP_ActividadeProfissional.PACDC_Descritivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PACTP_ActividadeProfissional.PACDC_Descritivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PESTC_EstadoCivil.EDCIV_Descritivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PESTC_EstadoCivil.EDCIV_Descritivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PHBLT_HabilitacoesLiterarias.HBDC_Descritivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PHBLT_HabilitacoesLiterarias.HBDC_Descritivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PPROF_Profissoes.PPRDESC_Descritivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PPROF_Profissoes.PPRDESC_Descritivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PREGC_RegimesCasamento.CDCAS_Descritivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PREGC_RegimesCasamento.CDCAS_Descritivo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

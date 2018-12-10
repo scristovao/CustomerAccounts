@@ -14,7 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMVCR_MovimentosContasCredito
     {
-        public int MCNDOC_Balcao { get; set; }
+        public int MCNDOC_NumeroDocumento { get; set; }
         public int MCBAL_Balcao { get; set; }
         public int MCNCLI_NumeroCliente { get; set; }
         public int MCNATR_Natureza { get; set; }

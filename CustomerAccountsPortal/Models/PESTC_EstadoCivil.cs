@@ -14,8 +14,17 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PESTC_EstadoCivil
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public PESTC_EstadoCivil()
+        {
+            this.GBTIT_Entidade = new HashSet<GBTIT_Entidade>();
+        }
+    
         public string EECIV_EstadoCivil { get; set; }
         public string EDCIV_Descritivo { get; set; }
         public string ERCAV_RegimesCasamentoValidos { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GBTIT_Entidade> GBTIT_Entidade { get; set; }
     }
 }

@@ -14,6 +14,12 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBTPENT_TiposEntidades
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public GBTPENT_TiposEntidades()
+        {
+            this.GBTIT_Entidade = new HashSet<GBTIT_Entidade>();
+        }
+    
         public string NITPEN_TipoEntidade { get; set; }
         public string NIDTPE_Descritivo { get; set; }
         public string NIPRCV_ProcessoValido { get; set; }
@@ -25,5 +31,8 @@ namespace CustomerAccountsPortal.Models
         public Nullable<int> NIDTCR_DataCriacao { get; set; }
         public Nullable<int> NIHOCR_HoraCriacao { get; set; }
         public string NISITU_Situacao { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GBTIT_Entidade> GBTIT_Entidade { get; set; }
     }
 }

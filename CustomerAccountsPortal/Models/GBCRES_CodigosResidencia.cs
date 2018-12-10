@@ -14,7 +14,19 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCRES_CodigosResidencia
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public GBCRES_CodigosResidencia()
+        {
+            this.GBCLI_Clientes = new HashSet<GBCLI_Clientes>();
+            this.GBTIT_Entidade = new HashSet<GBTIT_Entidade>();
+        }
+    
         public string RECRES_CodigoResidencia { get; set; }
         public string REDESC_Descritivo { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GBCLI_Clientes> GBCLI_Clientes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GBTIT_Entidade> GBTIT_Entidade { get; set; }
     }
 }

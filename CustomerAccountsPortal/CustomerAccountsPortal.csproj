@@ -171,6 +171,7 @@
     <Compile Include="Models\GBCLI_Clientes.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\GBCLI_ClientesController.cs" />
     <Compile Include="Models\GBCNDM_CondicoesMovimentacaoConta.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
@@ -192,6 +193,7 @@
     <Compile Include="Models\GBLTIT_LigacaoClientesEntidades.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\GBLTIT_LigacaoClientesEntidadesController.cs" />
     <Compile Include="Models\GBMORD_Moradas.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
@@ -222,6 +224,7 @@
     <Compile Include="Models\GBTIT_Entidade.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\GBTIT_EntidadeController.cs" />
     <Compile Include="Models\GBTPENT_TiposEntidades.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
@@ -305,6 +308,21 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\GBCLI_Clientes\Create.cshtml" />
+    <Content Include="Views\GBCLI_Clientes\Delete.cshtml" />
+    <Content Include="Views\GBCLI_Clientes\Details.cshtml" />
+    <Content Include="Views\GBCLI_Clientes\Edit.cshtml" />
+    <Content Include="Views\GBCLI_Clientes\Index.cshtml" />
+    <Content Include="Views\GBLTIT_LigacaoClientesEntidades\Create.cshtml" />
+    <Content Include="Views\GBLTIT_LigacaoClientesEntidades\Delete.cshtml" />
+    <Content Include="Views\GBLTIT_LigacaoClientesEntidades\Details.cshtml" />
+    <Content Include="Views\GBLTIT_LigacaoClientesEntidades\Edit.cshtml" />
+    <Content Include="Views\GBLTIT_LigacaoClientesEntidades\Index.cshtml" />
+    <Content Include="Views\GBTIT_Entidade\Create.cshtml" />
+    <Content Include="Views\GBTIT_Entidade\Delete.cshtml" />
+    <Content Include="Views\GBTIT_Entidade\Details.cshtml" />
+    <Content Include="Views\GBTIT_Entidade\Edit.cshtml" />
+    <Content Include="Views\GBTIT_Entidade\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

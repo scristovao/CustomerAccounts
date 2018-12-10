@@ -14,7 +14,16 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCNDM_CondicoesMovimentacaoConta
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public GBCNDM_CondicoesMovimentacaoConta()
+        {
+            this.GBCLI_Clientes = new HashSet<GBCLI_Clientes>();
+        }
+    
         public int ATCNDM_CondMovimentacao { get; set; }
         public string ATDCND_Descritivo { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GBCLI_Clientes> GBCLI_Clientes { get; set; }
     }
 }

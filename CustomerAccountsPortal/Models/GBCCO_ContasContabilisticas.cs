@@ -14,7 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCCO_ContasContabilisticas
     {
-        public int CSNSEQ_BalcaoContaContab { get; set; }
+        public int CSNSEQ_NrSequencial { get; set; }
         public int CSBALC_BalcaoContaContab { get; set; }
         public string CSCCB_ContaContabilistica { get; set; }
         public Nullable<int> CSBAL_Balcao { get; set; }

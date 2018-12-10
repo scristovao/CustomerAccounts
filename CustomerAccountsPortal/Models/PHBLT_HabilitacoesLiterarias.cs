@@ -20,7 +20,7 @@ namespace CustomerAccountsPortal.Models
             this.GBTIT_Entidade = new HashSet<GBTIT_Entidade>();
         }
     
-        public string PHBTP_HabilitacoesLiterarias { get; set; }
+        public string PHBTP_Habilitacoes { get; set; }
         public string HBDC_Descritivo { get; set; }
         public string SITU_Situacao { get; set; }
         public string USCR_UtilizadorCriacao { get; set; }

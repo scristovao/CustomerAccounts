@@ -14,7 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMVCC_MovimentosContasCaucionadas
     {
-        public int MUNDOC_Balcao { get; set; }
+        public int MUNDOC_NumeroDocumento { get; set; }
         public int MUBAL_Balcao { get; set; }
         public int MUNCLI_NumeroCliente { get; set; }
         public int MUNATR_Natureza { get; set; }
@@ -48,5 +48,8 @@ namespace CustomerAccountsPortal.Models
         public Nullable<decimal> MUTOTV_TotalValores { get; set; }
         public string MUCDEV_CodigoDevolucao { get; set; }
         public string MUOBS_Observacoes { get; set; }
+    
+        public virtual GBCCC_ContasCaucionadas GBCCC_ContasCaucionadas { get; set; }
+        public virtual GBCODOP_CodigosOperacao GBCODOP_CodigosOperacao { get; set; }
     }
 }

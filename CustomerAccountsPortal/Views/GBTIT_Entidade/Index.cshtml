@@ -1,0 +1,309 @@
+﻿@model IEnumerable<CustomerAccountsPortal.Models.GBTIT_Entidade>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TTTIPT_EmpresaOuParticular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTNOMT_NomeEntidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTNOME_NomeSemTitulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTNOMR_NomeReduzido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTDNSC_DataNascimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTSEXO_Sexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTTTIPIDF_TipoIdentificacaoFiscal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTNIF_NrIdentificacaoFiscal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTBAIR_ReparticaoFiscal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTTCTGFSC_CategoriaFiscal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTTIDE_TipoIdentificacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTNIDE_NrIdentificacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTTCKDGID_CheckDigitIdentificacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTLOCA_LocalEmissao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTDTEI_DataEmissao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTTDTVAL_DataValidadeDocumento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTTNUMACO_NrMatriculaConservatoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTTNOCONS_NomeConservatoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTTNUPBDO_NrPublicacaoDiarioOficial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTNAC_Nacionalidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTNATU_Naturalidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTPAI_NomePai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTMAE_NomeMae)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTENTP_EntidadePatronal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTFUCA_FuncaoOuCargo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTDTAD_DataAdmissao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTTSOC_TipoSociedade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTCAE_CodigoActividadeEconomica)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTTCAESC_CodigoActividadeEconomicaSecundario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTDTCT_DataConstituicao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTDTPB_DataPublicacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTSEDE_DomicilioOuSede)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTCSRA_CapitalSocialOuRendimentoAnual)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTMOED_MoedaCsra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTVINC_VinculoComOutras)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTNCTR_NrCentralRisco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTCST_CodigoSectorial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTPAIS_CodigoPais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TTBLOQ_ComBloqueios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTTALER_ComAlertas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBCRES_CodigosResidencia.REDESC_Descritivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GBTPENT_TiposEntidades.NIDTPE_Descritivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PACTP_ActividadeProfissional.PACDC_Descritivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PESTC_EstadoCivil.EDCIV_Descritivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PHBLT_HabilitacoesLiterarias.HBDC_Descritivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PPROF_Profissoes.PPRDESC_Descritivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PREGC_RegimesCasamento.CDCAS_Descritivo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTTIPT_EmpresaOuParticular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTNOMT_NomeEntidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTNOME_NomeSemTitulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTNOMR_NomeReduzido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTDNSC_DataNascimento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTSEXO_Sexo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTTTIPIDF_TipoIdentificacaoFiscal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTNIF_NrIdentificacaoFiscal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTBAIR_ReparticaoFiscal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTTCTGFSC_CategoriaFiscal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTTIDE_TipoIdentificacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTNIDE_NrIdentificacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTTCKDGID_CheckDigitIdentificacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTLOCA_LocalEmissao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTDTEI_DataEmissao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTTDTVAL_DataValidadeDocumento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTTNUMACO_NrMatriculaConservatoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTTNOCONS_NomeConservatoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTTNUPBDO_NrPublicacaoDiarioOficial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTNAC_Nacionalidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTNATU_Naturalidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTPAI_NomePai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTMAE_NomeMae)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTENTP_EntidadePatronal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTFUCA_FuncaoOuCargo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTDTAD_DataAdmissao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTTSOC_TipoSociedade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTCAE_CodigoActividadeEconomica)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTTCAESC_CodigoActividadeEconomicaSecundario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTDTCT_DataConstituicao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTDTPB_DataPublicacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTSEDE_DomicilioOuSede)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTCSRA_CapitalSocialOuRendimentoAnual)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTMOED_MoedaCsra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTVINC_VinculoComOutras)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTNCTR_NrCentralRisco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTCST_CodigoSectorial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTPAIS_CodigoPais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TTBLOQ_ComBloqueios)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTTALER_ComAlertas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBCRES_CodigosResidencia.REDESC_Descritivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GBTPENT_TiposEntidades.NIDTPE_Descritivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PACTP_ActividadeProfissional.PACDC_Descritivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PESTC_EstadoCivil.EDCIV_Descritivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PHBLT_HabilitacoesLiterarias.HBDC_Descritivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PPROF_Profissoes.PPRDESC_Descritivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PREGC_RegimesCasamento.CDCAS_Descritivo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TTNUMT_NrEntidade }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TTNUMT_NrEntidade }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TTNUMT_NrEntidade })
+        </td>
+    </tr>
+}
+
+</table>
