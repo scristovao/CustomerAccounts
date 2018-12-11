@@ -14,12 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCLI_Clientes
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public GBCLI_Clientes()
-        {
-            this.GBLTIT_LigacaoClientesEntidades = new HashSet<GBLTIT_LigacaoClientesEntidades>();
-        }
-    
         public int CLNCLI_NrCliente { get; set; }
         public Nullable<int> CLBAL_Balcao { get; set; }
         public Nullable<int> CLDTAB_DataAbertura { get; set; }
@@ -45,11 +39,5 @@ namespace CustomerAccountsPortal.Models
         public Nullable<int> GBCLDTUEXT_DataUltimoExtracto { get; set; }
         public Nullable<int> GBCLNUEXT_NumeroUltimoExtracto { get; set; }
         public string GBCLPEREXT_PeriodicidadeExtracto { get; set; }
-    
-        public virtual GBCNDM_CondicoesMovimentacaoConta GBCNDM_CondicoesMovimentacaoConta { get; set; }
-        public virtual GBCRES_CodigosResidencia GBCRES_CodigosResidencia { get; set; }
-        public virtual GBTCLI_SegmentoCliente GBTCLI_SegmentoCliente { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBLTIT_LigacaoClientesEntidades> GBLTIT_LigacaoClientesEntidades { get; set; }
     }
 }

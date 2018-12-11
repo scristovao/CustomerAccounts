@@ -81,3 +81,4 @@ C:\Users\sonia.cristovao\source\repos\CustomerAccountsPortal\CustomerAccountsPor
 C:\Users\sonia.cristovao\source\repos\CustomerAccountsPortal\CustomerAccountsPortal\bin\EntityFramework.SqlServer.dll
 C:\Users\sonia.cristovao\source\repos\CustomerAccountsPortal\CustomerAccountsPortal\bin\EntityFramework.xml
 C:\Users\sonia.cristovao\source\repos\CustomerAccountsPortal\CustomerAccountsPortal\bin\EntityFramework.SqlServer.xml
+C:\Users\sonia.cristovao\source\repos\CustomerAccountsPortal\CustomerAccountsPortal\obj\Debug\CustomerAccountsPortal.csprojAssemblyReference.cache

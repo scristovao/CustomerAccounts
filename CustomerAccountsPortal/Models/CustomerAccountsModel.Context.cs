@@ -25,6 +25,10 @@ namespace CustomerAccountsPortal.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<CTMOV_MovimentosAM> CTMOV_MovimentosAM { get; set; }
+        public virtual DbSet<FGCMB_Divisas> FGCMB_Divisas { get; set; }
+        public virtual DbSet<FGGCOT_GeracaoCotacoes> FGGCOT_GeracaoCotacoes { get; set; }
+        public virtual DbSet<FGTCOT_TiposCotacao> FGTCOT_TiposCotacao { get; set; }
         public virtual DbSet<GBCCC_ContasCaucionadas> GBCCC_ContasCaucionadas { get; set; }
         public virtual DbSet<GBCCO_ContasContabilisticas> GBCCO_ContasContabilisticas { get; set; }
         public virtual DbSet<GBCCR_ContasCredito> GBCCR_ContasCredito { get; set; }
@@ -53,6 +57,7 @@ namespace CustomerAccountsPortal.Models
         public virtual DbSet<PACTP_ActividadeProfissional> PACTP_ActividadeProfissional { get; set; }
         public virtual DbSet<PESTC_EstadoCivil> PESTC_EstadoCivil { get; set; }
         public virtual DbSet<PHBLT_HabilitacoesLiterarias> PHBLT_HabilitacoesLiterarias { get; set; }
+        public virtual DbSet<PMOEDA_Divisas> PMOEDA_Divisas { get; set; }
         public virtual DbSet<PPAIS_Paises> PPAIS_Paises { get; set; }
         public virtual DbSet<PPROF_Profissoes> PPROF_Profissoes { get; set; }
         public virtual DbSet<PREGC_RegimesCasamento> PREGC_RegimesCasamento { get; set; }

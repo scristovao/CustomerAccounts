@@ -138,6 +138,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CTMOV_MovimentosAM.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\CustomerAccountsModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -152,6 +155,15 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CustomerAccountsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FGCMB_Divisas.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FGGCOT_GeracaoCotacoes.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FGTCOT_TiposCotacao.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\GBCCC_ContasCaucionadas.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
@@ -238,6 +250,9 @@
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PHBLT_HabilitacoesLiterarias.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PMOEDA_Divisas.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PPAIS_Paises.cs">

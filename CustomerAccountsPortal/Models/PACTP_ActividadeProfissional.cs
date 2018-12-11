@@ -14,16 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PACTP_ActividadeProfissional
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PACTP_ActividadeProfissional()
-        {
-            this.GBTIT_Entidade = new HashSet<GBTIT_Entidade>();
-        }
-    
         public string PACTV_Actividade { get; set; }
         public string PACDC_Descritivo { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBTIT_Entidade> GBTIT_Entidade { get; set; }
     }
 }

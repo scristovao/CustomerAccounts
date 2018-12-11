@@ -14,17 +14,8 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBTCLI_SegmentoCliente
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public GBTCLI_SegmentoCliente()
-        {
-            this.GBCLI_Clientes = new HashSet<GBCLI_Clientes>();
-        }
-    
         public string TCTIPO_Tipo { get; set; }
         public string TCDESC_Descritivo { get; set; }
         public string TCPBAL_SoPermitidoNosBalcoes { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCLI_Clientes> GBCLI_Clientes { get; set; }
     }
 }

@@ -14,12 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBTRCLI_TiposRelacoesEntidadesClientes
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public GBTRCLI_TiposRelacoesEntidadesClientes()
-        {
-            this.GBLTIT_LigacaoClientesEntidades = new HashSet<GBLTIT_LigacaoClientesEntidades>();
-        }
-    
         public string RTRCLI_RelacaoComCliente { get; set; }
         public string RTSORD_SeqOrdenacao { get; set; }
         public string RTDESC_Descritivo { get; set; }
@@ -33,8 +27,5 @@ namespace CustomerAccountsPortal.Models
         public Nullable<int> RTDTCR_DataCriacao { get; set; }
         public Nullable<int> RTHOCR_HoraCriacao { get; set; }
         public string RTUSCR_UtilizadorCriacao { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBLTIT_LigacaoClientesEntidades> GBLTIT_LigacaoClientesEntidades { get; set; }
     }
 }

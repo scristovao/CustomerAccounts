@@ -5,54 +5,43 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="3112b49490734343af756f9d36acb5a1" Name="Diagram1" ZoomLevel="86">
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCCC_ContasCaucionadas" Width="1.5" PointX="11.5" PointY="27.875" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCCO_ContasContabilisticas" Width="1.5" PointX="13.5" PointY="14.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCCR_ContasCredito" Width="1.5" PointX="15.5" PointY="14.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCDO_ContasDepositosOrdem" Width="1.5" PointX="17.5" PointY="2.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCDP_ContasDepositosPrazo" Width="1.5" PointX="1.5" PointY="18.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCLI_Clientes" Width="1.5" PointX="3.75" PointY="10" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCNDM_CondicoesMovimentacaoConta" Width="1.5" PointX="1.5" PointY="9.25" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCODOP_CodigosOperacao" Width="1.5" PointX="11.5" PointY="3.375" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCRES_CodigosResidencia" Width="1.5" PointX="1.5" PointY="12.375" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCSTE_CodigosSectoriaisNaoResidentes" Width="1.5" PointX="1.5" PointY="2.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCSTR_CodigosSectoriaisResidentes" Width="1.5" PointX="1.5" PointY="5.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBDOC_Documentos" Width="1.5" PointX="13.5" PointY="2.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBLTIT_LigacaoClientesEntidades" Width="1.5" PointX="9" PointY="12" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBMORD_Moradas" Width="1.5" PointX="9.5" PointY="16.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVCC_MovimentosContasCaucionadas" Width="1.5" PointX="13.75" PointY="5.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVCO_MovimentosContasContabilisticas" Width="1.5" PointX="17.5" PointY="16.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVCR_MovimentosContasCredito" Width="1.5" PointX="19.5" PointY="2.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVDO_MovimentosContasDepositosOrdem" Width="1.5" PointX="6.5" PointY="20.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVDP_MovimentosContasDepositosPrazo" Width="1.5" PointX="19.5" PointY="11.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBNATR_NaturezasContas" Width="1.5" PointX="21.5" PointY="2.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBOPR_Operacoes" Width="1.5" PointX="21.5" PointY="6.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBTCLI_SegmentoCliente" Width="1.5" PointX="1.5" PointY="15.5" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBTIT_Entidade" Width="1.5" PointX="6.75" PointY="7.375" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBTPENT_TiposEntidades" Width="1.5" PointX="4.5" PointY="0.5" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBTRCLI_TiposRelacoesEntidadesClientes" Width="1.5" PointX="6.75" PointY="2.375" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.PACTP_ActividadeProfissional" Width="1.5" PointX="4.5" PointY="5.125" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.PESTC_EstadoCivil" Width="1.5" PointX="4.5" PointY="20.75" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.PHBLT_HabilitacoesLiterarias" Width="1.5" PointX="4.5" PointY="17.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.PPAIS_Paises" Width="1.5" PointX="21.5" PointY="9.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.PPROF_Profissoes" Width="1.5" PointX="4.5" PointY="25.625" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.PREGC_RegimesCasamento" Width="1.5" PointX="4.5" PointY="23.25" />
-        <EntityTypeShape EntityType="CustomerAccountsModel.PTIDD_TiposIdentificacao" Width="1.5" PointX="8.5" PointY="22.625" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCCC_ContasCaucionadas" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBCLI_Clientes_GBCNDM_CondicoesMovimentacaoConta" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBCLI_Clientes_GBCRES_CodigosResidencia" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBCLI_Clientes_GBTCLI_SegmentoCliente" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBCLI_Clientes" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBCODOP_CodigosOperacao_GBCODOP_CodigosOperacao" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCODOP_CodigosOperacao" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBTIT_Entidade_GBCRES_CodigosResidencia" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBTIT_Entidade" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBLTIT_LigacaoClientesEntidades_GBTRCLI_TiposRelacoesEntidadesClientes" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBTIT_Entidade_GBTPENT_TiposEntidades" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBTIT_Entidade_PACTP_ActividadeProfissional" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBTIT_Entidade_PESTC_EstadoCivil" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBTIT_Entidade_PPROF_Profissoes" />
-        <AssociationConnector Association="CustomerAccountsModel.FK_GBTIT_Entidade_PREGC_RegimesCasamento" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.CTMOV_MovimentosAM" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.FGCMB_Divisas" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.FGGCOT_GeracaoCotacoes" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.FGTCOT_TiposCotacao" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCCC_ContasCaucionadas" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCCO_ContasContabilisticas" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCCR_ContasCredito" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCDO_ContasDepositosOrdem" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCDP_ContasDepositosPrazo" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCLI_Clientes" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCNDM_CondicoesMovimentacaoConta" Width="1.5" PointX="12.75" PointY="7.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCODOP_CodigosOperacao" Width="1.5" PointX="12.75" PointY="10.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCRES_CodigosResidencia" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCSTE_CodigosSectoriaisNaoResidentes" Width="1.5" PointX="14.75" PointY="3.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCSTR_CodigosSectoriaisResidentes" Width="1.5" PointX="14.75" PointY="6.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBDOC_Documentos" Width="1.5" PointX="14.75" PointY="9.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBLTIT_LigacaoClientesEntidades" Width="1.5" PointX="14.75" PointY="12.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBMORD_Moradas" Width="1.5" PointX="14.75" PointY="15.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVCC_MovimentosContasCaucionadas" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVCO_MovimentosContasContabilisticas" Width="1.5" PointX="6.75" PointY="16.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVCR_MovimentosContasCredito" Width="1.5" PointX="8.75" PointY="16.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVDO_MovimentosContasDepositosOrdem" Width="1.5" PointX="16.75" PointY="9.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBMVDP_MovimentosContasDepositosPrazo" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBNATR_NaturezasContas" Width="1.5" PointX="18.75" PointY="11.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBOPR_Operacoes" Width="1.5" PointX="18.75" PointY="15.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBTCLI_SegmentoCliente" Width="1.5" PointX="16.75" PointY="18.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBTIT_Entidade" Width="1.5" PointX="18.75" PointY="18.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBTPENT_TiposEntidades" Width="1.5" PointX="20.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBTRCLI_TiposRelacoesEntidadesClientes" Width="1.5" PointX="20.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.PACTP_ActividadeProfissional" Width="1.5" PointX="20.75" PointY="9.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.PESTC_EstadoCivil" Width="1.5" PointX="20.75" PointY="12.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.PHBLT_HabilitacoesLiterarias" Width="1.5" PointX="20.75" PointY="15.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.PMOEDA_Divisas" Width="1.5" PointX="20.75" PointY="18.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.PPAIS_Paises" Width="1.5" PointX="14.75" PointY="21.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.PPROF_Profissoes" Width="1.5" PointX="22.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.PREGC_RegimesCasamento" Width="1.5" PointX="0.75" PointY="22.75" />
+        <EntityTypeShape EntityType="CustomerAccountsModel.PTIDD_TiposIdentificacao" Width="1.5" PointX="22.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

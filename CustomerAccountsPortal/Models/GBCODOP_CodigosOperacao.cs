@@ -14,13 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCODOP_CodigosOperacao
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public GBCODOP_CodigosOperacao()
-        {
-            this.GBCODOP_CodigosOperacao1 = new HashSet<GBCODOP_CodigosOperacao>();
-            this.GBMVCC_MovimentosContasCaucionadas = new HashSet<GBMVCC_MovimentosContasCaucionadas>();
-        }
-    
         public int COCOPE_CodigoOperacao { get; set; }
         public Nullable<int> COCOPA_CdgOperacaoAnulacao { get; set; }
         public Nullable<int> COTDOC_TipoDocumento { get; set; }
@@ -77,11 +70,5 @@ namespace CustomerAccountsPortal.Models
         public Nullable<int> CODTSI_DataSituacao { get; set; }
         public Nullable<int> COHOSI_HoraSituacao { get; set; }
         public string GBCOCRMOV_ComRestricoesMov { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCODOP_CodigosOperacao> GBCODOP_CodigosOperacao1 { get; set; }
-        public virtual GBCODOP_CodigosOperacao GBCODOP_CodigosOperacao2 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVCC_MovimentosContasCaucionadas> GBMVCC_MovimentosContasCaucionadas { get; set; }
     }
 }

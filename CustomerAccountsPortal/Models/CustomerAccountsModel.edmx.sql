@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 12/06/2018 19:00:26
+-- Date Created: 12/11/2018 14:16:48
 -- Generated from EDMX file: C:\Users\sonia.cristovao\source\repos\CustomerAccountsPortal\CustomerAccountsPortal\Models\CustomerAccountsModel.edmx
 -- --------------------------------------------------
 
@@ -17,14 +17,23 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[GBTIT_Entidade] DROP CONSTRAINT [FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias];
-GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[CTMOV_MovimentosAM]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[CTMOV_MovimentosAM];
+GO
+IF OBJECT_ID(N'[dbo].[FGCMB_Divisas]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[FGCMB_Divisas];
+GO
+IF OBJECT_ID(N'[dbo].[FGGCOT_GeracaoCotacoes]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[FGGCOT_GeracaoCotacoes];
+GO
+IF OBJECT_ID(N'[dbo].[FGTCOT_TiposCotacao]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[FGTCOT_TiposCotacao];
+GO
 IF OBJECT_ID(N'[dbo].[GBCCC_ContasCaucionadas]', 'U') IS NOT NULL
     DROP TABLE [dbo].[GBCCC_ContasCaucionadas];
 GO
@@ -109,6 +118,9 @@ GO
 IF OBJECT_ID(N'[dbo].[PHBLT_HabilitacoesLiterarias]', 'U') IS NOT NULL
     DROP TABLE [dbo].[PHBLT_HabilitacoesLiterarias];
 GO
+IF OBJECT_ID(N'[dbo].[PMOEDA_Divisas]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[PMOEDA_Divisas];
+GO
 IF OBJECT_ID(N'[dbo].[PPAIS_Paises]', 'U') IS NOT NULL
     DROP TABLE [dbo].[PPAIS_Paises];
 GO
@@ -126,9 +138,83 @@ GO
 -- Creating all tables
 -- --------------------------------------------------
 
+-- Creating table 'CTMOV_MovimentosAM'
+CREATE TABLE [dbo].[CTMOV_MovimentosAM] (
+    [MVNSEQ_NumeroSequencial] varchar(7)  NOT NULL,
+    [MVPLN_Plano] varchar(7)  NULL,
+    [MVCNTA_Conta] varchar(13)  NULL,
+    [MVDTMV_DataMovimento] int  NULL,
+    [MVAREA_Area] int  NULL,
+    [MVDOCN_Documento] int  NULL,
+    [MVDTDC_DataDocumento] int  NULL,
+    [MVDBCR_DebitoCredito] varchar(1)  NULL,
+    [MVVLR_ValorDoMovimento] decimal(10,2)  NULL,
+    [MVCOPE_CodigoOperacao] int  NULL,
+    [MVDEXT_NrDocExterno] varchar(11)  NULL,
+    [MVDDEX_Descritivo] varchar(30)  NULL,
+    [MVUSER_UtilizadorGravacao] varchar(10)  NULL,
+    [MVHORA_HoraGravacao] int  NULL,
+    [MVDTGR_DataGravacao] int  NULL,
+    [MVETRB_EstacaoGravacao] varchar(10)  NULL,
+    [MVACUD_AcumuladoDebito] decimal(10,2)  NULL,
+    [MVACUC_AcumuladoCredito] decimal(10,2)  NULL,
+    [MVRLMV_TipoMovimento] varchar(1)  NULL,
+    [MVPEST_Estorno] varchar(1)  NULL,
+    [MVTIVA_TipoDeIva] varchar(2)  NULL,
+    [MVTMIV_TipoMovIva] varchar(1)  NULL,
+    [MVNFC_NumeroContribuinte] int  NULL,
+    [MVTXIR_TaxaIrs] decimal(5,3)  NULL,
+    [MVDFPR_ParmMovRefProv] varchar(1)  NULL,
+    [MVSEQO_SequenciaOrigem] int  NULL,
+    [MVTPME_OrigemMovimento] varchar(1)  NULL,
+    [MVRFME_ReferenciaMovimento] varchar(10)  NULL,
+    [CTMVUSRDE_UtilizadorDesactivacao] varchar(10)  NULL,
+    [CTMVDTDE_DataDeDesactivacao] datetime  NULL,
+    [CTMVHODE_HoraDeDesactivacao] datetime  NULL
+);
+GO
+
+-- Creating table 'FGCMB_Divisas'
+CREATE TABLE [dbo].[FGCMB_Divisas] (
+    [CBDATC_CBTCOT_CBMOED] int  NOT NULL,
+    [CBDATC_DataCotacao] int  NULL,
+    [CBTCOT_TipoCotacao] varchar(1)  NULL,
+    [CBMOED_Moeda] varchar(3)  NULL,
+    [CBMOEB_MoedaBase] varchar(3)  NULL,
+    [CBCOMP_Compra] decimal(9,9)  NULL,
+    [CBVEND_Venda] decimal(9,9)  NULL,
+    [CBDATG_DataDeGravacao] int  NULL,
+    [CBHORA_HoraDeGravacao] int  NULL,
+    [CBUSGR_UtilizadorGravacao] varchar(10)  NULL
+);
+GO
+
+-- Creating table 'FGGCOT_GeracaoCotacoes'
+CREATE TABLE [dbo].[FGGCOT_GeracaoCotacoes] (
+    [CJMOED_CJTCOT] varchar(3)  NOT NULL,
+    [CJMOEB_MoedaBase] varchar(3)  NULL,
+    [CJMOED_Moeda] varchar(3)  NULL,
+    [CJTCOT_TipoCotacao] varchar(1)  NULL,
+    [CJPCMP_PercentagemParaCompra] decimal(4,3)  NULL,
+    [CJPVND_PercentagemParaVenda] decimal(4,3)  NULL,
+    [CJVARC_VariacaoParaCompra] varchar(1)  NULL,
+    [CJVARV_VariacaoParaVenda] varchar(1)  NULL
+);
+GO
+
+-- Creating table 'FGTCOT_TiposCotacao'
+CREATE TABLE [dbo].[FGTCOT_TiposCotacao] (
+    [TOTCOT_TipoCotacao] varchar(1)  NOT NULL,
+    [TODCOT_Descritivo] varchar(30)  NULL,
+    [TODSC_DisponivelModuloSc] varchar(1)  NULL,
+    [TOINDC_IndicadorCotacao] varchar(1)  NULL,
+    [FGTORECCV_RecolheCâmbioCompraVenda] varchar(1)  NULL
+);
+GO
+
 -- Creating table 'GBCCC_ContasCaucionadas'
 CREATE TABLE [dbo].[GBCCC_ContasCaucionadas] (
-    [CCNSEQ_Balcao] int  NOT NULL,
+    [CCNSEQ_NrSequencial] int  NOT NULL,
     [CCBAL_Balcao] int  NOT NULL,
     [CCNCLI_NrCliente] int  NOT NULL,
     [CCNATR_Natureza] int  NOT NULL,
@@ -218,7 +304,7 @@ GO
 
 -- Creating table 'GBCCO_ContasContabilisticas'
 CREATE TABLE [dbo].[GBCCO_ContasContabilisticas] (
-    [CSNSEQ_BalcaoContaContab] int  NOT NULL,
+    [CSNSEQ_NrSequencial] int  NOT NULL,
     [CSBALC_BalcaoContaContab] int  NOT NULL,
     [CSCCB_ContaContabilistica] varchar(13)  NOT NULL,
     [CSBAL_Balcao] int  NULL,
@@ -251,7 +337,7 @@ GO
 
 -- Creating table 'GBCCR_ContasCredito'
 CREATE TABLE [dbo].[GBCCR_ContasCredito] (
-    [CRNSEQ_Balcao] int  NOT NULL,
+    [CRNSEQ_NrSequencial] int  NOT NULL,
     [CRBAL_Balcao] int  NOT NULL,
     [CRNCLI_NrCliente] int  NOT NULL,
     [CRNATR_Natureza] int  NOT NULL,
@@ -330,7 +416,7 @@ GO
 
 -- Creating table 'GBCDO_ContasDepositosOrdem'
 CREATE TABLE [dbo].[GBCDO_ContasDepositosOrdem] (
-    [DONSEQ_Balcao] int  NOT NULL,
+    [DONSEQ_NrSequencial] int  NOT NULL,
     [DOBAL_Balcao] int  NOT NULL,
     [DONCLI_NrCliente] int  NOT NULL,
     [DONATR_Natureza] int  NOT NULL,
@@ -396,7 +482,7 @@ GO
 
 -- Creating table 'GBCDP_ContasDepositosPrazo'
 CREATE TABLE [dbo].[GBCDP_ContasDepositosPrazo] (
-    [DPNSEQ_Balcao] int  NOT NULL,
+    [DPNSEQ_NrSequencial] int  NOT NULL,
     [DPBAL_Balcao] int  NULL,
     [DPNCLI_NrCliente] int  NULL,
     [DPNATR_Natureza] int  NULL,
@@ -454,7 +540,7 @@ GO
 
 -- Creating table 'GBCLI_Clientes'
 CREATE TABLE [dbo].[GBCLI_Clientes] (
-    [CLNCLI_Balcao] int  NOT NULL,
+    [CLNCLI_NrCliente] int  NOT NULL,
     [CLBAL_Balcao] int  NULL,
     [CLDTAB_DataAbertura] int  NULL,
     [CLCRES_CodigoResidencia] varchar(1)  NULL,
@@ -588,7 +674,7 @@ GO
 
 -- Creating table 'GBLTIT_LigacaoClientesEntidades'
 CREATE TABLE [dbo].[GBLTIT_LigacaoClientesEntidades] (
-    [ID] bigint  NOT NULL,
+    [LTNCLI_LTNTIT] int  NOT NULL,
     [LTNCLI_NumeroCliente] int  NULL,
     [LTNTIT_NumeroEntidade] int  NULL,
     [LTRCLI_RelacaoCliente] varchar(2)  NULL,
@@ -598,7 +684,7 @@ GO
 
 -- Creating table 'GBMORD_Moradas'
 CREATE TABLE [dbo].[GBMORD_Moradas] (
-    [MONSEQ_NumeroCliente] int  NOT NULL,
+    [MONSEQ_NumeroSequencial] int  NOT NULL,
     [MONCLI_NumeroCliente] int  NULL,
     [MONATR_Natureza] int  NULL,
     [MOTMOR_TipoMorada] varchar(2)  NULL,
@@ -621,7 +707,7 @@ GO
 
 -- Creating table 'GBMVCC_MovimentosContasCaucionadas'
 CREATE TABLE [dbo].[GBMVCC_MovimentosContasCaucionadas] (
-    [MUNDOC_Balcao] int  NOT NULL,
+    [MUNDOC_NumeroDocumento] int  NOT NULL,
     [MUBAL_Balcao] int  NOT NULL,
     [MUNCLI_NumeroCliente] int  NOT NULL,
     [MUNATR_Natureza] int  NOT NULL,
@@ -660,7 +746,7 @@ GO
 
 -- Creating table 'GBMVCO_MovimentosContasContabilisticas'
 CREATE TABLE [dbo].[GBMVCO_MovimentosContasContabilisticas] (
-    [MRNDOC_BalcaoCcb] int  NOT NULL,
+    [MRNDOC_NumeroDocumento] int  NOT NULL,
     [MRBALC_BalcaoCcb] int  NOT NULL,
     [MRCCB_ContaContabilistica] varchar(13)  NOT NULL,
     [MRBAL_Balcao] int  NULL,
@@ -702,7 +788,7 @@ GO
 
 -- Creating table 'GBMVCR_MovimentosContasCredito'
 CREATE TABLE [dbo].[GBMVCR_MovimentosContasCredito] (
-    [MCNDOC_Balcao] int  NOT NULL,
+    [MCNDOC_NumeroDocumento] int  NOT NULL,
     [MCBAL_Balcao] int  NOT NULL,
     [MCNCLI_NumeroCliente] int  NOT NULL,
     [MCNATR_Natureza] int  NOT NULL,
@@ -741,11 +827,10 @@ GO
 
 -- Creating table 'GBMVDO_MovimentosContasDepositosOrdem'
 CREATE TABLE [dbo].[GBMVDO_MovimentosContasDepositosOrdem] (
-    [MVNDOC_Balcao] int  NOT NULL,
+    [MVNDOC_NumeroDocumento] int  NOT NULL,
     [MVBAL_Balcao] int  NOT NULL,
     [MVNCLI_NumeroCliente] int  NOT NULL,
     [MVNATR_Natureza] int  NOT NULL,
-    [MVNSEQ_NumeroSequencial] int  NOT NULL,
     [MVTDOC_TipoDocumento] int  NOT NULL,
     [MVCOPE_CodigoOperacao] int  NOT NULL,
     [MVVLR_ValorQueAfectaConta] decimal(8,2)  NOT NULL,
@@ -784,7 +869,7 @@ GO
 
 -- Creating table 'GBMVDP_MovimentosContasDepositosPrazo'
 CREATE TABLE [dbo].[GBMVDP_MovimentosContasDepositosPrazo] (
-    [MPNDOC_Balcao] decimal(3,0)  NOT NULL,
+    [MPNDOC_NumeroDocumento] decimal(3,0)  NOT NULL,
     [MPBAL_Balcao] decimal(3,0)  NULL,
     [MPNCLI_NumeroCliente] decimal(5,0)  NULL,
     [MPNATR_Natureza] decimal(2,0)  NULL,
@@ -967,7 +1052,7 @@ GO
 
 -- Creating table 'PHBLT_HabilitacoesLiterarias'
 CREATE TABLE [dbo].[PHBLT_HabilitacoesLiterarias] (
-    [PHBTP_HabilitacoesLiterarias] varchar(1)  NOT NULL,
+    [PHBTP_Habilitacoes] varchar(1)  NOT NULL,
     [HBDC_Descritivo] varchar(35)  NULL,
     [SITU_Situacao] varchar(1)  NULL,
     [USCR_UtilizadorCriacao] varchar(10)  NULL,
@@ -976,9 +1061,49 @@ CREATE TABLE [dbo].[PHBLT_HabilitacoesLiterarias] (
 );
 GO
 
+-- Creating table 'PMOEDA_Divisas'
+CREATE TABLE [dbo].[PMOEDA_Divisas] (
+    [WMOED_CodigoDivisaIso] varchar(3)  NOT NULL,
+    [WNMOE_CodigoIso] int  NULL,
+    [WDESC_DesignacaoDivisa] varchar(25)  NULL,
+    [WPENT_PaisOuEntidade] varchar(25)  NULL,
+    [WROFX_RecolhaObgFixing] varchar(1)  NULL,
+    [WLNGU_Lingua] varchar(1)  NULL,
+    [WSIMB_SimboloMoedaParaExterior] varchar(3)  NULL,
+    [WNDGC_NrDecimaisGerCotacao] int  NULL,
+    [WSORD_SeqOrdenacaoParaConsulta] int  NULL,
+    [WCTB_CotadaBanco] varchar(1)  NULL,
+    [WCTBC_CotadaBancoCentral] varchar(1)  NULL,
+    [WMMC_ValorDesvioCalcContr] decimal(8,2)  NULL,
+    [WMTC_MargemTaxaCambio] decimal(3,2)  NULL,
+    [WMTJ_MargemTaxaJuro] decimal(3,2)  NULL,
+    [WMITC_MargemIntrTaxaCambio] decimal(3,2)  NULL,
+    [WMITJ_MargemIntrTaxaJuro] decimal(3,2)  NULL,
+    [WCTJ_BaseCalculoTaxaJuro] int  NULL,
+    [WCBP_CodigoBancoSwiftPref] varchar(4)  NULL,
+    [WCPP_SiglaPaisIsoPref] varchar(2)  NULL,
+    [WCBLP_CodigoBalcaoPref] int  NULL,
+    [WCDP_CodigoDomicilioPref] int  NULL,
+    [WCREU_CodigoReutersPref] varchar(4)  NULL,
+    [WPSW_PrioridadeMsgSwift] varchar(1)  NULL,
+    [WOBS_ObservacoesDivisa] varchar(90)  NULL,
+    [WBLOQ_DivisaBloqueada] varchar(1)  NULL,
+    [WGEUR_MoedaInTerceiraFaseUem] varchar(1)  NULL,
+    [WDENTMIN_DataEntradaMoedaIn] int  NULL,
+    [WTARRMIN_MetodoArredondMoedaIn] varchar(1)  NULL,
+    [WSITU_Situacao] varchar(1)  NULL,
+    [WUSCR_UtilizadorCriacao] varchar(10)  NULL,
+    [WDTCR_DataCriacao] int  NULL,
+    [WHOCR_HoraCriacao] int  NULL,
+    [WUSDE_UtilizadorDesactivacao] varchar(10)  NULL,
+    [WDTDE_DataDesactivacao] int  NULL,
+    [WHODE_HoraDesactivacao] int  NULL
+);
+GO
+
 -- Creating table 'PPAIS_Paises'
 CREATE TABLE [dbo].[PPAIS_Paises] (
-    [ACPAI_SiglaPais] varchar(2)  NOT NULL,
+    [ACPAI_CodigoPais] varchar(2)  NOT NULL,
     [ASPAI_SiglaPais] varchar(2)  NULL,
     [ANPAI_NumeroPais] int  NULL,
     [ADPAI_DescricaoPais] varchar(40)  NULL,
@@ -1032,40 +1157,64 @@ GO
 -- Creating all PRIMARY KEY constraints
 -- --------------------------------------------------
 
--- Creating primary key on [CCNSEQ_Balcao] in table 'GBCCC_ContasCaucionadas'
+-- Creating primary key on [MVNSEQ_NumeroSequencial] in table 'CTMOV_MovimentosAM'
+ALTER TABLE [dbo].[CTMOV_MovimentosAM]
+ADD CONSTRAINT [PK_CTMOV_MovimentosAM]
+    PRIMARY KEY CLUSTERED ([MVNSEQ_NumeroSequencial] ASC);
+GO
+
+-- Creating primary key on [CBDATC_CBTCOT_CBMOED] in table 'FGCMB_Divisas'
+ALTER TABLE [dbo].[FGCMB_Divisas]
+ADD CONSTRAINT [PK_FGCMB_Divisas]
+    PRIMARY KEY CLUSTERED ([CBDATC_CBTCOT_CBMOED] ASC);
+GO
+
+-- Creating primary key on [CJMOED_CJTCOT] in table 'FGGCOT_GeracaoCotacoes'
+ALTER TABLE [dbo].[FGGCOT_GeracaoCotacoes]
+ADD CONSTRAINT [PK_FGGCOT_GeracaoCotacoes]
+    PRIMARY KEY CLUSTERED ([CJMOED_CJTCOT] ASC);
+GO
+
+-- Creating primary key on [TOTCOT_TipoCotacao] in table 'FGTCOT_TiposCotacao'
+ALTER TABLE [dbo].[FGTCOT_TiposCotacao]
+ADD CONSTRAINT [PK_FGTCOT_TiposCotacao]
+    PRIMARY KEY CLUSTERED ([TOTCOT_TipoCotacao] ASC);
+GO
+
+-- Creating primary key on [CCNSEQ_NrSequencial] in table 'GBCCC_ContasCaucionadas'
 ALTER TABLE [dbo].[GBCCC_ContasCaucionadas]
 ADD CONSTRAINT [PK_GBCCC_ContasCaucionadas]
-    PRIMARY KEY CLUSTERED ([CCNSEQ_Balcao] ASC);
+    PRIMARY KEY CLUSTERED ([CCNSEQ_NrSequencial] ASC);
 GO
 
--- Creating primary key on [CSNSEQ_BalcaoContaContab] in table 'GBCCO_ContasContabilisticas'
+-- Creating primary key on [CSNSEQ_NrSequencial] in table 'GBCCO_ContasContabilisticas'
 ALTER TABLE [dbo].[GBCCO_ContasContabilisticas]
 ADD CONSTRAINT [PK_GBCCO_ContasContabilisticas]
-    PRIMARY KEY CLUSTERED ([CSNSEQ_BalcaoContaContab] ASC);
+    PRIMARY KEY CLUSTERED ([CSNSEQ_NrSequencial] ASC);
 GO
 
--- Creating primary key on [CRNSEQ_Balcao] in table 'GBCCR_ContasCredito'
+-- Creating primary key on [CRNSEQ_NrSequencial] in table 'GBCCR_ContasCredito'
 ALTER TABLE [dbo].[GBCCR_ContasCredito]
 ADD CONSTRAINT [PK_GBCCR_ContasCredito]
-    PRIMARY KEY CLUSTERED ([CRNSEQ_Balcao] ASC);
+    PRIMARY KEY CLUSTERED ([CRNSEQ_NrSequencial] ASC);
 GO
 
--- Creating primary key on [DONSEQ_Balcao] in table 'GBCDO_ContasDepositosOrdem'
+-- Creating primary key on [DONSEQ_NrSequencial] in table 'GBCDO_ContasDepositosOrdem'
 ALTER TABLE [dbo].[GBCDO_ContasDepositosOrdem]
 ADD CONSTRAINT [PK_GBCDO_ContasDepositosOrdem]
-    PRIMARY KEY CLUSTERED ([DONSEQ_Balcao] ASC);
+    PRIMARY KEY CLUSTERED ([DONSEQ_NrSequencial] ASC);
 GO
 
--- Creating primary key on [DPNSEQ_Balcao] in table 'GBCDP_ContasDepositosPrazo'
+-- Creating primary key on [DPNSEQ_NrSequencial] in table 'GBCDP_ContasDepositosPrazo'
 ALTER TABLE [dbo].[GBCDP_ContasDepositosPrazo]
 ADD CONSTRAINT [PK_GBCDP_ContasDepositosPrazo]
-    PRIMARY KEY CLUSTERED ([DPNSEQ_Balcao] ASC);
+    PRIMARY KEY CLUSTERED ([DPNSEQ_NrSequencial] ASC);
 GO
 
--- Creating primary key on [CLNCLI_Balcao] in table 'GBCLI_Clientes'
+-- Creating primary key on [CLNCLI_NrCliente] in table 'GBCLI_Clientes'
 ALTER TABLE [dbo].[GBCLI_Clientes]
 ADD CONSTRAINT [PK_GBCLI_Clientes]
-    PRIMARY KEY CLUSTERED ([CLNCLI_Balcao] ASC);
+    PRIMARY KEY CLUSTERED ([CLNCLI_NrCliente] ASC);
 GO
 
 -- Creating primary key on [ATCNDM_CondMovimentacao] in table 'GBCNDM_CondicoesMovimentacaoConta'
@@ -1104,46 +1253,46 @@ ADD CONSTRAINT [PK_GBDOC_Documentos]
     PRIMARY KEY CLUSTERED ([DCTDOC_TipoDocumento] ASC);
 GO
 
--- Creating primary key on [ID] in table 'GBLTIT_LigacaoClientesEntidades'
+-- Creating primary key on [LTNCLI_LTNTIT] in table 'GBLTIT_LigacaoClientesEntidades'
 ALTER TABLE [dbo].[GBLTIT_LigacaoClientesEntidades]
 ADD CONSTRAINT [PK_GBLTIT_LigacaoClientesEntidades]
-    PRIMARY KEY CLUSTERED ([ID] ASC);
+    PRIMARY KEY CLUSTERED ([LTNCLI_LTNTIT] ASC);
 GO
 
--- Creating primary key on [MONSEQ_NumeroCliente] in table 'GBMORD_Moradas'
+-- Creating primary key on [MONSEQ_NumeroSequencial] in table 'GBMORD_Moradas'
 ALTER TABLE [dbo].[GBMORD_Moradas]
 ADD CONSTRAINT [PK_GBMORD_Moradas]
-    PRIMARY KEY CLUSTERED ([MONSEQ_NumeroCliente] ASC);
+    PRIMARY KEY CLUSTERED ([MONSEQ_NumeroSequencial] ASC);
 GO
 
--- Creating primary key on [MUNDOC_Balcao] in table 'GBMVCC_MovimentosContasCaucionadas'
+-- Creating primary key on [MUNDOC_NumeroDocumento] in table 'GBMVCC_MovimentosContasCaucionadas'
 ALTER TABLE [dbo].[GBMVCC_MovimentosContasCaucionadas]
 ADD CONSTRAINT [PK_GBMVCC_MovimentosContasCaucionadas]
-    PRIMARY KEY CLUSTERED ([MUNDOC_Balcao] ASC);
+    PRIMARY KEY CLUSTERED ([MUNDOC_NumeroDocumento] ASC);
 GO
 
--- Creating primary key on [MRNDOC_BalcaoCcb] in table 'GBMVCO_MovimentosContasContabilisticas'
+-- Creating primary key on [MRNDOC_NumeroDocumento] in table 'GBMVCO_MovimentosContasContabilisticas'
 ALTER TABLE [dbo].[GBMVCO_MovimentosContasContabilisticas]
 ADD CONSTRAINT [PK_GBMVCO_MovimentosContasContabilisticas]
-    PRIMARY KEY CLUSTERED ([MRNDOC_BalcaoCcb] ASC);
+    PRIMARY KEY CLUSTERED ([MRNDOC_NumeroDocumento] ASC);
 GO
 
--- Creating primary key on [MCNDOC_Balcao] in table 'GBMVCR_MovimentosContasCredito'
+-- Creating primary key on [MCNDOC_NumeroDocumento] in table 'GBMVCR_MovimentosContasCredito'
 ALTER TABLE [dbo].[GBMVCR_MovimentosContasCredito]
 ADD CONSTRAINT [PK_GBMVCR_MovimentosContasCredito]
-    PRIMARY KEY CLUSTERED ([MCNDOC_Balcao] ASC);
+    PRIMARY KEY CLUSTERED ([MCNDOC_NumeroDocumento] ASC);
 GO
 
--- Creating primary key on [MVNDOC_Balcao] in table 'GBMVDO_MovimentosContasDepositosOrdem'
+-- Creating primary key on [MVNDOC_NumeroDocumento] in table 'GBMVDO_MovimentosContasDepositosOrdem'
 ALTER TABLE [dbo].[GBMVDO_MovimentosContasDepositosOrdem]
 ADD CONSTRAINT [PK_GBMVDO_MovimentosContasDepositosOrdem]
-    PRIMARY KEY CLUSTERED ([MVNDOC_Balcao] ASC);
+    PRIMARY KEY CLUSTERED ([MVNDOC_NumeroDocumento] ASC);
 GO
 
--- Creating primary key on [MPNDOC_Balcao] in table 'GBMVDP_MovimentosContasDepositosPrazo'
+-- Creating primary key on [MPNDOC_NumeroDocumento] in table 'GBMVDP_MovimentosContasDepositosPrazo'
 ALTER TABLE [dbo].[GBMVDP_MovimentosContasDepositosPrazo]
 ADD CONSTRAINT [PK_GBMVDP_MovimentosContasDepositosPrazo]
-    PRIMARY KEY CLUSTERED ([MPNDOC_Balcao] ASC);
+    PRIMARY KEY CLUSTERED ([MPNDOC_NumeroDocumento] ASC);
 GO
 
 -- Creating primary key on [NTNATR_Natureza] in table 'GBNATR_NaturezasContas'
@@ -1194,16 +1343,22 @@ ADD CONSTRAINT [PK_PESTC_EstadoCivil]
     PRIMARY KEY CLUSTERED ([EECIV_EstadoCivil] ASC);
 GO
 
--- Creating primary key on [PHBTP_HabilitacoesLiterarias] in table 'PHBLT_HabilitacoesLiterarias'
+-- Creating primary key on [PHBTP_Habilitacoes] in table 'PHBLT_HabilitacoesLiterarias'
 ALTER TABLE [dbo].[PHBLT_HabilitacoesLiterarias]
 ADD CONSTRAINT [PK_PHBLT_HabilitacoesLiterarias]
-    PRIMARY KEY CLUSTERED ([PHBTP_HabilitacoesLiterarias] ASC);
+    PRIMARY KEY CLUSTERED ([PHBTP_Habilitacoes] ASC);
 GO
 
--- Creating primary key on [ACPAI_SiglaPais] in table 'PPAIS_Paises'
+-- Creating primary key on [WMOED_CodigoDivisaIso] in table 'PMOEDA_Divisas'
+ALTER TABLE [dbo].[PMOEDA_Divisas]
+ADD CONSTRAINT [PK_PMOEDA_Divisas]
+    PRIMARY KEY CLUSTERED ([WMOED_CodigoDivisaIso] ASC);
+GO
+
+-- Creating primary key on [ACPAI_CodigoPais] in table 'PPAIS_Paises'
 ALTER TABLE [dbo].[PPAIS_Paises]
 ADD CONSTRAINT [PK_PPAIS_Paises]
-    PRIMARY KEY CLUSTERED ([ACPAI_SiglaPais] ASC);
+    PRIMARY KEY CLUSTERED ([ACPAI_CodigoPais] ASC);
 GO
 
 -- Creating primary key on [PPRPROF_CodigoProfissao] in table 'PPROF_Profissoes'
@@ -1227,21 +1382,6 @@ GO
 -- --------------------------------------------------
 -- Creating all FOREIGN KEY constraints
 -- --------------------------------------------------
-
--- Creating foreign key on [TTHABL_Habilitacoes] in table 'GBTIT_Entidade'
-ALTER TABLE [dbo].[GBTIT_Entidade]
-ADD CONSTRAINT [FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias]
-    FOREIGN KEY ([TTHABL_Habilitacoes])
-    REFERENCES [dbo].[PHBLT_HabilitacoesLiterarias]
-        ([PHBTP_HabilitacoesLiterarias])
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
-GO
-
--- Creating non-clustered index for FOREIGN KEY 'FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias'
-CREATE INDEX [IX_FK_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias]
-ON [dbo].[GBTIT_Entidade]
-    ([TTHABL_Habilitacoes]);
-GO
 
 -- --------------------------------------------------
 -- Script has ended

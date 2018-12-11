@@ -14,12 +14,6 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCCC_ContasCaucionadas
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public GBCCC_ContasCaucionadas()
-        {
-            this.GBMVCC_MovimentosContasCaucionadas = new HashSet<GBMVCC_MovimentosContasCaucionadas>();
-        }
-    
         public int CCNSEQ_NrSequencial { get; set; }
         public int CCBAL_Balcao { get; set; }
         public int CCNCLI_NrCliente { get; set; }
@@ -105,8 +99,5 @@ namespace CustomerAccountsPortal.Models
         public Nullable<decimal> CCSPDN_SpreadTaxaDescNeg { get; set; }
         public string CCMAPI_ModoAplicIndexante { get; set; }
         public string CCMAIN_ModoAplicIndexNeg { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVCC_MovimentosContasCaucionadas> GBMVCC_MovimentosContasCaucionadas { get; set; }
     }
 }

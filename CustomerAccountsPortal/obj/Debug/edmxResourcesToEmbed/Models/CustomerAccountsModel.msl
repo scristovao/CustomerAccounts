@@ -1,937 +1,1055 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="CustomerAccountsModelStoreContainer" CdmEntityContainer="CustomerAccountsEntities">
+    <EntitySetMapping Name="CTMOV_MovimentosAM">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.CTMOV_MovimentosAM)">
+        <MappingFragment StoreEntitySet="CTMOV_MovimentosAM">
+          <ScalarProperty Name="MVNSEQ_NumeroSequencial" ColumnName="MVNSEQ_NumeroSequencial" />
+          <ScalarProperty Name="MVPLN_Plano" ColumnName="MVPLN_Plano" />
+          <ScalarProperty Name="MVCNTA_Conta" ColumnName="MVCNTA_Conta" />
+          <ScalarProperty Name="MVDTMV_DataMovimento" ColumnName="MVDTMV_DataMovimento" />
+          <ScalarProperty Name="MVAREA_Area" ColumnName="MVAREA_Area" />
+          <ScalarProperty Name="MVDOCN_Documento" ColumnName="MVDOCN_Documento" />
+          <ScalarProperty Name="MVDTDC_DataDocumento" ColumnName="MVDTDC_DataDocumento" />
+          <ScalarProperty Name="MVDBCR_DebitoCredito" ColumnName="MVDBCR_DebitoCredito" />
+          <ScalarProperty Name="MVVLR_ValorDoMovimento" ColumnName="MVVLR_ValorDoMovimento" />
+          <ScalarProperty Name="MVCOPE_CodigoOperacao" ColumnName="MVCOPE_CodigoOperacao" />
+          <ScalarProperty Name="MVDEXT_NrDocExterno" ColumnName="MVDEXT_NrDocExterno" />
+          <ScalarProperty Name="MVDDEX_Descritivo" ColumnName="MVDDEX_Descritivo" />
+          <ScalarProperty Name="MVUSER_UtilizadorGravacao" ColumnName="MVUSER_UtilizadorGravacao" />
+          <ScalarProperty Name="MVHORA_HoraGravacao" ColumnName="MVHORA_HoraGravacao" />
+          <ScalarProperty Name="MVDTGR_DataGravacao" ColumnName="MVDTGR_DataGravacao" />
+          <ScalarProperty Name="MVETRB_EstacaoGravacao" ColumnName="MVETRB_EstacaoGravacao" />
+          <ScalarProperty Name="MVACUD_AcumuladoDebito" ColumnName="MVACUD_AcumuladoDebito" />
+          <ScalarProperty Name="MVACUC_AcumuladoCredito" ColumnName="MVACUC_AcumuladoCredito" />
+          <ScalarProperty Name="MVRLMV_TipoMovimento" ColumnName="MVRLMV_TipoMovimento" />
+          <ScalarProperty Name="MVPEST_Estorno" ColumnName="MVPEST_Estorno" />
+          <ScalarProperty Name="MVTIVA_TipoDeIva" ColumnName="MVTIVA_TipoDeIva" />
+          <ScalarProperty Name="MVTMIV_TipoMovIva" ColumnName="MVTMIV_TipoMovIva" />
+          <ScalarProperty Name="MVNFC_NumeroContribuinte" ColumnName="MVNFC_NumeroContribuinte" />
+          <ScalarProperty Name="MVTXIR_TaxaIrs" ColumnName="MVTXIR_TaxaIrs" />
+          <ScalarProperty Name="MVDFPR_ParmMovRefProv" ColumnName="MVDFPR_ParmMovRefProv" />
+          <ScalarProperty Name="MVSEQO_SequenciaOrigem" ColumnName="MVSEQO_SequenciaOrigem" />
+          <ScalarProperty Name="MVTPME_OrigemMovimento" ColumnName="MVTPME_OrigemMovimento" />
+          <ScalarProperty Name="MVRFME_ReferenciaMovimento" ColumnName="MVRFME_ReferenciaMovimento" />
+          <ScalarProperty Name="CTMVUSRDE_UtilizadorDesactivacao" ColumnName="CTMVUSRDE_UtilizadorDesactivacao" />
+          <ScalarProperty Name="CTMVDTDE_DataDeDesactivacao" ColumnName="CTMVDTDE_DataDeDesactivacao" />
+          <ScalarProperty Name="CTMVHODE_HoraDeDesactivacao" ColumnName="CTMVHODE_HoraDeDesactivacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FGCMB_Divisas">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.FGCMB_Divisas)">
+        <MappingFragment StoreEntitySet="FGCMB_Divisas">
+          <ScalarProperty Name="CBDATC_CBTCOT_CBMOED" ColumnName="CBDATC_CBTCOT_CBMOED" />
+          <ScalarProperty Name="CBDATC_DataCotacao" ColumnName="CBDATC_DataCotacao" />
+          <ScalarProperty Name="CBTCOT_TipoCotacao" ColumnName="CBTCOT_TipoCotacao" />
+          <ScalarProperty Name="CBMOED_Moeda" ColumnName="CBMOED_Moeda" />
+          <ScalarProperty Name="CBMOEB_MoedaBase" ColumnName="CBMOEB_MoedaBase" />
+          <ScalarProperty Name="CBCOMP_Compra" ColumnName="CBCOMP_Compra" />
+          <ScalarProperty Name="CBVEND_Venda" ColumnName="CBVEND_Venda" />
+          <ScalarProperty Name="CBDATG_DataDeGravacao" ColumnName="CBDATG_DataDeGravacao" />
+          <ScalarProperty Name="CBHORA_HoraDeGravacao" ColumnName="CBHORA_HoraDeGravacao" />
+          <ScalarProperty Name="CBUSGR_UtilizadorGravacao" ColumnName="CBUSGR_UtilizadorGravacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FGGCOT_GeracaoCotacoes">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.FGGCOT_GeracaoCotacoes)">
+        <MappingFragment StoreEntitySet="FGGCOT_GeracaoCotacoes">
+          <ScalarProperty Name="CJMOED_CJTCOT" ColumnName="CJMOED_CJTCOT" />
+          <ScalarProperty Name="CJMOEB_MoedaBase" ColumnName="CJMOEB_MoedaBase" />
+          <ScalarProperty Name="CJMOED_Moeda" ColumnName="CJMOED_Moeda" />
+          <ScalarProperty Name="CJTCOT_TipoCotacao" ColumnName="CJTCOT_TipoCotacao" />
+          <ScalarProperty Name="CJPCMP_PercentagemParaCompra" ColumnName="CJPCMP_PercentagemParaCompra" />
+          <ScalarProperty Name="CJPVND_PercentagemParaVenda" ColumnName="CJPVND_PercentagemParaVenda" />
+          <ScalarProperty Name="CJVARC_VariacaoParaCompra" ColumnName="CJVARC_VariacaoParaCompra" />
+          <ScalarProperty Name="CJVARV_VariacaoParaVenda" ColumnName="CJVARV_VariacaoParaVenda" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FGTCOT_TiposCotacao">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.FGTCOT_TiposCotacao)">
+        <MappingFragment StoreEntitySet="FGTCOT_TiposCotacao">
+          <ScalarProperty Name="TOTCOT_TipoCotacao" ColumnName="TOTCOT_TipoCotacao" />
+          <ScalarProperty Name="TODCOT_Descritivo" ColumnName="TODCOT_Descritivo" />
+          <ScalarProperty Name="TODSC_DisponivelModuloSc" ColumnName="TODSC_DisponivelModuloSc" />
+          <ScalarProperty Name="TOINDC_IndicadorCotacao" ColumnName="TOINDC_IndicadorCotacao" />
+          <ScalarProperty Name="FGTORECCV_RecolheCâmbioCompraVenda" ColumnName="FGTORECCV_RecolheCâmbioCompraVenda" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="GBCCC_ContasCaucionadas">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCCC_ContasCaucionadas">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCCC_ContasCaucionadas)">
         <MappingFragment StoreEntitySet="GBCCC_ContasCaucionadas">
-          <ScalarProperty Name="CCMAIN_ModoAplicIndexNeg" ColumnName="CCMAIN_ModoAplicIndexNeg" />
-          <ScalarProperty Name="CCMAPI_ModoAplicIndexante" ColumnName="CCMAPI_ModoAplicIndexante" />
-          <ScalarProperty Name="CCSPDN_SpreadTaxaDescNeg" ColumnName="CCSPDN_SpreadTaxaDescNeg" />
-          <ScalarProperty Name="CCSPCN_SpreadTaxaContaNeg" ColumnName="CCSPCN_SpreadTaxaContaNeg" />
-          <ScalarProperty Name="CCPSDN_ParmSpreadTxDescNeg" ColumnName="CCPSDN_ParmSpreadTxDescNeg" />
-          <ScalarProperty Name="CCPSCN_ParmSpreadTxContaNeg" ColumnName="CCPSCN_ParmSpreadTxContaNeg" />
-          <ScalarProperty Name="CCTRDN_TaxaRefTxDescNeg" ColumnName="CCTRDN_TaxaRefTxDescNeg" />
-          <ScalarProperty Name="CCTXRN_TaxaRefTxContaNeg" ColumnName="CCTXRN_TaxaRefTxContaNeg" />
-          <ScalarProperty Name="CCTXIN_TaxaImobilizacaoNeg" ColumnName="CCTXIN_TaxaImobilizacaoNeg" />
-          <ScalarProperty Name="CCTXDN_TaxaDescobertoNeg" ColumnName="CCTXDN_TaxaDescobertoNeg" />
-          <ScalarProperty Name="CCTXCN_TaxaContaNegociada" ColumnName="CCTXCN_TaxaContaNegociada" />
-          <ScalarProperty Name="CCDTUT_DataUltimaRevisaoTaxa" ColumnName="CCDTUT_DataUltimaRevisaoTaxa" />
-          <ScalarProperty Name="CCDTRT_DtReferenciaRevisaoTx" ColumnName="CCDTRT_DtReferenciaRevisaoTx" />
-          <ScalarProperty Name="CCPRTX_PeriodicidadeRevisaoTx" ColumnName="CCPRTX_PeriodicidadeRevisaoTx" />
-          <ScalarProperty Name="CCUSRS_UtilizadorSubscricao" ColumnName="CCUSRS_UtilizadorSubscricao" />
-          <ScalarProperty Name="CCCCAS_CanalSubscricao" ColumnName="CCCCAS_CanalSubscricao" />
-          <ScalarProperty Name="CCCLCP_ClasseComponente" ColumnName="CCCLCP_ClasseComponente" />
-          <ScalarProperty Name="CCCCPR_CodigoComponente" ColumnName="CCCCPR_CodigoComponente" />
-          <ScalarProperty Name="CCCPRD_CodigoProduto" ColumnName="CCCPRD_CodigoProduto" />
-          <ScalarProperty Name="CCNCJR_CalculaJuros" ColumnName="CCNCJR_CalculaJuros" />
-          <ScalarProperty Name="CCSPDD_SpreadTaxaDescoberto" ColumnName="CCSPDD_SpreadTaxaDescoberto" />
-          <ScalarProperty Name="CCSPDC_SpreadTaxaConta" ColumnName="CCSPDC_SpreadTaxaConta" />
-          <ScalarProperty Name="CCPSPD_ParmSpreadTaxaDescob" ColumnName="CCPSPD_ParmSpreadTaxaDescob" />
-          <ScalarProperty Name="CCPSPC_ParmSpreadTaxaConta" ColumnName="CCPSPC_ParmSpreadTaxaConta" />
-          <ScalarProperty Name="CCTXRD_TaxaRefParaTaxaDesc" ColumnName="CCTXRD_TaxaRefParaTaxaDesc" />
-          <ScalarProperty Name="CCTTXR_TaxaRefParaTaxaConta" ColumnName="CCTTXR_TaxaRefParaTaxaConta" />
-          <ScalarProperty Name="CCBAJ_BaseAnualDiasParajuros" ColumnName="CCBAJ_BaseAnualDiasParajuros" />
-          <ScalarProperty Name="CCMSIT_MotivoSituacao" ColumnName="CCMSIT_MotivoSituacao" />
-          <ScalarProperty Name="CCCTPD_CativosPendentes" ColumnName="CCCTPD_CativosPendentes" />
-          <ScalarProperty Name="CCCTCR_CativosACredito" ColumnName="CCCTCR_CativosACredito" />
-          <ScalarProperty Name="CCCTDB_CativosADebito" ColumnName="CCCTDB_CativosADebito" />
-          <ScalarProperty Name="CCNSED_NrSeqRelacParaDebitos" ColumnName="CCNSED_NrSeqRelacParaDebitos" />
-          <ScalarProperty Name="CCNATD_NaturRelacParaDebitos" ColumnName="CCNATD_NaturRelacParaDebitos" />
-          <ScalarProperty Name="CCNCLD_NrCliRelacParaDebitos" ColumnName="CCNCLD_NrCliRelacParaDebitos" />
-          <ScalarProperty Name="CCNJDM_NrsJurosDevMes" ColumnName="CCNJDM_NrsJurosDevMes" />
-          <ScalarProperty Name="CCMOED_Moeda" ColumnName="CCMOED_Moeda" />
-          <ScalarProperty Name="CCECJ_ComEscalaJuros" ColumnName="CCECJ_ComEscalaJuros" />
-          <ScalarProperty Name="CCSITP_SituacaoProtegida" ColumnName="CCSITP_SituacaoProtegida" />
-          <ScalarProperty Name="CCTXNG_ComTaxaNegociada" ColumnName="CCTXNG_ComTaxaNegociada" />
-          <ScalarProperty Name="CCSLAL_SaldoAlterado" ColumnName="CCSLAL_SaldoAlterado" />
-          <ScalarProperty Name="CCTRCC_TrancheCredito" ColumnName="CCTRCC_TrancheCredito" />
-          <ScalarProperty Name="CCTRCD_TrancheDebito" ColumnName="CCTRCD_TrancheDebito" />
-          <ScalarProperty Name="CCVLRC_ValorMinimoParaCredito" ColumnName="CCVLRC_ValorMinimoParaCredito" />
-          <ScalarProperty Name="CCVLRD_ValorMinimoParaDebito" ColumnName="CCVLRD_ValorMinimoParaDebito" />
-          <ScalarProperty Name="CCDSIT_DataSituacao" ColumnName="CCDSIT_DataSituacao" />
-          <ScalarProperty Name="CCEPRZ_CdgEstatisticoPrazo" ColumnName="CCEPRZ_CdgEstatisticoPrazo" />
-          <ScalarProperty Name="CCSITU_SituacaoConta" ColumnName="CCSITU_SituacaoConta" />
-          <ScalarProperty Name="CCDEXT_DataUltimoExtracto" ColumnName="CCDEXT_DataUltimoExtracto" />
-          <ScalarProperty Name="CCUEXT_NrExtractoLinhaCader" ColumnName="CCUEXT_NrExtractoLinhaCader" />
-          <ScalarProperty Name="CCMVNE_MovNaoSaidosExtracto" ColumnName="CCMVNE_MovNaoSaidosExtracto" />
-          <ScalarProperty Name="CCPERE_PeriodicidadeExtracto" ColumnName="CCPERE_PeriodicidadeExtracto" />
-          <ScalarProperty Name="CCTEXT_TipoExtracto" ColumnName="CCTEXT_TipoExtracto" />
-          <ScalarProperty Name="CCDPDJ_ProximoDebitoJuros" ColumnName="CCDPDJ_ProximoDebitoJuros" />
-          <ScalarProperty Name="CCDDJR_DataUltimoDebitoJuros" ColumnName="CCDDJR_DataUltimoDebitoJuros" />
-          <ScalarProperty Name="CCDUMV_DataUltimoMovimento" ColumnName="CCDUMV_DataUltimoMovimento" />
-          <ScalarProperty Name="CCDVNC_DataVencimento" ColumnName="CCDVNC_DataVencimento" />
-          <ScalarProperty Name="CCDATAIPER_DataInicioPeriodo" ColumnName="CCDATAIPER_DataInicioPeriodo" />
-          <ScalarProperty Name="CCDTAB_DataAbertura" ColumnName="CCDTAB_DataAbertura" />
-          <ScalarProperty Name="CCTXIM_TaxaImobilizacao" ColumnName="CCTXIM_TaxaImobilizacao" />
-          <ScalarProperty Name="CCTXDS_TaxaDescoberto" ColumnName="CCTXDS_TaxaDescoberto" />
-          <ScalarProperty Name="CCTXC_TaxaConta" ColumnName="CCTXC_TaxaConta" />
-          <ScalarProperty Name="CCLCRE_LinhaCredito" ColumnName="CCLCRE_LinhaCredito" />
-          <ScalarProperty Name="CCTGAR_TipoGarantia" ColumnName="CCTGAR_TipoGarantia" />
-          <ScalarProperty Name="CCTCRE_TipoCredito" ColumnName="CCTCRE_TipoCredito" />
-          <ScalarProperty Name="CCRENOVAAU_RenovacaoAutomatica" ColumnName="CCRENOVAAU_RenovacaoAutomatica" />
-          <ScalarProperty Name="CCPERRENOV_PeriodicidadeRenovacao" ColumnName="CCPERRENOV_PeriodicidadeRenovacao" />
-          <ScalarProperty Name="CCPERJ_PeriodicidadeJuros" ColumnName="CCPERJ_PeriodicidadeJuros" />
-          <ScalarProperty Name="CCRUCI_RecalculoComissaoImob" ColumnName="CCRUCI_RecalculoComissaoImob" />
-          <ScalarProperty Name="CCRUMV_RecalculoNrsVermelhos" ColumnName="CCRUMV_RecalculoNrsVermelhos" />
-          <ScalarProperty Name="CCNUCI_ComissaoImobilizacao" ColumnName="CCNUCI_ComissaoImobilizacao" />
-          <ScalarProperty Name="CCNUMV_NumerosVermelhos" ColumnName="CCNUMV_NumerosVermelhos" />
-          <ScalarProperty Name="CCVLR_ValorCredito" ColumnName="CCVLR_ValorCredito" />
-          <ScalarProperty Name="CCDLIM_DataExpirLimiteDesc" ColumnName="CCDLIM_DataExpirLimiteDesc" />
-          <ScalarProperty Name="CCLIMD_LimiteDescoberto" ColumnName="CCLIMD_LimiteDescoberto" />
-          <ScalarProperty Name="CCNDSM_NrDiasSaldoMedio" ColumnName="CCNDSM_NrDiasSaldoMedio" />
-          <ScalarProperty Name="CCSALD_SaldoMedioDisponivel" ColumnName="CCSALD_SaldoMedioDisponivel" />
-          <ScalarProperty Name="CCSALV_SaldoMedioParaDataValor" ColumnName="CCSALV_SaldoMedioParaDataValor" />
-          <ScalarProperty Name="CCSALM_SaldoMedioPorSaldo" ColumnName="CCSALM_SaldoMedioPorSaldo" />
-          <ScalarProperty Name="CCNDDESC_DiasDescobertoSaldo" ColumnName="CCNDDESC_DiasDescobertoSaldo" />
-          <ScalarProperty Name="CCSLDV_SaldoPorDataValor" ColumnName="CCSLDV_SaldoPorDataValor" />
-          <ScalarProperty Name="CCSLD_Saldo" ColumnName="CCSLD_Saldo" />
-          <ScalarProperty Name="CCNATR_Natureza" ColumnName="CCNATR_Natureza" />
-          <ScalarProperty Name="CCNCLI_NrCliente" ColumnName="CCNCLI_NrCliente" />
-          <ScalarProperty Name="CCBAL_Balcao" ColumnName="CCBAL_Balcao" />
           <ScalarProperty Name="CCNSEQ_NrSequencial" ColumnName="CCNSEQ_NrSequencial" />
+          <ScalarProperty Name="CCBAL_Balcao" ColumnName="CCBAL_Balcao" />
+          <ScalarProperty Name="CCNCLI_NrCliente" ColumnName="CCNCLI_NrCliente" />
+          <ScalarProperty Name="CCNATR_Natureza" ColumnName="CCNATR_Natureza" />
+          <ScalarProperty Name="CCSLD_Saldo" ColumnName="CCSLD_Saldo" />
+          <ScalarProperty Name="CCSLDV_SaldoPorDataValor" ColumnName="CCSLDV_SaldoPorDataValor" />
+          <ScalarProperty Name="CCNDDESC_DiasDescobertoSaldo" ColumnName="CCNDDESC_DiasDescobertoSaldo" />
+          <ScalarProperty Name="CCSALM_SaldoMedioPorSaldo" ColumnName="CCSALM_SaldoMedioPorSaldo" />
+          <ScalarProperty Name="CCSALV_SaldoMedioParaDataValor" ColumnName="CCSALV_SaldoMedioParaDataValor" />
+          <ScalarProperty Name="CCSALD_SaldoMedioDisponivel" ColumnName="CCSALD_SaldoMedioDisponivel" />
+          <ScalarProperty Name="CCNDSM_NrDiasSaldoMedio" ColumnName="CCNDSM_NrDiasSaldoMedio" />
+          <ScalarProperty Name="CCLIMD_LimiteDescoberto" ColumnName="CCLIMD_LimiteDescoberto" />
+          <ScalarProperty Name="CCDLIM_DataExpirLimiteDesc" ColumnName="CCDLIM_DataExpirLimiteDesc" />
+          <ScalarProperty Name="CCVLR_ValorCredito" ColumnName="CCVLR_ValorCredito" />
+          <ScalarProperty Name="CCNUMV_NumerosVermelhos" ColumnName="CCNUMV_NumerosVermelhos" />
+          <ScalarProperty Name="CCNUCI_ComissaoImobilizacao" ColumnName="CCNUCI_ComissaoImobilizacao" />
+          <ScalarProperty Name="CCRUMV_RecalculoNrsVermelhos" ColumnName="CCRUMV_RecalculoNrsVermelhos" />
+          <ScalarProperty Name="CCRUCI_RecalculoComissaoImob" ColumnName="CCRUCI_RecalculoComissaoImob" />
+          <ScalarProperty Name="CCPERJ_PeriodicidadeJuros" ColumnName="CCPERJ_PeriodicidadeJuros" />
+          <ScalarProperty Name="CCPERRENOV_PeriodicidadeRenovacao" ColumnName="CCPERRENOV_PeriodicidadeRenovacao" />
+          <ScalarProperty Name="CCRENOVAAU_RenovacaoAutomatica" ColumnName="CCRENOVAAU_RenovacaoAutomatica" />
+          <ScalarProperty Name="CCTCRE_TipoCredito" ColumnName="CCTCRE_TipoCredito" />
+          <ScalarProperty Name="CCTGAR_TipoGarantia" ColumnName="CCTGAR_TipoGarantia" />
+          <ScalarProperty Name="CCLCRE_LinhaCredito" ColumnName="CCLCRE_LinhaCredito" />
+          <ScalarProperty Name="CCTXC_TaxaConta" ColumnName="CCTXC_TaxaConta" />
+          <ScalarProperty Name="CCTXDS_TaxaDescoberto" ColumnName="CCTXDS_TaxaDescoberto" />
+          <ScalarProperty Name="CCTXIM_TaxaImobilizacao" ColumnName="CCTXIM_TaxaImobilizacao" />
+          <ScalarProperty Name="CCDTAB_DataAbertura" ColumnName="CCDTAB_DataAbertura" />
+          <ScalarProperty Name="CCDATAIPER_DataInicioPeriodo" ColumnName="CCDATAIPER_DataInicioPeriodo" />
+          <ScalarProperty Name="CCDVNC_DataVencimento" ColumnName="CCDVNC_DataVencimento" />
+          <ScalarProperty Name="CCDUMV_DataUltimoMovimento" ColumnName="CCDUMV_DataUltimoMovimento" />
+          <ScalarProperty Name="CCDDJR_DataUltimoDebitoJuros" ColumnName="CCDDJR_DataUltimoDebitoJuros" />
+          <ScalarProperty Name="CCDPDJ_ProximoDebitoJuros" ColumnName="CCDPDJ_ProximoDebitoJuros" />
+          <ScalarProperty Name="CCTEXT_TipoExtracto" ColumnName="CCTEXT_TipoExtracto" />
+          <ScalarProperty Name="CCPERE_PeriodicidadeExtracto" ColumnName="CCPERE_PeriodicidadeExtracto" />
+          <ScalarProperty Name="CCMVNE_MovNaoSaidosExtracto" ColumnName="CCMVNE_MovNaoSaidosExtracto" />
+          <ScalarProperty Name="CCUEXT_NrExtractoLinhaCader" ColumnName="CCUEXT_NrExtractoLinhaCader" />
+          <ScalarProperty Name="CCDEXT_DataUltimoExtracto" ColumnName="CCDEXT_DataUltimoExtracto" />
+          <ScalarProperty Name="CCSITU_SituacaoConta" ColumnName="CCSITU_SituacaoConta" />
+          <ScalarProperty Name="CCEPRZ_CdgEstatisticoPrazo" ColumnName="CCEPRZ_CdgEstatisticoPrazo" />
+          <ScalarProperty Name="CCDSIT_DataSituacao" ColumnName="CCDSIT_DataSituacao" />
+          <ScalarProperty Name="CCVLRD_ValorMinimoParaDebito" ColumnName="CCVLRD_ValorMinimoParaDebito" />
+          <ScalarProperty Name="CCVLRC_ValorMinimoParaCredito" ColumnName="CCVLRC_ValorMinimoParaCredito" />
+          <ScalarProperty Name="CCTRCD_TrancheDebito" ColumnName="CCTRCD_TrancheDebito" />
+          <ScalarProperty Name="CCTRCC_TrancheCredito" ColumnName="CCTRCC_TrancheCredito" />
+          <ScalarProperty Name="CCSLAL_SaldoAlterado" ColumnName="CCSLAL_SaldoAlterado" />
+          <ScalarProperty Name="CCTXNG_ComTaxaNegociada" ColumnName="CCTXNG_ComTaxaNegociada" />
+          <ScalarProperty Name="CCSITP_SituacaoProtegida" ColumnName="CCSITP_SituacaoProtegida" />
+          <ScalarProperty Name="CCECJ_ComEscalaJuros" ColumnName="CCECJ_ComEscalaJuros" />
+          <ScalarProperty Name="CCMOED_Moeda" ColumnName="CCMOED_Moeda" />
+          <ScalarProperty Name="CCNJDM_NrsJurosDevMes" ColumnName="CCNJDM_NrsJurosDevMes" />
+          <ScalarProperty Name="CCNCLD_NrCliRelacParaDebitos" ColumnName="CCNCLD_NrCliRelacParaDebitos" />
+          <ScalarProperty Name="CCNATD_NaturRelacParaDebitos" ColumnName="CCNATD_NaturRelacParaDebitos" />
+          <ScalarProperty Name="CCNSED_NrSeqRelacParaDebitos" ColumnName="CCNSED_NrSeqRelacParaDebitos" />
+          <ScalarProperty Name="CCCTDB_CativosADebito" ColumnName="CCCTDB_CativosADebito" />
+          <ScalarProperty Name="CCCTCR_CativosACredito" ColumnName="CCCTCR_CativosACredito" />
+          <ScalarProperty Name="CCCTPD_CativosPendentes" ColumnName="CCCTPD_CativosPendentes" />
+          <ScalarProperty Name="CCMSIT_MotivoSituacao" ColumnName="CCMSIT_MotivoSituacao" />
+          <ScalarProperty Name="CCBAJ_BaseAnualDiasParajuros" ColumnName="CCBAJ_BaseAnualDiasParajuros" />
+          <ScalarProperty Name="CCTTXR_TaxaRefParaTaxaConta" ColumnName="CCTTXR_TaxaRefParaTaxaConta" />
+          <ScalarProperty Name="CCTXRD_TaxaRefParaTaxaDesc" ColumnName="CCTXRD_TaxaRefParaTaxaDesc" />
+          <ScalarProperty Name="CCPSPC_ParmSpreadTaxaConta" ColumnName="CCPSPC_ParmSpreadTaxaConta" />
+          <ScalarProperty Name="CCPSPD_ParmSpreadTaxaDescob" ColumnName="CCPSPD_ParmSpreadTaxaDescob" />
+          <ScalarProperty Name="CCSPDC_SpreadTaxaConta" ColumnName="CCSPDC_SpreadTaxaConta" />
+          <ScalarProperty Name="CCSPDD_SpreadTaxaDescoberto" ColumnName="CCSPDD_SpreadTaxaDescoberto" />
+          <ScalarProperty Name="CCNCJR_CalculaJuros" ColumnName="CCNCJR_CalculaJuros" />
+          <ScalarProperty Name="CCCPRD_CodigoProduto" ColumnName="CCCPRD_CodigoProduto" />
+          <ScalarProperty Name="CCCCPR_CodigoComponente" ColumnName="CCCCPR_CodigoComponente" />
+          <ScalarProperty Name="CCCLCP_ClasseComponente" ColumnName="CCCLCP_ClasseComponente" />
+          <ScalarProperty Name="CCCCAS_CanalSubscricao" ColumnName="CCCCAS_CanalSubscricao" />
+          <ScalarProperty Name="CCUSRS_UtilizadorSubscricao" ColumnName="CCUSRS_UtilizadorSubscricao" />
+          <ScalarProperty Name="CCPRTX_PeriodicidadeRevisaoTx" ColumnName="CCPRTX_PeriodicidadeRevisaoTx" />
+          <ScalarProperty Name="CCDTRT_DtReferenciaRevisaoTx" ColumnName="CCDTRT_DtReferenciaRevisaoTx" />
+          <ScalarProperty Name="CCDTUT_DataUltimaRevisaoTaxa" ColumnName="CCDTUT_DataUltimaRevisaoTaxa" />
+          <ScalarProperty Name="CCTXCN_TaxaContaNegociada" ColumnName="CCTXCN_TaxaContaNegociada" />
+          <ScalarProperty Name="CCTXDN_TaxaDescobertoNeg" ColumnName="CCTXDN_TaxaDescobertoNeg" />
+          <ScalarProperty Name="CCTXIN_TaxaImobilizacaoNeg" ColumnName="CCTXIN_TaxaImobilizacaoNeg" />
+          <ScalarProperty Name="CCTXRN_TaxaRefTxContaNeg" ColumnName="CCTXRN_TaxaRefTxContaNeg" />
+          <ScalarProperty Name="CCTRDN_TaxaRefTxDescNeg" ColumnName="CCTRDN_TaxaRefTxDescNeg" />
+          <ScalarProperty Name="CCPSCN_ParmSpreadTxContaNeg" ColumnName="CCPSCN_ParmSpreadTxContaNeg" />
+          <ScalarProperty Name="CCPSDN_ParmSpreadTxDescNeg" ColumnName="CCPSDN_ParmSpreadTxDescNeg" />
+          <ScalarProperty Name="CCSPCN_SpreadTaxaContaNeg" ColumnName="CCSPCN_SpreadTaxaContaNeg" />
+          <ScalarProperty Name="CCSPDN_SpreadTaxaDescNeg" ColumnName="CCSPDN_SpreadTaxaDescNeg" />
+          <ScalarProperty Name="CCMAPI_ModoAplicIndexante" ColumnName="CCMAPI_ModoAplicIndexante" />
+          <ScalarProperty Name="CCMAIN_ModoAplicIndexNeg" ColumnName="CCMAIN_ModoAplicIndexNeg" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCCO_ContasContabilisticas">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCCO_ContasContabilisticas">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCCO_ContasContabilisticas)">
         <MappingFragment StoreEntitySet="GBCCO_ContasContabilisticas">
-          <ScalarProperty Name="CSUSRS_UtilizadorSubscricao" ColumnName="CSUSRS_UtilizadorSubscricao" />
-          <ScalarProperty Name="CSCCAS_CanalSubscricao" ColumnName="CSCCAS_CanalSubscricao" />
-          <ScalarProperty Name="CSCLCP_ClasseComponente" ColumnName="CSCLCP_ClasseComponente" />
-          <ScalarProperty Name="CSCCPR_CodigoComponente" ColumnName="CSCCPR_CodigoComponente" />
-          <ScalarProperty Name="CSCPRD_CodigoProduto" ColumnName="CSCPRD_CodigoProduto" />
-          <ScalarProperty Name="CSMSIT_MotivoSituacao" ColumnName="CSMSIT_MotivoSituacao" />
-          <ScalarProperty Name="CSCGRP_GrupoContasComCo" ColumnName="CSCGRP_GrupoContasComCo" />
-          <ScalarProperty Name="CSRACE_RestricoesAcesso" ColumnName="CSRACE_RestricoesAcesso" />
-          <ScalarProperty Name="CSCRMV_RestricaoMovimentacao" ColumnName="CSCRMV_RestricaoMovimentacao" />
-          <ScalarProperty Name="CSMOED_Moeda" ColumnName="CSMOED_Moeda" />
-          <ScalarProperty Name="CSSITU_Situacao" ColumnName="CSSITU_Situacao" />
-          <ScalarProperty Name="CSDTAB_DataAbertura" ColumnName="CSDTAB_DataAbertura" />
-          <ScalarProperty Name="CSOBS_Observacoes" ColumnName="CSOBS_Observacoes" />
-          <ScalarProperty Name="CSMVCC_MovimEContabilizado" ColumnName="CSMVCC_MovimEContabilizado" />
-          <ScalarProperty Name="CSSLDA_SaldoActPelosMovim" ColumnName="CSSLDA_SaldoActPelosMovim" />
-          <ScalarProperty Name="CSSLAL_SaldoAlterado" ColumnName="CSSLAL_SaldoAlterado" />
-          <ScalarProperty Name="CSTSLD_TipoSaldo" ColumnName="CSTSLD_TipoSaldo" />
-          <ScalarProperty Name="CSIBLC_ImprimeNoBalancete" ColumnName="CSIBLC_ImprimeNoBalancete" />
-          <ScalarProperty Name="CSLMOV_LimpezaMovimentos" ColumnName="CSLMOV_LimpezaMovimentos" />
-          <ScalarProperty Name="CSMTRF_TransferencMovimentam" ColumnName="CSMTRF_TransferencMovimentam" />
-          <ScalarProperty Name="CSMCX_CaixasMovimentam" ColumnName="CSMCX_CaixasMovimentam" />
-          <ScalarProperty Name="CSSLD_Saldo" ColumnName="CSSLD_Saldo" />
-          <ScalarProperty Name="CSNATR_Natureza" ColumnName="CSNATR_Natureza" />
-          <ScalarProperty Name="CSNCLI_NrCliente" ColumnName="CSNCLI_NrCliente" />
-          <ScalarProperty Name="CSBAL_Balcao" ColumnName="CSBAL_Balcao" />
-          <ScalarProperty Name="CSCCB_ContaContabilistica" ColumnName="CSCCB_ContaContabilistica" />
-          <ScalarProperty Name="CSBALC_BalcaoContaContab" ColumnName="CSBALC_BalcaoContaContab" />
           <ScalarProperty Name="CSNSEQ_NrSequencial" ColumnName="CSNSEQ_NrSequencial" />
+          <ScalarProperty Name="CSBALC_BalcaoContaContab" ColumnName="CSBALC_BalcaoContaContab" />
+          <ScalarProperty Name="CSCCB_ContaContabilistica" ColumnName="CSCCB_ContaContabilistica" />
+          <ScalarProperty Name="CSBAL_Balcao" ColumnName="CSBAL_Balcao" />
+          <ScalarProperty Name="CSNCLI_NrCliente" ColumnName="CSNCLI_NrCliente" />
+          <ScalarProperty Name="CSNATR_Natureza" ColumnName="CSNATR_Natureza" />
+          <ScalarProperty Name="CSSLD_Saldo" ColumnName="CSSLD_Saldo" />
+          <ScalarProperty Name="CSMCX_CaixasMovimentam" ColumnName="CSMCX_CaixasMovimentam" />
+          <ScalarProperty Name="CSMTRF_TransferencMovimentam" ColumnName="CSMTRF_TransferencMovimentam" />
+          <ScalarProperty Name="CSLMOV_LimpezaMovimentos" ColumnName="CSLMOV_LimpezaMovimentos" />
+          <ScalarProperty Name="CSIBLC_ImprimeNoBalancete" ColumnName="CSIBLC_ImprimeNoBalancete" />
+          <ScalarProperty Name="CSTSLD_TipoSaldo" ColumnName="CSTSLD_TipoSaldo" />
+          <ScalarProperty Name="CSSLAL_SaldoAlterado" ColumnName="CSSLAL_SaldoAlterado" />
+          <ScalarProperty Name="CSSLDA_SaldoActPelosMovim" ColumnName="CSSLDA_SaldoActPelosMovim" />
+          <ScalarProperty Name="CSMVCC_MovimEContabilizado" ColumnName="CSMVCC_MovimEContabilizado" />
+          <ScalarProperty Name="CSOBS_Observacoes" ColumnName="CSOBS_Observacoes" />
+          <ScalarProperty Name="CSDTAB_DataAbertura" ColumnName="CSDTAB_DataAbertura" />
+          <ScalarProperty Name="CSSITU_Situacao" ColumnName="CSSITU_Situacao" />
+          <ScalarProperty Name="CSMOED_Moeda" ColumnName="CSMOED_Moeda" />
+          <ScalarProperty Name="CSCRMV_RestricaoMovimentacao" ColumnName="CSCRMV_RestricaoMovimentacao" />
+          <ScalarProperty Name="CSRACE_RestricoesAcesso" ColumnName="CSRACE_RestricoesAcesso" />
+          <ScalarProperty Name="CSCGRP_GrupoContasComCo" ColumnName="CSCGRP_GrupoContasComCo" />
+          <ScalarProperty Name="CSMSIT_MotivoSituacao" ColumnName="CSMSIT_MotivoSituacao" />
+          <ScalarProperty Name="CSCPRD_CodigoProduto" ColumnName="CSCPRD_CodigoProduto" />
+          <ScalarProperty Name="CSCCPR_CodigoComponente" ColumnName="CSCCPR_CodigoComponente" />
+          <ScalarProperty Name="CSCLCP_ClasseComponente" ColumnName="CSCLCP_ClasseComponente" />
+          <ScalarProperty Name="CSCCAS_CanalSubscricao" ColumnName="CSCCAS_CanalSubscricao" />
+          <ScalarProperty Name="CSUSRS_UtilizadorSubscricao" ColumnName="CSUSRS_UtilizadorSubscricao" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCCR_ContasCredito">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCCR_ContasCredito">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCCR_ContasCredito)">
         <MappingFragment StoreEntitySet="GBCCR_ContasCredito">
-          <ScalarProperty Name="CRDTTA_DataUltimaTae" ColumnName="CRDTTA_DataUltimaTae" />
-          <ScalarProperty Name="CRTAEG_UltimaTaegCalculada" ColumnName="CRTAEG_UltimaTaegCalculada" />
-          <ScalarProperty Name="CRTAE_UltimaTaeCalculada" ColumnName="CRTAE_UltimaTaeCalculada" />
-          <ScalarProperty Name="CRSPDN_SpreadNegociado" ColumnName="CRSPDN_SpreadNegociado" />
-          <ScalarProperty Name="CRPSPN_ParametroSpreadNeg" ColumnName="CRPSPN_ParametroSpreadNeg" />
-          <ScalarProperty Name="CRTXRN_TaxaReferenciaNeg" ColumnName="CRTXRN_TaxaReferenciaNeg" />
-          <ScalarProperty Name="CRMATN_ModoAplicacaoTaxaNeg" ColumnName="CRMATN_ModoAplicacaoTaxaNeg" />
-          <ScalarProperty Name="CRTXNN_TaxaNominalNegociada" ColumnName="CRTXNN_TaxaNominalNegociada" />
-          <ScalarProperty Name="CRDTUT_DataUltimaRevisaoTaxa" ColumnName="CRDTUT_DataUltimaRevisaoTaxa" />
-          <ScalarProperty Name="CRDTRT_DtReferenciaRevisaoTx" ColumnName="CRDTRT_DtReferenciaRevisaoTx" />
-          <ScalarProperty Name="CRPRTX_PeriodicidadeRevisaoTx" ColumnName="CRPRTX_PeriodicidadeRevisaoTx" />
-          <ScalarProperty Name="CRJRPC_JurosPeriodoCarencia" ColumnName="CRJRPC_JurosPeriodoCarencia" />
-          <ScalarProperty Name="CRCBNF_ContaComBonificacoes" ColumnName="CRCBNF_ContaComBonificacoes" />
-          <ScalarProperty Name="CRUSRS_UtilizadorSubscricao" ColumnName="CRUSRS_UtilizadorSubscricao" />
-          <ScalarProperty Name="CRCCAS_CanalSubscricao" ColumnName="CRCCAS_CanalSubscricao" />
-          <ScalarProperty Name="CRCLCP_ClasseComponente" ColumnName="CRCLCP_ClasseComponente" />
-          <ScalarProperty Name="CRCCPR_CodigoComponente" ColumnName="CRCCPR_CodigoComponente" />
-          <ScalarProperty Name="CRCPRD_CodigoProduto" ColumnName="CRCPRD_CodigoProduto" />
-          <ScalarProperty Name="CRSPD_Spread" ColumnName="CRSPD_Spread" />
-          <ScalarProperty Name="CRPSPD_ParametroSpread" ColumnName="CRPSPD_ParametroSpread" />
-          <ScalarProperty Name="CRTTXR_TaxaReferencia" ColumnName="CRTTXR_TaxaReferencia" />
-          <ScalarProperty Name="CRBAJ_BaseAnualDiasParaJuros" ColumnName="CRBAJ_BaseAnualDiasParaJuros" />
-          <ScalarProperty Name="CRISJR_ImpostoSeloJurosInclRenda" ColumnName="CRISJR_ImpostoSeloJurosInclRenda" />
-          <ScalarProperty Name="CRMSIT_MotivoSituacao" ColumnName="CRMSIT_MotivoSituacao" />
-          <ScalarProperty Name="CRDTSJ_DataSituacaoJuros" ColumnName="CRDTSJ_DataSituacaoJuros" />
-          <ScalarProperty Name="CRSITJ_SituacaoJuros" ColumnName="CRSITJ_SituacaoJuros" />
-          <ScalarProperty Name="CRNSEC_NrSeqRelacParaCreditos" ColumnName="CRNSEC_NrSeqRelacParaCreditos" />
-          <ScalarProperty Name="CRNATC_NatrRelacParaCreditos" ColumnName="CRNATC_NatrRelacParaCreditos" />
-          <ScalarProperty Name="CRNCLC_NrCliRelacParaCreditos" ColumnName="CRNCLC_NrCliRelacParaCreditos" />
-          <ScalarProperty Name="CRNSED_NrSeqRelacParaDebitos" ColumnName="CRNSED_NrSeqRelacParaDebitos" />
-          <ScalarProperty Name="CRNATD_NatrRelacParaDebitos" ColumnName="CRNATD_NatrRelacParaDebitos" />
-          <ScalarProperty Name="CRNCLD_NrCliRelacParaDebitos" ColumnName="CRNCLD_NrCliRelacParaDebitos" />
-          <ScalarProperty Name="CRCPRA_PeriodicidadeAmortiz" ColumnName="CRCPRA_PeriodicidadeAmortiz" />
-          <ScalarProperty Name="CRCPRU_PeriodicidadeUtiliz" ColumnName="CRCPRU_PeriodicidadeUtiliz" />
-          <ScalarProperty Name="CRTPRG_TipoProgressao" ColumnName="CRTPRG_TipoProgressao" />
-          <ScalarProperty Name="CRORDP_OrdemProgressao" ColumnName="CRORDP_OrdemProgressao" />
-          <ScalarProperty Name="CRVFPR_VlrFactorProgRenda" ColumnName="CRVFPR_VlrFactorProgRenda" />
-          <ScalarProperty Name="CRTFPR_FactorProgressaoRnd" ColumnName="CRTFPR_FactorProgressaoRnd" />
-          <ScalarProperty Name="CRTRND_TipoRenda" ColumnName="CRTRND_TipoRenda" />
-          <ScalarProperty Name="CRMOED_Moeda" ColumnName="CRMOED_Moeda" />
-          <ScalarProperty Name="CRDAAM_RegularizAutomaticas" ColumnName="CRDAAM_RegularizAutomaticas" />
-          <ScalarProperty Name="CRSITP_SituacaoProtegida" ColumnName="CRSITP_SituacaoProtegida" />
-          <ScalarProperty Name="CRPERV_PeriodoJuroOuRendaVigor" ColumnName="CRPERV_PeriodoJuroOuRendaVigor" />
-          <ScalarProperty Name="CRTXNG_ComTaxaNegociada" ColumnName="CRTXNG_ComTaxaNegociada" />
-          <ScalarProperty Name="CRDVNC_DataVencimento" ColumnName="CRDVNC_DataVencimento" />
-          <ScalarProperty Name="CRSLAL_SaldoAlterado" ColumnName="CRSLAL_SaldoAlterado" />
-          <ScalarProperty Name="CROBS_Observacoes" ColumnName="CROBS_Observacoes" />
-          <ScalarProperty Name="CRREFC_ReferenciaCliente" ColumnName="CRREFC_ReferenciaCliente" />
-          <ScalarProperty Name="CRREFR_ReferenciaInterna" ColumnName="CRREFR_ReferenciaInterna" />
-          <ScalarProperty Name="CRTJUR_TipoJuros" ColumnName="CRTJUR_TipoJuros" />
-          <ScalarProperty Name="CRSLDI_SaldoCapitalSituIrreg" ColumnName="CRSLDI_SaldoCapitalSituIrreg" />
-          <ScalarProperty Name="CRSLDJ_SaldoJuros" ColumnName="CRSLDJ_SaldoJuros" />
-          <ScalarProperty Name="CRSLDC_SaldoCapital" ColumnName="CRSLDC_SaldoCapital" />
-          <ScalarProperty Name="CRSLD_Saldo" ColumnName="CRSLD_Saldo" />
-          <ScalarProperty Name="CRDSIT_DataSituacao" ColumnName="CRDSIT_DataSituacao" />
-          <ScalarProperty Name="CRSITU_Situacao" ColumnName="CRSITU_Situacao" />
-          <ScalarProperty Name="CREPRZ_CdgEstatisticoPrazo" ColumnName="CREPRZ_CdgEstatisticoPrazo" />
-          <ScalarProperty Name="CRDTAB_DataAbertura" ColumnName="CRDTAB_DataAbertura" />
-          <ScalarProperty Name="CRTGAR_TipoGarantia" ColumnName="CRTGAR_TipoGarantia" />
-          <ScalarProperty Name="CRDDJR_InicioPerJurosOuRendas" ColumnName="CRDDJR_InicioPerJurosOuRendas" />
-          <ScalarProperty Name="CRDPDJ_ProxDebitoJurosOuRendas" ColumnName="CRDPDJ_ProxDebitoJurosOuRendas" />
-          <ScalarProperty Name="CRPERJ_PeriodicidJurosOuRendas" ColumnName="CRPERJ_PeriodicidJurosOuRendas" />
-          <ScalarProperty Name="CRMATX_ModoAplicacaoTaxa" ColumnName="CRMATX_ModoAplicacaoTaxa" />
-          <ScalarProperty Name="CRTXNO_TaxaNominal" ColumnName="CRTXNO_TaxaNominal" />
-          <ScalarProperty Name="CRAMR_NrAmortizOuRendas" ColumnName="CRAMR_NrAmortizOuRendas" />
-          <ScalarProperty Name="CRUTI_NrUtilizacoes" ColumnName="CRUTI_NrUtilizacoes" />
-          <ScalarProperty Name="CRVLR_ValorEmprestimo" ColumnName="CRVLR_ValorEmprestimo" />
-          <ScalarProperty Name="CRLCRE_LinhaCredito" ColumnName="CRLCRE_LinhaCredito" />
-          <ScalarProperty Name="CRTCRE_TipoCredito" ColumnName="CRTCRE_TipoCredito" />
-          <ScalarProperty Name="CRNPRO_NrProposta" ColumnName="CRNPRO_NrProposta" />
-          <ScalarProperty Name="CRNATR_Natureza" ColumnName="CRNATR_Natureza" />
-          <ScalarProperty Name="CRNCLI_NrCliente" ColumnName="CRNCLI_NrCliente" />
-          <ScalarProperty Name="CRBAL_Balcao" ColumnName="CRBAL_Balcao" />
           <ScalarProperty Name="CRNSEQ_NrSequencial" ColumnName="CRNSEQ_NrSequencial" />
+          <ScalarProperty Name="CRBAL_Balcao" ColumnName="CRBAL_Balcao" />
+          <ScalarProperty Name="CRNCLI_NrCliente" ColumnName="CRNCLI_NrCliente" />
+          <ScalarProperty Name="CRNATR_Natureza" ColumnName="CRNATR_Natureza" />
+          <ScalarProperty Name="CRNPRO_NrProposta" ColumnName="CRNPRO_NrProposta" />
+          <ScalarProperty Name="CRTCRE_TipoCredito" ColumnName="CRTCRE_TipoCredito" />
+          <ScalarProperty Name="CRLCRE_LinhaCredito" ColumnName="CRLCRE_LinhaCredito" />
+          <ScalarProperty Name="CRVLR_ValorEmprestimo" ColumnName="CRVLR_ValorEmprestimo" />
+          <ScalarProperty Name="CRUTI_NrUtilizacoes" ColumnName="CRUTI_NrUtilizacoes" />
+          <ScalarProperty Name="CRAMR_NrAmortizOuRendas" ColumnName="CRAMR_NrAmortizOuRendas" />
+          <ScalarProperty Name="CRTXNO_TaxaNominal" ColumnName="CRTXNO_TaxaNominal" />
+          <ScalarProperty Name="CRMATX_ModoAplicacaoTaxa" ColumnName="CRMATX_ModoAplicacaoTaxa" />
+          <ScalarProperty Name="CRPERJ_PeriodicidJurosOuRendas" ColumnName="CRPERJ_PeriodicidJurosOuRendas" />
+          <ScalarProperty Name="CRDPDJ_ProxDebitoJurosOuRendas" ColumnName="CRDPDJ_ProxDebitoJurosOuRendas" />
+          <ScalarProperty Name="CRDDJR_InicioPerJurosOuRendas" ColumnName="CRDDJR_InicioPerJurosOuRendas" />
+          <ScalarProperty Name="CRTGAR_TipoGarantia" ColumnName="CRTGAR_TipoGarantia" />
+          <ScalarProperty Name="CRDTAB_DataAbertura" ColumnName="CRDTAB_DataAbertura" />
+          <ScalarProperty Name="CREPRZ_CdgEstatisticoPrazo" ColumnName="CREPRZ_CdgEstatisticoPrazo" />
+          <ScalarProperty Name="CRSITU_Situacao" ColumnName="CRSITU_Situacao" />
+          <ScalarProperty Name="CRDSIT_DataSituacao" ColumnName="CRDSIT_DataSituacao" />
+          <ScalarProperty Name="CRSLD_Saldo" ColumnName="CRSLD_Saldo" />
+          <ScalarProperty Name="CRSLDC_SaldoCapital" ColumnName="CRSLDC_SaldoCapital" />
+          <ScalarProperty Name="CRSLDJ_SaldoJuros" ColumnName="CRSLDJ_SaldoJuros" />
+          <ScalarProperty Name="CRSLDI_SaldoCapitalSituIrreg" ColumnName="CRSLDI_SaldoCapitalSituIrreg" />
+          <ScalarProperty Name="CRTJUR_TipoJuros" ColumnName="CRTJUR_TipoJuros" />
+          <ScalarProperty Name="CRREFR_ReferenciaInterna" ColumnName="CRREFR_ReferenciaInterna" />
+          <ScalarProperty Name="CRREFC_ReferenciaCliente" ColumnName="CRREFC_ReferenciaCliente" />
+          <ScalarProperty Name="CROBS_Observacoes" ColumnName="CROBS_Observacoes" />
+          <ScalarProperty Name="CRSLAL_SaldoAlterado" ColumnName="CRSLAL_SaldoAlterado" />
+          <ScalarProperty Name="CRDVNC_DataVencimento" ColumnName="CRDVNC_DataVencimento" />
+          <ScalarProperty Name="CRTXNG_ComTaxaNegociada" ColumnName="CRTXNG_ComTaxaNegociada" />
+          <ScalarProperty Name="CRPERV_PeriodoJuroOuRendaVigor" ColumnName="CRPERV_PeriodoJuroOuRendaVigor" />
+          <ScalarProperty Name="CRSITP_SituacaoProtegida" ColumnName="CRSITP_SituacaoProtegida" />
+          <ScalarProperty Name="CRDAAM_RegularizAutomaticas" ColumnName="CRDAAM_RegularizAutomaticas" />
+          <ScalarProperty Name="CRMOED_Moeda" ColumnName="CRMOED_Moeda" />
+          <ScalarProperty Name="CRTRND_TipoRenda" ColumnName="CRTRND_TipoRenda" />
+          <ScalarProperty Name="CRTFPR_FactorProgressaoRnd" ColumnName="CRTFPR_FactorProgressaoRnd" />
+          <ScalarProperty Name="CRVFPR_VlrFactorProgRenda" ColumnName="CRVFPR_VlrFactorProgRenda" />
+          <ScalarProperty Name="CRORDP_OrdemProgressao" ColumnName="CRORDP_OrdemProgressao" />
+          <ScalarProperty Name="CRTPRG_TipoProgressao" ColumnName="CRTPRG_TipoProgressao" />
+          <ScalarProperty Name="CRCPRU_PeriodicidadeUtiliz" ColumnName="CRCPRU_PeriodicidadeUtiliz" />
+          <ScalarProperty Name="CRCPRA_PeriodicidadeAmortiz" ColumnName="CRCPRA_PeriodicidadeAmortiz" />
+          <ScalarProperty Name="CRNCLD_NrCliRelacParaDebitos" ColumnName="CRNCLD_NrCliRelacParaDebitos" />
+          <ScalarProperty Name="CRNATD_NatrRelacParaDebitos" ColumnName="CRNATD_NatrRelacParaDebitos" />
+          <ScalarProperty Name="CRNSED_NrSeqRelacParaDebitos" ColumnName="CRNSED_NrSeqRelacParaDebitos" />
+          <ScalarProperty Name="CRNCLC_NrCliRelacParaCreditos" ColumnName="CRNCLC_NrCliRelacParaCreditos" />
+          <ScalarProperty Name="CRNATC_NatrRelacParaCreditos" ColumnName="CRNATC_NatrRelacParaCreditos" />
+          <ScalarProperty Name="CRNSEC_NrSeqRelacParaCreditos" ColumnName="CRNSEC_NrSeqRelacParaCreditos" />
+          <ScalarProperty Name="CRSITJ_SituacaoJuros" ColumnName="CRSITJ_SituacaoJuros" />
+          <ScalarProperty Name="CRDTSJ_DataSituacaoJuros" ColumnName="CRDTSJ_DataSituacaoJuros" />
+          <ScalarProperty Name="CRMSIT_MotivoSituacao" ColumnName="CRMSIT_MotivoSituacao" />
+          <ScalarProperty Name="CRISJR_ImpostoSeloJurosInclRenda" ColumnName="CRISJR_ImpostoSeloJurosInclRenda" />
+          <ScalarProperty Name="CRBAJ_BaseAnualDiasParaJuros" ColumnName="CRBAJ_BaseAnualDiasParaJuros" />
+          <ScalarProperty Name="CRTTXR_TaxaReferencia" ColumnName="CRTTXR_TaxaReferencia" />
+          <ScalarProperty Name="CRPSPD_ParametroSpread" ColumnName="CRPSPD_ParametroSpread" />
+          <ScalarProperty Name="CRSPD_Spread" ColumnName="CRSPD_Spread" />
+          <ScalarProperty Name="CRCPRD_CodigoProduto" ColumnName="CRCPRD_CodigoProduto" />
+          <ScalarProperty Name="CRCCPR_CodigoComponente" ColumnName="CRCCPR_CodigoComponente" />
+          <ScalarProperty Name="CRCLCP_ClasseComponente" ColumnName="CRCLCP_ClasseComponente" />
+          <ScalarProperty Name="CRCCAS_CanalSubscricao" ColumnName="CRCCAS_CanalSubscricao" />
+          <ScalarProperty Name="CRUSRS_UtilizadorSubscricao" ColumnName="CRUSRS_UtilizadorSubscricao" />
+          <ScalarProperty Name="CRCBNF_ContaComBonificacoes" ColumnName="CRCBNF_ContaComBonificacoes" />
+          <ScalarProperty Name="CRJRPC_JurosPeriodoCarencia" ColumnName="CRJRPC_JurosPeriodoCarencia" />
+          <ScalarProperty Name="CRPRTX_PeriodicidadeRevisaoTx" ColumnName="CRPRTX_PeriodicidadeRevisaoTx" />
+          <ScalarProperty Name="CRDTRT_DtReferenciaRevisaoTx" ColumnName="CRDTRT_DtReferenciaRevisaoTx" />
+          <ScalarProperty Name="CRDTUT_DataUltimaRevisaoTaxa" ColumnName="CRDTUT_DataUltimaRevisaoTaxa" />
+          <ScalarProperty Name="CRTXNN_TaxaNominalNegociada" ColumnName="CRTXNN_TaxaNominalNegociada" />
+          <ScalarProperty Name="CRMATN_ModoAplicacaoTaxaNeg" ColumnName="CRMATN_ModoAplicacaoTaxaNeg" />
+          <ScalarProperty Name="CRTXRN_TaxaReferenciaNeg" ColumnName="CRTXRN_TaxaReferenciaNeg" />
+          <ScalarProperty Name="CRPSPN_ParametroSpreadNeg" ColumnName="CRPSPN_ParametroSpreadNeg" />
+          <ScalarProperty Name="CRSPDN_SpreadNegociado" ColumnName="CRSPDN_SpreadNegociado" />
+          <ScalarProperty Name="CRTAE_UltimaTaeCalculada" ColumnName="CRTAE_UltimaTaeCalculada" />
+          <ScalarProperty Name="CRTAEG_UltimaTaegCalculada" ColumnName="CRTAEG_UltimaTaegCalculada" />
+          <ScalarProperty Name="CRDTTA_DataUltimaTae" ColumnName="CRDTTA_DataUltimaTae" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCDO_ContasDepositosOrdem">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCDO_ContasDepositosOrdem">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCDO_ContasDepositosOrdem)">
         <MappingFragment StoreEntitySet="GBCDO_ContasDepositosOrdem">
-          <ScalarProperty Name="DOUSRS_UtilizadorSubscricao" ColumnName="DOUSRS_UtilizadorSubscricao" />
-          <ScalarProperty Name="DOCCAS_CanalSubscricao" ColumnName="DOCCAS_CanalSubscricao" />
-          <ScalarProperty Name="DOCLCP_ClasseComponente" ColumnName="DOCLCP_ClasseComponente" />
-          <ScalarProperty Name="DOCCPR_CodigoComponente" ColumnName="DOCCPR_CodigoComponente" />
-          <ScalarProperty Name="DOCPRD_CodigoProduto" ColumnName="DOCPRD_CodigoProduto" />
-          <ScalarProperty Name="DOBAJD_BaseAnualDiasJurosDv" ColumnName="DOBAJD_BaseAnualDiasJurosDv" />
-          <ScalarProperty Name="DOBAJC_BaseAnualDiasJurosCr" ColumnName="DOBAJC_BaseAnualDiasJurosCr" />
-          <ScalarProperty Name="DOMSIT_MotivoSituacao" ColumnName="DOMSIT_MotivoSituacao" />
-          <ScalarProperty Name="DOSITP_SituacaoProtegida" ColumnName="DOSITP_SituacaoProtegida" />
-          <ScalarProperty Name="DORCHM_NrChequesReqNoMes" ColumnName="DORCHM_NrChequesReqNoMes" />
-          <ScalarProperty Name="DODTUR_DataUltimaRequisicao" ColumnName="DODTUR_DataUltimaRequisicao" />
-          <ScalarProperty Name="DOMCHM_NrMaximoChequesPorMes" ColumnName="DOMCHM_NrMaximoChequesPorMes" />
-          <ScalarProperty Name="DONCJD_CalculaJurosDevedores" ColumnName="DONCJD_CalculaJurosDevedores" />
-          <ScalarProperty Name="DONCJC_CalculaJurosCredores" ColumnName="DONCJC_CalculaJurosCredores" />
-          <ScalarProperty Name="DOCTPD_CativosPendentes" ColumnName="DOCTPD_CativosPendentes" />
-          <ScalarProperty Name="DOCTCR_CativosACredito" ColumnName="DOCTCR_CativosACredito" />
-          <ScalarProperty Name="DOCTDB_CativosADebito" ColumnName="DOCTDB_CativosADebito" />
-          <ScalarProperty Name="DONIB_NIB" ColumnName="DONIB_NIB" />
-          <ScalarProperty Name="DONSED_NrSeqParaJurosDevedor" ColumnName="DONSED_NrSeqParaJurosDevedor" />
-          <ScalarProperty Name="DONATD_NaturezaParaJurosDeved" ColumnName="DONATD_NaturezaParaJurosDeved" />
-          <ScalarProperty Name="DONCLD_ClienteParaJurosDevedor" ColumnName="DONCLD_ClienteParaJurosDevedor" />
-          <ScalarProperty Name="DOTXMD_TaxaMediaDia" ColumnName="DOTXMD_TaxaMediaDia" />
-          <ScalarProperty Name="DONJCM_NrsJurosCredDoMes" ColumnName="DONJCM_NrsJurosCredDoMes" />
-          <ScalarProperty Name="DONJDM_NrsJurosDevedDoMes" ColumnName="DONJDM_NrsJurosDevedDoMes" />
-          <ScalarProperty Name="DONSEC_NrSeqParaJurosCredores" ColumnName="DONSEC_NrSeqParaJurosCredores" />
-          <ScalarProperty Name="DONATC_NaturezaParaJurosCredor" ColumnName="DONATC_NaturezaParaJurosCredor" />
-          <ScalarProperty Name="DONCLC_ClienteParaJurosCredores" ColumnName="DONCLC_ClienteParaJurosCredores" />
-          <ScalarProperty Name="DOMOED_Moeda" ColumnName="DOMOED_Moeda" />
-          <ScalarProperty Name="DOECJ_ComEscalaJuros" ColumnName="DOECJ_ComEscalaJuros" />
-          <ScalarProperty Name="DODSIT_DataSituacao" ColumnName="DODSIT_DataSituacao" />
-          <ScalarProperty Name="DOSITU_SituacaoConta" ColumnName="DOSITU_SituacaoConta" />
-          <ScalarProperty Name="DODCJR_DataUltimoCreditoJuro" ColumnName="DODCJR_DataUltimoCreditoJuro" />
-          <ScalarProperty Name="DODDJR_DataUltimoDebitoJuros" ColumnName="DODDJR_DataUltimoDebitoJuros" />
-          <ScalarProperty Name="DODUMV_DataUltimoMovimento" ColumnName="DODUMV_DataUltimoMovimento" />
-          <ScalarProperty Name="DODTAB_DataAbertura" ColumnName="DODTAB_DataAbertura" />
-          <ScalarProperty Name="DOTXDN_ComTaxasDevedorasNegoc" ColumnName="DOTXDN_ComTaxasDevedorasNegoc" />
-          <ScalarProperty Name="DOTXCN_ComTaxasCredorasNegoc" ColumnName="DOTXCN_ComTaxasCredorasNegoc" />
-          <ScalarProperty Name="DOSLAL_SaldoAlterado" ColumnName="DOSLAL_SaldoAlterado" />
-          <ScalarProperty Name="DODEXT_DataUltimoExtracto" ColumnName="DODEXT_DataUltimoExtracto" />
-          <ScalarProperty Name="DOUEXT_NrExtrOuLinhaCader" ColumnName="DOUEXT_NrExtrOuLinhaCader" />
-          <ScalarProperty Name="DOMVNE_NrMovNaoSaidosExtr" ColumnName="DOMVNE_NrMovNaoSaidosExtr" />
-          <ScalarProperty Name="DORUMV_RecalculoNrsVermelhos" ColumnName="DORUMV_RecalculoNrsVermelhos" />
-          <ScalarProperty Name="DORUMP_RecalculoNrsPretos" ColumnName="DORUMP_RecalculoNrsPretos" />
-          <ScalarProperty Name="DONUMV_NumerosVermelhos" ColumnName="DONUMV_NumerosVermelhos" />
-          <ScalarProperty Name="DONUMP_NumerosPretos" ColumnName="DONUMP_NumerosPretos" />
-          <ScalarProperty Name="DOPERE_PeriodicidadeExtracto" ColumnName="DOPERE_PeriodicidadeExtracto" />
-          <ScalarProperty Name="DOTEXT_TipoExtracto" ColumnName="DOTEXT_TipoExtracto" />
-          <ScalarProperty Name="DODLIM_DataExpirLimiteDesc" ColumnName="DODLIM_DataExpirLimiteDesc" />
-          <ScalarProperty Name="DOSMIN_SaldoMinimo" ColumnName="DOSMIN_SaldoMinimo" />
-          <ScalarProperty Name="DOLIMD_LimiteDescoberto" ColumnName="DOLIMD_LimiteDescoberto" />
-          <ScalarProperty Name="DONDSM_NrDiasSaldoMedio" ColumnName="DONDSM_NrDiasSaldoMedio" />
-          <ScalarProperty Name="DOSALD_SaldoMedioDisponivel" ColumnName="DOSALD_SaldoMedioDisponivel" />
-          <ScalarProperty Name="DOSALV_SaldoMedioDataValor" ColumnName="DOSALV_SaldoMedioDataValor" />
-          <ScalarProperty Name="DOSALM_SaldoMedioPorSaldo" ColumnName="DOSALM_SaldoMedioPorSaldo" />
-          <ScalarProperty Name="DONDDESC_DiasDescobertoSaldo" ColumnName="DONDDESC_DiasDescobertoSaldo" />
-          <ScalarProperty Name="DOSLDV_SaldoPorDataValor" ColumnName="DOSLDV_SaldoPorDataValor" />
-          <ScalarProperty Name="DOSLD_Saldo" ColumnName="DOSLD_Saldo" />
-          <ScalarProperty Name="DONATR_Natureza" ColumnName="DONATR_Natureza" />
-          <ScalarProperty Name="DONCLI_NrCliente" ColumnName="DONCLI_NrCliente" />
-          <ScalarProperty Name="DOBAL_Balcao" ColumnName="DOBAL_Balcao" />
           <ScalarProperty Name="DONSEQ_NrSequencial" ColumnName="DONSEQ_NrSequencial" />
+          <ScalarProperty Name="DOBAL_Balcao" ColumnName="DOBAL_Balcao" />
+          <ScalarProperty Name="DONCLI_NrCliente" ColumnName="DONCLI_NrCliente" />
+          <ScalarProperty Name="DONATR_Natureza" ColumnName="DONATR_Natureza" />
+          <ScalarProperty Name="DOSLD_Saldo" ColumnName="DOSLD_Saldo" />
+          <ScalarProperty Name="DOSLDV_SaldoPorDataValor" ColumnName="DOSLDV_SaldoPorDataValor" />
+          <ScalarProperty Name="DONDDESC_DiasDescobertoSaldo" ColumnName="DONDDESC_DiasDescobertoSaldo" />
+          <ScalarProperty Name="DOSALM_SaldoMedioPorSaldo" ColumnName="DOSALM_SaldoMedioPorSaldo" />
+          <ScalarProperty Name="DOSALV_SaldoMedioDataValor" ColumnName="DOSALV_SaldoMedioDataValor" />
+          <ScalarProperty Name="DOSALD_SaldoMedioDisponivel" ColumnName="DOSALD_SaldoMedioDisponivel" />
+          <ScalarProperty Name="DONDSM_NrDiasSaldoMedio" ColumnName="DONDSM_NrDiasSaldoMedio" />
+          <ScalarProperty Name="DOLIMD_LimiteDescoberto" ColumnName="DOLIMD_LimiteDescoberto" />
+          <ScalarProperty Name="DOSMIN_SaldoMinimo" ColumnName="DOSMIN_SaldoMinimo" />
+          <ScalarProperty Name="DODLIM_DataExpirLimiteDesc" ColumnName="DODLIM_DataExpirLimiteDesc" />
+          <ScalarProperty Name="DOTEXT_TipoExtracto" ColumnName="DOTEXT_TipoExtracto" />
+          <ScalarProperty Name="DOPERE_PeriodicidadeExtracto" ColumnName="DOPERE_PeriodicidadeExtracto" />
+          <ScalarProperty Name="DONUMP_NumerosPretos" ColumnName="DONUMP_NumerosPretos" />
+          <ScalarProperty Name="DONUMV_NumerosVermelhos" ColumnName="DONUMV_NumerosVermelhos" />
+          <ScalarProperty Name="DORUMP_RecalculoNrsPretos" ColumnName="DORUMP_RecalculoNrsPretos" />
+          <ScalarProperty Name="DORUMV_RecalculoNrsVermelhos" ColumnName="DORUMV_RecalculoNrsVermelhos" />
+          <ScalarProperty Name="DOMVNE_NrMovNaoSaidosExtr" ColumnName="DOMVNE_NrMovNaoSaidosExtr" />
+          <ScalarProperty Name="DOUEXT_NrExtrOuLinhaCader" ColumnName="DOUEXT_NrExtrOuLinhaCader" />
+          <ScalarProperty Name="DODEXT_DataUltimoExtracto" ColumnName="DODEXT_DataUltimoExtracto" />
+          <ScalarProperty Name="DOSLAL_SaldoAlterado" ColumnName="DOSLAL_SaldoAlterado" />
+          <ScalarProperty Name="DOTXCN_ComTaxasCredorasNegoc" ColumnName="DOTXCN_ComTaxasCredorasNegoc" />
+          <ScalarProperty Name="DOTXDN_ComTaxasDevedorasNegoc" ColumnName="DOTXDN_ComTaxasDevedorasNegoc" />
+          <ScalarProperty Name="DODTAB_DataAbertura" ColumnName="DODTAB_DataAbertura" />
+          <ScalarProperty Name="DODUMV_DataUltimoMovimento" ColumnName="DODUMV_DataUltimoMovimento" />
+          <ScalarProperty Name="DODDJR_DataUltimoDebitoJuros" ColumnName="DODDJR_DataUltimoDebitoJuros" />
+          <ScalarProperty Name="DODCJR_DataUltimoCreditoJuro" ColumnName="DODCJR_DataUltimoCreditoJuro" />
+          <ScalarProperty Name="DOSITU_SituacaoConta" ColumnName="DOSITU_SituacaoConta" />
+          <ScalarProperty Name="DODSIT_DataSituacao" ColumnName="DODSIT_DataSituacao" />
+          <ScalarProperty Name="DOECJ_ComEscalaJuros" ColumnName="DOECJ_ComEscalaJuros" />
+          <ScalarProperty Name="DOMOED_Moeda" ColumnName="DOMOED_Moeda" />
+          <ScalarProperty Name="DONCLC_ClienteParaJurosCredores" ColumnName="DONCLC_ClienteParaJurosCredores" />
+          <ScalarProperty Name="DONATC_NaturezaParaJurosCredor" ColumnName="DONATC_NaturezaParaJurosCredor" />
+          <ScalarProperty Name="DONSEC_NrSeqParaJurosCredores" ColumnName="DONSEC_NrSeqParaJurosCredores" />
+          <ScalarProperty Name="DONJDM_NrsJurosDevedDoMes" ColumnName="DONJDM_NrsJurosDevedDoMes" />
+          <ScalarProperty Name="DONJCM_NrsJurosCredDoMes" ColumnName="DONJCM_NrsJurosCredDoMes" />
+          <ScalarProperty Name="DOTXMD_TaxaMediaDia" ColumnName="DOTXMD_TaxaMediaDia" />
+          <ScalarProperty Name="DONCLD_ClienteParaJurosDevedor" ColumnName="DONCLD_ClienteParaJurosDevedor" />
+          <ScalarProperty Name="DONATD_NaturezaParaJurosDeved" ColumnName="DONATD_NaturezaParaJurosDeved" />
+          <ScalarProperty Name="DONSED_NrSeqParaJurosDevedor" ColumnName="DONSED_NrSeqParaJurosDevedor" />
+          <ScalarProperty Name="DONIB_NIB" ColumnName="DONIB_NIB" />
+          <ScalarProperty Name="DOCTDB_CativosADebito" ColumnName="DOCTDB_CativosADebito" />
+          <ScalarProperty Name="DOCTCR_CativosACredito" ColumnName="DOCTCR_CativosACredito" />
+          <ScalarProperty Name="DOCTPD_CativosPendentes" ColumnName="DOCTPD_CativosPendentes" />
+          <ScalarProperty Name="DONCJC_CalculaJurosCredores" ColumnName="DONCJC_CalculaJurosCredores" />
+          <ScalarProperty Name="DONCJD_CalculaJurosDevedores" ColumnName="DONCJD_CalculaJurosDevedores" />
+          <ScalarProperty Name="DOMCHM_NrMaximoChequesPorMes" ColumnName="DOMCHM_NrMaximoChequesPorMes" />
+          <ScalarProperty Name="DODTUR_DataUltimaRequisicao" ColumnName="DODTUR_DataUltimaRequisicao" />
+          <ScalarProperty Name="DORCHM_NrChequesReqNoMes" ColumnName="DORCHM_NrChequesReqNoMes" />
+          <ScalarProperty Name="DOSITP_SituacaoProtegida" ColumnName="DOSITP_SituacaoProtegida" />
+          <ScalarProperty Name="DOMSIT_MotivoSituacao" ColumnName="DOMSIT_MotivoSituacao" />
+          <ScalarProperty Name="DOBAJC_BaseAnualDiasJurosCr" ColumnName="DOBAJC_BaseAnualDiasJurosCr" />
+          <ScalarProperty Name="DOBAJD_BaseAnualDiasJurosDv" ColumnName="DOBAJD_BaseAnualDiasJurosDv" />
+          <ScalarProperty Name="DOCPRD_CodigoProduto" ColumnName="DOCPRD_CodigoProduto" />
+          <ScalarProperty Name="DOCCPR_CodigoComponente" ColumnName="DOCCPR_CodigoComponente" />
+          <ScalarProperty Name="DOCLCP_ClasseComponente" ColumnName="DOCLCP_ClasseComponente" />
+          <ScalarProperty Name="DOCCAS_CanalSubscricao" ColumnName="DOCCAS_CanalSubscricao" />
+          <ScalarProperty Name="DOUSRS_UtilizadorSubscricao" ColumnName="DOUSRS_UtilizadorSubscricao" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCDP_ContasDepositosPrazo">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCDP_ContasDepositosPrazo">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCDP_ContasDepositosPrazo)">
         <MappingFragment StoreEntitySet="GBCDP_ContasDepositosPrazo">
-          <ScalarProperty Name="DPDTTA_DataUltimaTAE" ColumnName="DPDTTA_DataUltimaTAE" />
-          <ScalarProperty Name="DPTAE_UltimaTaeCalculada" ColumnName="DPTAE_UltimaTaeCalculada" />
-          <ScalarProperty Name="DPSPDN_SpreadNegociado" ColumnName="DPSPDN_SpreadNegociado" />
-          <ScalarProperty Name="DPPSPN_ParametroSpreadNeg" ColumnName="DPPSPN_ParametroSpreadNeg" />
-          <ScalarProperty Name="DPTXRN_TaxaReferenciaNeg" ColumnName="DPTXRN_TaxaReferenciaNeg" />
-          <ScalarProperty Name="DPTXJN_TaxaJurosNegociada" ColumnName="DPTXJN_TaxaJurosNegociada" />
-          <ScalarProperty Name="DPDTUT_DataUltimaRevisaoTaxa" ColumnName="DPDTUT_DataUltimaRevisaoTaxa" />
-          <ScalarProperty Name="DPDTRT_DtReferenciaRevisaoTx" ColumnName="DPDTRT_DtReferenciaRevisaoTx" />
-          <ScalarProperty Name="DPPRTX_PeriodicidadeRevisaoTx" ColumnName="DPPRTX_PeriodicidadeRevisaoTx" />
-          <ScalarProperty Name="DPUSRS_UtilizadorSubscricao" ColumnName="DPUSRS_UtilizadorSubscricao" />
-          <ScalarProperty Name="DPCCAS_CanalSubscricao" ColumnName="DPCCAS_CanalSubscricao" />
-          <ScalarProperty Name="DPCLCP_ClasseComponente" ColumnName="DPCLCP_ClasseComponente" />
-          <ScalarProperty Name="DPCCPR_CodigoComponente" ColumnName="DPCCPR_CodigoComponente" />
-          <ScalarProperty Name="DPCPRD_CodigoProduto" ColumnName="DPCPRD_CodigoProduto" />
-          <ScalarProperty Name="DPSPD_Spread" ColumnName="DPSPD_Spread" />
-          <ScalarProperty Name="DPPSPD_ParametroSpread" ColumnName="DPPSPD_ParametroSpread" />
-          <ScalarProperty Name="DPTTXR_TaxaReferencia" ColumnName="DPTTXR_TaxaReferencia" />
-          <ScalarProperty Name="DPBAJ_BaseAnualDiasParaJuros" ColumnName="DPBAJ_BaseAnualDiasParaJuros" />
-          <ScalarProperty Name="DPMSIT_MotivoSituacao" ColumnName="DPMSIT_MotivoSituacao" />
-          <ScalarProperty Name="DPDTIC_DataProximoIncremento" ColumnName="DPDTIC_DataProximoIncremento" />
-          <ScalarProperty Name="DPTINC_ValorParaIncremento" ColumnName="DPTINC_ValorParaIncremento" />
-          <ScalarProperty Name="DPPINC_PeriodicidadeIncremento" ColumnName="DPPINC_PeriodicidadeIncremento" />
-          <ScalarProperty Name="DPTCJR_TipoCalculoJuros" ColumnName="DPTCJR_TipoCalculoJuros" />
-          <ScalarProperty Name="DPCTPD_CativosPendentes" ColumnName="DPCTPD_CativosPendentes" />
-          <ScalarProperty Name="DPCTCR_CativosACredito" ColumnName="DPCTCR_CativosACredito" />
-          <ScalarProperty Name="DPCTDB_CativosADebito" ColumnName="DPCTDB_CativosADebito" />
-          <ScalarProperty Name="DPTFVC_TransfereNoVencimento" ColumnName="DPTFVC_TransfereNoVencimento" />
-          <ScalarProperty Name="DPMOED_Moeda" ColumnName="DPMOED_Moeda" />
-          <ScalarProperty Name="DPEPRZ_CdgEstatisticoPrazo" ColumnName="DPEPRZ_CdgEstatisticoPrazo" />
-          <ScalarProperty Name="DPNSEJ_NrSequencialParaJuros" ColumnName="DPNSEJ_NrSequencialParaJuros" />
-          <ScalarProperty Name="DPNATJ_NaturezaParaJuros" ColumnName="DPNATJ_NaturezaParaJuros" />
-          <ScalarProperty Name="DPNCLJ_NrClienteParaJuros" ColumnName="DPNCLJ_NrClienteParaJuros" />
-          <ScalarProperty Name="DPEPRO_PromissoriaEmitida" ColumnName="DPEPRO_PromissoriaEmitida" />
-          <ScalarProperty Name="DPNPRO_NrPromissoria" ColumnName="DPNPRO_NrPromissoria" />
-          <ScalarProperty Name="DPPCRJ_FimPeriodoJuros" ColumnName="DPPCRJ_FimPeriodoJuros" />
-          <ScalarProperty Name="DPPERJ_PeriodicidadeJuros" ColumnName="DPPERJ_PeriodicidadeJuros" />
-          <ScalarProperty Name="DPIPRJ_InicioPeriodoJuros" ColumnName="DPIPRJ_InicioPeriodoJuros" />
-          <ScalarProperty Name="DPDSIT_DataSituacao" ColumnName="DPDSIT_DataSituacao" />
-          <ScalarProperty Name="DPSITU_SituacaoConta" ColumnName="DPSITU_SituacaoConta" />
-          <ScalarProperty Name="DPTXNG_ComTaxaNegociada" ColumnName="DPTXNG_ComTaxaNegociada" />
-          <ScalarProperty Name="DPDTAB_DataAbertura" ColumnName="DPDTAB_DataAbertura" />
-          <ScalarProperty Name="DPSLAL_SaldoAlterado" ColumnName="DPSLAL_SaldoAlterado" />
-          <ScalarProperty Name="DPNREN_NrRenovacoes" ColumnName="DPNREN_NrRenovacoes" />
-          <ScalarProperty Name="DPTXJ_TaxaJuro" ColumnName="DPTXJ_TaxaJuro" />
-          <ScalarProperty Name="DPDVNC_DataVencimento" ColumnName="DPDVNC_DataVencimento" />
-          <ScalarProperty Name="DPNDIA_NrDias" ColumnName="DPNDIA_NrDias" />
-          <ScalarProperty Name="DPDTIN_DataInicio" ColumnName="DPDTIN_DataInicio" />
-          <ScalarProperty Name="DPSLD_Saldo" ColumnName="DPSLD_Saldo" />
-          <ScalarProperty Name="DPCCAP_CodigoCapitalizacao" ColumnName="DPCCAP_CodigoCapitalizacao" />
-          <ScalarProperty Name="DPNATR_Natureza" ColumnName="DPNATR_Natureza" />
-          <ScalarProperty Name="DPNCLI_NrCliente" ColumnName="DPNCLI_NrCliente" />
-          <ScalarProperty Name="DPBAL_Balcao" ColumnName="DPBAL_Balcao" />
           <ScalarProperty Name="DPNSEQ_NrSequencial" ColumnName="DPNSEQ_NrSequencial" />
+          <ScalarProperty Name="DPBAL_Balcao" ColumnName="DPBAL_Balcao" />
+          <ScalarProperty Name="DPNCLI_NrCliente" ColumnName="DPNCLI_NrCliente" />
+          <ScalarProperty Name="DPNATR_Natureza" ColumnName="DPNATR_Natureza" />
+          <ScalarProperty Name="DPCCAP_CodigoCapitalizacao" ColumnName="DPCCAP_CodigoCapitalizacao" />
+          <ScalarProperty Name="DPSLD_Saldo" ColumnName="DPSLD_Saldo" />
+          <ScalarProperty Name="DPDTIN_DataInicio" ColumnName="DPDTIN_DataInicio" />
+          <ScalarProperty Name="DPNDIA_NrDias" ColumnName="DPNDIA_NrDias" />
+          <ScalarProperty Name="DPDVNC_DataVencimento" ColumnName="DPDVNC_DataVencimento" />
+          <ScalarProperty Name="DPTXJ_TaxaJuro" ColumnName="DPTXJ_TaxaJuro" />
+          <ScalarProperty Name="DPNREN_NrRenovacoes" ColumnName="DPNREN_NrRenovacoes" />
+          <ScalarProperty Name="DPSLAL_SaldoAlterado" ColumnName="DPSLAL_SaldoAlterado" />
+          <ScalarProperty Name="DPDTAB_DataAbertura" ColumnName="DPDTAB_DataAbertura" />
+          <ScalarProperty Name="DPTXNG_ComTaxaNegociada" ColumnName="DPTXNG_ComTaxaNegociada" />
+          <ScalarProperty Name="DPSITU_SituacaoConta" ColumnName="DPSITU_SituacaoConta" />
+          <ScalarProperty Name="DPDSIT_DataSituacao" ColumnName="DPDSIT_DataSituacao" />
+          <ScalarProperty Name="DPIPRJ_InicioPeriodoJuros" ColumnName="DPIPRJ_InicioPeriodoJuros" />
+          <ScalarProperty Name="DPPERJ_PeriodicidadeJuros" ColumnName="DPPERJ_PeriodicidadeJuros" />
+          <ScalarProperty Name="DPPCRJ_FimPeriodoJuros" ColumnName="DPPCRJ_FimPeriodoJuros" />
+          <ScalarProperty Name="DPNPRO_NrPromissoria" ColumnName="DPNPRO_NrPromissoria" />
+          <ScalarProperty Name="DPEPRO_PromissoriaEmitida" ColumnName="DPEPRO_PromissoriaEmitida" />
+          <ScalarProperty Name="DPNCLJ_NrClienteParaJuros" ColumnName="DPNCLJ_NrClienteParaJuros" />
+          <ScalarProperty Name="DPNATJ_NaturezaParaJuros" ColumnName="DPNATJ_NaturezaParaJuros" />
+          <ScalarProperty Name="DPNSEJ_NrSequencialParaJuros" ColumnName="DPNSEJ_NrSequencialParaJuros" />
+          <ScalarProperty Name="DPEPRZ_CdgEstatisticoPrazo" ColumnName="DPEPRZ_CdgEstatisticoPrazo" />
+          <ScalarProperty Name="DPMOED_Moeda" ColumnName="DPMOED_Moeda" />
+          <ScalarProperty Name="DPTFVC_TransfereNoVencimento" ColumnName="DPTFVC_TransfereNoVencimento" />
+          <ScalarProperty Name="DPCTDB_CativosADebito" ColumnName="DPCTDB_CativosADebito" />
+          <ScalarProperty Name="DPCTCR_CativosACredito" ColumnName="DPCTCR_CativosACredito" />
+          <ScalarProperty Name="DPCTPD_CativosPendentes" ColumnName="DPCTPD_CativosPendentes" />
+          <ScalarProperty Name="DPTCJR_TipoCalculoJuros" ColumnName="DPTCJR_TipoCalculoJuros" />
+          <ScalarProperty Name="DPPINC_PeriodicidadeIncremento" ColumnName="DPPINC_PeriodicidadeIncremento" />
+          <ScalarProperty Name="DPTINC_ValorParaIncremento" ColumnName="DPTINC_ValorParaIncremento" />
+          <ScalarProperty Name="DPDTIC_DataProximoIncremento" ColumnName="DPDTIC_DataProximoIncremento" />
+          <ScalarProperty Name="DPMSIT_MotivoSituacao" ColumnName="DPMSIT_MotivoSituacao" />
+          <ScalarProperty Name="DPBAJ_BaseAnualDiasParaJuros" ColumnName="DPBAJ_BaseAnualDiasParaJuros" />
+          <ScalarProperty Name="DPTTXR_TaxaReferencia" ColumnName="DPTTXR_TaxaReferencia" />
+          <ScalarProperty Name="DPPSPD_ParametroSpread" ColumnName="DPPSPD_ParametroSpread" />
+          <ScalarProperty Name="DPSPD_Spread" ColumnName="DPSPD_Spread" />
+          <ScalarProperty Name="DPCPRD_CodigoProduto" ColumnName="DPCPRD_CodigoProduto" />
+          <ScalarProperty Name="DPCCPR_CodigoComponente" ColumnName="DPCCPR_CodigoComponente" />
+          <ScalarProperty Name="DPCLCP_ClasseComponente" ColumnName="DPCLCP_ClasseComponente" />
+          <ScalarProperty Name="DPCCAS_CanalSubscricao" ColumnName="DPCCAS_CanalSubscricao" />
+          <ScalarProperty Name="DPUSRS_UtilizadorSubscricao" ColumnName="DPUSRS_UtilizadorSubscricao" />
+          <ScalarProperty Name="DPPRTX_PeriodicidadeRevisaoTx" ColumnName="DPPRTX_PeriodicidadeRevisaoTx" />
+          <ScalarProperty Name="DPDTRT_DtReferenciaRevisaoTx" ColumnName="DPDTRT_DtReferenciaRevisaoTx" />
+          <ScalarProperty Name="DPDTUT_DataUltimaRevisaoTaxa" ColumnName="DPDTUT_DataUltimaRevisaoTaxa" />
+          <ScalarProperty Name="DPTXJN_TaxaJurosNegociada" ColumnName="DPTXJN_TaxaJurosNegociada" />
+          <ScalarProperty Name="DPTXRN_TaxaReferenciaNeg" ColumnName="DPTXRN_TaxaReferenciaNeg" />
+          <ScalarProperty Name="DPPSPN_ParametroSpreadNeg" ColumnName="DPPSPN_ParametroSpreadNeg" />
+          <ScalarProperty Name="DPSPDN_SpreadNegociado" ColumnName="DPSPDN_SpreadNegociado" />
+          <ScalarProperty Name="DPTAE_UltimaTaeCalculada" ColumnName="DPTAE_UltimaTaeCalculada" />
+          <ScalarProperty Name="DPDTTA_DataUltimaTAE" ColumnName="DPDTTA_DataUltimaTAE" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCLI_Clientes">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCLI_Clientes">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCLI_Clientes)">
         <MappingFragment StoreEntitySet="GBCLI_Clientes">
-          <ScalarProperty Name="GBCLPEREXT_PeriodicidadeExtracto" ColumnName="GBCLPEREXT_PeriodicidadeExtracto" />
-          <ScalarProperty Name="GBCLNUEXT_NumeroUltimoExtracto" ColumnName="GBCLNUEXT_NumeroUltimoExtracto" />
-          <ScalarProperty Name="GBCLDTUEXT_DataUltimoExtracto" ColumnName="GBCLDTUEXT_DataUltimoExtracto" />
-          <ScalarProperty Name="GBCLEXTINT_ExtractoIntegrado" ColumnName="GBCLEXTINT_ExtractoIntegrado" />
-          <ScalarProperty Name="GBCLALER_ComAlertas" ColumnName="GBCLALER_ComAlertas" />
-          <ScalarProperty Name="CLRACE_RestricoesAcesso" ColumnName="CLRACE_RestricoesAcesso" />
-          <ScalarProperty Name="CLPCNG_PerfilClienteNegociado" ColumnName="CLPCNG_PerfilClienteNegociado" />
-          <ScalarProperty Name="CLCSAC_CodigoServicoApoio" ColumnName="CLCSAC_CodigoServicoApoio" />
-          <ScalarProperty Name="CLCIAC_ComIsencaoActiva" ColumnName="CLCIAC_ComIsencaoActiva" />
-          <ScalarProperty Name="CLCNDM_CondicoesMovimentacao" ColumnName="CLCNDM_CondicoesMovimentacao" />
-          <ScalarProperty Name="CLPAIS_CodigoPais" ColumnName="CLPAIS_CodigoPais" />
-          <ScalarProperty Name="CLEPAR_EmpresaOuParticular" ColumnName="CLEPAR_EmpresaOuParticular" />
-          <ScalarProperty Name="CLOBSV_Observacoes" ColumnName="CLOBSV_Observacoes" />
-          <ScalarProperty Name="CLGERC_GestorCliente" ColumnName="CLGERC_GestorCliente" />
-          <ScalarProperty Name="CLNIVC_NivelConfidencial" ColumnName="CLNIVC_NivelConfidencial" />
-          <ScalarProperty Name="CLBLOQ_ComBloqueios" ColumnName="CLBLOQ_ComBloqueios" />
-          <ScalarProperty Name="CLMSGP_ComMensagemPendente" ColumnName="CLMSGP_ComMensagemPendente" />
-          <ScalarProperty Name="CLCORR_EnvioCorrespondencia" ColumnName="CLCORR_EnvioCorrespondencia" />
-          <ScalarProperty Name="CLTTIT_TipoTitularidade" ColumnName="CLTTIT_TipoTitularidade" />
-          <ScalarProperty Name="CLTCLI_SegmentoCliente" ColumnName="CLTCLI_SegmentoCliente" />
-          <ScalarProperty Name="CLCST_CodigoSectorial" ColumnName="CLCST_CodigoSectorial" />
-          <ScalarProperty Name="CLCRES_CodigoResidencia" ColumnName="CLCRES_CodigoResidencia" />
-          <ScalarProperty Name="CLDTAB_DataAbertura" ColumnName="CLDTAB_DataAbertura" />
-          <ScalarProperty Name="CLBAL_Balcao" ColumnName="CLBAL_Balcao" />
           <ScalarProperty Name="CLNCLI_NrCliente" ColumnName="CLNCLI_NrCliente" />
+          <ScalarProperty Name="CLBAL_Balcao" ColumnName="CLBAL_Balcao" />
+          <ScalarProperty Name="CLDTAB_DataAbertura" ColumnName="CLDTAB_DataAbertura" />
+          <ScalarProperty Name="CLCRES_CodigoResidencia" ColumnName="CLCRES_CodigoResidencia" />
+          <ScalarProperty Name="CLCST_CodigoSectorial" ColumnName="CLCST_CodigoSectorial" />
+          <ScalarProperty Name="CLTCLI_SegmentoCliente" ColumnName="CLTCLI_SegmentoCliente" />
+          <ScalarProperty Name="CLTTIT_TipoTitularidade" ColumnName="CLTTIT_TipoTitularidade" />
+          <ScalarProperty Name="CLCORR_EnvioCorrespondencia" ColumnName="CLCORR_EnvioCorrespondencia" />
+          <ScalarProperty Name="CLMSGP_ComMensagemPendente" ColumnName="CLMSGP_ComMensagemPendente" />
+          <ScalarProperty Name="CLBLOQ_ComBloqueios" ColumnName="CLBLOQ_ComBloqueios" />
+          <ScalarProperty Name="CLNIVC_NivelConfidencial" ColumnName="CLNIVC_NivelConfidencial" />
+          <ScalarProperty Name="CLGERC_GestorCliente" ColumnName="CLGERC_GestorCliente" />
+          <ScalarProperty Name="CLOBSV_Observacoes" ColumnName="CLOBSV_Observacoes" />
+          <ScalarProperty Name="CLEPAR_EmpresaOuParticular" ColumnName="CLEPAR_EmpresaOuParticular" />
+          <ScalarProperty Name="CLPAIS_CodigoPais" ColumnName="CLPAIS_CodigoPais" />
+          <ScalarProperty Name="CLCNDM_CondicoesMovimentacao" ColumnName="CLCNDM_CondicoesMovimentacao" />
+          <ScalarProperty Name="CLCIAC_ComIsencaoActiva" ColumnName="CLCIAC_ComIsencaoActiva" />
+          <ScalarProperty Name="CLCSAC_CodigoServicoApoio" ColumnName="CLCSAC_CodigoServicoApoio" />
+          <ScalarProperty Name="CLPCNG_PerfilClienteNegociado" ColumnName="CLPCNG_PerfilClienteNegociado" />
+          <ScalarProperty Name="CLRACE_RestricoesAcesso" ColumnName="CLRACE_RestricoesAcesso" />
+          <ScalarProperty Name="GBCLALER_ComAlertas" ColumnName="GBCLALER_ComAlertas" />
+          <ScalarProperty Name="GBCLEXTINT_ExtractoIntegrado" ColumnName="GBCLEXTINT_ExtractoIntegrado" />
+          <ScalarProperty Name="GBCLDTUEXT_DataUltimoExtracto" ColumnName="GBCLDTUEXT_DataUltimoExtracto" />
+          <ScalarProperty Name="GBCLNUEXT_NumeroUltimoExtracto" ColumnName="GBCLNUEXT_NumeroUltimoExtracto" />
+          <ScalarProperty Name="GBCLPEREXT_PeriodicidadeExtracto" ColumnName="GBCLPEREXT_PeriodicidadeExtracto" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCNDM_CondicoesMovimentacaoConta">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCNDM_CondicoesMovimentacaoConta">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCNDM_CondicoesMovimentacaoConta)">
         <MappingFragment StoreEntitySet="GBCNDM_CondicoesMovimentacaoConta">
-          <ScalarProperty Name="ATDCND_Descritivo" ColumnName="ATDCND_Descritivo" />
           <ScalarProperty Name="ATCNDM_CondMovimentacao" ColumnName="ATCNDM_CondMovimentacao" />
+          <ScalarProperty Name="ATDCND_Descritivo" ColumnName="ATDCND_Descritivo" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCODOP_CodigosOperacao">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCODOP_CodigosOperacao">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCODOP_CodigosOperacao)">
         <MappingFragment StoreEntitySet="GBCODOP_CodigosOperacao">
-          <ScalarProperty Name="GBCOCRMOV_ComRestricoesMov" ColumnName="GBCOCRMOV_ComRestricoesMov" />
-          <ScalarProperty Name="COHOSI_HoraSituacao" ColumnName="COHOSI_HoraSituacao" />
-          <ScalarProperty Name="CODTSI_DataSituacao" ColumnName="CODTSI_DataSituacao" />
-          <ScalarProperty Name="COUSSI_UtilizadorSituacao" ColumnName="COUSSI_UtilizadorSituacao" />
-          <ScalarProperty Name="COSITU_Situacao" ColumnName="COSITU_Situacao" />
-          <ScalarProperty Name="COCNOTA_CodigoNotaDespesas" ColumnName="COCNOTA_CodigoNotaDespesas" />
-          <ScalarProperty Name="COTARR_TipoArredondamento" ColumnName="COTARR_TipoArredondamento" />
-          <ScalarProperty Name="COMOEI_MoedaIsencao" ColumnName="COMOEI_MoedaIsencao" />
-          <ScalarProperty Name="COVISN_ValorIsencao" ColumnName="COVISN_ValorIsencao" />
-          <ScalarProperty Name="COTISN_TipoIsencao" ColumnName="COTISN_TipoIsencao" />
-          <ScalarProperty Name="COMOEM_MoedaMinimoMaximo" ColumnName="COMOEM_MoedaMinimoMaximo" />
-          <ScalarProperty Name="COVLRX_ValorMaximo" ColumnName="COVLRX_ValorMaximo" />
-          <ScalarProperty Name="COVLRM_ValorMinimo" ColumnName="COVLRM_ValorMinimo" />
-          <ScalarProperty Name="COFACT_FactorDespesas" ColumnName="COFACT_FactorDespesas" />
-          <ScalarProperty Name="CODMOVDES_DescMovimDespesas" ColumnName="CODMOVDES_DescMovimDespesas" />
-          <ScalarProperty Name="COMOEV_MoedaDespesas" ColumnName="COMOEV_MoedaDespesas" />
-          <ScalarProperty Name="COVLR_ValorDespesas" ColumnName="COVLR_ValorDespesas" />
-          <ScalarProperty Name="COTTYP_TipoTransaccaoParaSwift" ColumnName="COTTYP_TipoTransaccaoParaSwift" />
-          <ScalarProperty Name="COCDCX_CertificaDocCaixa" ColumnName="COCDCX_CertificaDocCaixa" />
-          <ScalarProperty Name="COPCD_PosicaoConcatDocumento" ColumnName="COPCD_PosicaoConcatDocumento" />
-          <ScalarProperty Name="COBSIT_BypassNaSituacaoDoc" ColumnName="COBSIT_BypassNaSituacaoDoc" />
-          <ScalarProperty Name="CODMOV_DescritivoMovimento" ColumnName="CODMOV_DescritivoMovimento" />
-          <ScalarProperty Name="COCNOT_CodigoNota" ColumnName="COCNOT_CodigoNota" />
-          <ScalarProperty Name="COMINV_MovimentoInvisivel" ColumnName="COMINV_MovimentoInvisivel" />
-          <ScalarProperty Name="COTVLR_TipoValorColectavel" ColumnName="COTVLR_TipoValorColectavel" />
-          <ScalarProperty Name="COTRV_ParmTransitoValores" ColumnName="COTRV_ParmTransitoValores" />
-          <ScalarProperty Name="COCCB_ContaContabPorDefeito" ColumnName="COCCB_ContaContabPorDefeito" />
-          <ScalarProperty Name="COBALC_BalcaoCcbPorDefeito" ColumnName="COBALC_BalcaoCcbPorDefeito" />
-          <ScalarProperty Name="CODOAU_DescativoExigeAutoriz" ColumnName="CODOAU_DescativoExigeAutoriz" />
-          <ScalarProperty Name="COTSAC_SaldoCreditoAAfectar" ColumnName="COTSAC_SaldoCreditoAAfectar" />
-          <ScalarProperty Name="COCVDS_CativoValidaDescoberto" ColumnName="COCVDS_CativoValidaDescoberto" />
-          <ScalarProperty Name="COCOAU_CativoExigeAutorizacao" ColumnName="COCOAU_CativoExigeAutorizacao" />
-          <ScalarProperty Name="COCZIB_CativoObrigaZib" ColumnName="COCZIB_CativoObrigaZib" />
-          <ScalarProperty Name="COVIBA_ParmVisadoOuBancario" ColumnName="COVIBA_ParmVisadoOuBancario" />
-          <ScalarProperty Name="COCKDG_ValidaCheckDigit" ColumnName="COCKDG_ValidaCheckDigit" />
-          <ScalarProperty Name="COTDCT_TipoDiasParaCativo" ColumnName="COTDCT_TipoDiasParaCativo" />
-          <ScalarProperty Name="CONDCT_NrDiasParaCativo" ColumnName="CONDCT_NrDiasParaCativo" />
-          <ScalarProperty Name="COTDDV_TipoDiasParaDataValor" ColumnName="COTDDV_TipoDiasParaDataValor" />
-          <ScalarProperty Name="CONDDV_NrDiasParaDataValor" ColumnName="CONDDV_NrDiasParaDataValor" />
-          <ScalarProperty Name="CODRCX_ValidoEmDiarioCaixa" ColumnName="CODRCX_ValidoEmDiarioCaixa" />
-          <ScalarProperty Name="CONVLP_NivelProteccao" ColumnName="CONVLP_NivelProteccao" />
-          <ScalarProperty Name="COSCTV_SaldoCativoAAfectar" ColumnName="COSCTV_SaldoCativoAAfectar" />
-          <ScalarProperty Name="COAVLR_AdmiteValoresParaCativar" ColumnName="COAVLR_AdmiteValoresParaCativar" />
-          <ScalarProperty Name="COCOES_PodeSerEstornado" ColumnName="COCOES_PodeSerEstornado" />
-          <ScalarProperty Name="CODEV_CodigoEDevolucao" ColumnName="CODEV_CodigoEDevolucao" />
-          <ScalarProperty Name="COCHEQ_TipoDocCheques" ColumnName="COCHEQ_TipoDocCheques" />
-          <ScalarProperty Name="COLVDF_LancaParaValorDiferente" ColumnName="COLVDF_LancaParaValorDiferente" />
-          <ScalarProperty Name="COPLC_PodeLibertarCativo" ColumnName="COPLC_PodeLibertarCativo" />
-          <ScalarProperty Name="COCTV_PodeSerCativo" ColumnName="COCTV_PodeSerCativo" />
-          <ScalarProperty Name="COPERD_PodeSerPerdido" ColumnName="COPERD_PodeSerPerdido" />
-          <ScalarProperty Name="CODBCR_DebitoOuCredito" ColumnName="CODBCR_DebitoOuCredito" />
-          <ScalarProperty Name="CODEST_DescritivoTipoDoc" ColumnName="CODEST_DescritivoTipoDoc" />
-          <ScalarProperty Name="CODESC_DescritivoCdgOper" ColumnName="CODESC_DescritivoCdgOper" />
-          <ScalarProperty Name="COTDOC_TipoDocumento" ColumnName="COTDOC_TipoDocumento" />
-          <ScalarProperty Name="COCOPA_CdgOperacaoAnulacao" ColumnName="COCOPA_CdgOperacaoAnulacao" />
           <ScalarProperty Name="COCOPE_CodigoOperacao" ColumnName="COCOPE_CodigoOperacao" />
+          <ScalarProperty Name="COCOPA_CdgOperacaoAnulacao" ColumnName="COCOPA_CdgOperacaoAnulacao" />
+          <ScalarProperty Name="COTDOC_TipoDocumento" ColumnName="COTDOC_TipoDocumento" />
+          <ScalarProperty Name="CODESC_DescritivoCdgOper" ColumnName="CODESC_DescritivoCdgOper" />
+          <ScalarProperty Name="CODEST_DescritivoTipoDoc" ColumnName="CODEST_DescritivoTipoDoc" />
+          <ScalarProperty Name="CODBCR_DebitoOuCredito" ColumnName="CODBCR_DebitoOuCredito" />
+          <ScalarProperty Name="COPERD_PodeSerPerdido" ColumnName="COPERD_PodeSerPerdido" />
+          <ScalarProperty Name="COCTV_PodeSerCativo" ColumnName="COCTV_PodeSerCativo" />
+          <ScalarProperty Name="COPLC_PodeLibertarCativo" ColumnName="COPLC_PodeLibertarCativo" />
+          <ScalarProperty Name="COLVDF_LancaParaValorDiferente" ColumnName="COLVDF_LancaParaValorDiferente" />
+          <ScalarProperty Name="COCHEQ_TipoDocCheques" ColumnName="COCHEQ_TipoDocCheques" />
+          <ScalarProperty Name="CODEV_CodigoEDevolucao" ColumnName="CODEV_CodigoEDevolucao" />
+          <ScalarProperty Name="COCOES_PodeSerEstornado" ColumnName="COCOES_PodeSerEstornado" />
+          <ScalarProperty Name="COAVLR_AdmiteValoresParaCativar" ColumnName="COAVLR_AdmiteValoresParaCativar" />
+          <ScalarProperty Name="COSCTV_SaldoCativoAAfectar" ColumnName="COSCTV_SaldoCativoAAfectar" />
+          <ScalarProperty Name="CONVLP_NivelProteccao" ColumnName="CONVLP_NivelProteccao" />
+          <ScalarProperty Name="CODRCX_ValidoEmDiarioCaixa" ColumnName="CODRCX_ValidoEmDiarioCaixa" />
+          <ScalarProperty Name="CONDDV_NrDiasParaDataValor" ColumnName="CONDDV_NrDiasParaDataValor" />
+          <ScalarProperty Name="COTDDV_TipoDiasParaDataValor" ColumnName="COTDDV_TipoDiasParaDataValor" />
+          <ScalarProperty Name="CONDCT_NrDiasParaCativo" ColumnName="CONDCT_NrDiasParaCativo" />
+          <ScalarProperty Name="COTDCT_TipoDiasParaCativo" ColumnName="COTDCT_TipoDiasParaCativo" />
+          <ScalarProperty Name="COCKDG_ValidaCheckDigit" ColumnName="COCKDG_ValidaCheckDigit" />
+          <ScalarProperty Name="COVIBA_ParmVisadoOuBancario" ColumnName="COVIBA_ParmVisadoOuBancario" />
+          <ScalarProperty Name="COCZIB_CativoObrigaZib" ColumnName="COCZIB_CativoObrigaZib" />
+          <ScalarProperty Name="COCOAU_CativoExigeAutorizacao" ColumnName="COCOAU_CativoExigeAutorizacao" />
+          <ScalarProperty Name="COCVDS_CativoValidaDescoberto" ColumnName="COCVDS_CativoValidaDescoberto" />
+          <ScalarProperty Name="COTSAC_SaldoCreditoAAfectar" ColumnName="COTSAC_SaldoCreditoAAfectar" />
+          <ScalarProperty Name="CODOAU_DescativoExigeAutoriz" ColumnName="CODOAU_DescativoExigeAutoriz" />
+          <ScalarProperty Name="COBALC_BalcaoCcbPorDefeito" ColumnName="COBALC_BalcaoCcbPorDefeito" />
+          <ScalarProperty Name="COCCB_ContaContabPorDefeito" ColumnName="COCCB_ContaContabPorDefeito" />
+          <ScalarProperty Name="COTRV_ParmTransitoValores" ColumnName="COTRV_ParmTransitoValores" />
+          <ScalarProperty Name="COTVLR_TipoValorColectavel" ColumnName="COTVLR_TipoValorColectavel" />
+          <ScalarProperty Name="COMINV_MovimentoInvisivel" ColumnName="COMINV_MovimentoInvisivel" />
+          <ScalarProperty Name="COCNOT_CodigoNota" ColumnName="COCNOT_CodigoNota" />
+          <ScalarProperty Name="CODMOV_DescritivoMovimento" ColumnName="CODMOV_DescritivoMovimento" />
+          <ScalarProperty Name="COBSIT_BypassNaSituacaoDoc" ColumnName="COBSIT_BypassNaSituacaoDoc" />
+          <ScalarProperty Name="COPCD_PosicaoConcatDocumento" ColumnName="COPCD_PosicaoConcatDocumento" />
+          <ScalarProperty Name="COCDCX_CertificaDocCaixa" ColumnName="COCDCX_CertificaDocCaixa" />
+          <ScalarProperty Name="COTTYP_TipoTransaccaoParaSwift" ColumnName="COTTYP_TipoTransaccaoParaSwift" />
+          <ScalarProperty Name="COVLR_ValorDespesas" ColumnName="COVLR_ValorDespesas" />
+          <ScalarProperty Name="COMOEV_MoedaDespesas" ColumnName="COMOEV_MoedaDespesas" />
+          <ScalarProperty Name="CODMOVDES_DescMovimDespesas" ColumnName="CODMOVDES_DescMovimDespesas" />
+          <ScalarProperty Name="COFACT_FactorDespesas" ColumnName="COFACT_FactorDespesas" />
+          <ScalarProperty Name="COVLRM_ValorMinimo" ColumnName="COVLRM_ValorMinimo" />
+          <ScalarProperty Name="COVLRX_ValorMaximo" ColumnName="COVLRX_ValorMaximo" />
+          <ScalarProperty Name="COMOEM_MoedaMinimoMaximo" ColumnName="COMOEM_MoedaMinimoMaximo" />
+          <ScalarProperty Name="COTISN_TipoIsencao" ColumnName="COTISN_TipoIsencao" />
+          <ScalarProperty Name="COVISN_ValorIsencao" ColumnName="COVISN_ValorIsencao" />
+          <ScalarProperty Name="COMOEI_MoedaIsencao" ColumnName="COMOEI_MoedaIsencao" />
+          <ScalarProperty Name="COTARR_TipoArredondamento" ColumnName="COTARR_TipoArredondamento" />
+          <ScalarProperty Name="COCNOTA_CodigoNotaDespesas" ColumnName="COCNOTA_CodigoNotaDespesas" />
+          <ScalarProperty Name="COSITU_Situacao" ColumnName="COSITU_Situacao" />
+          <ScalarProperty Name="COUSSI_UtilizadorSituacao" ColumnName="COUSSI_UtilizadorSituacao" />
+          <ScalarProperty Name="CODTSI_DataSituacao" ColumnName="CODTSI_DataSituacao" />
+          <ScalarProperty Name="COHOSI_HoraSituacao" ColumnName="COHOSI_HoraSituacao" />
+          <ScalarProperty Name="GBCOCRMOV_ComRestricoesMov" ColumnName="GBCOCRMOV_ComRestricoesMov" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCRES_CodigosResidencia">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCRES_CodigosResidencia">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCRES_CodigosResidencia)">
         <MappingFragment StoreEntitySet="GBCRES_CodigosResidencia">
-          <ScalarProperty Name="REDESC_Descritivo" ColumnName="REDESC_Descritivo" />
           <ScalarProperty Name="RECRES_CodigoResidencia" ColumnName="RECRES_CodigoResidencia" />
+          <ScalarProperty Name="REDESC_Descritivo" ColumnName="REDESC_Descritivo" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCSTE_CodigosSectoriaisNaoResidentes">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCSTE_CodigosSectoriaisNaoResidentes">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCSTE_CodigosSectoriaisNaoResidentes)">
         <MappingFragment StoreEntitySet="GBCSTE_CodigosSectoriaisNaoResidentes">
-          <ScalarProperty Name="SEVALE_ValidoEm" ColumnName="SEVALE_ValidoEm" />
-          <ScalarProperty Name="SEOCPA_ObrigatorioCdgPais" ColumnName="SEOCPA_ObrigatorioCdgPais" />
-          <ScalarProperty Name="SEDESC_Descritivo" ColumnName="SEDESC_Descritivo" />
-          <ScalarProperty Name="SESLT_Seleccionavel" ColumnName="SESLT_Seleccionavel" />
           <ScalarProperty Name="SECST_CodigoSectorial" ColumnName="SECST_CodigoSectorial" />
+          <ScalarProperty Name="SESLT_Seleccionavel" ColumnName="SESLT_Seleccionavel" />
+          <ScalarProperty Name="SEDESC_Descritivo" ColumnName="SEDESC_Descritivo" />
+          <ScalarProperty Name="SEOCPA_ObrigatorioCdgPais" ColumnName="SEOCPA_ObrigatorioCdgPais" />
+          <ScalarProperty Name="SEVALE_ValidoEm" ColumnName="SEVALE_ValidoEm" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBCSTR_CodigosSectoriaisResidentes">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBCSTR_CodigosSectoriaisResidentes">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBCSTR_CodigosSectoriaisResidentes)">
         <MappingFragment StoreEntitySet="GBCSTR_CodigosSectoriaisResidentes">
-          <ScalarProperty Name="SRVALE_ValidoEm" ColumnName="SRVALE_ValidoEm" />
-          <ScalarProperty Name="SROCPA_ObrigatorioCdgPais" ColumnName="SROCPA_ObrigatorioCdgPais" />
-          <ScalarProperty Name="SRDESC_Descritivo" ColumnName="SRDESC_Descritivo" />
-          <ScalarProperty Name="SRSLT_Seleccionavel" ColumnName="SRSLT_Seleccionavel" />
           <ScalarProperty Name="SRCST_CodigoSectorial" ColumnName="SRCST_CodigoSectorial" />
+          <ScalarProperty Name="SRSLT_Seleccionavel" ColumnName="SRSLT_Seleccionavel" />
+          <ScalarProperty Name="SRDESC_Descritivo" ColumnName="SRDESC_Descritivo" />
+          <ScalarProperty Name="SROCPA_ObrigatorioCdgPais" ColumnName="SROCPA_ObrigatorioCdgPais" />
+          <ScalarProperty Name="SRVALE_ValidoEm" ColumnName="SRVALE_ValidoEm" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBDOC_Documentos">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBDOC_Documentos">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBDOC_Documentos)">
         <MappingFragment StoreEntitySet="GBDOC_Documentos">
-          <ScalarProperty Name="DCANOI_Ano" ColumnName="DCANOI_Ano" />
-          <ScalarProperty Name="DCSITU_SituacaoDocumento" ColumnName="DCSITU_SituacaoDocumento" />
-          <ScalarProperty Name="DCNDOC_Documento" ColumnName="DCNDOC_Documento" />
           <ScalarProperty Name="DCTDOC_TipoDocumento" ColumnName="DCTDOC_TipoDocumento" />
+          <ScalarProperty Name="DCNDOC_Documento" ColumnName="DCNDOC_Documento" />
+          <ScalarProperty Name="DCSITU_SituacaoDocumento" ColumnName="DCSITU_SituacaoDocumento" />
+          <ScalarProperty Name="DCANOI_Ano" ColumnName="DCANOI_Ano" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBLTIT_LigacaoClientesEntidades">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBLTIT_LigacaoClientesEntidades">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBLTIT_LigacaoClientesEntidades)">
         <MappingFragment StoreEntitySet="GBLTIT_LigacaoClientesEntidades">
-          <ScalarProperty Name="LTRCPE_RelacaoPrimeiraEntidade" ColumnName="LTRCPE_RelacaoPrimeiraEntidade" />
-          <ScalarProperty Name="LTRCLI_RelacaoCliente" ColumnName="LTRCLI_RelacaoCliente" />
-          <ScalarProperty Name="LTNTIT_NumeroEntidade" ColumnName="LTNTIT_NumeroEntidade" />
-          <ScalarProperty Name="LTNCLI_NumeroCliente" ColumnName="LTNCLI_NumeroCliente" />
           <ScalarProperty Name="LTNCLI_LTNTIT" ColumnName="LTNCLI_LTNTIT" />
+          <ScalarProperty Name="LTNCLI_NumeroCliente" ColumnName="LTNCLI_NumeroCliente" />
+          <ScalarProperty Name="LTNTIT_NumeroEntidade" ColumnName="LTNTIT_NumeroEntidade" />
+          <ScalarProperty Name="LTRCLI_RelacaoCliente" ColumnName="LTRCLI_RelacaoCliente" />
+          <ScalarProperty Name="LTRCPE_RelacaoPrimeiraEntidade" ColumnName="LTRCPE_RelacaoPrimeiraEntidade" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBMORD_Moradas">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMORD_Moradas">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMORD_Moradas)">
         <MappingFragment StoreEntitySet="GBMORD_Moradas">
-          <ScalarProperty Name="GBMOHOCR_HoraCriacao" ColumnName="GBMOHOCR_HoraCriacao" />
-          <ScalarProperty Name="GBMODTCR_DataCriacao" ColumnName="GBMODTCR_DataCriacao" />
-          <ScalarProperty Name="GBMOUSCR_UtilizadorCriacao" ColumnName="GBMOUSCR_UtilizadorCriacao" />
-          <ScalarProperty Name="GBMOSITU_SituacaoRegisto" ColumnName="GBMOSITU_SituacaoRegisto" />
-          <ScalarProperty Name="GBMOSITMOR_SituacaoMorada" ColumnName="GBMOSITMOR_SituacaoMorada" />
-          <ScalarProperty Name="MOTFAX_Telefax" ColumnName="MOTFAX_Telefax" />
-          <ScalarProperty Name="GBMOCONT1_Contacto2" ColumnName="GBMOCONT1_Contacto2" />
-          <ScalarProperty Name="MOTEL1_Telefone2" ColumnName="MOTEL1_Telefone2" />
-          <ScalarProperty Name="GBMOCONT_Contacto1" ColumnName="GBMOCONT_Contacto1" />
-          <ScalarProperty Name="MOTELF_Telefone1" ColumnName="MOTELF_Telefone1" />
-          <ScalarProperty Name="MOCODX_CodigoPostalPais" ColumnName="MOCODX_CodigoPostalPais" />
-          <ScalarProperty Name="MOMOR1_Morada" ColumnName="MOMOR1_Morada" />
-          <ScalarProperty Name="MOMORD_Morada" ColumnName="MOMORD_Morada" />
-          <ScalarProperty Name="MONTIT_NumeroEntidade" ColumnName="MONTIT_NumeroEntidade" />
-          <ScalarProperty Name="MOTMOR_TipoMorada" ColumnName="MOTMOR_TipoMorada" />
-          <ScalarProperty Name="MONATR_Natureza" ColumnName="MONATR_Natureza" />
-          <ScalarProperty Name="MONCLI_NumeroCliente" ColumnName="MONCLI_NumeroCliente" />
           <ScalarProperty Name="MONSEQ_NumeroSequencial" ColumnName="MONSEQ_NumeroSequencial" />
+          <ScalarProperty Name="MONCLI_NumeroCliente" ColumnName="MONCLI_NumeroCliente" />
+          <ScalarProperty Name="MONATR_Natureza" ColumnName="MONATR_Natureza" />
+          <ScalarProperty Name="MOTMOR_TipoMorada" ColumnName="MOTMOR_TipoMorada" />
+          <ScalarProperty Name="MONTIT_NumeroEntidade" ColumnName="MONTIT_NumeroEntidade" />
+          <ScalarProperty Name="MOMORD_Morada" ColumnName="MOMORD_Morada" />
+          <ScalarProperty Name="MOMOR1_Morada" ColumnName="MOMOR1_Morada" />
+          <ScalarProperty Name="MOCODX_CodigoPostalPais" ColumnName="MOCODX_CodigoPostalPais" />
+          <ScalarProperty Name="MOTELF_Telefone1" ColumnName="MOTELF_Telefone1" />
+          <ScalarProperty Name="GBMOCONT_Contacto1" ColumnName="GBMOCONT_Contacto1" />
+          <ScalarProperty Name="MOTEL1_Telefone2" ColumnName="MOTEL1_Telefone2" />
+          <ScalarProperty Name="GBMOCONT1_Contacto2" ColumnName="GBMOCONT1_Contacto2" />
+          <ScalarProperty Name="MOTFAX_Telefax" ColumnName="MOTFAX_Telefax" />
+          <ScalarProperty Name="GBMOSITMOR_SituacaoMorada" ColumnName="GBMOSITMOR_SituacaoMorada" />
+          <ScalarProperty Name="GBMOSITU_SituacaoRegisto" ColumnName="GBMOSITU_SituacaoRegisto" />
+          <ScalarProperty Name="GBMOUSCR_UtilizadorCriacao" ColumnName="GBMOUSCR_UtilizadorCriacao" />
+          <ScalarProperty Name="GBMODTCR_DataCriacao" ColumnName="GBMODTCR_DataCriacao" />
+          <ScalarProperty Name="GBMOHOCR_HoraCriacao" ColumnName="GBMOHOCR_HoraCriacao" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBMVCC_MovimentosContasCaucionadas">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCC_MovimentosContasCaucionadas">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVCC_MovimentosContasCaucionadas)">
         <MappingFragment StoreEntitySet="GBMVCC_MovimentosContasCaucionadas">
-          <ScalarProperty Name="MUOBS_Observacoes" ColumnName="MUOBS_Observacoes" />
-          <ScalarProperty Name="MUCDEV_CodigoDevolucao" ColumnName="MUCDEV_CodigoDevolucao" />
-          <ScalarProperty Name="MUTOTV_TotalValores" ColumnName="MUTOTV_TotalValores" />
-          <ScalarProperty Name="MUAUTR_Autorizacao" ColumnName="MUAUTR_Autorizacao" />
-          <ScalarProperty Name="MUVLRI_ValorIncidencia" ColumnName="MUVLRI_ValorIncidencia" />
-          <ScalarProperty Name="MUTXA_TaxaAplicadaValorInc" ColumnName="MUTXA_TaxaAplicadaValorInc" />
-          <ScalarProperty Name="MUDMOV_DescritivoMovimento" ColumnName="MUDMOV_DescritivoMovimento" />
-          <ScalarProperty Name="MUMOED_Moeda" ColumnName="MUMOED_Moeda" />
-          <ScalarProperty Name="MUEXCT_ExecutorMovimento" ColumnName="MUEXCT_ExecutorMovimento" />
-          <ScalarProperty Name="MUDTCB_DataContabilistica" ColumnName="MUDTCB_DataContabilistica" />
-          <ScalarProperty Name="MUMINV_MovimentoInvisivel" ColumnName="MUMINV_MovimentoInvisivel" />
-          <ScalarProperty Name="MUNORD_NrOrdemTransaccao" ColumnName="MUNORD_NrOrdemTransaccao" />
-          <ScalarProperty Name="MUNTCX_NrTransaccaoCaixa" ColumnName="MUNTCX_NrTransaccaoCaixa" />
-          <ScalarProperty Name="MUNCX_NumeroCaixa" ColumnName="MUNCX_NumeroCaixa" />
-          <ScalarProperty Name="MUNOPR_NrOperacao" ColumnName="MUNOPR_NrOperacao" />
-          <ScalarProperty Name="MUCCB_ContaCcbMovimento" ColumnName="MUCCB_ContaCcbMovimento" />
-          <ScalarProperty Name="MUBALC_BalcaoCntCcbMov" ColumnName="MUBALC_BalcaoCntCcbMov" />
-          <ScalarProperty Name="MUBALM_BalcaoMovimento" ColumnName="MUBALM_BalcaoMovimento" />
-          <ScalarProperty Name="MUDTEE_DataEmissaoExtracto" ColumnName="MUDTEE_DataEmissaoExtracto" />
-          <ScalarProperty Name="MUETRB_EstacaoLancamento" ColumnName="MUETRB_EstacaoLancamento" />
-          <ScalarProperty Name="MUDRCX_DiarioOuCaixa" ColumnName="MUDRCX_DiarioOuCaixa" />
-          <ScalarProperty Name="MUDATV_DataValor" ColumnName="MUDATV_DataValor" />
-          <ScalarProperty Name="MUDATL_DataLancamento" ColumnName="MUDATL_DataLancamento" />
-          <ScalarProperty Name="MUHORA_HoraLancamento" ColumnName="MUHORA_HoraLancamento" />
-          <ScalarProperty Name="MUUSER_LancadoPor" ColumnName="MUUSER_LancadoPor" />
-          <ScalarProperty Name="MUSALD_SaldoAposMovimento" ColumnName="MUSALD_SaldoAposMovimento" />
-          <ScalarProperty Name="MUVLR_ValorMovimento" ColumnName="MUVLR_ValorMovimento" />
-          <ScalarProperty Name="MUCOPE_CodigoOperacao" ColumnName="MUCOPE_CodigoOperacao" />
-          <ScalarProperty Name="MUTDOC_TipoDocumento" ColumnName="MUTDOC_TipoDocumento" />
-          <ScalarProperty Name="MUNSEQ_NumeroSequencial" ColumnName="MUNSEQ_NumeroSequencial" />
-          <ScalarProperty Name="MUNATR_Natureza" ColumnName="MUNATR_Natureza" />
-          <ScalarProperty Name="MUNCLI_NumeroCliente" ColumnName="MUNCLI_NumeroCliente" />
-          <ScalarProperty Name="MUBAL_Balcao" ColumnName="MUBAL_Balcao" />
           <ScalarProperty Name="MUNDOC_NumeroDocumento" ColumnName="MUNDOC_NumeroDocumento" />
+          <ScalarProperty Name="MUBAL_Balcao" ColumnName="MUBAL_Balcao" />
+          <ScalarProperty Name="MUNCLI_NumeroCliente" ColumnName="MUNCLI_NumeroCliente" />
+          <ScalarProperty Name="MUNATR_Natureza" ColumnName="MUNATR_Natureza" />
+          <ScalarProperty Name="MUNSEQ_NumeroSequencial" ColumnName="MUNSEQ_NumeroSequencial" />
+          <ScalarProperty Name="MUTDOC_TipoDocumento" ColumnName="MUTDOC_TipoDocumento" />
+          <ScalarProperty Name="MUCOPE_CodigoOperacao" ColumnName="MUCOPE_CodigoOperacao" />
+          <ScalarProperty Name="MUVLR_ValorMovimento" ColumnName="MUVLR_ValorMovimento" />
+          <ScalarProperty Name="MUSALD_SaldoAposMovimento" ColumnName="MUSALD_SaldoAposMovimento" />
+          <ScalarProperty Name="MUUSER_LancadoPor" ColumnName="MUUSER_LancadoPor" />
+          <ScalarProperty Name="MUHORA_HoraLancamento" ColumnName="MUHORA_HoraLancamento" />
+          <ScalarProperty Name="MUDATL_DataLancamento" ColumnName="MUDATL_DataLancamento" />
+          <ScalarProperty Name="MUDATV_DataValor" ColumnName="MUDATV_DataValor" />
+          <ScalarProperty Name="MUDRCX_DiarioOuCaixa" ColumnName="MUDRCX_DiarioOuCaixa" />
+          <ScalarProperty Name="MUETRB_EstacaoLancamento" ColumnName="MUETRB_EstacaoLancamento" />
+          <ScalarProperty Name="MUDTEE_DataEmissaoExtracto" ColumnName="MUDTEE_DataEmissaoExtracto" />
+          <ScalarProperty Name="MUBALM_BalcaoMovimento" ColumnName="MUBALM_BalcaoMovimento" />
+          <ScalarProperty Name="MUBALC_BalcaoCntCcbMov" ColumnName="MUBALC_BalcaoCntCcbMov" />
+          <ScalarProperty Name="MUCCB_ContaCcbMovimento" ColumnName="MUCCB_ContaCcbMovimento" />
+          <ScalarProperty Name="MUNOPR_NrOperacao" ColumnName="MUNOPR_NrOperacao" />
+          <ScalarProperty Name="MUNCX_NumeroCaixa" ColumnName="MUNCX_NumeroCaixa" />
+          <ScalarProperty Name="MUNTCX_NrTransaccaoCaixa" ColumnName="MUNTCX_NrTransaccaoCaixa" />
+          <ScalarProperty Name="MUNORD_NrOrdemTransaccao" ColumnName="MUNORD_NrOrdemTransaccao" />
+          <ScalarProperty Name="MUMINV_MovimentoInvisivel" ColumnName="MUMINV_MovimentoInvisivel" />
+          <ScalarProperty Name="MUDTCB_DataContabilistica" ColumnName="MUDTCB_DataContabilistica" />
+          <ScalarProperty Name="MUEXCT_ExecutorMovimento" ColumnName="MUEXCT_ExecutorMovimento" />
+          <ScalarProperty Name="MUMOED_Moeda" ColumnName="MUMOED_Moeda" />
+          <ScalarProperty Name="MUDMOV_DescritivoMovimento" ColumnName="MUDMOV_DescritivoMovimento" />
+          <ScalarProperty Name="MUTXA_TaxaAplicadaValorInc" ColumnName="MUTXA_TaxaAplicadaValorInc" />
+          <ScalarProperty Name="MUVLRI_ValorIncidencia" ColumnName="MUVLRI_ValorIncidencia" />
+          <ScalarProperty Name="MUAUTR_Autorizacao" ColumnName="MUAUTR_Autorizacao" />
+          <ScalarProperty Name="MUTOTV_TotalValores" ColumnName="MUTOTV_TotalValores" />
+          <ScalarProperty Name="MUCDEV_CodigoDevolucao" ColumnName="MUCDEV_CodigoDevolucao" />
+          <ScalarProperty Name="MUOBS_Observacoes" ColumnName="MUOBS_Observacoes" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBMVCO_MovimentosContasContabilisticas">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCO_MovimentosContasContabilisticas">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVCO_MovimentosContasContabilisticas)">
         <MappingFragment StoreEntitySet="GBMVCO_MovimentosContasContabilisticas">
-          <ScalarProperty Name="MRGRPP_GrupoPrecario" ColumnName="MRGRPP_GrupoPrecario" />
-          <ScalarProperty Name="GBMRCONTA_NrConta" ColumnName="GBMRCONTA_NrConta" />
-          <ScalarProperty Name="MRNSCR_NrSeqContaRelacionada" ColumnName="MRNSCR_NrSeqContaRelacionada" />
-          <ScalarProperty Name="MRNTCR_NatContaRelacionada" ColumnName="MRNTCR_NatContaRelacionada" />
-          <ScalarProperty Name="MRNCCR_NrclienteCntaRelaciona" ColumnName="MRNCCR_NrclienteCntaRelaciona" />
-          <ScalarProperty Name="MRMVCC_MovContabilizado" ColumnName="MRMVCC_MovContabilizado" />
-          <ScalarProperty Name="MRNTIT_NrEntidadeParaNota" ColumnName="MRNTIT_NrEntidadeParaNota" />
-          <ScalarProperty Name="MRAUTR_Autorizacao" ColumnName="MRAUTR_Autorizacao" />
-          <ScalarProperty Name="MRVLRI_ValorIncidencia" ColumnName="MRVLRI_ValorIncidencia" />
-          <ScalarProperty Name="MRTXA_TaxaAplicadaValorInc" ColumnName="MRTXA_TaxaAplicadaValorInc" />
-          <ScalarProperty Name="MRDMOV_DescritivoMovimento" ColumnName="MRDMOV_DescritivoMovimento" />
-          <ScalarProperty Name="MRMOED_Moeda" ColumnName="MRMOED_Moeda" />
-          <ScalarProperty Name="MREXCT_ExecutorMovimento" ColumnName="MREXCT_ExecutorMovimento" />
-          <ScalarProperty Name="MRDTCB_DataContabilistica" ColumnName="MRDTCB_DataContabilistica" />
-          <ScalarProperty Name="MRMINV_MovimentoInvisivel" ColumnName="MRMINV_MovimentoInvisivel" />
-          <ScalarProperty Name="MRNORD_NrOrdemTransaccao" ColumnName="MRNORD_NrOrdemTransaccao" />
-          <ScalarProperty Name="MRNTCX_NrTransaccaoCaixa" ColumnName="MRNTCX_NrTransaccaoCaixa" />
-          <ScalarProperty Name="MRNCX_NumeroCaixa" ColumnName="MRNCX_NumeroCaixa" />
-          <ScalarProperty Name="MRNOPR_NrOperacao" ColumnName="MRNOPR_NrOperacao" />
-          <ScalarProperty Name="MROBS_Observacoes" ColumnName="MROBS_Observacoes" />
-          <ScalarProperty Name="MRBALM_BalcaoMovimento" ColumnName="MRBALM_BalcaoMovimento" />
-          <ScalarProperty Name="MRETRB_EstacaoLancamento" ColumnName="MRETRB_EstacaoLancamento" />
-          <ScalarProperty Name="MRDRCX_DiarioOuCaixa" ColumnName="MRDRCX_DiarioOuCaixa" />
-          <ScalarProperty Name="MRDATL_DataLancamento" ColumnName="MRDATL_DataLancamento" />
-          <ScalarProperty Name="MRHORA_HoraLancamento" ColumnName="MRHORA_HoraLancamento" />
-          <ScalarProperty Name="MRUSER_LancadoPor" ColumnName="MRUSER_LancadoPor" />
-          <ScalarProperty Name="MRSALD_SaldoAposMovimento" ColumnName="MRSALD_SaldoAposMovimento" />
-          <ScalarProperty Name="MRVLR_ValorMovimento" ColumnName="MRVLR_ValorMovimento" />
-          <ScalarProperty Name="MRCOPE_CodigoOperacao" ColumnName="MRCOPE_CodigoOperacao" />
-          <ScalarProperty Name="MRTDOC_TipoDocumento" ColumnName="MRTDOC_TipoDocumento" />
-          <ScalarProperty Name="MRNSEQ_NumeroSequencial" ColumnName="MRNSEQ_NumeroSequencial" />
-          <ScalarProperty Name="MRNATR_Natureza" ColumnName="MRNATR_Natureza" />
-          <ScalarProperty Name="MRNCLI_NumeroCliente" ColumnName="MRNCLI_NumeroCliente" />
-          <ScalarProperty Name="MRBAL_Balcao" ColumnName="MRBAL_Balcao" />
-          <ScalarProperty Name="MRCCB_ContaContabilistica" ColumnName="MRCCB_ContaContabilistica" />
-          <ScalarProperty Name="MRBALC_BalcaoCcb" ColumnName="MRBALC_BalcaoCcb" />
           <ScalarProperty Name="MRNDOC_NumeroDocumento" ColumnName="MRNDOC_NumeroDocumento" />
+          <ScalarProperty Name="MRBALC_BalcaoCcb" ColumnName="MRBALC_BalcaoCcb" />
+          <ScalarProperty Name="MRCCB_ContaContabilistica" ColumnName="MRCCB_ContaContabilistica" />
+          <ScalarProperty Name="MRBAL_Balcao" ColumnName="MRBAL_Balcao" />
+          <ScalarProperty Name="MRNCLI_NumeroCliente" ColumnName="MRNCLI_NumeroCliente" />
+          <ScalarProperty Name="MRNATR_Natureza" ColumnName="MRNATR_Natureza" />
+          <ScalarProperty Name="MRNSEQ_NumeroSequencial" ColumnName="MRNSEQ_NumeroSequencial" />
+          <ScalarProperty Name="MRTDOC_TipoDocumento" ColumnName="MRTDOC_TipoDocumento" />
+          <ScalarProperty Name="MRCOPE_CodigoOperacao" ColumnName="MRCOPE_CodigoOperacao" />
+          <ScalarProperty Name="MRVLR_ValorMovimento" ColumnName="MRVLR_ValorMovimento" />
+          <ScalarProperty Name="MRSALD_SaldoAposMovimento" ColumnName="MRSALD_SaldoAposMovimento" />
+          <ScalarProperty Name="MRUSER_LancadoPor" ColumnName="MRUSER_LancadoPor" />
+          <ScalarProperty Name="MRHORA_HoraLancamento" ColumnName="MRHORA_HoraLancamento" />
+          <ScalarProperty Name="MRDATL_DataLancamento" ColumnName="MRDATL_DataLancamento" />
+          <ScalarProperty Name="MRDRCX_DiarioOuCaixa" ColumnName="MRDRCX_DiarioOuCaixa" />
+          <ScalarProperty Name="MRETRB_EstacaoLancamento" ColumnName="MRETRB_EstacaoLancamento" />
+          <ScalarProperty Name="MRBALM_BalcaoMovimento" ColumnName="MRBALM_BalcaoMovimento" />
+          <ScalarProperty Name="MROBS_Observacoes" ColumnName="MROBS_Observacoes" />
+          <ScalarProperty Name="MRNOPR_NrOperacao" ColumnName="MRNOPR_NrOperacao" />
+          <ScalarProperty Name="MRNCX_NumeroCaixa" ColumnName="MRNCX_NumeroCaixa" />
+          <ScalarProperty Name="MRNTCX_NrTransaccaoCaixa" ColumnName="MRNTCX_NrTransaccaoCaixa" />
+          <ScalarProperty Name="MRNORD_NrOrdemTransaccao" ColumnName="MRNORD_NrOrdemTransaccao" />
+          <ScalarProperty Name="MRMINV_MovimentoInvisivel" ColumnName="MRMINV_MovimentoInvisivel" />
+          <ScalarProperty Name="MRDTCB_DataContabilistica" ColumnName="MRDTCB_DataContabilistica" />
+          <ScalarProperty Name="MREXCT_ExecutorMovimento" ColumnName="MREXCT_ExecutorMovimento" />
+          <ScalarProperty Name="MRMOED_Moeda" ColumnName="MRMOED_Moeda" />
+          <ScalarProperty Name="MRDMOV_DescritivoMovimento" ColumnName="MRDMOV_DescritivoMovimento" />
+          <ScalarProperty Name="MRTXA_TaxaAplicadaValorInc" ColumnName="MRTXA_TaxaAplicadaValorInc" />
+          <ScalarProperty Name="MRVLRI_ValorIncidencia" ColumnName="MRVLRI_ValorIncidencia" />
+          <ScalarProperty Name="MRAUTR_Autorizacao" ColumnName="MRAUTR_Autorizacao" />
+          <ScalarProperty Name="MRNTIT_NrEntidadeParaNota" ColumnName="MRNTIT_NrEntidadeParaNota" />
+          <ScalarProperty Name="MRMVCC_MovContabilizado" ColumnName="MRMVCC_MovContabilizado" />
+          <ScalarProperty Name="MRNCCR_NrclienteCntaRelaciona" ColumnName="MRNCCR_NrclienteCntaRelaciona" />
+          <ScalarProperty Name="MRNTCR_NatContaRelacionada" ColumnName="MRNTCR_NatContaRelacionada" />
+          <ScalarProperty Name="MRNSCR_NrSeqContaRelacionada" ColumnName="MRNSCR_NrSeqContaRelacionada" />
+          <ScalarProperty Name="GBMRCONTA_NrConta" ColumnName="GBMRCONTA_NrConta" />
+          <ScalarProperty Name="MRGRPP_GrupoPrecario" ColumnName="MRGRPP_GrupoPrecario" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBMVCR_MovimentosContasCredito">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVCR_MovimentosContasCredito">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVCR_MovimentosContasCredito)">
         <MappingFragment StoreEntitySet="GBMVCR_MovimentosContasCredito">
-          <ScalarProperty Name="MCOBS_Observacoes" ColumnName="MCOBS_Observacoes" />
-          <ScalarProperty Name="MCTBON_TipoBonificacao" ColumnName="MCTBON_TipoBonificacao" />
-          <ScalarProperty Name="MCAUTR_Autorizacao" ColumnName="MCAUTR_Autorizacao" />
-          <ScalarProperty Name="MCVLRI_ValorIncidencia" ColumnName="MCVLRI_ValorIncidencia" />
-          <ScalarProperty Name="MCTXA_TaxaAplicadaValorInc" ColumnName="MCTXA_TaxaAplicadaValorInc" />
-          <ScalarProperty Name="MCDMOV_DescritivoMovimento" ColumnName="MCDMOV_DescritivoMovimento" />
-          <ScalarProperty Name="MCMOED_Moeda" ColumnName="MCMOED_Moeda" />
-          <ScalarProperty Name="MCEXCT_ExecutorMovimento" ColumnName="MCEXCT_ExecutorMovimento" />
-          <ScalarProperty Name="MCDTCB_DataContabilistica" ColumnName="MCDTCB_DataContabilistica" />
-          <ScalarProperty Name="MCMINV_MovimentoInvisivel" ColumnName="MCMINV_MovimentoInvisivel" />
-          <ScalarProperty Name="MCNORD_NrOrdemTransaccao" ColumnName="MCNORD_NrOrdemTransaccao" />
-          <ScalarProperty Name="MCNTCX_NrTransaccaoCaixa" ColumnName="MCNTCX_NrTransaccaoCaixa" />
-          <ScalarProperty Name="MCNCX_NumeroCaixa" ColumnName="MCNCX_NumeroCaixa" />
-          <ScalarProperty Name="MCNOPR_NrOperacao" ColumnName="MCNOPR_NrOperacao" />
-          <ScalarProperty Name="MCNUAM_NrUtlzAmrtPer" ColumnName="MCNUAM_NrUtlzAmrtPer" />
-          <ScalarProperty Name="MCCCB_ContaCcbMovimento" ColumnName="MCCCB_ContaCcbMovimento" />
-          <ScalarProperty Name="MCBALC_BalcaoContaCcbMov" ColumnName="MCBALC_BalcaoContaCcbMov" />
-          <ScalarProperty Name="MCBALM_BalcaoMovimento" ColumnName="MCBALM_BalcaoMovimento" />
-          <ScalarProperty Name="MCDTEE_DataEmissaoExtracto" ColumnName="MCDTEE_DataEmissaoExtracto" />
-          <ScalarProperty Name="MCETRB_EstacaoLancamento" ColumnName="MCETRB_EstacaoLancamento" />
-          <ScalarProperty Name="MCDRCX_DiarioOuCaixa" ColumnName="MCDRCX_DiarioOuCaixa" />
-          <ScalarProperty Name="MCDATV_DataValor" ColumnName="MCDATV_DataValor" />
-          <ScalarProperty Name="MCDATL_DataLancamento" ColumnName="MCDATL_DataLancamento" />
-          <ScalarProperty Name="MCHORA_HoraLancamento" ColumnName="MCHORA_HoraLancamento" />
-          <ScalarProperty Name="MCUSER_LancadoPor" ColumnName="MCUSER_LancadoPor" />
-          <ScalarProperty Name="MCSALD_SaldoAposMovimento" ColumnName="MCSALD_SaldoAposMovimento" />
-          <ScalarProperty Name="MCVLR_ValorMovimento" ColumnName="MCVLR_ValorMovimento" />
-          <ScalarProperty Name="MCCOPE_CodigoOperacao" ColumnName="MCCOPE_CodigoOperacao" />
-          <ScalarProperty Name="MCTDOC_TipoDocumento" ColumnName="MCTDOC_TipoDocumento" />
-          <ScalarProperty Name="MCNSEQ_NumeroSequencial" ColumnName="MCNSEQ_NumeroSequencial" />
-          <ScalarProperty Name="MCNATR_Natureza" ColumnName="MCNATR_Natureza" />
-          <ScalarProperty Name="MCNCLI_NumeroCliente" ColumnName="MCNCLI_NumeroCliente" />
-          <ScalarProperty Name="MCBAL_Balcao" ColumnName="MCBAL_Balcao" />
           <ScalarProperty Name="MCNDOC_NumeroDocumento" ColumnName="MCNDOC_NumeroDocumento" />
+          <ScalarProperty Name="MCBAL_Balcao" ColumnName="MCBAL_Balcao" />
+          <ScalarProperty Name="MCNCLI_NumeroCliente" ColumnName="MCNCLI_NumeroCliente" />
+          <ScalarProperty Name="MCNATR_Natureza" ColumnName="MCNATR_Natureza" />
+          <ScalarProperty Name="MCNSEQ_NumeroSequencial" ColumnName="MCNSEQ_NumeroSequencial" />
+          <ScalarProperty Name="MCTDOC_TipoDocumento" ColumnName="MCTDOC_TipoDocumento" />
+          <ScalarProperty Name="MCCOPE_CodigoOperacao" ColumnName="MCCOPE_CodigoOperacao" />
+          <ScalarProperty Name="MCVLR_ValorMovimento" ColumnName="MCVLR_ValorMovimento" />
+          <ScalarProperty Name="MCSALD_SaldoAposMovimento" ColumnName="MCSALD_SaldoAposMovimento" />
+          <ScalarProperty Name="MCUSER_LancadoPor" ColumnName="MCUSER_LancadoPor" />
+          <ScalarProperty Name="MCHORA_HoraLancamento" ColumnName="MCHORA_HoraLancamento" />
+          <ScalarProperty Name="MCDATL_DataLancamento" ColumnName="MCDATL_DataLancamento" />
+          <ScalarProperty Name="MCDATV_DataValor" ColumnName="MCDATV_DataValor" />
+          <ScalarProperty Name="MCDRCX_DiarioOuCaixa" ColumnName="MCDRCX_DiarioOuCaixa" />
+          <ScalarProperty Name="MCETRB_EstacaoLancamento" ColumnName="MCETRB_EstacaoLancamento" />
+          <ScalarProperty Name="MCDTEE_DataEmissaoExtracto" ColumnName="MCDTEE_DataEmissaoExtracto" />
+          <ScalarProperty Name="MCBALM_BalcaoMovimento" ColumnName="MCBALM_BalcaoMovimento" />
+          <ScalarProperty Name="MCBALC_BalcaoContaCcbMov" ColumnName="MCBALC_BalcaoContaCcbMov" />
+          <ScalarProperty Name="MCCCB_ContaCcbMovimento" ColumnName="MCCCB_ContaCcbMovimento" />
+          <ScalarProperty Name="MCNUAM_NrUtlzAmrtPer" ColumnName="MCNUAM_NrUtlzAmrtPer" />
+          <ScalarProperty Name="MCNOPR_NrOperacao" ColumnName="MCNOPR_NrOperacao" />
+          <ScalarProperty Name="MCNCX_NumeroCaixa" ColumnName="MCNCX_NumeroCaixa" />
+          <ScalarProperty Name="MCNTCX_NrTransaccaoCaixa" ColumnName="MCNTCX_NrTransaccaoCaixa" />
+          <ScalarProperty Name="MCNORD_NrOrdemTransaccao" ColumnName="MCNORD_NrOrdemTransaccao" />
+          <ScalarProperty Name="MCMINV_MovimentoInvisivel" ColumnName="MCMINV_MovimentoInvisivel" />
+          <ScalarProperty Name="MCDTCB_DataContabilistica" ColumnName="MCDTCB_DataContabilistica" />
+          <ScalarProperty Name="MCEXCT_ExecutorMovimento" ColumnName="MCEXCT_ExecutorMovimento" />
+          <ScalarProperty Name="MCMOED_Moeda" ColumnName="MCMOED_Moeda" />
+          <ScalarProperty Name="MCDMOV_DescritivoMovimento" ColumnName="MCDMOV_DescritivoMovimento" />
+          <ScalarProperty Name="MCTXA_TaxaAplicadaValorInc" ColumnName="MCTXA_TaxaAplicadaValorInc" />
+          <ScalarProperty Name="MCVLRI_ValorIncidencia" ColumnName="MCVLRI_ValorIncidencia" />
+          <ScalarProperty Name="MCAUTR_Autorizacao" ColumnName="MCAUTR_Autorizacao" />
+          <ScalarProperty Name="MCTBON_TipoBonificacao" ColumnName="MCTBON_TipoBonificacao" />
+          <ScalarProperty Name="MCOBS_Observacoes" ColumnName="MCOBS_Observacoes" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBMVDO_MovimentosContasDepositosOrdem">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVDO_MovimentosContasDepositosOrdem">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVDO_MovimentosContasDepositosOrdem)">
         <MappingFragment StoreEntitySet="GBMVDO_MovimentosContasDepositosOrdem">
-          <ScalarProperty Name="MVOBS_Observacoes" ColumnName="MVOBS_Observacoes" />
-          <ScalarProperty Name="MVVLRE_ValorParaExtracto" ColumnName="MVVLRE_ValorParaExtracto" />
-          <ScalarProperty Name="MVCDEV_CodigoDevolucao" ColumnName="MVCDEV_CodigoDevolucao" />
-          <ScalarProperty Name="MVTOTV_TotalValores" ColumnName="MVTOTV_TotalValores" />
-          <ScalarProperty Name="MVAUTR_Autorizacao" ColumnName="MVAUTR_Autorizacao" />
-          <ScalarProperty Name="MVVLRI_ValorIncidencia" ColumnName="MVVLRI_ValorIncidencia" />
-          <ScalarProperty Name="MVTXA_TaxaAplicadaValorInc" ColumnName="MVTXA_TaxaAplicadaValorInc" />
-          <ScalarProperty Name="MVDMOV_DescritivoMovimento" ColumnName="MVDMOV_DescritivoMovimento" />
-          <ScalarProperty Name="MVEXCT_ExecutorMovimento" ColumnName="MVEXCT_ExecutorMovimento" />
-          <ScalarProperty Name="MVDTCB_DataContabilistica" ColumnName="MVDTCB_DataContabilistica" />
-          <ScalarProperty Name="MVMINV_MovimentoInvisivel" ColumnName="MVMINV_MovimentoInvisivel" />
-          <ScalarProperty Name="MVNORD_NrOrdemTransaccao" ColumnName="MVNORD_NrOrdemTransaccao" />
-          <ScalarProperty Name="MVNTCX_NrTransaccaoCaixa" ColumnName="MVNTCX_NrTransaccaoCaixa" />
-          <ScalarProperty Name="MVNCX_NumeroCaixa" ColumnName="MVNCX_NumeroCaixa" />
-          <ScalarProperty Name="MVNOPR_NrOperacao" ColumnName="MVNOPR_NrOperacao" />
-          <ScalarProperty Name="MVCCB_ContaCcbMovimento" ColumnName="MVCCB_ContaCcbMovimento" />
-          <ScalarProperty Name="MVBALC_BalcaoContaCcbMov" ColumnName="MVBALC_BalcaoContaCcbMov" />
-          <ScalarProperty Name="MVBALM_BalcaoMovimento" ColumnName="MVBALM_BalcaoMovimento" />
-          <ScalarProperty Name="MVDTEE_DataEmissaoExtracto" ColumnName="MVDTEE_DataEmissaoExtracto" />
-          <ScalarProperty Name="MVCCAS_Canal" ColumnName="MVCCAS_Canal" />
-          <ScalarProperty Name="MVETRB_EstacaoLancamento" ColumnName="MVETRB_EstacaoLancamento" />
-          <ScalarProperty Name="MVDRCX_DiarioOuCaixa" ColumnName="MVDRCX_DiarioOuCaixa" />
-          <ScalarProperty Name="MVDATV_DataValor" ColumnName="MVDATV_DataValor" />
-          <ScalarProperty Name="MVDATL_DataLancamento" ColumnName="MVDATL_DataLancamento" />
-          <ScalarProperty Name="MVHORA_HoraLancamento" ColumnName="MVHORA_HoraLancamento" />
-          <ScalarProperty Name="MVUSER_LancadoPor" ColumnName="MVUSER_LancadoPor" />
-          <ScalarProperty Name="MVSALD_SaldoAposMovimento" ColumnName="MVSALD_SaldoAposMovimento" />
-          <ScalarProperty Name="MVMOET_MoedaTransaccao" ColumnName="MVMOET_MoedaTransaccao" />
-          <ScalarProperty Name="MVVLRT_ValorTransaccao" ColumnName="MVVLRT_ValorTransaccao" />
-          <ScalarProperty Name="MVMOED_MoedaQueAfectaConta" ColumnName="MVMOED_MoedaQueAfectaConta" />
-          <ScalarProperty Name="MVVLR_ValorQueAfectaConta" ColumnName="MVVLR_ValorQueAfectaConta" />
-          <ScalarProperty Name="MVCOPE_CodigoOperacao" ColumnName="MVCOPE_CodigoOperacao" />
-          <ScalarProperty Name="MVTDOC_TipoDocumento" ColumnName="MVTDOC_TipoDocumento" />
-          <ScalarProperty Name="MVNSEQ_NumeroSequencial" ColumnName="MVNSEQ_NumeroSequencial" />
-          <ScalarProperty Name="MVNATR_Natureza" ColumnName="MVNATR_Natureza" />
-          <ScalarProperty Name="MVNCLI_NumeroCliente" ColumnName="MVNCLI_NumeroCliente" />
-          <ScalarProperty Name="MVBAL_Balcao" ColumnName="MVBAL_Balcao" />
           <ScalarProperty Name="MVNDOC_NumeroDocumento" ColumnName="MVNDOC_NumeroDocumento" />
+          <ScalarProperty Name="MVBAL_Balcao" ColumnName="MVBAL_Balcao" />
+          <ScalarProperty Name="MVNCLI_NumeroCliente" ColumnName="MVNCLI_NumeroCliente" />
+          <ScalarProperty Name="MVNATR_Natureza" ColumnName="MVNATR_Natureza" />
+          <ScalarProperty Name="MVTDOC_TipoDocumento" ColumnName="MVTDOC_TipoDocumento" />
+          <ScalarProperty Name="MVCOPE_CodigoOperacao" ColumnName="MVCOPE_CodigoOperacao" />
+          <ScalarProperty Name="MVVLR_ValorQueAfectaConta" ColumnName="MVVLR_ValorQueAfectaConta" />
+          <ScalarProperty Name="MVMOED_MoedaQueAfectaConta" ColumnName="MVMOED_MoedaQueAfectaConta" />
+          <ScalarProperty Name="MVVLRT_ValorTransaccao" ColumnName="MVVLRT_ValorTransaccao" />
+          <ScalarProperty Name="MVMOET_MoedaTransaccao" ColumnName="MVMOET_MoedaTransaccao" />
+          <ScalarProperty Name="MVSALD_SaldoAposMovimento" ColumnName="MVSALD_SaldoAposMovimento" />
+          <ScalarProperty Name="MVUSER_LancadoPor" ColumnName="MVUSER_LancadoPor" />
+          <ScalarProperty Name="MVHORA_HoraLancamento" ColumnName="MVHORA_HoraLancamento" />
+          <ScalarProperty Name="MVDATL_DataLancamento" ColumnName="MVDATL_DataLancamento" />
+          <ScalarProperty Name="MVDATV_DataValor" ColumnName="MVDATV_DataValor" />
+          <ScalarProperty Name="MVDRCX_DiarioOuCaixa" ColumnName="MVDRCX_DiarioOuCaixa" />
+          <ScalarProperty Name="MVETRB_EstacaoLancamento" ColumnName="MVETRB_EstacaoLancamento" />
+          <ScalarProperty Name="MVCCAS_Canal" ColumnName="MVCCAS_Canal" />
+          <ScalarProperty Name="MVDTEE_DataEmissaoExtracto" ColumnName="MVDTEE_DataEmissaoExtracto" />
+          <ScalarProperty Name="MVBALM_BalcaoMovimento" ColumnName="MVBALM_BalcaoMovimento" />
+          <ScalarProperty Name="MVBALC_BalcaoContaCcbMov" ColumnName="MVBALC_BalcaoContaCcbMov" />
+          <ScalarProperty Name="MVCCB_ContaCcbMovimento" ColumnName="MVCCB_ContaCcbMovimento" />
+          <ScalarProperty Name="MVNOPR_NrOperacao" ColumnName="MVNOPR_NrOperacao" />
+          <ScalarProperty Name="MVNCX_NumeroCaixa" ColumnName="MVNCX_NumeroCaixa" />
+          <ScalarProperty Name="MVNTCX_NrTransaccaoCaixa" ColumnName="MVNTCX_NrTransaccaoCaixa" />
+          <ScalarProperty Name="MVNORD_NrOrdemTransaccao" ColumnName="MVNORD_NrOrdemTransaccao" />
+          <ScalarProperty Name="MVMINV_MovimentoInvisivel" ColumnName="MVMINV_MovimentoInvisivel" />
+          <ScalarProperty Name="MVDTCB_DataContabilistica" ColumnName="MVDTCB_DataContabilistica" />
+          <ScalarProperty Name="MVEXCT_ExecutorMovimento" ColumnName="MVEXCT_ExecutorMovimento" />
+          <ScalarProperty Name="MVDMOV_DescritivoMovimento" ColumnName="MVDMOV_DescritivoMovimento" />
+          <ScalarProperty Name="MVTXA_TaxaAplicadaValorInc" ColumnName="MVTXA_TaxaAplicadaValorInc" />
+          <ScalarProperty Name="MVVLRI_ValorIncidencia" ColumnName="MVVLRI_ValorIncidencia" />
+          <ScalarProperty Name="MVAUTR_Autorizacao" ColumnName="MVAUTR_Autorizacao" />
+          <ScalarProperty Name="MVTOTV_TotalValores" ColumnName="MVTOTV_TotalValores" />
+          <ScalarProperty Name="MVCDEV_CodigoDevolucao" ColumnName="MVCDEV_CodigoDevolucao" />
+          <ScalarProperty Name="MVVLRE_ValorParaExtracto" ColumnName="MVVLRE_ValorParaExtracto" />
+          <ScalarProperty Name="MVOBS_Observacoes" ColumnName="MVOBS_Observacoes" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBMVDP_MovimentosContasDepositosPrazo">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBMVDP_MovimentosContasDepositosPrazo">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBMVDP_MovimentosContasDepositosPrazo)">
         <MappingFragment StoreEntitySet="GBMVDP_MovimentosContasDepositosPrazo">
-          <ScalarProperty Name="MPOBS_Observacoes" ColumnName="MPOBS_Observacoes" />
-          <ScalarProperty Name="MPTXM_TaxaMobilizacao" ColumnName="MPTXM_TaxaMobilizacao" />
-          <ScalarProperty Name="MPTXPE_TaxaPenalizacao" ColumnName="MPTXPE_TaxaPenalizacao" />
-          <ScalarProperty Name="MPPENJ_NrDiasPenalizacao" ColumnName="MPPENJ_NrDiasPenalizacao" />
-          <ScalarProperty Name="MPPENA_PenalizacaoAlterada" ColumnName="MPPENA_PenalizacaoAlterada" />
-          <ScalarProperty Name="MPCCAP_CodigoCapitalizacao" ColumnName="MPCCAP_CodigoCapitalizacao" />
-          <ScalarProperty Name="MPTXJ_TaxaJuro" ColumnName="MPTXJ_TaxaJuro" />
-          <ScalarProperty Name="MPNDIA_NumeroDias" ColumnName="MPNDIA_NumeroDias" />
-          <ScalarProperty Name="MPDVNC_DataVencimento" ColumnName="MPDVNC_DataVencimento" />
-          <ScalarProperty Name="MPTOTV_TotalValores" ColumnName="MPTOTV_TotalValores" />
-          <ScalarProperty Name="MPAUTR_Autorizacao" ColumnName="MPAUTR_Autorizacao" />
-          <ScalarProperty Name="MPVLRI_ValorIncidencia" ColumnName="MPVLRI_ValorIncidencia" />
-          <ScalarProperty Name="MPTXA_TaxaAplicadaValorI" ColumnName="MPTXA_TaxaAplicadaValorI" />
-          <ScalarProperty Name="MPDMOV_DescritivoMovimento" ColumnName="MPDMOV_DescritivoMovimento" />
-          <ScalarProperty Name="MPMOED_Moeda" ColumnName="MPMOED_Moeda" />
-          <ScalarProperty Name="MPEXCT_ExecutorMovimento" ColumnName="MPEXCT_ExecutorMovimento" />
-          <ScalarProperty Name="MPDTCB_DataContabilistica" ColumnName="MPDTCB_DataContabilistica" />
-          <ScalarProperty Name="MPMINV_MovimentoInvisivel" ColumnName="MPMINV_MovimentoInvisivel" />
-          <ScalarProperty Name="MPNORD_NrOrdemTransacca" ColumnName="MPNORD_NrOrdemTransacca" />
-          <ScalarProperty Name="MPTMOV_TipoMovimento" ColumnName="MPTMOV_TipoMovimento" />
-          <ScalarProperty Name="MPMNSL_MovParaMensualizar" ColumnName="MPMNSL_MovParaMensualizar" />
-          <ScalarProperty Name="MPNTCX_NrTransaccaoCaixa" ColumnName="MPNTCX_NrTransaccaoCaixa" />
-          <ScalarProperty Name="MPNCX_NumeroCaixa" ColumnName="MPNCX_NumeroCaixa" />
-          <ScalarProperty Name="MPNOPR_NumeroOperacao" ColumnName="MPNOPR_NumeroOperacao" />
-          <ScalarProperty Name="MPCCB_ContaCcbMovimento" ColumnName="MPCCB_ContaCcbMovimento" />
-          <ScalarProperty Name="MPBALC_BalcaoContaCcbMov" ColumnName="MPBALC_BalcaoContaCcbMov" />
-          <ScalarProperty Name="MPBALM_BalcaoMovimento" ColumnName="MPBALM_BalcaoMovimento" />
-          <ScalarProperty Name="MPDTEE_DataEmissaoExtracto" ColumnName="MPDTEE_DataEmissaoExtracto" />
-          <ScalarProperty Name="MPETRB_EstacaoLancamento" ColumnName="MPETRB_EstacaoLancamento" />
-          <ScalarProperty Name="MPDRCX_DiarioOuCaixa" ColumnName="MPDRCX_DiarioOuCaixa" />
-          <ScalarProperty Name="MPDATV_DataValor" ColumnName="MPDATV_DataValor" />
-          <ScalarProperty Name="MPDATL_DataLancamento" ColumnName="MPDATL_DataLancamento" />
-          <ScalarProperty Name="MPHORA_HoraLancamento" ColumnName="MPHORA_HoraLancamento" />
-          <ScalarProperty Name="MPUSER_LancadoPor" ColumnName="MPUSER_LancadoPor" />
-          <ScalarProperty Name="MPSLDV_SaldoAposDataValor" ColumnName="MPSLDV_SaldoAposDataValor" />
-          <ScalarProperty Name="MPSALD_SaldoAposMovimento" ColumnName="MPSALD_SaldoAposMovimento" />
-          <ScalarProperty Name="MPSLDI_SaldoIncremento" ColumnName="MPSLDI_SaldoIncremento" />
-          <ScalarProperty Name="MPVLR_ValorMovimento" ColumnName="MPVLR_ValorMovimento" />
-          <ScalarProperty Name="MPCOPE_CodigoOperacao" ColumnName="MPCOPE_CodigoOperacao" />
-          <ScalarProperty Name="MPTDOC_TipoDocumento" ColumnName="MPTDOC_TipoDocumento" />
-          <ScalarProperty Name="MPNSEQ_NumeroSequencial" ColumnName="MPNSEQ_NumeroSequencial" />
-          <ScalarProperty Name="MPNATR_Natureza" ColumnName="MPNATR_Natureza" />
-          <ScalarProperty Name="MPNCLI_NumeroCliente" ColumnName="MPNCLI_NumeroCliente" />
-          <ScalarProperty Name="MPBAL_Balcao" ColumnName="MPBAL_Balcao" />
           <ScalarProperty Name="MPNDOC_NumeroDocumento" ColumnName="MPNDOC_NumeroDocumento" />
+          <ScalarProperty Name="MPBAL_Balcao" ColumnName="MPBAL_Balcao" />
+          <ScalarProperty Name="MPNCLI_NumeroCliente" ColumnName="MPNCLI_NumeroCliente" />
+          <ScalarProperty Name="MPNATR_Natureza" ColumnName="MPNATR_Natureza" />
+          <ScalarProperty Name="MPNSEQ_NumeroSequencial" ColumnName="MPNSEQ_NumeroSequencial" />
+          <ScalarProperty Name="MPTDOC_TipoDocumento" ColumnName="MPTDOC_TipoDocumento" />
+          <ScalarProperty Name="MPCOPE_CodigoOperacao" ColumnName="MPCOPE_CodigoOperacao" />
+          <ScalarProperty Name="MPVLR_ValorMovimento" ColumnName="MPVLR_ValorMovimento" />
+          <ScalarProperty Name="MPSLDI_SaldoIncremento" ColumnName="MPSLDI_SaldoIncremento" />
+          <ScalarProperty Name="MPSALD_SaldoAposMovimento" ColumnName="MPSALD_SaldoAposMovimento" />
+          <ScalarProperty Name="MPSLDV_SaldoAposDataValor" ColumnName="MPSLDV_SaldoAposDataValor" />
+          <ScalarProperty Name="MPUSER_LancadoPor" ColumnName="MPUSER_LancadoPor" />
+          <ScalarProperty Name="MPHORA_HoraLancamento" ColumnName="MPHORA_HoraLancamento" />
+          <ScalarProperty Name="MPDATL_DataLancamento" ColumnName="MPDATL_DataLancamento" />
+          <ScalarProperty Name="MPDATV_DataValor" ColumnName="MPDATV_DataValor" />
+          <ScalarProperty Name="MPDRCX_DiarioOuCaixa" ColumnName="MPDRCX_DiarioOuCaixa" />
+          <ScalarProperty Name="MPETRB_EstacaoLancamento" ColumnName="MPETRB_EstacaoLancamento" />
+          <ScalarProperty Name="MPDTEE_DataEmissaoExtracto" ColumnName="MPDTEE_DataEmissaoExtracto" />
+          <ScalarProperty Name="MPBALM_BalcaoMovimento" ColumnName="MPBALM_BalcaoMovimento" />
+          <ScalarProperty Name="MPBALC_BalcaoContaCcbMov" ColumnName="MPBALC_BalcaoContaCcbMov" />
+          <ScalarProperty Name="MPCCB_ContaCcbMovimento" ColumnName="MPCCB_ContaCcbMovimento" />
+          <ScalarProperty Name="MPNOPR_NumeroOperacao" ColumnName="MPNOPR_NumeroOperacao" />
+          <ScalarProperty Name="MPNCX_NumeroCaixa" ColumnName="MPNCX_NumeroCaixa" />
+          <ScalarProperty Name="MPNTCX_NrTransaccaoCaixa" ColumnName="MPNTCX_NrTransaccaoCaixa" />
+          <ScalarProperty Name="MPMNSL_MovParaMensualizar" ColumnName="MPMNSL_MovParaMensualizar" />
+          <ScalarProperty Name="MPTMOV_TipoMovimento" ColumnName="MPTMOV_TipoMovimento" />
+          <ScalarProperty Name="MPNORD_NrOrdemTransacca" ColumnName="MPNORD_NrOrdemTransacca" />
+          <ScalarProperty Name="MPMINV_MovimentoInvisivel" ColumnName="MPMINV_MovimentoInvisivel" />
+          <ScalarProperty Name="MPDTCB_DataContabilistica" ColumnName="MPDTCB_DataContabilistica" />
+          <ScalarProperty Name="MPEXCT_ExecutorMovimento" ColumnName="MPEXCT_ExecutorMovimento" />
+          <ScalarProperty Name="MPMOED_Moeda" ColumnName="MPMOED_Moeda" />
+          <ScalarProperty Name="MPDMOV_DescritivoMovimento" ColumnName="MPDMOV_DescritivoMovimento" />
+          <ScalarProperty Name="MPTXA_TaxaAplicadaValorI" ColumnName="MPTXA_TaxaAplicadaValorI" />
+          <ScalarProperty Name="MPVLRI_ValorIncidencia" ColumnName="MPVLRI_ValorIncidencia" />
+          <ScalarProperty Name="MPAUTR_Autorizacao" ColumnName="MPAUTR_Autorizacao" />
+          <ScalarProperty Name="MPTOTV_TotalValores" ColumnName="MPTOTV_TotalValores" />
+          <ScalarProperty Name="MPDVNC_DataVencimento" ColumnName="MPDVNC_DataVencimento" />
+          <ScalarProperty Name="MPNDIA_NumeroDias" ColumnName="MPNDIA_NumeroDias" />
+          <ScalarProperty Name="MPTXJ_TaxaJuro" ColumnName="MPTXJ_TaxaJuro" />
+          <ScalarProperty Name="MPCCAP_CodigoCapitalizacao" ColumnName="MPCCAP_CodigoCapitalizacao" />
+          <ScalarProperty Name="MPPENA_PenalizacaoAlterada" ColumnName="MPPENA_PenalizacaoAlterada" />
+          <ScalarProperty Name="MPPENJ_NrDiasPenalizacao" ColumnName="MPPENJ_NrDiasPenalizacao" />
+          <ScalarProperty Name="MPTXPE_TaxaPenalizacao" ColumnName="MPTXPE_TaxaPenalizacao" />
+          <ScalarProperty Name="MPTXM_TaxaMobilizacao" ColumnName="MPTXM_TaxaMobilizacao" />
+          <ScalarProperty Name="MPOBS_Observacoes" ColumnName="MPOBS_Observacoes" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBNATR_NaturezasContas">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBNATR_NaturezasContas">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBNATR_NaturezasContas)">
         <MappingFragment StoreEntitySet="GBNATR_NaturezasContas">
-          <ScalarProperty Name="NTTNSC_TipoParaNatrSemContas" ColumnName="NTTNSC_TipoParaNatrSemContas" />
-          <ScalarProperty Name="NTCLCP_ClasseComponente" ColumnName="NTCLCP_ClasseComponente" />
-          <ScalarProperty Name="NTTSLD_TipoSaldo" ColumnName="NTTSLD_TipoSaldo" />
-          <ScalarProperty Name="NTNULC_NrMaximoContas" ColumnName="NTNULC_NrMaximoContas" />
-          <ScalarProperty Name="NTDESR_DescritivoReduzido" ColumnName="NTDESR_DescritivoReduzido" />
-          <ScalarProperty Name="NTDESC_Descritivo" ColumnName="NTDESC_Descritivo" />
           <ScalarProperty Name="NTNATR_Natureza" ColumnName="NTNATR_Natureza" />
+          <ScalarProperty Name="NTDESC_Descritivo" ColumnName="NTDESC_Descritivo" />
+          <ScalarProperty Name="NTDESR_DescritivoReduzido" ColumnName="NTDESR_DescritivoReduzido" />
+          <ScalarProperty Name="NTNULC_NrMaximoContas" ColumnName="NTNULC_NrMaximoContas" />
+          <ScalarProperty Name="NTTSLD_TipoSaldo" ColumnName="NTTSLD_TipoSaldo" />
+          <ScalarProperty Name="NTCLCP_ClasseComponente" ColumnName="NTCLCP_ClasseComponente" />
+          <ScalarProperty Name="NTTNSC_TipoParaNatrSemContas" ColumnName="NTTNSC_TipoParaNatrSemContas" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBOPR_Operacoes">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBOPR_Operacoes">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBOPR_Operacoes)">
         <MappingFragment StoreEntitySet="GBOPR_Operacoes">
-          <ScalarProperty Name="X1DTIN_DataInicioExecucao" ColumnName="X1DTIN_DataInicioExecucao" />
-          <ScalarProperty Name="X1HORA_HoraInicioExecucao" ColumnName="X1HORA_HoraInicioExecucao" />
-          <ScalarProperty Name="X1MVES_MovimentosEstornados" ColumnName="X1MVES_MovimentosEstornados" />
-          <ScalarProperty Name="X1SITU_SituacaoOperacao" ColumnName="X1SITU_SituacaoOperacao" />
-          <ScalarProperty Name="X1TTTR_TipoTransaccao" ColumnName="X1TTTR_TipoTransaccao" />
           <ScalarProperty Name="X1NOPR_NumeroOperacao" ColumnName="X1NOPR_NumeroOperacao" />
+          <ScalarProperty Name="X1TTTR_TipoTransaccao" ColumnName="X1TTTR_TipoTransaccao" />
+          <ScalarProperty Name="X1SITU_SituacaoOperacao" ColumnName="X1SITU_SituacaoOperacao" />
+          <ScalarProperty Name="X1MVES_MovimentosEstornados" ColumnName="X1MVES_MovimentosEstornados" />
+          <ScalarProperty Name="X1HORA_HoraInicioExecucao" ColumnName="X1HORA_HoraInicioExecucao" />
+          <ScalarProperty Name="X1DTIN_DataInicioExecucao" ColumnName="X1DTIN_DataInicioExecucao" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBTCLI_SegmentoCliente">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTCLI_SegmentoCliente">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTCLI_SegmentoCliente)">
         <MappingFragment StoreEntitySet="GBTCLI_SegmentoCliente">
-          <ScalarProperty Name="TCPBAL_SoPermitidoNosBalcoes" ColumnName="TCPBAL_SoPermitidoNosBalcoes" />
-          <ScalarProperty Name="TCDESC_Descritivo" ColumnName="TCDESC_Descritivo" />
           <ScalarProperty Name="TCTIPO_Tipo" ColumnName="TCTIPO_Tipo" />
+          <ScalarProperty Name="TCDESC_Descritivo" ColumnName="TCDESC_Descritivo" />
+          <ScalarProperty Name="TCPBAL_SoPermitidoNosBalcoes" ColumnName="TCPBAL_SoPermitidoNosBalcoes" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBTIT_Entidade">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTIT_Entidade">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTIT_Entidade)">
         <MappingFragment StoreEntitySet="GBTIT_Entidade">
-          <ScalarProperty Name="GBTTALER_ComAlertas" ColumnName="GBTTALER_ComAlertas" />
-          <ScalarProperty Name="TTBLOQ_ComBloqueios" ColumnName="TTBLOQ_ComBloqueios" />
-          <ScalarProperty Name="TTTPEN_TipoEntidade" ColumnName="TTTPEN_TipoEntidade" />
-          <ScalarProperty Name="TTPAIS_CodigoPais" ColumnName="TTPAIS_CodigoPais" />
-          <ScalarProperty Name="TTCST_CodigoSectorial" ColumnName="TTCST_CodigoSectorial" />
-          <ScalarProperty Name="TTCRES_CodigoResidencia" ColumnName="TTCRES_CodigoResidencia" />
-          <ScalarProperty Name="TTNCTR_NrCentralRisco" ColumnName="TTNCTR_NrCentralRisco" />
-          <ScalarProperty Name="TTVINC_VinculoComOutras" ColumnName="TTVINC_VinculoComOutras" />
-          <ScalarProperty Name="TTMOED_MoedaCsra" ColumnName="TTMOED_MoedaCsra" />
-          <ScalarProperty Name="TTCSRA_CapitalSocialOuRendimentoAnual" ColumnName="TTCSRA_CapitalSocialOuRendimentoAnual" />
-          <ScalarProperty Name="TTSEDE_DomicilioOuSede" ColumnName="TTSEDE_DomicilioOuSede" />
-          <ScalarProperty Name="TTDTPB_DataPublicacao" ColumnName="TTDTPB_DataPublicacao" />
-          <ScalarProperty Name="TTDTCT_DataConstituicao" ColumnName="TTDTCT_DataConstituicao" />
-          <ScalarProperty Name="GBTTCAESC_CodigoActividadeEconomicaSecundario" ColumnName="GBTTCAESC_CodigoActividadeEconomicaSecundario" />
-          <ScalarProperty Name="TTCAE_CodigoActividadeEconomica" ColumnName="TTCAE_CodigoActividadeEconomica" />
-          <ScalarProperty Name="TTTSOC_TipoSociedade" ColumnName="TTTSOC_TipoSociedade" />
-          <ScalarProperty Name="TTDTAD_DataAdmissao" ColumnName="TTDTAD_DataAdmissao" />
-          <ScalarProperty Name="TTFUCA_FuncaoOuCargo" ColumnName="TTFUCA_FuncaoOuCargo" />
-          <ScalarProperty Name="TTENTP_EntidadePatronal" ColumnName="TTENTP_EntidadePatronal" />
-          <ScalarProperty Name="TTMAE_NomeMae" ColumnName="TTMAE_NomeMae" />
-          <ScalarProperty Name="TTPAI_NomePai" ColumnName="TTPAI_NomePai" />
-          <ScalarProperty Name="TTRCAS_RegimeCasamento" ColumnName="TTRCAS_RegimeCasamento" />
-          <ScalarProperty Name="TTECIV_EstadoCivil" ColumnName="TTECIV_EstadoCivil" />
-          <ScalarProperty Name="TTNATU_Naturalidade" ColumnName="TTNATU_Naturalidade" />
-          <ScalarProperty Name="TTNAC_Nacionalidade" ColumnName="TTNAC_Nacionalidade" />
-          <ScalarProperty Name="GBTTNUPBDO_NrPublicacaoDiarioOficial" ColumnName="GBTTNUPBDO_NrPublicacaoDiarioOficial" />
-          <ScalarProperty Name="GBTTNOCONS_NomeConservatoria" ColumnName="GBTTNOCONS_NomeConservatoria" />
-          <ScalarProperty Name="GBTTNUMACO_NrMatriculaConservatoria" ColumnName="GBTTNUMACO_NrMatriculaConservatoria" />
-          <ScalarProperty Name="GBTTDTVAL_DataValidadeDocumento" ColumnName="GBTTDTVAL_DataValidadeDocumento" />
-          <ScalarProperty Name="TTDTEI_DataEmissao" ColumnName="TTDTEI_DataEmissao" />
-          <ScalarProperty Name="TTLOCA_LocalEmissao" ColumnName="TTLOCA_LocalEmissao" />
-          <ScalarProperty Name="GBTTCKDGID_CheckDigitIdentificacao" ColumnName="GBTTCKDGID_CheckDigitIdentificacao" />
-          <ScalarProperty Name="TTNIDE_NrIdentificacao" ColumnName="TTNIDE_NrIdentificacao" />
-          <ScalarProperty Name="TTTIDE_TipoIdentificacao" ColumnName="TTTIDE_TipoIdentificacao" />
-          <ScalarProperty Name="GBTTCTGFSC_CategoriaFiscal" ColumnName="GBTTCTGFSC_CategoriaFiscal" />
-          <ScalarProperty Name="TTBAIR_ReparticaoFiscal" ColumnName="TTBAIR_ReparticaoFiscal" />
-          <ScalarProperty Name="TTNIF_NrIdentificacaoFiscal" ColumnName="TTNIF_NrIdentificacaoFiscal" />
-          <ScalarProperty Name="GBTTTIPIDF_TipoIdentificacaoFiscal" ColumnName="GBTTTIPIDF_TipoIdentificacaoFiscal" />
-          <ScalarProperty Name="GBTTPROF_Profissao" ColumnName="GBTTPROF_Profissao" />
-          <ScalarProperty Name="TTACTP_ActividadeProfissional" ColumnName="TTACTP_ActividadeProfissional" />
-          <ScalarProperty Name="TTHABL_Habilitacoes" ColumnName="TTHABL_Habilitacoes" />
-          <ScalarProperty Name="TTSEXO_Sexo" ColumnName="TTSEXO_Sexo" />
-          <ScalarProperty Name="TTDNSC_DataNascimento" ColumnName="TTDNSC_DataNascimento" />
-          <ScalarProperty Name="TTNOMR_NomeReduzido" ColumnName="TTNOMR_NomeReduzido" />
-          <ScalarProperty Name="TTNOME_NomeSemTitulo" ColumnName="TTNOME_NomeSemTitulo" />
-          <ScalarProperty Name="TTNOMT_NomeEntidade" ColumnName="TTNOMT_NomeEntidade" />
-          <ScalarProperty Name="TTTIPT_EmpresaOuParticular" ColumnName="TTTIPT_EmpresaOuParticular" />
           <ScalarProperty Name="TTNUMT_NrEntidade" ColumnName="TTNUMT_NrEntidade" />
+          <ScalarProperty Name="TTTIPT_EmpresaOuParticular" ColumnName="TTTIPT_EmpresaOuParticular" />
+          <ScalarProperty Name="TTNOMT_NomeEntidade" ColumnName="TTNOMT_NomeEntidade" />
+          <ScalarProperty Name="TTNOME_NomeSemTitulo" ColumnName="TTNOME_NomeSemTitulo" />
+          <ScalarProperty Name="TTNOMR_NomeReduzido" ColumnName="TTNOMR_NomeReduzido" />
+          <ScalarProperty Name="TTDNSC_DataNascimento" ColumnName="TTDNSC_DataNascimento" />
+          <ScalarProperty Name="TTSEXO_Sexo" ColumnName="TTSEXO_Sexo" />
+          <ScalarProperty Name="TTHABL_Habilitacoes" ColumnName="TTHABL_Habilitacoes" />
+          <ScalarProperty Name="TTACTP_ActividadeProfissional" ColumnName="TTACTP_ActividadeProfissional" />
+          <ScalarProperty Name="GBTTPROF_Profissao" ColumnName="GBTTPROF_Profissao" />
+          <ScalarProperty Name="GBTTTIPIDF_TipoIdentificacaoFiscal" ColumnName="GBTTTIPIDF_TipoIdentificacaoFiscal" />
+          <ScalarProperty Name="TTNIF_NrIdentificacaoFiscal" ColumnName="TTNIF_NrIdentificacaoFiscal" />
+          <ScalarProperty Name="TTBAIR_ReparticaoFiscal" ColumnName="TTBAIR_ReparticaoFiscal" />
+          <ScalarProperty Name="GBTTCTGFSC_CategoriaFiscal" ColumnName="GBTTCTGFSC_CategoriaFiscal" />
+          <ScalarProperty Name="TTTIDE_TipoIdentificacao" ColumnName="TTTIDE_TipoIdentificacao" />
+          <ScalarProperty Name="TTNIDE_NrIdentificacao" ColumnName="TTNIDE_NrIdentificacao" />
+          <ScalarProperty Name="GBTTCKDGID_CheckDigitIdentificacao" ColumnName="GBTTCKDGID_CheckDigitIdentificacao" />
+          <ScalarProperty Name="TTLOCA_LocalEmissao" ColumnName="TTLOCA_LocalEmissao" />
+          <ScalarProperty Name="TTDTEI_DataEmissao" ColumnName="TTDTEI_DataEmissao" />
+          <ScalarProperty Name="GBTTDTVAL_DataValidadeDocumento" ColumnName="GBTTDTVAL_DataValidadeDocumento" />
+          <ScalarProperty Name="GBTTNUMACO_NrMatriculaConservatoria" ColumnName="GBTTNUMACO_NrMatriculaConservatoria" />
+          <ScalarProperty Name="GBTTNOCONS_NomeConservatoria" ColumnName="GBTTNOCONS_NomeConservatoria" />
+          <ScalarProperty Name="GBTTNUPBDO_NrPublicacaoDiarioOficial" ColumnName="GBTTNUPBDO_NrPublicacaoDiarioOficial" />
+          <ScalarProperty Name="TTNAC_Nacionalidade" ColumnName="TTNAC_Nacionalidade" />
+          <ScalarProperty Name="TTNATU_Naturalidade" ColumnName="TTNATU_Naturalidade" />
+          <ScalarProperty Name="TTECIV_EstadoCivil" ColumnName="TTECIV_EstadoCivil" />
+          <ScalarProperty Name="TTRCAS_RegimeCasamento" ColumnName="TTRCAS_RegimeCasamento" />
+          <ScalarProperty Name="TTPAI_NomePai" ColumnName="TTPAI_NomePai" />
+          <ScalarProperty Name="TTMAE_NomeMae" ColumnName="TTMAE_NomeMae" />
+          <ScalarProperty Name="TTENTP_EntidadePatronal" ColumnName="TTENTP_EntidadePatronal" />
+          <ScalarProperty Name="TTFUCA_FuncaoOuCargo" ColumnName="TTFUCA_FuncaoOuCargo" />
+          <ScalarProperty Name="TTDTAD_DataAdmissao" ColumnName="TTDTAD_DataAdmissao" />
+          <ScalarProperty Name="TTTSOC_TipoSociedade" ColumnName="TTTSOC_TipoSociedade" />
+          <ScalarProperty Name="TTCAE_CodigoActividadeEconomica" ColumnName="TTCAE_CodigoActividadeEconomica" />
+          <ScalarProperty Name="GBTTCAESC_CodigoActividadeEconomicaSecundario" ColumnName="GBTTCAESC_CodigoActividadeEconomicaSecundario" />
+          <ScalarProperty Name="TTDTCT_DataConstituicao" ColumnName="TTDTCT_DataConstituicao" />
+          <ScalarProperty Name="TTDTPB_DataPublicacao" ColumnName="TTDTPB_DataPublicacao" />
+          <ScalarProperty Name="TTSEDE_DomicilioOuSede" ColumnName="TTSEDE_DomicilioOuSede" />
+          <ScalarProperty Name="TTCSRA_CapitalSocialOuRendimentoAnual" ColumnName="TTCSRA_CapitalSocialOuRendimentoAnual" />
+          <ScalarProperty Name="TTMOED_MoedaCsra" ColumnName="TTMOED_MoedaCsra" />
+          <ScalarProperty Name="TTVINC_VinculoComOutras" ColumnName="TTVINC_VinculoComOutras" />
+          <ScalarProperty Name="TTNCTR_NrCentralRisco" ColumnName="TTNCTR_NrCentralRisco" />
+          <ScalarProperty Name="TTCRES_CodigoResidencia" ColumnName="TTCRES_CodigoResidencia" />
+          <ScalarProperty Name="TTCST_CodigoSectorial" ColumnName="TTCST_CodigoSectorial" />
+          <ScalarProperty Name="TTPAIS_CodigoPais" ColumnName="TTPAIS_CodigoPais" />
+          <ScalarProperty Name="TTTPEN_TipoEntidade" ColumnName="TTTPEN_TipoEntidade" />
+          <ScalarProperty Name="TTBLOQ_ComBloqueios" ColumnName="TTBLOQ_ComBloqueios" />
+          <ScalarProperty Name="GBTTALER_ComAlertas" ColumnName="GBTTALER_ComAlertas" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBTPENT_TiposEntidades">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTPENT_TiposEntidades">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTPENT_TiposEntidades)">
         <MappingFragment StoreEntitySet="GBTPENT_TiposEntidades">
-          <ScalarProperty Name="NISITU_Situacao" ColumnName="NISITU_Situacao" />
-          <ScalarProperty Name="NIHOCR_HoraCriacao" ColumnName="NIHOCR_HoraCriacao" />
-          <ScalarProperty Name="NIDTCR_DataCriacao" ColumnName="NIDTCR_DataCriacao" />
-          <ScalarProperty Name="NIUSCR_UtilizadorCriacao" ColumnName="NIUSCR_UtilizadorCriacao" />
-          <ScalarProperty Name="GBNIIDMAX_IdadeMaxima" ColumnName="GBNIIDMAX_IdadeMaxima" />
-          <ScalarProperty Name="GBNIIDMIN_IdadeMinima" ColumnName="GBNIIDMIN_IdadeMinima" />
-          <ScalarProperty Name="NICOCR_ComunicaParaCentralRisco" ColumnName="NICOCR_ComunicaParaCentralRisco" />
-          <ScalarProperty Name="NICOUR_ComunicaParaUtilizadoresRisco" ColumnName="NICOUR_ComunicaParaUtilizadoresRisco" />
-          <ScalarProperty Name="NIPRCV_ProcessoValido" ColumnName="NIPRCV_ProcessoValido" />
-          <ScalarProperty Name="NIDTPE_Descritivo" ColumnName="NIDTPE_Descritivo" />
           <ScalarProperty Name="NITPEN_TipoEntidade" ColumnName="NITPEN_TipoEntidade" />
+          <ScalarProperty Name="NIDTPE_Descritivo" ColumnName="NIDTPE_Descritivo" />
+          <ScalarProperty Name="NIPRCV_ProcessoValido" ColumnName="NIPRCV_ProcessoValido" />
+          <ScalarProperty Name="NICOUR_ComunicaParaUtilizadoresRisco" ColumnName="NICOUR_ComunicaParaUtilizadoresRisco" />
+          <ScalarProperty Name="NICOCR_ComunicaParaCentralRisco" ColumnName="NICOCR_ComunicaParaCentralRisco" />
+          <ScalarProperty Name="GBNIIDMIN_IdadeMinima" ColumnName="GBNIIDMIN_IdadeMinima" />
+          <ScalarProperty Name="GBNIIDMAX_IdadeMaxima" ColumnName="GBNIIDMAX_IdadeMaxima" />
+          <ScalarProperty Name="NIUSCR_UtilizadorCriacao" ColumnName="NIUSCR_UtilizadorCriacao" />
+          <ScalarProperty Name="NIDTCR_DataCriacao" ColumnName="NIDTCR_DataCriacao" />
+          <ScalarProperty Name="NIHOCR_HoraCriacao" ColumnName="NIHOCR_HoraCriacao" />
+          <ScalarProperty Name="NISITU_Situacao" ColumnName="NISITU_Situacao" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GBTRCLI_TiposRelacoesEntidadesClientes">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.GBTRCLI_TiposRelacoesEntidadesClientes">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.GBTRCLI_TiposRelacoesEntidadesClientes)">
         <MappingFragment StoreEntitySet="GBTRCLI_TiposRelacoesEntidadesClientes">
-          <ScalarProperty Name="RTUSCR_UtilizadorCriacao" ColumnName="RTUSCR_UtilizadorCriacao" />
-          <ScalarProperty Name="RTHOCR_HoraCriacao" ColumnName="RTHOCR_HoraCriacao" />
-          <ScalarProperty Name="RTDTCR_DataCriacao" ColumnName="RTDTCR_DataCriacao" />
-          <ScalarProperty Name="RTSITU_Situacao" ColumnName="RTSITU_Situacao" />
-          <ScalarProperty Name="RTCOCR_ComunicaParaCentRisco" ColumnName="RTCOCR_ComunicaParaCentRisco" />
-          <ScalarProperty Name="RTCOUR_ComunicaParaUtilRisco" ColumnName="RTCOUR_ComunicaParaUtilRisco" />
-          <ScalarProperty Name="RTPRCH_PodeReqCheques" ColumnName="RTPRCH_PodeReqCheques" />
-          <ScalarProperty Name="RTSLDT_InfluenciaSldTit" ColumnName="RTSLDT_InfluenciaSldTit" />
-          <ScalarProperty Name="RTVCEP_ValidoCliEmpresa" ColumnName="RTVCEP_ValidoCliEmpresa" />
-          <ScalarProperty Name="RTVCPR_ValidoCliPart" ColumnName="RTVCPR_ValidoCliPart" />
-          <ScalarProperty Name="RTDESC_Descritivo" ColumnName="RTDESC_Descritivo" />
-          <ScalarProperty Name="RTSORD_SeqOrdenacao" ColumnName="RTSORD_SeqOrdenacao" />
           <ScalarProperty Name="RTRCLI_RelacaoComCliente" ColumnName="RTRCLI_RelacaoComCliente" />
+          <ScalarProperty Name="RTSORD_SeqOrdenacao" ColumnName="RTSORD_SeqOrdenacao" />
+          <ScalarProperty Name="RTDESC_Descritivo" ColumnName="RTDESC_Descritivo" />
+          <ScalarProperty Name="RTVCPR_ValidoCliPart" ColumnName="RTVCPR_ValidoCliPart" />
+          <ScalarProperty Name="RTVCEP_ValidoCliEmpresa" ColumnName="RTVCEP_ValidoCliEmpresa" />
+          <ScalarProperty Name="RTSLDT_InfluenciaSldTit" ColumnName="RTSLDT_InfluenciaSldTit" />
+          <ScalarProperty Name="RTPRCH_PodeReqCheques" ColumnName="RTPRCH_PodeReqCheques" />
+          <ScalarProperty Name="RTCOUR_ComunicaParaUtilRisco" ColumnName="RTCOUR_ComunicaParaUtilRisco" />
+          <ScalarProperty Name="RTCOCR_ComunicaParaCentRisco" ColumnName="RTCOCR_ComunicaParaCentRisco" />
+          <ScalarProperty Name="RTSITU_Situacao" ColumnName="RTSITU_Situacao" />
+          <ScalarProperty Name="RTDTCR_DataCriacao" ColumnName="RTDTCR_DataCriacao" />
+          <ScalarProperty Name="RTHOCR_HoraCriacao" ColumnName="RTHOCR_HoraCriacao" />
+          <ScalarProperty Name="RTUSCR_UtilizadorCriacao" ColumnName="RTUSCR_UtilizadorCriacao" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PACTP_ActividadeProfissional">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.PACTP_ActividadeProfissional">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.PACTP_ActividadeProfissional)">
         <MappingFragment StoreEntitySet="PACTP_ActividadeProfissional">
-          <ScalarProperty Name="PACDC_Descritivo" ColumnName="PACDC_Descritivo" />
           <ScalarProperty Name="PACTV_Actividade" ColumnName="PACTV_Actividade" />
+          <ScalarProperty Name="PACDC_Descritivo" ColumnName="PACDC_Descritivo" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PESTC_EstadoCivil">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.PESTC_EstadoCivil">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.PESTC_EstadoCivil)">
         <MappingFragment StoreEntitySet="PESTC_EstadoCivil">
-          <ScalarProperty Name="ERCAV_RegimesCasamentoValidos" ColumnName="ERCAV_RegimesCasamentoValidos" />
-          <ScalarProperty Name="EDCIV_Descritivo" ColumnName="EDCIV_Descritivo" />
           <ScalarProperty Name="EECIV_EstadoCivil" ColumnName="EECIV_EstadoCivil" />
+          <ScalarProperty Name="EDCIV_Descritivo" ColumnName="EDCIV_Descritivo" />
+          <ScalarProperty Name="ERCAV_RegimesCasamentoValidos" ColumnName="ERCAV_RegimesCasamentoValidos" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PHBLT_HabilitacoesLiterarias">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.PHBLT_HabilitacoesLiterarias">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.PHBLT_HabilitacoesLiterarias)">
         <MappingFragment StoreEntitySet="PHBLT_HabilitacoesLiterarias">
-          <ScalarProperty Name="HOCR_HoraCriacao" ColumnName="HOCR_HoraCriacao" />
-          <ScalarProperty Name="DTCR_DataCriacao" ColumnName="DTCR_DataCriacao" />
-          <ScalarProperty Name="USCR_UtilizadorCriacao" ColumnName="USCR_UtilizadorCriacao" />
-          <ScalarProperty Name="SITU_Situacao" ColumnName="SITU_Situacao" />
-          <ScalarProperty Name="HBDC_Descritivo" ColumnName="HBDC_Descritivo" />
           <ScalarProperty Name="PHBTP_Habilitacoes" ColumnName="PHBTP_Habilitacoes" />
+          <ScalarProperty Name="HBDC_Descritivo" ColumnName="HBDC_Descritivo" />
+          <ScalarProperty Name="SITU_Situacao" ColumnName="SITU_Situacao" />
+          <ScalarProperty Name="USCR_UtilizadorCriacao" ColumnName="USCR_UtilizadorCriacao" />
+          <ScalarProperty Name="DTCR_DataCriacao" ColumnName="DTCR_DataCriacao" />
+          <ScalarProperty Name="HOCR_HoraCriacao" ColumnName="HOCR_HoraCriacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMOEDA_Divisas">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.PMOEDA_Divisas)">
+        <MappingFragment StoreEntitySet="PMOEDA_Divisas">
+          <ScalarProperty Name="WMOED_CodigoDivisaIso" ColumnName="WMOED_CodigoDivisaIso" />
+          <ScalarProperty Name="WNMOE_CodigoIso" ColumnName="WNMOE_CodigoIso" />
+          <ScalarProperty Name="WDESC_DesignacaoDivisa" ColumnName="WDESC_DesignacaoDivisa" />
+          <ScalarProperty Name="WPENT_PaisOuEntidade" ColumnName="WPENT_PaisOuEntidade" />
+          <ScalarProperty Name="WROFX_RecolhaObgFixing" ColumnName="WROFX_RecolhaObgFixing" />
+          <ScalarProperty Name="WLNGU_Lingua" ColumnName="WLNGU_Lingua" />
+          <ScalarProperty Name="WSIMB_SimboloMoedaParaExterior" ColumnName="WSIMB_SimboloMoedaParaExterior" />
+          <ScalarProperty Name="WNDGC_NrDecimaisGerCotacao" ColumnName="WNDGC_NrDecimaisGerCotacao" />
+          <ScalarProperty Name="WSORD_SeqOrdenacaoParaConsulta" ColumnName="WSORD_SeqOrdenacaoParaConsulta" />
+          <ScalarProperty Name="WCTB_CotadaBanco" ColumnName="WCTB_CotadaBanco" />
+          <ScalarProperty Name="WCTBC_CotadaBancoCentral" ColumnName="WCTBC_CotadaBancoCentral" />
+          <ScalarProperty Name="WMMC_ValorDesvioCalcContr" ColumnName="WMMC_ValorDesvioCalcContr" />
+          <ScalarProperty Name="WMTC_MargemTaxaCambio" ColumnName="WMTC_MargemTaxaCambio" />
+          <ScalarProperty Name="WMTJ_MargemTaxaJuro" ColumnName="WMTJ_MargemTaxaJuro" />
+          <ScalarProperty Name="WMITC_MargemIntrTaxaCambio" ColumnName="WMITC_MargemIntrTaxaCambio" />
+          <ScalarProperty Name="WMITJ_MargemIntrTaxaJuro" ColumnName="WMITJ_MargemIntrTaxaJuro" />
+          <ScalarProperty Name="WCTJ_BaseCalculoTaxaJuro" ColumnName="WCTJ_BaseCalculoTaxaJuro" />
+          <ScalarProperty Name="WCBP_CodigoBancoSwiftPref" ColumnName="WCBP_CodigoBancoSwiftPref" />
+          <ScalarProperty Name="WCPP_SiglaPaisIsoPref" ColumnName="WCPP_SiglaPaisIsoPref" />
+          <ScalarProperty Name="WCBLP_CodigoBalcaoPref" ColumnName="WCBLP_CodigoBalcaoPref" />
+          <ScalarProperty Name="WCDP_CodigoDomicilioPref" ColumnName="WCDP_CodigoDomicilioPref" />
+          <ScalarProperty Name="WCREU_CodigoReutersPref" ColumnName="WCREU_CodigoReutersPref" />
+          <ScalarProperty Name="WPSW_PrioridadeMsgSwift" ColumnName="WPSW_PrioridadeMsgSwift" />
+          <ScalarProperty Name="WOBS_ObservacoesDivisa" ColumnName="WOBS_ObservacoesDivisa" />
+          <ScalarProperty Name="WBLOQ_DivisaBloqueada" ColumnName="WBLOQ_DivisaBloqueada" />
+          <ScalarProperty Name="WGEUR_MoedaInTerceiraFaseUem" ColumnName="WGEUR_MoedaInTerceiraFaseUem" />
+          <ScalarProperty Name="WDENTMIN_DataEntradaMoedaIn" ColumnName="WDENTMIN_DataEntradaMoedaIn" />
+          <ScalarProperty Name="WTARRMIN_MetodoArredondMoedaIn" ColumnName="WTARRMIN_MetodoArredondMoedaIn" />
+          <ScalarProperty Name="WSITU_Situacao" ColumnName="WSITU_Situacao" />
+          <ScalarProperty Name="WUSCR_UtilizadorCriacao" ColumnName="WUSCR_UtilizadorCriacao" />
+          <ScalarProperty Name="WDTCR_DataCriacao" ColumnName="WDTCR_DataCriacao" />
+          <ScalarProperty Name="WHOCR_HoraCriacao" ColumnName="WHOCR_HoraCriacao" />
+          <ScalarProperty Name="WUSDE_UtilizadorDesactivacao" ColumnName="WUSDE_UtilizadorDesactivacao" />
+          <ScalarProperty Name="WDTDE_DataDesactivacao" ColumnName="WDTDE_DataDesactivacao" />
+          <ScalarProperty Name="WHODE_HoraDesactivacao" ColumnName="WHODE_HoraDesactivacao" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PPAIS_Paises">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.PPAIS_Paises">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.PPAIS_Paises)">
         <MappingFragment StoreEntitySet="PPAIS_Paises">
-          <ScalarProperty Name="AHODE_HoraDesactivacao" ColumnName="AHODE_HoraDesactivacao" />
-          <ScalarProperty Name="ADTDE_DataDesactivacao" ColumnName="ADTDE_DataDesactivacao" />
-          <ScalarProperty Name="AUSDE_UtilizadorDesactivacao" ColumnName="AUSDE_UtilizadorDesactivacao" />
-          <ScalarProperty Name="AHOCR_HoraCriacao" ColumnName="AHOCR_HoraCriacao" />
-          <ScalarProperty Name="ADTCR_DataCriacao" ColumnName="ADTCR_DataCriacao" />
-          <ScalarProperty Name="AUSCR_UtilizadorCriacao" ColumnName="AUSCR_UtilizadorCriacao" />
-          <ScalarProperty Name="ASITU_Situacao" ColumnName="ASITU_Situacao" />
-          <ScalarProperty Name="ACID3_CodigoIdioma3" ColumnName="ACID3_CodigoIdioma3" />
-          <ScalarProperty Name="ACID2_CodigoIdioma2" ColumnName="ACID2_CodigoIdioma2" />
-          <ScalarProperty Name="ACID1_CodigoIdioma1" ColumnName="ACID1_CodigoIdioma1" />
-          <ScalarProperty Name="AINDI_IndicativoInternacional" ColumnName="AINDI_IndicativoInternacional" />
-          <ScalarProperty Name="ADPAI_DescricaoPais" ColumnName="ADPAI_DescricaoPais" />
-          <ScalarProperty Name="ANPAI_NumeroPais" ColumnName="ANPAI_NumeroPais" />
-          <ScalarProperty Name="ASPAI_SiglaPais" ColumnName="ASPAI_SiglaPais" />
           <ScalarProperty Name="ACPAI_CodigoPais" ColumnName="ACPAI_CodigoPais" />
+          <ScalarProperty Name="ASPAI_SiglaPais" ColumnName="ASPAI_SiglaPais" />
+          <ScalarProperty Name="ANPAI_NumeroPais" ColumnName="ANPAI_NumeroPais" />
+          <ScalarProperty Name="ADPAI_DescricaoPais" ColumnName="ADPAI_DescricaoPais" />
+          <ScalarProperty Name="AINDI_IndicativoInternacional" ColumnName="AINDI_IndicativoInternacional" />
+          <ScalarProperty Name="ACID1_CodigoIdioma1" ColumnName="ACID1_CodigoIdioma1" />
+          <ScalarProperty Name="ACID2_CodigoIdioma2" ColumnName="ACID2_CodigoIdioma2" />
+          <ScalarProperty Name="ACID3_CodigoIdioma3" ColumnName="ACID3_CodigoIdioma3" />
+          <ScalarProperty Name="ASITU_Situacao" ColumnName="ASITU_Situacao" />
+          <ScalarProperty Name="AUSCR_UtilizadorCriacao" ColumnName="AUSCR_UtilizadorCriacao" />
+          <ScalarProperty Name="ADTCR_DataCriacao" ColumnName="ADTCR_DataCriacao" />
+          <ScalarProperty Name="AHOCR_HoraCriacao" ColumnName="AHOCR_HoraCriacao" />
+          <ScalarProperty Name="AUSDE_UtilizadorDesactivacao" ColumnName="AUSDE_UtilizadorDesactivacao" />
+          <ScalarProperty Name="ADTDE_DataDesactivacao" ColumnName="ADTDE_DataDesactivacao" />
+          <ScalarProperty Name="AHODE_HoraDesactivacao" ColumnName="AHODE_HoraDesactivacao" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PPROF_Profissoes">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.PPROF_Profissoes">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.PPROF_Profissoes)">
         <MappingFragment StoreEntitySet="PPROF_Profissoes">
-          <ScalarProperty Name="PPRACTV_CdgActividadeValidos" ColumnName="PPRACTV_CdgActividadeValidos" />
-          <ScalarProperty Name="PPRDESC_Descritivo" ColumnName="PPRDESC_Descritivo" />
           <ScalarProperty Name="PPRPROF_CodigoProfissao" ColumnName="PPRPROF_CodigoProfissao" />
+          <ScalarProperty Name="PPRDESC_Descritivo" ColumnName="PPRDESC_Descritivo" />
+          <ScalarProperty Name="PPRACTV_CdgActividadeValidos" ColumnName="PPRACTV_CdgActividadeValidos" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PREGC_RegimesCasamento">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.PREGC_RegimesCasamento">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.PREGC_RegimesCasamento)">
         <MappingFragment StoreEntitySet="PREGC_RegimesCasamento">
-          <ScalarProperty Name="CDCAS_Descritivo" ColumnName="CDCAS_Descritivo" />
           <ScalarProperty Name="CRCAS_RegimeCasamento" ColumnName="CRCAS_RegimeCasamento" />
+          <ScalarProperty Name="CDCAS_Descritivo" ColumnName="CDCAS_Descritivo" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PTIDD_TiposIdentificacao">
-      <EntityTypeMapping TypeName="CustomerAccountsModel.PTIDD_TiposIdentificacao">
+      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.PTIDD_TiposIdentificacao)">
         <MappingFragment StoreEntitySet="PTIDD_TiposIdentificacao">
-          <ScalarProperty Name="PIDCARMAX_NrMaximoCaracteres" ColumnName="PIDCARMAX_NrMaximoCaracteres" />
-          <ScalarProperty Name="PIDCARMIN_NrMinimoCaracteres" ColumnName="PIDCARMIN_NrMinimoCaracteres" />
-          <ScalarProperty Name="PIDTRCKDG_TratamentoParaCheckDigit" ColumnName="PIDTRCKDG_TratamentoParaCheckDigit" />
-          <ScalarProperty Name="PIDPARM2_Parametro2ParaRotina" ColumnName="PIDPARM2_Parametro2ParaRotina" />
-          <ScalarProperty Name="PIDPARM1_Parametro1ParaRotina" ColumnName="PIDPARM1_Parametro1ParaRotina" />
-          <ScalarProperty Name="PIDRCLCKD_RotinaCalculoCheckDigit" ColumnName="PIDRCLCKD_RotinaCalculoCheckDigit" />
-          <ScalarProperty Name="PIDTIPUTL_TipoUtilizacao" ColumnName="PIDTIPUTL_TipoUtilizacao" />
-          <ScalarProperty Name="PPASD_PermiteAssociarSeDesactivado" ColumnName="PPASD_PermiteAssociarSeDesactivado" />
-          <ScalarProperty Name="PSITU_Situacao" ColumnName="PSITU_Situacao" />
-          <ScalarProperty Name="POLOC_ObrigaLocalEmissao" ColumnName="POLOC_ObrigaLocalEmissao" />
-          <ScalarProperty Name="PTIDC_Descritivo" ColumnName="PTIDC_Descritivo" />
           <ScalarProperty Name="PTITP_TipoIdentificacao" ColumnName="PTITP_TipoIdentificacao" />
+          <ScalarProperty Name="PTIDC_Descritivo" ColumnName="PTIDC_Descritivo" />
+          <ScalarProperty Name="POLOC_ObrigaLocalEmissao" ColumnName="POLOC_ObrigaLocalEmissao" />
+          <ScalarProperty Name="PSITU_Situacao" ColumnName="PSITU_Situacao" />
+          <ScalarProperty Name="PPASD_PermiteAssociarSeDesactivado" ColumnName="PPASD_PermiteAssociarSeDesactivado" />
+          <ScalarProperty Name="PIDTIPUTL_TipoUtilizacao" ColumnName="PIDTIPUTL_TipoUtilizacao" />
+          <ScalarProperty Name="PIDRCLCKD_RotinaCalculoCheckDigit" ColumnName="PIDRCLCKD_RotinaCalculoCheckDigit" />
+          <ScalarProperty Name="PIDPARM1_Parametro1ParaRotina" ColumnName="PIDPARM1_Parametro1ParaRotina" />
+          <ScalarProperty Name="PIDPARM2_Parametro2ParaRotina" ColumnName="PIDPARM2_Parametro2ParaRotina" />
+          <ScalarProperty Name="PIDTRCKDG_TratamentoParaCheckDigit" ColumnName="PIDTRCKDG_TratamentoParaCheckDigit" />
+          <ScalarProperty Name="PIDCARMIN_NrMinimoCaracteres" ColumnName="PIDCARMIN_NrMinimoCaracteres" />
+          <ScalarProperty Name="PIDCARMAX_NrMaximoCaracteres" ColumnName="PIDCARMAX_NrMaximoCaracteres" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

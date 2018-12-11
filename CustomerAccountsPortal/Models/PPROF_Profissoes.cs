@@ -14,17 +14,8 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PPROF_Profissoes
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PPROF_Profissoes()
-        {
-            this.GBTIT_Entidade = new HashSet<GBTIT_Entidade>();
-        }
-    
         public string PPRPROF_CodigoProfissao { get; set; }
         public string PPRDESC_Descritivo { get; set; }
         public string PPRACTV_CdgActividadeValidos { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBTIT_Entidade> GBTIT_Entidade { get; set; }
     }
 }

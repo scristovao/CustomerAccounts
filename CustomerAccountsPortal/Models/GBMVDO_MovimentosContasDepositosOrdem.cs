@@ -18,7 +18,6 @@ namespace CustomerAccountsPortal.Models
         public int MVBAL_Balcao { get; set; }
         public int MVNCLI_NumeroCliente { get; set; }
         public int MVNATR_Natureza { get; set; }
-        public int MVNSEQ_NumeroSequencial { get; set; }
         public int MVTDOC_TipoDocumento { get; set; }
         public int MVCOPE_CodigoOperacao { get; set; }
         public decimal MVVLR_ValorQueAfectaConta { get; set; }
