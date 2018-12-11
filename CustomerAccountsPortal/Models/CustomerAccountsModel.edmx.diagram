@@ -42,9 +42,6 @@
         <EntityTypeShape EntityType="CustomerAccountsModel.PREGC_RegimesCasamento" Width="1.5" PointX="0.75" PointY="22.75" />
         <EntityTypeShape EntityType="CustomerAccountsModel.PTIDD_TiposIdentificacao" Width="1.5" PointX="22.75" PointY="3.75" />
       </Diagram>
-      <Diagram DiagramId="42e7d4ed303642c6a325fc0c9d5b2171" Name="01 Clientes" >
-        <EntityTypeShape EntityType="CustomerAccountsModel.GBCLI_Clientes" Width="2.625" PointX="1.125" PointY="0.625" IsExpanded="true" />
-      </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="CustomerAccountsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityContainer Name="CustomerAccountsEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="CTMOV_MovimentosAM" EntityType="CustomerAccountsModel.CTMOV_MovimentosAM" />
     <EntitySet Name="FGCMB_Divisas" EntityType="CustomerAccountsModel.FGCMB_Divisas" />
     <EntitySet Name="FGGCOT_GeracaoCotacoes" EntityType="CustomerAccountsModel.FGGCOT_GeracaoCotacoes" />
     <EntitySet Name="FGTCOT_TiposCotacao" EntityType="CustomerAccountsModel.FGTCOT_TiposCotacao" />
@@ -39,42 +38,6 @@
     <EntitySet Name="PREGC_RegimesCasamento" EntityType="CustomerAccountsModel.PREGC_RegimesCasamento" />
     <EntitySet Name="PTIDD_TiposIdentificacao" EntityType="CustomerAccountsModel.PTIDD_TiposIdentificacao" />
   </EntityContainer>
-  <EntityType Name="CTMOV_MovimentosAM">
-    <Key>
-      <PropertyRef Name="MVNSEQ_NumeroSequencial" />
-    </Key>
-    <Property Name="MVNSEQ_NumeroSequencial" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
-    <Property Name="MVPLN_Plano" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
-    <Property Name="MVCNTA_Conta" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
-    <Property Name="MVDTMV_DataMovimento" Type="Int32" />
-    <Property Name="MVAREA_Area" Type="Int32" />
-    <Property Name="MVDOCN_Documento" Type="Int32" />
-    <Property Name="MVDTDC_DataDocumento" Type="Int32" />
-    <Property Name="MVDBCR_DebitoCredito" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-    <Property Name="MVVLR_ValorDoMovimento" Type="Decimal" Precision="10" Scale="2" />
-    <Property Name="MVCOPE_CodigoOperacao" Type="Int32" />
-    <Property Name="MVDEXT_NrDocExterno" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
-    <Property Name="MVDDEX_Descritivo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="MVUSER_UtilizadorGravacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="MVHORA_HoraGravacao" Type="Int32" />
-    <Property Name="MVDTGR_DataGravacao" Type="Int32" />
-    <Property Name="MVETRB_EstacaoGravacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="MVACUD_AcumuladoDebito" Type="Decimal" Precision="10" Scale="2" />
-    <Property Name="MVACUC_AcumuladoCredito" Type="Decimal" Precision="10" Scale="2" />
-    <Property Name="MVRLMV_TipoMovimento" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-    <Property Name="MVPEST_Estorno" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-    <Property Name="MVTIVA_TipoDeIva" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
-    <Property Name="MVTMIV_TipoMovIva" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-    <Property Name="MVNFC_NumeroContribuinte" Type="Int32" />
-    <Property Name="MVTXIR_TaxaIrs" Type="Decimal" Precision="5" Scale="3" />
-    <Property Name="MVDFPR_ParmMovRefProv" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-    <Property Name="MVSEQO_SequenciaOrigem" Type="Int32" />
-    <Property Name="MVTPME_OrigemMovimento" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-    <Property Name="MVRFME_ReferenciaMovimento" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="CTMVUSRDE_UtilizadorDesactivacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="CTMVDTDE_DataDeDesactivacao" Type="DateTime" Precision="3" />
-    <Property Name="CTMVHODE_HoraDeDesactivacao" Type="DateTime" Precision="3" />
-  </EntityType>
   <EntityType Name="FGCMB_Divisas">
     <Key>
       <PropertyRef Name="CBDATC_CBTCOT_CBMOED" />
