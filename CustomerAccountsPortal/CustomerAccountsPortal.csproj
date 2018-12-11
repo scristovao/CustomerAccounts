@@ -138,9 +138,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CTMOV_MovimentosAM.cs">
-      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\CustomerAccountsModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -183,7 +180,6 @@
     <Compile Include="Models\GBCLI_Clientes.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\GBCLI_ClientesController.cs" />
     <Compile Include="Models\GBCNDM_CondicoesMovimentacaoConta.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
@@ -205,7 +201,6 @@
     <Compile Include="Models\GBLTIT_LigacaoClientesEntidades.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\GBLTIT_LigacaoClientesEntidadesController.cs" />
     <Compile Include="Models\GBMORD_Moradas.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
@@ -236,7 +231,6 @@
     <Compile Include="Models\GBTIT_Entidade.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\GBTIT_EntidadeController.cs" />
     <Compile Include="Models\GBTPENT_TiposEntidades.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>

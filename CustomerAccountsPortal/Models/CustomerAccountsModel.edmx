@@ -1064,7 +1064,6 @@
     <edmx:ConceptualModels>
       <Schema Namespace="CustomerAccountsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="CustomerAccountsEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="CTMOV_MovimentosAM" EntityType="CustomerAccountsModel.CTMOV_MovimentosAM" />
           <EntitySet Name="FGCMB_Divisas" EntityType="CustomerAccountsModel.FGCMB_Divisas" />
           <EntitySet Name="FGGCOT_GeracaoCotacoes" EntityType="CustomerAccountsModel.FGGCOT_GeracaoCotacoes" />
           <EntitySet Name="FGTCOT_TiposCotacao" EntityType="CustomerAccountsModel.FGTCOT_TiposCotacao" />
@@ -1102,42 +1101,6 @@
           <EntitySet Name="PREGC_RegimesCasamento" EntityType="CustomerAccountsModel.PREGC_RegimesCasamento" />
           <EntitySet Name="PTIDD_TiposIdentificacao" EntityType="CustomerAccountsModel.PTIDD_TiposIdentificacao" />
         </EntityContainer>
-        <EntityType Name="CTMOV_MovimentosAM">
-          <Key>
-            <PropertyRef Name="MVNSEQ_NumeroSequencial" />
-          </Key>
-          <Property Name="MVNSEQ_NumeroSequencial" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
-          <Property Name="MVPLN_Plano" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
-          <Property Name="MVCNTA_Conta" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
-          <Property Name="MVDTMV_DataMovimento" Type="Int32" />
-          <Property Name="MVAREA_Area" Type="Int32" />
-          <Property Name="MVDOCN_Documento" Type="Int32" />
-          <Property Name="MVDTDC_DataDocumento" Type="Int32" />
-          <Property Name="MVDBCR_DebitoCredito" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-          <Property Name="MVVLR_ValorDoMovimento" Type="Decimal" Precision="10" Scale="2" />
-          <Property Name="MVCOPE_CodigoOperacao" Type="Int32" />
-          <Property Name="MVDEXT_NrDocExterno" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
-          <Property Name="MVDDEX_Descritivo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="MVUSER_UtilizadorGravacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="MVHORA_HoraGravacao" Type="Int32" />
-          <Property Name="MVDTGR_DataGravacao" Type="Int32" />
-          <Property Name="MVETRB_EstacaoGravacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="MVACUD_AcumuladoDebito" Type="Decimal" Precision="10" Scale="2" />
-          <Property Name="MVACUC_AcumuladoCredito" Type="Decimal" Precision="10" Scale="2" />
-          <Property Name="MVRLMV_TipoMovimento" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-          <Property Name="MVPEST_Estorno" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-          <Property Name="MVTIVA_TipoDeIva" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
-          <Property Name="MVTMIV_TipoMovIva" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-          <Property Name="MVNFC_NumeroContribuinte" Type="Int32" />
-          <Property Name="MVTXIR_TaxaIrs" Type="Decimal" Precision="5" Scale="3" />
-          <Property Name="MVDFPR_ParmMovRefProv" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-          <Property Name="MVSEQO_SequenciaOrigem" Type="Int32" />
-          <Property Name="MVTPME_OrigemMovimento" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-          <Property Name="MVRFME_ReferenciaMovimento" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="CTMVUSRDE_UtilizadorDesactivacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="CTMVDTDE_DataDeDesactivacao" Type="DateTime" Precision="3" />
-          <Property Name="CTMVHODE_HoraDeDesactivacao" Type="DateTime" Precision="3" />
-        </EntityType>
         <EntityType Name="FGCMB_Divisas">
           <Key>
             <PropertyRef Name="CBDATC_CBTCOT_CBMOED" />
@@ -2123,43 +2086,6 @@
     <edmx:Mappings>
     <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="CustomerAccountsModelStoreContainer" CdmEntityContainer="CustomerAccountsEntities">
-    <EntitySetMapping Name="CTMOV_MovimentosAM">
-      <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.CTMOV_MovimentosAM)">
-        <MappingFragment StoreEntitySet="CTMOV_MovimentosAM">
-          <ScalarProperty Name="MVNSEQ_NumeroSequencial" ColumnName="MVNSEQ_NumeroSequencial" />
-          <ScalarProperty Name="MVPLN_Plano" ColumnName="MVPLN_Plano" />
-          <ScalarProperty Name="MVCNTA_Conta" ColumnName="MVCNTA_Conta" />
-          <ScalarProperty Name="MVDTMV_DataMovimento" ColumnName="MVDTMV_DataMovimento" />
-          <ScalarProperty Name="MVAREA_Area" ColumnName="MVAREA_Area" />
-          <ScalarProperty Name="MVDOCN_Documento" ColumnName="MVDOCN_Documento" />
-          <ScalarProperty Name="MVDTDC_DataDocumento" ColumnName="MVDTDC_DataDocumento" />
-          <ScalarProperty Name="MVDBCR_DebitoCredito" ColumnName="MVDBCR_DebitoCredito" />
-          <ScalarProperty Name="MVVLR_ValorDoMovimento" ColumnName="MVVLR_ValorDoMovimento" />
-          <ScalarProperty Name="MVCOPE_CodigoOperacao" ColumnName="MVCOPE_CodigoOperacao" />
-          <ScalarProperty Name="MVDEXT_NrDocExterno" ColumnName="MVDEXT_NrDocExterno" />
-          <ScalarProperty Name="MVDDEX_Descritivo" ColumnName="MVDDEX_Descritivo" />
-          <ScalarProperty Name="MVUSER_UtilizadorGravacao" ColumnName="MVUSER_UtilizadorGravacao" />
-          <ScalarProperty Name="MVHORA_HoraGravacao" ColumnName="MVHORA_HoraGravacao" />
-          <ScalarProperty Name="MVDTGR_DataGravacao" ColumnName="MVDTGR_DataGravacao" />
-          <ScalarProperty Name="MVETRB_EstacaoGravacao" ColumnName="MVETRB_EstacaoGravacao" />
-          <ScalarProperty Name="MVACUD_AcumuladoDebito" ColumnName="MVACUD_AcumuladoDebito" />
-          <ScalarProperty Name="MVACUC_AcumuladoCredito" ColumnName="MVACUC_AcumuladoCredito" />
-          <ScalarProperty Name="MVRLMV_TipoMovimento" ColumnName="MVRLMV_TipoMovimento" />
-          <ScalarProperty Name="MVPEST_Estorno" ColumnName="MVPEST_Estorno" />
-          <ScalarProperty Name="MVTIVA_TipoDeIva" ColumnName="MVTIVA_TipoDeIva" />
-          <ScalarProperty Name="MVTMIV_TipoMovIva" ColumnName="MVTMIV_TipoMovIva" />
-          <ScalarProperty Name="MVNFC_NumeroContribuinte" ColumnName="MVNFC_NumeroContribuinte" />
-          <ScalarProperty Name="MVTXIR_TaxaIrs" ColumnName="MVTXIR_TaxaIrs" />
-          <ScalarProperty Name="MVDFPR_ParmMovRefProv" ColumnName="MVDFPR_ParmMovRefProv" />
-          <ScalarProperty Name="MVSEQO_SequenciaOrigem" ColumnName="MVSEQO_SequenciaOrigem" />
-          <ScalarProperty Name="MVTPME_OrigemMovimento" ColumnName="MVTPME_OrigemMovimento" />
-          <ScalarProperty Name="MVRFME_ReferenciaMovimento" ColumnName="MVRFME_ReferenciaMovimento" />
-          <ScalarProperty Name="CTMVUSRDE_UtilizadorDesactivacao" ColumnName="CTMVUSRDE_UtilizadorDesactivacao" />
-          <ScalarProperty Name="CTMVDTDE_DataDeDesactivacao" ColumnName="CTMVDTDE_DataDeDesactivacao" />
-          <ScalarProperty Name="CTMVHODE_HoraDeDesactivacao" ColumnName="CTMVHODE_HoraDeDesactivacao" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="FGCMB_Divisas">
       <EntityTypeMapping TypeName="IsTypeOf(CustomerAccountsModel.FGCMB_Divisas)">
         <MappingFragment StoreEntitySet="FGCMB_Divisas">

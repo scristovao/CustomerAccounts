@@ -4,8 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3112b49490734343af756f9d36acb5a1" Name="Diagram1" ZoomLevel="86">
-        <EntityTypeShape EntityType="CustomerAccountsModel.CTMOV_MovimentosAM" Width="1.5" PointX="0.75" PointY="0.75" />
+      <Diagram DiagramId="3112b49490734343af756f9d36acb5a1" Name="Complete" ZoomLevel="86">
         <EntityTypeShape EntityType="CustomerAccountsModel.FGCMB_Divisas" Width="1.5" PointX="2.75" PointY="0.75" />
         <EntityTypeShape EntityType="CustomerAccountsModel.FGGCOT_GeracaoCotacoes" Width="1.5" PointX="4.75" PointY="0.75" />
         <EntityTypeShape EntityType="CustomerAccountsModel.FGTCOT_TiposCotacao" Width="1.5" PointX="2.75" PointY="4.75" />
@@ -42,6 +41,9 @@
         <EntityTypeShape EntityType="CustomerAccountsModel.PPROF_Profissoes" Width="1.5" PointX="22.75" PointY="0.75" />
         <EntityTypeShape EntityType="CustomerAccountsModel.PREGC_RegimesCasamento" Width="1.5" PointX="0.75" PointY="22.75" />
         <EntityTypeShape EntityType="CustomerAccountsModel.PTIDD_TiposIdentificacao" Width="1.5" PointX="22.75" PointY="3.75" />
+      </Diagram>
+      <Diagram DiagramId="42e7d4ed303642c6a325fc0c9d5b2171" Name="01 Clientes" >
+        <EntityTypeShape EntityType="CustomerAccountsModel.GBCLI_Clientes" Width="2.625" PointX="1.125" PointY="0.625" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

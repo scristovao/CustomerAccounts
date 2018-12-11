@@ -1,2 +1,5 @@
 
 *.lock
+*.dll
+CustomerAccountsPortal/bin/Antlr3.Runtime.pdb
+*.exe

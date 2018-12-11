@@ -25,7 +25,6 @@ namespace CustomerAccountsPortal.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<CTMOV_MovimentosAM> CTMOV_MovimentosAM { get; set; }
         public virtual DbSet<FGCMB_Divisas> FGCMB_Divisas { get; set; }
         public virtual DbSet<FGGCOT_GeracaoCotacoes> FGGCOT_GeracaoCotacoes { get; set; }
         public virtual DbSet<FGTCOT_TiposCotacao> FGTCOT_TiposCotacao { get; set; }
