@@ -14,6 +14,13 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PTIDD_TiposIdentificacao
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public PTIDD_TiposIdentificacao()
+        {
+            this.GBTIT_Entidade = new HashSet<GBTIT_Entidade>();
+            this.GBTIT_Entidade1 = new HashSet<GBTIT_Entidade>();
+        }
+    
         public string PTITP_TipoIdentificacao { get; set; }
         public string PTIDC_Descritivo { get; set; }
         public string POLOC_ObrigaLocalEmissao { get; set; }
@@ -26,5 +33,10 @@ namespace CustomerAccountsPortal.Models
         public string PIDTRCKDG_TratamentoParaCheckDigit { get; set; }
         public Nullable<int> PIDCARMIN_NrMinimoCaracteres { get; set; }
         public Nullable<int> PIDCARMAX_NrMaximoCaracteres { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GBTIT_Entidade> GBTIT_Entidade { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GBTIT_Entidade> GBTIT_Entidade1 { get; set; }
     }
 }

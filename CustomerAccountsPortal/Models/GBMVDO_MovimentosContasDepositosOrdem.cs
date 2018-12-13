@@ -51,5 +51,8 @@ namespace CustomerAccountsPortal.Models
         public string MVCDEV_CodigoDevolucao { get; set; }
         public decimal MVVLRE_ValorParaExtracto { get; set; }
         public string MVOBS_Observacoes { get; set; }
+    
+        public virtual GBCODOP_CodigosOperacao GBCODOP_CodigosOperacao { get; set; }
+        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
     }
 }

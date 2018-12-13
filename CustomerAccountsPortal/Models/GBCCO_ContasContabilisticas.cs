@@ -42,5 +42,8 @@ namespace CustomerAccountsPortal.Models
         public string CSCLCP_ClasseComponente { get; set; }
         public string CSCCAS_CanalSubscricao { get; set; }
         public string CSUSRS_UtilizadorSubscricao { get; set; }
+    
+        public virtual GBCLI_Clientes GBCLI_Clientes { get; set; }
+        public virtual GBNATR_NaturezasContas GBNATR_NaturezasContas { get; set; }
     }
 }

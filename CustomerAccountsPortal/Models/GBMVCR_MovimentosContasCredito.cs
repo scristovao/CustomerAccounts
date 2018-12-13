@@ -48,5 +48,8 @@ namespace CustomerAccountsPortal.Models
         public Nullable<long> MCAUTR_Autorizacao { get; set; }
         public string MCTBON_TipoBonificacao { get; set; }
         public string MCOBS_Observacoes { get; set; }
+    
+        public virtual GBCCR_ContasCredito GBCCR_ContasCredito { get; set; }
+        public virtual GBCODOP_CodigosOperacao GBCODOP_CodigosOperacao { get; set; }
     }
 }

@@ -19,5 +19,9 @@ namespace CustomerAccountsPortal.Models
         public Nullable<int> LTNTIT_NumeroEntidade { get; set; }
         public string LTRCLI_RelacaoCliente { get; set; }
         public string LTRCPE_RelacaoPrimeiraEntidade { get; set; }
+    
+        public virtual GBCLI_Clientes GBCLI_Clientes { get; set; }
+        public virtual GBTIT_Entidade GBTIT_Entidade { get; set; }
+        public virtual GBTRCLI_TiposRelacoesEntidadesClientes GBTRCLI_TiposRelacoesEntidadesClientes { get; set; }
     }
 }

@@ -37,6 +37,247 @@
     <EntitySet Name="PPROF_Profissoes" EntityType="CustomerAccountsModel.PPROF_Profissoes" />
     <EntitySet Name="PREGC_RegimesCasamento" EntityType="CustomerAccountsModel.PREGC_RegimesCasamento" />
     <EntitySet Name="PTIDD_TiposIdentificacao" EntityType="CustomerAccountsModel.PTIDD_TiposIdentificacao" />
+    <EntitySet Name="sysdiagrams" EntityType="CustomerAccountsModel.sysdiagrams" />
+    <AssociationSet Name="FK_FGCMB_Divisas_FGTCOT_TiposCotacao" Association="CustomerAccountsModel.FK_FGCMB_Divisas_FGTCOT_TiposCotacao">
+      <End Role="FGTCOT_TiposCotacao" EntitySet="FGTCOT_TiposCotacao" />
+      <End Role="FGCMB_Divisas" EntitySet="FGCMB_Divisas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FGCMB_Divisas_PMOEDA_Divisas" Association="CustomerAccountsModel.FK_FGCMB_Divisas_PMOEDA_Divisas">
+      <End Role="PMOEDA_Divisas" EntitySet="PMOEDA_Divisas" />
+      <End Role="FGCMB_Divisas" EntitySet="FGCMB_Divisas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FGGCOT_GeracaoCotacoes_FGTCOT_TiposCotacao" Association="CustomerAccountsModel.FK_FGGCOT_GeracaoCotacoes_FGTCOT_TiposCotacao">
+      <End Role="FGTCOT_TiposCotacao" EntitySet="FGTCOT_TiposCotacao" />
+      <End Role="FGGCOT_GeracaoCotacoes" EntitySet="FGGCOT_GeracaoCotacoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FGGCOT_GeracaoCotacoes_PMOEDA_Divisas" Association="CustomerAccountsModel.FK_FGGCOT_GeracaoCotacoes_PMOEDA_Divisas">
+      <End Role="PMOEDA_Divisas" EntitySet="PMOEDA_Divisas" />
+      <End Role="FGGCOT_GeracaoCotacoes" EntitySet="FGGCOT_GeracaoCotacoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCCC_ContasCaucionadas_GBCDO_ContasDepositosOrdem" Association="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_GBCDO_ContasDepositosOrdem">
+      <End Role="GBCDO_ContasDepositosOrdem" EntitySet="GBCDO_ContasDepositosOrdem" />
+      <End Role="GBCCC_ContasCaucionadas" EntitySet="GBCCC_ContasCaucionadas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCCC_ContasCaucionadas_GBCLI_Clientes" Association="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_GBCLI_Clientes">
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+      <End Role="GBCCC_ContasCaucionadas" EntitySet="GBCCC_ContasCaucionadas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCCC_ContasCaucionadas_GBNATR_NaturezasContas" Association="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_GBNATR_NaturezasContas">
+      <End Role="GBNATR_NaturezasContas" EntitySet="GBNATR_NaturezasContas" />
+      <End Role="GBCCC_ContasCaucionadas" EntitySet="GBCCC_ContasCaucionadas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCCC_ContasCaucionadas_PMOEDA_Divisas" Association="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_PMOEDA_Divisas">
+      <End Role="PMOEDA_Divisas" EntitySet="PMOEDA_Divisas" />
+      <End Role="GBCCC_ContasCaucionadas" EntitySet="GBCCC_ContasCaucionadas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVCC_MovimentosContasCaucionadas_GBCCC_ContasCaucionadas" Association="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCCC_ContasCaucionadas">
+      <End Role="GBCCC_ContasCaucionadas" EntitySet="GBCCC_ContasCaucionadas" />
+      <End Role="GBMVCC_MovimentosContasCaucionadas" EntitySet="GBMVCC_MovimentosContasCaucionadas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCCO_ContasContabilisticas_GBCLI_Clientes" Association="CustomerAccountsModel.FK_GBCCO_ContasContabilisticas_GBCLI_Clientes">
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+      <End Role="GBCCO_ContasContabilisticas" EntitySet="GBCCO_ContasContabilisticas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCCO_ContasContabilisticas_GBNATR_NaturezasContas" Association="CustomerAccountsModel.FK_GBCCO_ContasContabilisticas_GBNATR_NaturezasContas">
+      <End Role="GBNATR_NaturezasContas" EntitySet="GBNATR_NaturezasContas" />
+      <End Role="GBCCO_ContasContabilisticas" EntitySet="GBCCO_ContasContabilisticas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCCR_ContasCredito_GBCDO_ContasDepositosOrdem" Association="CustomerAccountsModel.FK_GBCCR_ContasCredito_GBCDO_ContasDepositosOrdem">
+      <End Role="GBCDO_ContasDepositosOrdem" EntitySet="GBCDO_ContasDepositosOrdem" />
+      <End Role="GBCCR_ContasCredito" EntitySet="GBCCR_ContasCredito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCCR_ContasCredito_GBCLI_Clientes" Association="CustomerAccountsModel.FK_GBCCR_ContasCredito_GBCLI_Clientes">
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+      <End Role="GBCCR_ContasCredito" EntitySet="GBCCR_ContasCredito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCCR_ContasCredito_GBNATR_NaturezasContas" Association="CustomerAccountsModel.FK_GBCCR_ContasCredito_GBNATR_NaturezasContas">
+      <End Role="GBNATR_NaturezasContas" EntitySet="GBNATR_NaturezasContas" />
+      <End Role="GBCCR_ContasCredito" EntitySet="GBCCR_ContasCredito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVCR_MovimentosContasCredito_GBCCR_ContasCredito" Association="CustomerAccountsModel.FK_GBMVCR_MovimentosContasCredito_GBCCR_ContasCredito">
+      <End Role="GBCCR_ContasCredito" EntitySet="GBCCR_ContasCredito" />
+      <End Role="GBMVCR_MovimentosContasCredito" EntitySet="GBMVCR_MovimentosContasCredito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCDO_ContasDepositosOrdem_GBCLI_Clientes" Association="CustomerAccountsModel.FK_GBCDO_ContasDepositosOrdem_GBCLI_Clientes">
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+      <End Role="GBCDO_ContasDepositosOrdem" EntitySet="GBCDO_ContasDepositosOrdem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCDO_ContasDepositosOrdem_GBNATR_NaturezasContas" Association="CustomerAccountsModel.FK_GBCDO_ContasDepositosOrdem_GBNATR_NaturezasContas">
+      <End Role="GBNATR_NaturezasContas" EntitySet="GBNATR_NaturezasContas" />
+      <End Role="GBCDO_ContasDepositosOrdem" EntitySet="GBCDO_ContasDepositosOrdem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCDO_ContasDepositosOrdem_PMOEDA_Divisas" Association="CustomerAccountsModel.FK_GBCDO_ContasDepositosOrdem_PMOEDA_Divisas">
+      <End Role="PMOEDA_Divisas" EntitySet="PMOEDA_Divisas" />
+      <End Role="GBCDO_ContasDepositosOrdem" EntitySet="GBCDO_ContasDepositosOrdem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCDP_ContasDepositosPrazo_GBCLI_Clientes" Association="CustomerAccountsModel.FK_GBCDP_ContasDepositosPrazo_GBCLI_Clientes">
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+      <End Role="GBCDP_ContasDepositosPrazo" EntitySet="GBCDP_ContasDepositosPrazo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCDP_ContasDepositosPrazo_GBNATR_NaturezasContas" Association="CustomerAccountsModel.FK_GBCDP_ContasDepositosPrazo_GBNATR_NaturezasContas">
+      <End Role="GBNATR_NaturezasContas" EntitySet="GBNATR_NaturezasContas" />
+      <End Role="GBCDP_ContasDepositosPrazo" EntitySet="GBCDP_ContasDepositosPrazo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBCDP_ContasDepositosPrazo_PMOEDA_Divisas" Association="CustomerAccountsModel.FK_GBCDP_ContasDepositosPrazo_PMOEDA_Divisas">
+      <End Role="PMOEDA_Divisas" EntitySet="PMOEDA_Divisas" />
+      <End Role="GBCDP_ContasDepositosPrazo" EntitySet="GBCDP_ContasDepositosPrazo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLCNDM_GBCLI_Clientes_GBCNDM_CondicoesMovimentacaoConta" Association="CustomerAccountsModel.FK_CLCNDM_GBCLI_Clientes_GBCNDM_CondicoesMovimentacaoConta">
+      <End Role="GBCNDM_CondicoesMovimentacaoConta" EntitySet="GBCNDM_CondicoesMovimentacaoConta" />
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLCRES_GBCLI_Clientes_GBCRES_CodigosResidencia" Association="CustomerAccountsModel.FK_CLCRES_GBCLI_Clientes_GBCRES_CodigosResidencia">
+      <End Role="GBCRES_CodigosResidencia" EntitySet="GBCRES_CodigosResidencia" />
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLPAIS_GBCLI_Clientes_PPAIS_Paises" Association="CustomerAccountsModel.FK_CLPAIS_GBCLI_Clientes_PPAIS_Paises">
+      <End Role="PPAIS_Paises" EntitySet="PPAIS_Paises" />
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLTCLI_GBCLI_Clientes_GBTCLI_SegmentoCliente" Association="CustomerAccountsModel.FK_CLTCLI_GBCLI_Clientes_GBTCLI_SegmentoCliente">
+      <End Role="GBTCLI_SegmentoCliente" EntitySet="GBTCLI_SegmentoCliente" />
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMORD_Moradas_GBCLI_Clientes" Association="CustomerAccountsModel.FK_GBMORD_Moradas_GBCLI_Clientes">
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+      <End Role="GBMORD_Moradas" EntitySet="GBMORD_Moradas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVDP_MovimentosContasDepositosPrazo_GBCLI_Clientes" Association="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBCLI_Clientes">
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+      <End Role="GBMVDP_MovimentosContasDepositosPrazo" EntitySet="GBMVDP_MovimentosContasDepositosPrazo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LTNCLI_GBLTIT_LigacaoClientesEntidades_GBCLI_Clientes" Association="CustomerAccountsModel.FK_LTNCLI_GBLTIT_LigacaoClientesEntidades_GBCLI_Clientes">
+      <End Role="GBCLI_Clientes" EntitySet="GBCLI_Clientes" />
+      <End Role="GBLTIT_LigacaoClientesEntidades" EntitySet="GBLTIT_LigacaoClientesEntidades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COCOPA_GBCODOP_CodigosOperacao_GBCODOP_CodigosOperacao" Association="CustomerAccountsModel.FK_COCOPA_GBCODOP_CodigosOperacao_GBCODOP_CodigosOperacao">
+      <End Role="GBCODOP_CodigosOperacao" EntitySet="GBCODOP_CodigosOperacao" />
+      <End Role="GBCODOP_CodigosOperacao1" EntitySet="GBCODOP_CodigosOperacao" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COMOEI_GBCODOP_CodigosOperacao_PMOEDA_Divisas" Association="CustomerAccountsModel.FK_COMOEI_GBCODOP_CodigosOperacao_PMOEDA_Divisas">
+      <End Role="PMOEDA_Divisas" EntitySet="PMOEDA_Divisas" />
+      <End Role="GBCODOP_CodigosOperacao" EntitySet="GBCODOP_CodigosOperacao" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COMOEM_GBCODOP_CodigosOperacao_PMOEDA_Divisas" Association="CustomerAccountsModel.FK_COMOEM_GBCODOP_CodigosOperacao_PMOEDA_Divisas">
+      <End Role="PMOEDA_Divisas" EntitySet="PMOEDA_Divisas" />
+      <End Role="GBCODOP_CodigosOperacao" EntitySet="GBCODOP_CodigosOperacao" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COMOEV_GBCODOP_CodigosOperacao_PMOEDA_Divisas" Association="CustomerAccountsModel.FK_COMOEV_GBCODOP_CodigosOperacao_PMOEDA_Divisas">
+      <End Role="PMOEDA_Divisas" EntitySet="PMOEDA_Divisas" />
+      <End Role="GBCODOP_CodigosOperacao" EntitySet="GBCODOP_CodigosOperacao" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVCC_MovimentosContasCaucionadas_GBCODOP_CodigosOperacao" Association="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCODOP_CodigosOperacao">
+      <End Role="GBCODOP_CodigosOperacao" EntitySet="GBCODOP_CodigosOperacao" />
+      <End Role="GBMVCC_MovimentosContasCaucionadas" EntitySet="GBMVCC_MovimentosContasCaucionadas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVCO_MovimentosContasContabilisticas_GBCODOP_CodigosOperacao" Association="CustomerAccountsModel.FK_GBMVCO_MovimentosContasContabilisticas_GBCODOP_CodigosOperacao">
+      <End Role="GBCODOP_CodigosOperacao" EntitySet="GBCODOP_CodigosOperacao" />
+      <End Role="GBMVCO_MovimentosContasContabilisticas" EntitySet="GBMVCO_MovimentosContasContabilisticas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVCR_MovimentosContasCredito_GBCODOP_CodigosOperacao" Association="CustomerAccountsModel.FK_GBMVCR_MovimentosContasCredito_GBCODOP_CodigosOperacao">
+      <End Role="GBCODOP_CodigosOperacao" EntitySet="GBCODOP_CodigosOperacao" />
+      <End Role="GBMVCR_MovimentosContasCredito" EntitySet="GBMVCR_MovimentosContasCredito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVDO_MovimentosContasDepositosOrdem_GBCODOP_CodigosOperacao" Association="CustomerAccountsModel.FK_GBMVDO_MovimentosContasDepositosOrdem_GBCODOP_CodigosOperacao">
+      <End Role="GBCODOP_CodigosOperacao" EntitySet="GBCODOP_CodigosOperacao" />
+      <End Role="GBMVDO_MovimentosContasDepositosOrdem" EntitySet="GBMVDO_MovimentosContasDepositosOrdem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVDP_MovimentosContasDepositosPrazo_GBCODOP_CodigosOperacao" Association="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBCODOP_CodigosOperacao">
+      <End Role="GBCODOP_CodigosOperacao" EntitySet="GBCODOP_CodigosOperacao" />
+      <End Role="GBMVDP_MovimentosContasDepositosPrazo" EntitySet="GBMVDP_MovimentosContasDepositosPrazo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TTCRES_GBTIT_Entidade_GBCRES_CodigosResidencia" Association="CustomerAccountsModel.FK_TTCRES_GBTIT_Entidade_GBCRES_CodigosResidencia">
+      <End Role="GBCRES_CodigosResidencia" EntitySet="GBCRES_CodigosResidencia" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVDP_MovimentosContasDepositosPrazo_GBDOC_Documentos" Association="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBDOC_Documentos">
+      <End Role="GBDOC_Documentos" EntitySet="GBDOC_Documentos" />
+      <End Role="GBMVDP_MovimentosContasDepositosPrazo" EntitySet="GBMVDP_MovimentosContasDepositosPrazo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LTNTIT_GBLTIT_LigacaoClientesEntidades_GBTIT_Entidade" Association="CustomerAccountsModel.FK_LTNTIT_GBLTIT_LigacaoClientesEntidades_GBTIT_Entidade">
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+      <End Role="GBLTIT_LigacaoClientesEntidades" EntitySet="GBLTIT_LigacaoClientesEntidades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LTRCLI_GBLTIT_LigacaoClientesEntidades_GBTRCLI_TiposRelacoesEntidadesClientes" Association="CustomerAccountsModel.FK_LTRCLI_GBLTIT_LigacaoClientesEntidades_GBTRCLI_TiposRelacoesEntidadesClientes">
+      <End Role="GBTRCLI_TiposRelacoesEntidadesClientes" EntitySet="GBTRCLI_TiposRelacoesEntidadesClientes" />
+      <End Role="GBLTIT_LigacaoClientesEntidades" EntitySet="GBLTIT_LigacaoClientesEntidades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMORD_Moradas_GBNATR_NaturezasContas" Association="CustomerAccountsModel.FK_GBMORD_Moradas_GBNATR_NaturezasContas">
+      <End Role="GBNATR_NaturezasContas" EntitySet="GBNATR_NaturezasContas" />
+      <End Role="GBMORD_Moradas" EntitySet="GBMORD_Moradas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMORD_Moradas_GBTIT_Entidade" Association="CustomerAccountsModel.FK_GBMORD_Moradas_GBTIT_Entidade">
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+      <End Role="GBMORD_Moradas" EntitySet="GBMORD_Moradas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVCO_MovimentosContasContabilisticas_GBTIT_Entidade" Association="CustomerAccountsModel.FK_GBMVCO_MovimentosContasContabilisticas_GBTIT_Entidade">
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+      <End Role="GBMVCO_MovimentosContasContabilisticas" EntitySet="GBMVCO_MovimentosContasContabilisticas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVDO_MovimentosContasDepositosOrdem_PMOEDA_Divisas" Association="CustomerAccountsModel.FK_GBMVDO_MovimentosContasDepositosOrdem_PMOEDA_Divisas">
+      <End Role="PMOEDA_Divisas" EntitySet="PMOEDA_Divisas" />
+      <End Role="GBMVDO_MovimentosContasDepositosOrdem" EntitySet="GBMVDO_MovimentosContasDepositosOrdem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVDP_MovimentosContasDepositosPrazo_GBNATR_NaturezasContas" Association="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBNATR_NaturezasContas">
+      <End Role="GBNATR_NaturezasContas" EntitySet="GBNATR_NaturezasContas" />
+      <End Role="GBMVDP_MovimentosContasDepositosPrazo" EntitySet="GBMVDP_MovimentosContasDepositosPrazo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBMVDP_MovimentosContasDepositosPrazo_PMOEDA_Divisas" Association="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_PMOEDA_Divisas">
+      <End Role="PMOEDA_Divisas" EntitySet="PMOEDA_Divisas" />
+      <End Role="GBMVDP_MovimentosContasDepositosPrazo" EntitySet="GBMVDP_MovimentosContasDepositosPrazo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBTTPROF_GBTIT_Entidade_PPROF_Profissoes" Association="CustomerAccountsModel.FK_GBTTPROF_GBTIT_Entidade_PPROF_Profissoes">
+      <End Role="PPROF_Profissoes" EntitySet="PPROF_Profissoes" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GBTTTIPIDF_GBTIT_Entidade_PTIDD_TiposIdentificacao" Association="CustomerAccountsModel.FK_GBTTTIPIDF_GBTIT_Entidade_PTIDD_TiposIdentificacao">
+      <End Role="PTIDD_TiposIdentificacao" EntitySet="PTIDD_TiposIdentificacao" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TTACTP_GBTIT_Entidade_PACTP_ActividadeProfissional" Association="CustomerAccountsModel.FK_TTACTP_GBTIT_Entidade_PACTP_ActividadeProfissional">
+      <End Role="PACTP_ActividadeProfissional" EntitySet="PACTP_ActividadeProfissional" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TTECIV_GBTIT_Entidade_PESTC_EstadoCivil" Association="CustomerAccountsModel.FK_TTECIV_GBTIT_Entidade_PESTC_EstadoCivil">
+      <End Role="PESTC_EstadoCivil" EntitySet="PESTC_EstadoCivil" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TTHABL_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias" Association="CustomerAccountsModel.FK_TTHABL_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias">
+      <End Role="PHBLT_HabilitacoesLiterarias" EntitySet="PHBLT_HabilitacoesLiterarias" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TTMOED_GBTIT_Entidade_PMOEDA_Divisas" Association="CustomerAccountsModel.FK_TTMOED_GBTIT_Entidade_PMOEDA_Divisas">
+      <End Role="PMOEDA_Divisas" EntitySet="PMOEDA_Divisas" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TTNAC_GBTIT_Entidade_PPAIS_Paises" Association="CustomerAccountsModel.FK_TTNAC_GBTIT_Entidade_PPAIS_Paises">
+      <End Role="PPAIS_Paises" EntitySet="PPAIS_Paises" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TTPAIS_GBTIT_Entidade_PPAIS_Paises" Association="CustomerAccountsModel.FK_TTPAIS_GBTIT_Entidade_PPAIS_Paises">
+      <End Role="PPAIS_Paises" EntitySet="PPAIS_Paises" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TTRCAS_GBTIT_Entidade_PREGC_RegimesCasamento" Association="CustomerAccountsModel.FK_TTRCAS_GBTIT_Entidade_PREGC_RegimesCasamento">
+      <End Role="PREGC_RegimesCasamento" EntitySet="PREGC_RegimesCasamento" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TTTIDE_GBTIT_Entidade_PTIDD_TiposIdentificacao" Association="CustomerAccountsModel.FK_TTTIDE_GBTIT_Entidade_PTIDD_TiposIdentificacao">
+      <End Role="PTIDD_TiposIdentificacao" EntitySet="PTIDD_TiposIdentificacao" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TTTPEN_GBTIT_Entidade_GBTPENT_TiposEntidades" Association="CustomerAccountsModel.FK_TTTPEN_GBTIT_Entidade_GBTPENT_TiposEntidades">
+      <End Role="GBTPENT_TiposEntidades" EntitySet="GBTPENT_TiposEntidades" />
+      <End Role="GBTIT_Entidade" EntitySet="GBTIT_Entidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PPRACTV_PPROF_Profissoes_PACTP_ActividadeProfissional" Association="CustomerAccountsModel.FK_PPRACTV_PPROF_Profissoes_PACTP_ActividadeProfissional">
+      <End Role="PACTP_ActividadeProfissional" EntitySet="PACTP_ActividadeProfissional" />
+      <End Role="PPROF_Profissoes" EntitySet="PPROF_Profissoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ERCAV_PESTC_EstadoCivil_PREGC_RegimesCasamento" Association="CustomerAccountsModel.FK_ERCAV_PESTC_EstadoCivil_PREGC_RegimesCasamento">
+      <End Role="PREGC_RegimesCasamento" EntitySet="PREGC_RegimesCasamento" />
+      <End Role="PESTC_EstadoCivil" EntitySet="PESTC_EstadoCivil" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="FGCMB_Divisas">
     <Key>
@@ -52,12 +293,14 @@
     <Property Name="CBDATG_DataDeGravacao" Type="Int32" />
     <Property Name="CBHORA_HoraDeGravacao" Type="Int32" />
     <Property Name="CBUSGR_UtilizadorGravacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="FGTCOT_TiposCotacao" Relationship="CustomerAccountsModel.FK_FGCMB_Divisas_FGTCOT_TiposCotacao" FromRole="FGCMB_Divisas" ToRole="FGTCOT_TiposCotacao" />
+    <NavigationProperty Name="PMOEDA_Divisas" Relationship="CustomerAccountsModel.FK_FGCMB_Divisas_PMOEDA_Divisas" FromRole="FGCMB_Divisas" ToRole="PMOEDA_Divisas" />
   </EntityType>
   <EntityType Name="FGGCOT_GeracaoCotacoes">
     <Key>
       <PropertyRef Name="CJMOED_CJTCOT" />
     </Key>
-    <Property Name="CJMOED_CJTCOT" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="CJMOED_CJTCOT" Type="Int32" Nullable="false" />
     <Property Name="CJMOEB_MoedaBase" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
     <Property Name="CJMOED_Moeda" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
     <Property Name="CJTCOT_TipoCotacao" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
@@ -65,6 +308,8 @@
     <Property Name="CJPVND_PercentagemParaVenda" Type="Decimal" Precision="4" Scale="3" />
     <Property Name="CJVARC_VariacaoParaCompra" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="CJVARV_VariacaoParaVenda" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="FGTCOT_TiposCotacao" Relationship="CustomerAccountsModel.FK_FGGCOT_GeracaoCotacoes_FGTCOT_TiposCotacao" FromRole="FGGCOT_GeracaoCotacoes" ToRole="FGTCOT_TiposCotacao" />
+    <NavigationProperty Name="PMOEDA_Divisas" Relationship="CustomerAccountsModel.FK_FGGCOT_GeracaoCotacoes_PMOEDA_Divisas" FromRole="FGGCOT_GeracaoCotacoes" ToRole="PMOEDA_Divisas" />
   </EntityType>
   <EntityType Name="FGTCOT_TiposCotacao">
     <Key>
@@ -75,6 +320,8 @@
     <Property Name="TODSC_DisponivelModuloSc" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="TOINDC_IndicadorCotacao" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="FGTORECCV_RecolheCâmbioCompraVenda" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="FGCMB_Divisas" Relationship="CustomerAccountsModel.FK_FGCMB_Divisas_FGTCOT_TiposCotacao" FromRole="FGTCOT_TiposCotacao" ToRole="FGCMB_Divisas" />
+    <NavigationProperty Name="FGGCOT_GeracaoCotacoes" Relationship="CustomerAccountsModel.FK_FGGCOT_GeracaoCotacoes_FGTCOT_TiposCotacao" FromRole="FGTCOT_TiposCotacao" ToRole="FGGCOT_GeracaoCotacoes" />
   </EntityType>
   <EntityType Name="GBCCC_ContasCaucionadas">
     <Key>
@@ -165,6 +412,11 @@
     <Property Name="CCSPDN_SpreadTaxaDescNeg" Type="Decimal" Precision="5" Scale="5" />
     <Property Name="CCMAPI_ModoAplicIndexante" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="CCMAIN_ModoAplicIndexNeg" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCDO_ContasDepositosOrdem" Relationship="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_GBCDO_ContasDepositosOrdem" FromRole="GBCCC_ContasCaucionadas" ToRole="GBCDO_ContasDepositosOrdem" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_GBCLI_Clientes" FromRole="GBCCC_ContasCaucionadas" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBNATR_NaturezasContas" Relationship="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_GBNATR_NaturezasContas" FromRole="GBCCC_ContasCaucionadas" ToRole="GBNATR_NaturezasContas" />
+    <NavigationProperty Name="PMOEDA_Divisas" Relationship="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_PMOEDA_Divisas" FromRole="GBCCC_ContasCaucionadas" ToRole="PMOEDA_Divisas" />
+    <NavigationProperty Name="GBMVCC_MovimentosContasCaucionadas" Relationship="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCCC_ContasCaucionadas" FromRole="GBCCC_ContasCaucionadas" ToRole="GBMVCC_MovimentosContasCaucionadas" />
   </EntityType>
   <EntityType Name="GBCCO_ContasContabilisticas">
     <Key>
@@ -198,6 +450,8 @@
     <Property Name="CSCLCP_ClasseComponente" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
     <Property Name="CSCCAS_CanalSubscricao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="CSUSRS_UtilizadorSubscricao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_GBCCO_ContasContabilisticas_GBCLI_Clientes" FromRole="GBCCO_ContasContabilisticas" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBNATR_NaturezasContas" Relationship="CustomerAccountsModel.FK_GBCCO_ContasContabilisticas_GBNATR_NaturezasContas" FromRole="GBCCO_ContasContabilisticas" ToRole="GBNATR_NaturezasContas" />
   </EntityType>
   <EntityType Name="GBCCR_ContasCredito">
     <Key>
@@ -277,6 +531,10 @@
     <Property Name="CRTAE_UltimaTaeCalculada" Type="Decimal" Precision="3" Scale="3" />
     <Property Name="CRTAEG_UltimaTaegCalculada" Type="Decimal" Precision="3" Scale="3" />
     <Property Name="CRDTTA_DataUltimaTae" Type="Int32" />
+    <NavigationProperty Name="GBCDO_ContasDepositosOrdem" Relationship="CustomerAccountsModel.FK_GBCCR_ContasCredito_GBCDO_ContasDepositosOrdem" FromRole="GBCCR_ContasCredito" ToRole="GBCDO_ContasDepositosOrdem" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_GBCCR_ContasCredito_GBCLI_Clientes" FromRole="GBCCR_ContasCredito" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBNATR_NaturezasContas" Relationship="CustomerAccountsModel.FK_GBCCR_ContasCredito_GBNATR_NaturezasContas" FromRole="GBCCR_ContasCredito" ToRole="GBNATR_NaturezasContas" />
+    <NavigationProperty Name="GBMVCR_MovimentosContasCredito" Relationship="CustomerAccountsModel.FK_GBMVCR_MovimentosContasCredito_GBCCR_ContasCredito" FromRole="GBCCR_ContasCredito" ToRole="GBMVCR_MovimentosContasCredito" />
   </EntityType>
   <EntityType Name="GBCDO_ContasDepositosOrdem">
     <Key>
@@ -343,6 +601,11 @@
     <Property Name="DOCLCP_ClasseComponente" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
     <Property Name="DOCCAS_CanalSubscricao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="DOUSRS_UtilizadorSubscricao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCCC_ContasCaucionadas" Relationship="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_GBCDO_ContasDepositosOrdem" FromRole="GBCDO_ContasDepositosOrdem" ToRole="GBCCC_ContasCaucionadas" />
+    <NavigationProperty Name="GBCCR_ContasCredito" Relationship="CustomerAccountsModel.FK_GBCCR_ContasCredito_GBCDO_ContasDepositosOrdem" FromRole="GBCDO_ContasDepositosOrdem" ToRole="GBCCR_ContasCredito" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_GBCDO_ContasDepositosOrdem_GBCLI_Clientes" FromRole="GBCDO_ContasDepositosOrdem" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBNATR_NaturezasContas" Relationship="CustomerAccountsModel.FK_GBCDO_ContasDepositosOrdem_GBNATR_NaturezasContas" FromRole="GBCDO_ContasDepositosOrdem" ToRole="GBNATR_NaturezasContas" />
+    <NavigationProperty Name="PMOEDA_Divisas" Relationship="CustomerAccountsModel.FK_GBCDO_ContasDepositosOrdem_PMOEDA_Divisas" FromRole="GBCDO_ContasDepositosOrdem" ToRole="PMOEDA_Divisas" />
   </EntityType>
   <EntityType Name="GBCDP_ContasDepositosPrazo">
     <Key>
@@ -401,6 +664,9 @@
     <Property Name="DPSPDN_SpreadNegociado" Type="Decimal" Precision="5" Scale="5" />
     <Property Name="DPTAE_UltimaTaeCalculada" Type="Decimal" Precision="3" Scale="3" />
     <Property Name="DPDTTA_DataUltimaTAE" Type="Int32" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_GBCDP_ContasDepositosPrazo_GBCLI_Clientes" FromRole="GBCDP_ContasDepositosPrazo" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBNATR_NaturezasContas" Relationship="CustomerAccountsModel.FK_GBCDP_ContasDepositosPrazo_GBNATR_NaturezasContas" FromRole="GBCDP_ContasDepositosPrazo" ToRole="GBNATR_NaturezasContas" />
+    <NavigationProperty Name="PMOEDA_Divisas" Relationship="CustomerAccountsModel.FK_GBCDP_ContasDepositosPrazo_PMOEDA_Divisas" FromRole="GBCDP_ContasDepositosPrazo" ToRole="PMOEDA_Divisas" />
   </EntityType>
   <EntityType Name="GBCLI_Clientes">
     <Key>
@@ -431,6 +697,18 @@
     <Property Name="GBCLDTUEXT_DataUltimoExtracto" Type="Int32" />
     <Property Name="GBCLNUEXT_NumeroUltimoExtracto" Type="Int32" />
     <Property Name="GBCLPEREXT_PeriodicidadeExtracto" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCCC_ContasCaucionadas" Relationship="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_GBCLI_Clientes" FromRole="GBCLI_Clientes" ToRole="GBCCC_ContasCaucionadas" />
+    <NavigationProperty Name="GBCCO_ContasContabilisticas" Relationship="CustomerAccountsModel.FK_GBCCO_ContasContabilisticas_GBCLI_Clientes" FromRole="GBCLI_Clientes" ToRole="GBCCO_ContasContabilisticas" />
+    <NavigationProperty Name="GBCCR_ContasCredito" Relationship="CustomerAccountsModel.FK_GBCCR_ContasCredito_GBCLI_Clientes" FromRole="GBCLI_Clientes" ToRole="GBCCR_ContasCredito" />
+    <NavigationProperty Name="GBCDO_ContasDepositosOrdem" Relationship="CustomerAccountsModel.FK_GBCDO_ContasDepositosOrdem_GBCLI_Clientes" FromRole="GBCLI_Clientes" ToRole="GBCDO_ContasDepositosOrdem" />
+    <NavigationProperty Name="GBCDP_ContasDepositosPrazo" Relationship="CustomerAccountsModel.FK_GBCDP_ContasDepositosPrazo_GBCLI_Clientes" FromRole="GBCLI_Clientes" ToRole="GBCDP_ContasDepositosPrazo" />
+    <NavigationProperty Name="GBCNDM_CondicoesMovimentacaoConta" Relationship="CustomerAccountsModel.FK_CLCNDM_GBCLI_Clientes_GBCNDM_CondicoesMovimentacaoConta" FromRole="GBCLI_Clientes" ToRole="GBCNDM_CondicoesMovimentacaoConta" />
+    <NavigationProperty Name="GBCRES_CodigosResidencia" Relationship="CustomerAccountsModel.FK_CLCRES_GBCLI_Clientes_GBCRES_CodigosResidencia" FromRole="GBCLI_Clientes" ToRole="GBCRES_CodigosResidencia" />
+    <NavigationProperty Name="PPAIS_Paises" Relationship="CustomerAccountsModel.FK_CLPAIS_GBCLI_Clientes_PPAIS_Paises" FromRole="GBCLI_Clientes" ToRole="PPAIS_Paises" />
+    <NavigationProperty Name="GBTCLI_SegmentoCliente" Relationship="CustomerAccountsModel.FK_CLTCLI_GBCLI_Clientes_GBTCLI_SegmentoCliente" FromRole="GBCLI_Clientes" ToRole="GBTCLI_SegmentoCliente" />
+    <NavigationProperty Name="GBMORD_Moradas" Relationship="CustomerAccountsModel.FK_GBMORD_Moradas_GBCLI_Clientes" FromRole="GBCLI_Clientes" ToRole="GBMORD_Moradas" />
+    <NavigationProperty Name="GBMVDP_MovimentosContasDepositosPrazo" Relationship="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBCLI_Clientes" FromRole="GBCLI_Clientes" ToRole="GBMVDP_MovimentosContasDepositosPrazo" />
+    <NavigationProperty Name="GBLTIT_LigacaoClientesEntidades" Relationship="CustomerAccountsModel.FK_LTNCLI_GBLTIT_LigacaoClientesEntidades_GBCLI_Clientes" FromRole="GBCLI_Clientes" ToRole="GBLTIT_LigacaoClientesEntidades" />
   </EntityType>
   <EntityType Name="GBCNDM_CondicoesMovimentacaoConta">
     <Key>
@@ -438,6 +716,7 @@
     </Key>
     <Property Name="ATCNDM_CondMovimentacao" Type="Int32" Nullable="false" />
     <Property Name="ATDCND_Descritivo" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_CLCNDM_GBCLI_Clientes_GBCNDM_CondicoesMovimentacaoConta" FromRole="GBCNDM_CondicoesMovimentacaoConta" ToRole="GBCLI_Clientes" />
   </EntityType>
   <EntityType Name="GBCODOP_CodigosOperacao">
     <Key>
@@ -499,6 +778,16 @@
     <Property Name="CODTSI_DataSituacao" Type="Int32" />
     <Property Name="COHOSI_HoraSituacao" Type="Int32" />
     <Property Name="GBCOCRMOV_ComRestricoesMov" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao1" Relationship="CustomerAccountsModel.FK_COCOPA_GBCODOP_CodigosOperacao_GBCODOP_CodigosOperacao" FromRole="GBCODOP_CodigosOperacao" ToRole="GBCODOP_CodigosOperacao1" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao2" Relationship="CustomerAccountsModel.FK_COCOPA_GBCODOP_CodigosOperacao_GBCODOP_CodigosOperacao" FromRole="GBCODOP_CodigosOperacao1" ToRole="GBCODOP_CodigosOperacao" />
+    <NavigationProperty Name="PMOEDA_Divisas" Relationship="CustomerAccountsModel.FK_COMOEI_GBCODOP_CodigosOperacao_PMOEDA_Divisas" FromRole="GBCODOP_CodigosOperacao" ToRole="PMOEDA_Divisas" />
+    <NavigationProperty Name="PMOEDA_Divisas1" Relationship="CustomerAccountsModel.FK_COMOEM_GBCODOP_CodigosOperacao_PMOEDA_Divisas" FromRole="GBCODOP_CodigosOperacao" ToRole="PMOEDA_Divisas" />
+    <NavigationProperty Name="PMOEDA_Divisas2" Relationship="CustomerAccountsModel.FK_COMOEV_GBCODOP_CodigosOperacao_PMOEDA_Divisas" FromRole="GBCODOP_CodigosOperacao" ToRole="PMOEDA_Divisas" />
+    <NavigationProperty Name="GBMVCC_MovimentosContasCaucionadas" Relationship="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCODOP_CodigosOperacao" FromRole="GBCODOP_CodigosOperacao" ToRole="GBMVCC_MovimentosContasCaucionadas" />
+    <NavigationProperty Name="GBMVCO_MovimentosContasContabilisticas" Relationship="CustomerAccountsModel.FK_GBMVCO_MovimentosContasContabilisticas_GBCODOP_CodigosOperacao" FromRole="GBCODOP_CodigosOperacao" ToRole="GBMVCO_MovimentosContasContabilisticas" />
+    <NavigationProperty Name="GBMVCR_MovimentosContasCredito" Relationship="CustomerAccountsModel.FK_GBMVCR_MovimentosContasCredito_GBCODOP_CodigosOperacao" FromRole="GBCODOP_CodigosOperacao" ToRole="GBMVCR_MovimentosContasCredito" />
+    <NavigationProperty Name="GBMVDO_MovimentosContasDepositosOrdem" Relationship="CustomerAccountsModel.FK_GBMVDO_MovimentosContasDepositosOrdem_GBCODOP_CodigosOperacao" FromRole="GBCODOP_CodigosOperacao" ToRole="GBMVDO_MovimentosContasDepositosOrdem" />
+    <NavigationProperty Name="GBMVDP_MovimentosContasDepositosPrazo" Relationship="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBCODOP_CodigosOperacao" FromRole="GBCODOP_CodigosOperacao" ToRole="GBMVDP_MovimentosContasDepositosPrazo" />
   </EntityType>
   <EntityType Name="GBCRES_CodigosResidencia">
     <Key>
@@ -506,6 +795,8 @@
     </Key>
     <Property Name="RECRES_CodigoResidencia" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="REDESC_Descritivo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_CLCRES_GBCLI_Clientes_GBCRES_CodigosResidencia" FromRole="GBCRES_CodigosResidencia" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_TTCRES_GBTIT_Entidade_GBCRES_CodigosResidencia" FromRole="GBCRES_CodigosResidencia" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="GBCSTE_CodigosSectoriaisNaoResidentes">
     <Key>
@@ -535,6 +826,7 @@
     <Property Name="DCNDOC_Documento" Type="Int32" Nullable="false" />
     <Property Name="DCSITU_SituacaoDocumento" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="DCANOI_Ano" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GBMVDP_MovimentosContasDepositosPrazo" Relationship="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBDOC_Documentos" FromRole="GBDOC_Documentos" ToRole="GBMVDP_MovimentosContasDepositosPrazo" />
   </EntityType>
   <EntityType Name="GBLTIT_LigacaoClientesEntidades">
     <Key>
@@ -545,6 +837,9 @@
     <Property Name="LTNTIT_NumeroEntidade" Type="Int32" />
     <Property Name="LTRCLI_RelacaoCliente" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="LTRCPE_RelacaoPrimeiraEntidade" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_LTNCLI_GBLTIT_LigacaoClientesEntidades_GBCLI_Clientes" FromRole="GBLTIT_LigacaoClientesEntidades" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_LTNTIT_GBLTIT_LigacaoClientesEntidades_GBTIT_Entidade" FromRole="GBLTIT_LigacaoClientesEntidades" ToRole="GBTIT_Entidade" />
+    <NavigationProperty Name="GBTRCLI_TiposRelacoesEntidadesClientes" Relationship="CustomerAccountsModel.FK_LTRCLI_GBLTIT_LigacaoClientesEntidades_GBTRCLI_TiposRelacoesEntidadesClientes" FromRole="GBLTIT_LigacaoClientesEntidades" ToRole="GBTRCLI_TiposRelacoesEntidadesClientes" />
   </EntityType>
   <EntityType Name="GBMORD_Moradas">
     <Key>
@@ -568,6 +863,9 @@
     <Property Name="GBMOUSCR_UtilizadorCriacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="GBMODTCR_DataCriacao" Type="Int32" />
     <Property Name="GBMOHOCR_HoraCriacao" Type="Int32" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_GBMORD_Moradas_GBCLI_Clientes" FromRole="GBMORD_Moradas" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBNATR_NaturezasContas" Relationship="CustomerAccountsModel.FK_GBMORD_Moradas_GBNATR_NaturezasContas" FromRole="GBMORD_Moradas" ToRole="GBNATR_NaturezasContas" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBMORD_Moradas_GBTIT_Entidade" FromRole="GBMORD_Moradas" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="GBMVCC_MovimentosContasCaucionadas">
     <Key>
@@ -607,6 +905,8 @@
     <Property Name="MUTOTV_TotalValores" Type="Decimal" Precision="8" Scale="2" />
     <Property Name="MUCDEV_CodigoDevolucao" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="MUOBS_Observacoes" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCCC_ContasCaucionadas" Relationship="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCCC_ContasCaucionadas" FromRole="GBMVCC_MovimentosContasCaucionadas" ToRole="GBCCC_ContasCaucionadas" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao" Relationship="CustomerAccountsModel.FK_GBMVCC_MovimentosContasCaucionadas_GBCODOP_CodigosOperacao" FromRole="GBMVCC_MovimentosContasCaucionadas" ToRole="GBCODOP_CodigosOperacao" />
   </EntityType>
   <EntityType Name="GBMVCO_MovimentosContasContabilisticas">
     <Key>
@@ -649,6 +949,8 @@
     <Property Name="MRNSCR_NrSeqContaRelacionada" Type="Int32" />
     <Property Name="GBMRCONTA_NrConta" Type="Int64" />
     <Property Name="MRGRPP_GrupoPrecario" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao" Relationship="CustomerAccountsModel.FK_GBMVCO_MovimentosContasContabilisticas_GBCODOP_CodigosOperacao" FromRole="GBMVCO_MovimentosContasContabilisticas" ToRole="GBCODOP_CodigosOperacao" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBMVCO_MovimentosContasContabilisticas_GBTIT_Entidade" FromRole="GBMVCO_MovimentosContasContabilisticas" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="GBMVCR_MovimentosContasCredito">
     <Key>
@@ -688,6 +990,8 @@
     <Property Name="MCAUTR_Autorizacao" Type="Int64" />
     <Property Name="MCTBON_TipoBonificacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="MCOBS_Observacoes" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCCR_ContasCredito" Relationship="CustomerAccountsModel.FK_GBMVCR_MovimentosContasCredito_GBCCR_ContasCredito" FromRole="GBMVCR_MovimentosContasCredito" ToRole="GBCCR_ContasCredito" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao" Relationship="CustomerAccountsModel.FK_GBMVCR_MovimentosContasCredito_GBCODOP_CodigosOperacao" FromRole="GBMVCR_MovimentosContasCredito" ToRole="GBCODOP_CodigosOperacao" />
   </EntityType>
   <EntityType Name="GBMVDO_MovimentosContasDepositosOrdem">
     <Key>
@@ -730,18 +1034,20 @@
     <Property Name="MVCDEV_CodigoDevolucao" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="MVVLRE_ValorParaExtracto" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
     <Property Name="MVOBS_Observacoes" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao" Relationship="CustomerAccountsModel.FK_GBMVDO_MovimentosContasDepositosOrdem_GBCODOP_CodigosOperacao" FromRole="GBMVDO_MovimentosContasDepositosOrdem" ToRole="GBCODOP_CodigosOperacao" />
+    <NavigationProperty Name="PMOEDA_Divisas" Relationship="CustomerAccountsModel.FK_GBMVDO_MovimentosContasDepositosOrdem_PMOEDA_Divisas" FromRole="GBMVDO_MovimentosContasDepositosOrdem" ToRole="PMOEDA_Divisas" />
   </EntityType>
   <EntityType Name="GBMVDP_MovimentosContasDepositosPrazo">
     <Key>
       <PropertyRef Name="MPNDOC_NumeroDocumento" />
     </Key>
-    <Property Name="MPNDOC_NumeroDocumento" Type="Decimal" Nullable="false" Precision="3" Scale="0" />
+    <Property Name="MPNDOC_NumeroDocumento" Type="Int32" Nullable="false" />
     <Property Name="MPBAL_Balcao" Type="Decimal" Precision="3" Scale="0" />
-    <Property Name="MPNCLI_NumeroCliente" Type="Decimal" Precision="5" Scale="0" />
-    <Property Name="MPNATR_Natureza" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="MPNCLI_NumeroCliente" Type="Int32" />
+    <Property Name="MPNATR_Natureza" Type="Int32" />
     <Property Name="MPNSEQ_NumeroSequencial" Type="Decimal" Precision="2" Scale="0" />
-    <Property Name="MPTDOC_TipoDocumento" Type="Decimal" Precision="2" Scale="0" />
-    <Property Name="MPCOPE_CodigoOperacao" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="MPTDOC_TipoDocumento" Type="Int32" />
+    <Property Name="MPCOPE_CodigoOperacao" Type="Int32" />
     <Property Name="MPVLR_ValorMovimento" Type="Decimal" Precision="8" Scale="2" />
     <Property Name="MPSLDI_SaldoIncremento" Type="Decimal" Precision="9" Scale="2" />
     <Property Name="MPSALD_SaldoAposMovimento" Type="Decimal" Precision="9" Scale="2" />
@@ -780,6 +1086,11 @@
     <Property Name="MPTXPE_TaxaPenalizacao" Type="Decimal" Precision="4" Scale="3" />
     <Property Name="MPTXM_TaxaMobilizacao" Type="Decimal" Precision="5" Scale="5" />
     <Property Name="MPOBS_Observacoes" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBCLI_Clientes" FromRole="GBMVDP_MovimentosContasDepositosPrazo" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao" Relationship="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBCODOP_CodigosOperacao" FromRole="GBMVDP_MovimentosContasDepositosPrazo" ToRole="GBCODOP_CodigosOperacao" />
+    <NavigationProperty Name="GBDOC_Documentos" Relationship="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBDOC_Documentos" FromRole="GBMVDP_MovimentosContasDepositosPrazo" ToRole="GBDOC_Documentos" />
+    <NavigationProperty Name="GBNATR_NaturezasContas" Relationship="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBNATR_NaturezasContas" FromRole="GBMVDP_MovimentosContasDepositosPrazo" ToRole="GBNATR_NaturezasContas" />
+    <NavigationProperty Name="PMOEDA_Divisas" Relationship="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_PMOEDA_Divisas" FromRole="GBMVDP_MovimentosContasDepositosPrazo" ToRole="PMOEDA_Divisas" />
   </EntityType>
   <EntityType Name="GBNATR_NaturezasContas">
     <Key>
@@ -792,6 +1103,13 @@
     <Property Name="NTTSLD_TipoSaldo" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="NTCLCP_ClasseComponente" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
     <Property Name="NTTNSC_TipoParaNatrSemContas" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCCC_ContasCaucionadas" Relationship="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_GBNATR_NaturezasContas" FromRole="GBNATR_NaturezasContas" ToRole="GBCCC_ContasCaucionadas" />
+    <NavigationProperty Name="GBCCO_ContasContabilisticas" Relationship="CustomerAccountsModel.FK_GBCCO_ContasContabilisticas_GBNATR_NaturezasContas" FromRole="GBNATR_NaturezasContas" ToRole="GBCCO_ContasContabilisticas" />
+    <NavigationProperty Name="GBCCR_ContasCredito" Relationship="CustomerAccountsModel.FK_GBCCR_ContasCredito_GBNATR_NaturezasContas" FromRole="GBNATR_NaturezasContas" ToRole="GBCCR_ContasCredito" />
+    <NavigationProperty Name="GBCDO_ContasDepositosOrdem" Relationship="CustomerAccountsModel.FK_GBCDO_ContasDepositosOrdem_GBNATR_NaturezasContas" FromRole="GBNATR_NaturezasContas" ToRole="GBCDO_ContasDepositosOrdem" />
+    <NavigationProperty Name="GBCDP_ContasDepositosPrazo" Relationship="CustomerAccountsModel.FK_GBCDP_ContasDepositosPrazo_GBNATR_NaturezasContas" FromRole="GBNATR_NaturezasContas" ToRole="GBCDP_ContasDepositosPrazo" />
+    <NavigationProperty Name="GBMORD_Moradas" Relationship="CustomerAccountsModel.FK_GBMORD_Moradas_GBNATR_NaturezasContas" FromRole="GBNATR_NaturezasContas" ToRole="GBMORD_Moradas" />
+    <NavigationProperty Name="GBMVDP_MovimentosContasDepositosPrazo" Relationship="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_GBNATR_NaturezasContas" FromRole="GBNATR_NaturezasContas" ToRole="GBMVDP_MovimentosContasDepositosPrazo" />
   </EntityType>
   <EntityType Name="GBOPR_Operacoes">
     <Key>
@@ -811,6 +1129,7 @@
     <Property Name="TCTIPO_Tipo" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="TCDESC_Descritivo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
     <Property Name="TCPBAL_SoPermitidoNosBalcoes" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_CLTCLI_GBCLI_Clientes_GBTCLI_SegmentoCliente" FromRole="GBTCLI_SegmentoCliente" ToRole="GBCLI_Clientes" />
   </EntityType>
   <EntityType Name="GBTIT_Entidade">
     <Key>
@@ -864,6 +1183,21 @@
     <Property Name="TTTPEN_TipoEntidade" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="TTBLOQ_ComBloqueios" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="GBTTALER_ComAlertas" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBCRES_CodigosResidencia" Relationship="CustomerAccountsModel.FK_TTCRES_GBTIT_Entidade_GBCRES_CodigosResidencia" FromRole="GBTIT_Entidade" ToRole="GBCRES_CodigosResidencia" />
+    <NavigationProperty Name="GBLTIT_LigacaoClientesEntidades" Relationship="CustomerAccountsModel.FK_LTNTIT_GBLTIT_LigacaoClientesEntidades_GBTIT_Entidade" FromRole="GBTIT_Entidade" ToRole="GBLTIT_LigacaoClientesEntidades" />
+    <NavigationProperty Name="GBMORD_Moradas" Relationship="CustomerAccountsModel.FK_GBMORD_Moradas_GBTIT_Entidade" FromRole="GBTIT_Entidade" ToRole="GBMORD_Moradas" />
+    <NavigationProperty Name="GBMVCO_MovimentosContasContabilisticas" Relationship="CustomerAccountsModel.FK_GBMVCO_MovimentosContasContabilisticas_GBTIT_Entidade" FromRole="GBTIT_Entidade" ToRole="GBMVCO_MovimentosContasContabilisticas" />
+    <NavigationProperty Name="PPROF_Profissoes" Relationship="CustomerAccountsModel.FK_GBTTPROF_GBTIT_Entidade_PPROF_Profissoes" FromRole="GBTIT_Entidade" ToRole="PPROF_Profissoes" />
+    <NavigationProperty Name="PTIDD_TiposIdentificacao" Relationship="CustomerAccountsModel.FK_GBTTTIPIDF_GBTIT_Entidade_PTIDD_TiposIdentificacao" FromRole="GBTIT_Entidade" ToRole="PTIDD_TiposIdentificacao" />
+    <NavigationProperty Name="PACTP_ActividadeProfissional" Relationship="CustomerAccountsModel.FK_TTACTP_GBTIT_Entidade_PACTP_ActividadeProfissional" FromRole="GBTIT_Entidade" ToRole="PACTP_ActividadeProfissional" />
+    <NavigationProperty Name="PESTC_EstadoCivil" Relationship="CustomerAccountsModel.FK_TTECIV_GBTIT_Entidade_PESTC_EstadoCivil" FromRole="GBTIT_Entidade" ToRole="PESTC_EstadoCivil" />
+    <NavigationProperty Name="PHBLT_HabilitacoesLiterarias" Relationship="CustomerAccountsModel.FK_TTHABL_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias" FromRole="GBTIT_Entidade" ToRole="PHBLT_HabilitacoesLiterarias" />
+    <NavigationProperty Name="PMOEDA_Divisas" Relationship="CustomerAccountsModel.FK_TTMOED_GBTIT_Entidade_PMOEDA_Divisas" FromRole="GBTIT_Entidade" ToRole="PMOEDA_Divisas" />
+    <NavigationProperty Name="PPAIS_Paises" Relationship="CustomerAccountsModel.FK_TTNAC_GBTIT_Entidade_PPAIS_Paises" FromRole="GBTIT_Entidade" ToRole="PPAIS_Paises" />
+    <NavigationProperty Name="PPAIS_Paises1" Relationship="CustomerAccountsModel.FK_TTPAIS_GBTIT_Entidade_PPAIS_Paises" FromRole="GBTIT_Entidade" ToRole="PPAIS_Paises" />
+    <NavigationProperty Name="PREGC_RegimesCasamento" Relationship="CustomerAccountsModel.FK_TTRCAS_GBTIT_Entidade_PREGC_RegimesCasamento" FromRole="GBTIT_Entidade" ToRole="PREGC_RegimesCasamento" />
+    <NavigationProperty Name="PTIDD_TiposIdentificacao1" Relationship="CustomerAccountsModel.FK_TTTIDE_GBTIT_Entidade_PTIDD_TiposIdentificacao" FromRole="GBTIT_Entidade" ToRole="PTIDD_TiposIdentificacao" />
+    <NavigationProperty Name="GBTPENT_TiposEntidades" Relationship="CustomerAccountsModel.FK_TTTPEN_GBTIT_Entidade_GBTPENT_TiposEntidades" FromRole="GBTIT_Entidade" ToRole="GBTPENT_TiposEntidades" />
   </EntityType>
   <EntityType Name="GBTPENT_TiposEntidades">
     <Key>
@@ -880,6 +1214,7 @@
     <Property Name="NIDTCR_DataCriacao" Type="Int32" />
     <Property Name="NIHOCR_HoraCriacao" Type="Int32" />
     <Property Name="NISITU_Situacao" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_TTTPEN_GBTIT_Entidade_GBTPENT_TiposEntidades" FromRole="GBTPENT_TiposEntidades" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="GBTRCLI_TiposRelacoesEntidadesClientes">
     <Key>
@@ -898,6 +1233,7 @@
     <Property Name="RTDTCR_DataCriacao" Type="Int32" />
     <Property Name="RTHOCR_HoraCriacao" Type="Int32" />
     <Property Name="RTUSCR_UtilizadorCriacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBLTIT_LigacaoClientesEntidades" Relationship="CustomerAccountsModel.FK_LTRCLI_GBLTIT_LigacaoClientesEntidades_GBTRCLI_TiposRelacoesEntidadesClientes" FromRole="GBTRCLI_TiposRelacoesEntidadesClientes" ToRole="GBLTIT_LigacaoClientesEntidades" />
   </EntityType>
   <EntityType Name="PACTP_ActividadeProfissional">
     <Key>
@@ -905,6 +1241,8 @@
     </Key>
     <Property Name="PACTV_Actividade" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="PACDC_Descritivo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_TTACTP_GBTIT_Entidade_PACTP_ActividadeProfissional" FromRole="PACTP_ActividadeProfissional" ToRole="GBTIT_Entidade" />
+    <NavigationProperty Name="PPROF_Profissoes" Relationship="CustomerAccountsModel.FK_PPRACTV_PPROF_Profissoes_PACTP_ActividadeProfissional" FromRole="PACTP_ActividadeProfissional" ToRole="PPROF_Profissoes" />
   </EntityType>
   <EntityType Name="PESTC_EstadoCivil">
     <Key>
@@ -912,7 +1250,9 @@
     </Key>
     <Property Name="EECIV_EstadoCivil" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="EDCIV_Descritivo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
-    <Property Name="ERCAV_RegimesCasamentoValidos" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ERCAV_RegimesCasamentoValidos" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_TTECIV_GBTIT_Entidade_PESTC_EstadoCivil" FromRole="PESTC_EstadoCivil" ToRole="GBTIT_Entidade" />
+    <NavigationProperty Name="PREGC_RegimesCasamento" Relationship="CustomerAccountsModel.FK_ERCAV_PESTC_EstadoCivil_PREGC_RegimesCasamento" FromRole="PESTC_EstadoCivil" ToRole="PREGC_RegimesCasamento" />
   </EntityType>
   <EntityType Name="PHBLT_HabilitacoesLiterarias">
     <Key>
@@ -924,6 +1264,7 @@
     <Property Name="USCR_UtilizadorCriacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="DTCR_DataCriacao" Type="DateTime" Precision="3" />
     <Property Name="HOCR_HoraCriacao" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_TTHABL_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias" FromRole="PHBLT_HabilitacoesLiterarias" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="PMOEDA_Divisas">
     <Key>
@@ -964,12 +1305,23 @@
     <Property Name="WUSDE_UtilizadorDesactivacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="WDTDE_DataDesactivacao" Type="Int32" />
     <Property Name="WHODE_HoraDesactivacao" Type="Int32" />
+    <NavigationProperty Name="FGCMB_Divisas" Relationship="CustomerAccountsModel.FK_FGCMB_Divisas_PMOEDA_Divisas" FromRole="PMOEDA_Divisas" ToRole="FGCMB_Divisas" />
+    <NavigationProperty Name="FGGCOT_GeracaoCotacoes" Relationship="CustomerAccountsModel.FK_FGGCOT_GeracaoCotacoes_PMOEDA_Divisas" FromRole="PMOEDA_Divisas" ToRole="FGGCOT_GeracaoCotacoes" />
+    <NavigationProperty Name="GBCCC_ContasCaucionadas" Relationship="CustomerAccountsModel.FK_GBCCC_ContasCaucionadas_PMOEDA_Divisas" FromRole="PMOEDA_Divisas" ToRole="GBCCC_ContasCaucionadas" />
+    <NavigationProperty Name="GBCDO_ContasDepositosOrdem" Relationship="CustomerAccountsModel.FK_GBCDO_ContasDepositosOrdem_PMOEDA_Divisas" FromRole="PMOEDA_Divisas" ToRole="GBCDO_ContasDepositosOrdem" />
+    <NavigationProperty Name="GBCDP_ContasDepositosPrazo" Relationship="CustomerAccountsModel.FK_GBCDP_ContasDepositosPrazo_PMOEDA_Divisas" FromRole="PMOEDA_Divisas" ToRole="GBCDP_ContasDepositosPrazo" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao" Relationship="CustomerAccountsModel.FK_COMOEI_GBCODOP_CodigosOperacao_PMOEDA_Divisas" FromRole="PMOEDA_Divisas" ToRole="GBCODOP_CodigosOperacao" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao1" Relationship="CustomerAccountsModel.FK_COMOEM_GBCODOP_CodigosOperacao_PMOEDA_Divisas" FromRole="PMOEDA_Divisas" ToRole="GBCODOP_CodigosOperacao" />
+    <NavigationProperty Name="GBCODOP_CodigosOperacao2" Relationship="CustomerAccountsModel.FK_COMOEV_GBCODOP_CodigosOperacao_PMOEDA_Divisas" FromRole="PMOEDA_Divisas" ToRole="GBCODOP_CodigosOperacao" />
+    <NavigationProperty Name="GBMVDO_MovimentosContasDepositosOrdem" Relationship="CustomerAccountsModel.FK_GBMVDO_MovimentosContasDepositosOrdem_PMOEDA_Divisas" FromRole="PMOEDA_Divisas" ToRole="GBMVDO_MovimentosContasDepositosOrdem" />
+    <NavigationProperty Name="GBMVDP_MovimentosContasDepositosPrazo" Relationship="CustomerAccountsModel.FK_GBMVDP_MovimentosContasDepositosPrazo_PMOEDA_Divisas" FromRole="PMOEDA_Divisas" ToRole="GBMVDP_MovimentosContasDepositosPrazo" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_TTMOED_GBTIT_Entidade_PMOEDA_Divisas" FromRole="PMOEDA_Divisas" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="PPAIS_Paises">
     <Key>
       <PropertyRef Name="ACPAI_CodigoPais" />
     </Key>
-    <Property Name="ACPAI_CodigoPais" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="ACPAI_CodigoPais" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
     <Property Name="ASPAI_SiglaPais" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
     <Property Name="ANPAI_NumeroPais" Type="Int32" />
     <Property Name="ADPAI_DescricaoPais" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
@@ -984,6 +1336,9 @@
     <Property Name="AUSDE_UtilizadorDesactivacao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="ADTDE_DataDesactivacao" Type="Int32" />
     <Property Name="AHODE_HoraDesactivacao" Type="Int32" />
+    <NavigationProperty Name="GBCLI_Clientes" Relationship="CustomerAccountsModel.FK_CLPAIS_GBCLI_Clientes_PPAIS_Paises" FromRole="PPAIS_Paises" ToRole="GBCLI_Clientes" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_TTNAC_GBTIT_Entidade_PPAIS_Paises" FromRole="PPAIS_Paises" ToRole="GBTIT_Entidade" />
+    <NavigationProperty Name="GBTIT_Entidade1" Relationship="CustomerAccountsModel.FK_TTPAIS_GBTIT_Entidade_PPAIS_Paises" FromRole="PPAIS_Paises" ToRole="GBTIT_Entidade" />
   </EntityType>
   <EntityType Name="PPROF_Profissoes">
     <Key>
@@ -991,7 +1346,9 @@
     </Key>
     <Property Name="PPRPROF_CodigoProfissao" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
     <Property Name="PPRDESC_Descritivo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="PPRACTV_CdgActividadeValidos" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PPRACTV_CdgActividadeValidos" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBTTPROF_GBTIT_Entidade_PPROF_Profissoes" FromRole="PPROF_Profissoes" ToRole="GBTIT_Entidade" />
+    <NavigationProperty Name="PACTP_ActividadeProfissional" Relationship="CustomerAccountsModel.FK_PPRACTV_PPROF_Profissoes_PACTP_ActividadeProfissional" FromRole="PPROF_Profissoes" ToRole="PACTP_ActividadeProfissional" />
   </EntityType>
   <EntityType Name="PREGC_RegimesCasamento">
     <Key>
@@ -999,6 +1356,8 @@
     </Key>
     <Property Name="CRCAS_RegimeCasamento" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="CDCAS_Descritivo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_TTRCAS_GBTIT_Entidade_PREGC_RegimesCasamento" FromRole="PREGC_RegimesCasamento" ToRole="GBTIT_Entidade" />
+    <NavigationProperty Name="PESTC_EstadoCivil" Relationship="CustomerAccountsModel.FK_ERCAV_PESTC_EstadoCivil_PREGC_RegimesCasamento" FromRole="PREGC_RegimesCasamento" ToRole="PESTC_EstadoCivil" />
   </EntityType>
   <EntityType Name="PTIDD_TiposIdentificacao">
     <Key>
@@ -1016,5 +1375,737 @@
     <Property Name="PIDTRCKDG_TratamentoParaCheckDigit" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="PIDCARMIN_NrMinimoCaracteres" Type="Int32" />
     <Property Name="PIDCARMAX_NrMaximoCaracteres" Type="Int32" />
+    <NavigationProperty Name="GBTIT_Entidade" Relationship="CustomerAccountsModel.FK_GBTTTIPIDF_GBTIT_Entidade_PTIDD_TiposIdentificacao" FromRole="PTIDD_TiposIdentificacao" ToRole="GBTIT_Entidade" />
+    <NavigationProperty Name="GBTIT_Entidade1" Relationship="CustomerAccountsModel.FK_TTTIDE_GBTIT_Entidade_PTIDD_TiposIdentificacao" FromRole="PTIDD_TiposIdentificacao" ToRole="GBTIT_Entidade" />
   </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_FGCMB_Divisas_FGTCOT_TiposCotacao">
+    <End Type="CustomerAccountsModel.FGTCOT_TiposCotacao" Role="FGTCOT_TiposCotacao" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.FGCMB_Divisas" Role="FGCMB_Divisas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FGTCOT_TiposCotacao">
+        <PropertyRef Name="TOTCOT_TipoCotacao" />
+      </Principal>
+      <Dependent Role="FGCMB_Divisas">
+        <PropertyRef Name="CBTCOT_TipoCotacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FGCMB_Divisas_PMOEDA_Divisas">
+    <End Type="CustomerAccountsModel.PMOEDA_Divisas" Role="PMOEDA_Divisas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.FGCMB_Divisas" Role="FGCMB_Divisas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMOEDA_Divisas">
+        <PropertyRef Name="WMOED_CodigoDivisaIso" />
+      </Principal>
+      <Dependent Role="FGCMB_Divisas">
+        <PropertyRef Name="CBMOEB_MoedaBase" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FGGCOT_GeracaoCotacoes_FGTCOT_TiposCotacao">
+    <End Type="CustomerAccountsModel.FGTCOT_TiposCotacao" Role="FGTCOT_TiposCotacao" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.FGGCOT_GeracaoCotacoes" Role="FGGCOT_GeracaoCotacoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FGTCOT_TiposCotacao">
+        <PropertyRef Name="TOTCOT_TipoCotacao" />
+      </Principal>
+      <Dependent Role="FGGCOT_GeracaoCotacoes">
+        <PropertyRef Name="CJTCOT_TipoCotacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FGGCOT_GeracaoCotacoes_PMOEDA_Divisas">
+    <End Type="CustomerAccountsModel.PMOEDA_Divisas" Role="PMOEDA_Divisas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.FGGCOT_GeracaoCotacoes" Role="FGGCOT_GeracaoCotacoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMOEDA_Divisas">
+        <PropertyRef Name="WMOED_CodigoDivisaIso" />
+      </Principal>
+      <Dependent Role="FGGCOT_GeracaoCotacoes">
+        <PropertyRef Name="CJMOED_Moeda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCCC_ContasCaucionadas_GBCDO_ContasDepositosOrdem">
+    <End Type="CustomerAccountsModel.GBCDO_ContasDepositosOrdem" Role="GBCDO_ContasDepositosOrdem" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBCCC_ContasCaucionadas" Role="GBCCC_ContasCaucionadas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCDO_ContasDepositosOrdem">
+        <PropertyRef Name="DONSEQ_NrSequencial" />
+      </Principal>
+      <Dependent Role="GBCCC_ContasCaucionadas">
+        <PropertyRef Name="CCNSED_NrSeqRelacParaDebitos" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCCC_ContasCaucionadas_GBCLI_Clientes">
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBCCC_ContasCaucionadas" Role="GBCCC_ContasCaucionadas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCLI_Clientes">
+        <PropertyRef Name="CLNCLI_NrCliente" />
+      </Principal>
+      <Dependent Role="GBCCC_ContasCaucionadas">
+        <PropertyRef Name="CCNCLI_NrCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCCC_ContasCaucionadas_GBNATR_NaturezasContas">
+    <End Type="CustomerAccountsModel.GBNATR_NaturezasContas" Role="GBNATR_NaturezasContas" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBCCC_ContasCaucionadas" Role="GBCCC_ContasCaucionadas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBNATR_NaturezasContas">
+        <PropertyRef Name="NTNATR_Natureza" />
+      </Principal>
+      <Dependent Role="GBCCC_ContasCaucionadas">
+        <PropertyRef Name="CCNATR_Natureza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCCC_ContasCaucionadas_PMOEDA_Divisas">
+    <End Type="CustomerAccountsModel.PMOEDA_Divisas" Role="PMOEDA_Divisas" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBCCC_ContasCaucionadas" Role="GBCCC_ContasCaucionadas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMOEDA_Divisas">
+        <PropertyRef Name="WMOED_CodigoDivisaIso" />
+      </Principal>
+      <Dependent Role="GBCCC_ContasCaucionadas">
+        <PropertyRef Name="CCMOED_Moeda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVCC_MovimentosContasCaucionadas_GBCCC_ContasCaucionadas">
+    <End Type="CustomerAccountsModel.GBCCC_ContasCaucionadas" Role="GBCCC_ContasCaucionadas" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBMVCC_MovimentosContasCaucionadas" Role="GBMVCC_MovimentosContasCaucionadas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCCC_ContasCaucionadas">
+        <PropertyRef Name="CCNSEQ_NrSequencial" />
+      </Principal>
+      <Dependent Role="GBMVCC_MovimentosContasCaucionadas">
+        <PropertyRef Name="MUNSEQ_NumeroSequencial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCCO_ContasContabilisticas_GBCLI_Clientes">
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCCO_ContasContabilisticas" Role="GBCCO_ContasContabilisticas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCLI_Clientes">
+        <PropertyRef Name="CLNCLI_NrCliente" />
+      </Principal>
+      <Dependent Role="GBCCO_ContasContabilisticas">
+        <PropertyRef Name="CSNCLI_NrCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCCO_ContasContabilisticas_GBNATR_NaturezasContas">
+    <End Type="CustomerAccountsModel.GBNATR_NaturezasContas" Role="GBNATR_NaturezasContas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCCO_ContasContabilisticas" Role="GBCCO_ContasContabilisticas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBNATR_NaturezasContas">
+        <PropertyRef Name="NTNATR_Natureza" />
+      </Principal>
+      <Dependent Role="GBCCO_ContasContabilisticas">
+        <PropertyRef Name="CSNATR_Natureza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCCR_ContasCredito_GBCDO_ContasDepositosOrdem">
+    <End Type="CustomerAccountsModel.GBCDO_ContasDepositosOrdem" Role="GBCDO_ContasDepositosOrdem" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBCCR_ContasCredito" Role="GBCCR_ContasCredito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCDO_ContasDepositosOrdem">
+        <PropertyRef Name="DONSEQ_NrSequencial" />
+      </Principal>
+      <Dependent Role="GBCCR_ContasCredito">
+        <PropertyRef Name="CRNSEC_NrSeqRelacParaCreditos" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCCR_ContasCredito_GBCLI_Clientes">
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBCCR_ContasCredito" Role="GBCCR_ContasCredito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCLI_Clientes">
+        <PropertyRef Name="CLNCLI_NrCliente" />
+      </Principal>
+      <Dependent Role="GBCCR_ContasCredito">
+        <PropertyRef Name="CRNCLI_NrCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCCR_ContasCredito_GBNATR_NaturezasContas">
+    <End Type="CustomerAccountsModel.GBNATR_NaturezasContas" Role="GBNATR_NaturezasContas" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBCCR_ContasCredito" Role="GBCCR_ContasCredito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBNATR_NaturezasContas">
+        <PropertyRef Name="NTNATR_Natureza" />
+      </Principal>
+      <Dependent Role="GBCCR_ContasCredito">
+        <PropertyRef Name="CRNATR_Natureza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVCR_MovimentosContasCredito_GBCCR_ContasCredito">
+    <End Type="CustomerAccountsModel.GBCCR_ContasCredito" Role="GBCCR_ContasCredito" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBMVCR_MovimentosContasCredito" Role="GBMVCR_MovimentosContasCredito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCCR_ContasCredito">
+        <PropertyRef Name="CRNSEQ_NrSequencial" />
+      </Principal>
+      <Dependent Role="GBMVCR_MovimentosContasCredito">
+        <PropertyRef Name="MCNSEQ_NumeroSequencial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCDO_ContasDepositosOrdem_GBCLI_Clientes">
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBCDO_ContasDepositosOrdem" Role="GBCDO_ContasDepositosOrdem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCLI_Clientes">
+        <PropertyRef Name="CLNCLI_NrCliente" />
+      </Principal>
+      <Dependent Role="GBCDO_ContasDepositosOrdem">
+        <PropertyRef Name="DONCLD_ClienteParaJurosDevedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCDO_ContasDepositosOrdem_GBNATR_NaturezasContas">
+    <End Type="CustomerAccountsModel.GBNATR_NaturezasContas" Role="GBNATR_NaturezasContas" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBCDO_ContasDepositosOrdem" Role="GBCDO_ContasDepositosOrdem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBNATR_NaturezasContas">
+        <PropertyRef Name="NTNATR_Natureza" />
+      </Principal>
+      <Dependent Role="GBCDO_ContasDepositosOrdem">
+        <PropertyRef Name="DONATR_Natureza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCDO_ContasDepositosOrdem_PMOEDA_Divisas">
+    <End Type="CustomerAccountsModel.PMOEDA_Divisas" Role="PMOEDA_Divisas" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBCDO_ContasDepositosOrdem" Role="GBCDO_ContasDepositosOrdem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMOEDA_Divisas">
+        <PropertyRef Name="WMOED_CodigoDivisaIso" />
+      </Principal>
+      <Dependent Role="GBCDO_ContasDepositosOrdem">
+        <PropertyRef Name="DOMOED_Moeda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCDP_ContasDepositosPrazo_GBCLI_Clientes">
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCDP_ContasDepositosPrazo" Role="GBCDP_ContasDepositosPrazo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCLI_Clientes">
+        <PropertyRef Name="CLNCLI_NrCliente" />
+      </Principal>
+      <Dependent Role="GBCDP_ContasDepositosPrazo">
+        <PropertyRef Name="DPNCLI_NrCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCDP_ContasDepositosPrazo_GBNATR_NaturezasContas">
+    <End Type="CustomerAccountsModel.GBNATR_NaturezasContas" Role="GBNATR_NaturezasContas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCDP_ContasDepositosPrazo" Role="GBCDP_ContasDepositosPrazo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBNATR_NaturezasContas">
+        <PropertyRef Name="NTNATR_Natureza" />
+      </Principal>
+      <Dependent Role="GBCDP_ContasDepositosPrazo">
+        <PropertyRef Name="DPNATJ_NaturezaParaJuros" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBCDP_ContasDepositosPrazo_PMOEDA_Divisas">
+    <End Type="CustomerAccountsModel.PMOEDA_Divisas" Role="PMOEDA_Divisas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCDP_ContasDepositosPrazo" Role="GBCDP_ContasDepositosPrazo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMOEDA_Divisas">
+        <PropertyRef Name="WMOED_CodigoDivisaIso" />
+      </Principal>
+      <Dependent Role="GBCDP_ContasDepositosPrazo">
+        <PropertyRef Name="DPMOED_Moeda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLCNDM_GBCLI_Clientes_GBCNDM_CondicoesMovimentacaoConta">
+    <End Type="CustomerAccountsModel.GBCNDM_CondicoesMovimentacaoConta" Role="GBCNDM_CondicoesMovimentacaoConta" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCNDM_CondicoesMovimentacaoConta">
+        <PropertyRef Name="ATCNDM_CondMovimentacao" />
+      </Principal>
+      <Dependent Role="GBCLI_Clientes">
+        <PropertyRef Name="CLCNDM_CondicoesMovimentacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLCRES_GBCLI_Clientes_GBCRES_CodigosResidencia">
+    <End Type="CustomerAccountsModel.GBCRES_CodigosResidencia" Role="GBCRES_CodigosResidencia" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCRES_CodigosResidencia">
+        <PropertyRef Name="RECRES_CodigoResidencia" />
+      </Principal>
+      <Dependent Role="GBCLI_Clientes">
+        <PropertyRef Name="CLCRES_CodigoResidencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLPAIS_GBCLI_Clientes_PPAIS_Paises">
+    <End Type="CustomerAccountsModel.PPAIS_Paises" Role="PPAIS_Paises" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPAIS_Paises">
+        <PropertyRef Name="ACPAI_CodigoPais" />
+      </Principal>
+      <Dependent Role="GBCLI_Clientes">
+        <PropertyRef Name="CLPAIS_CodigoPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLTCLI_GBCLI_Clientes_GBTCLI_SegmentoCliente">
+    <End Type="CustomerAccountsModel.GBTCLI_SegmentoCliente" Role="GBTCLI_SegmentoCliente" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBTCLI_SegmentoCliente">
+        <PropertyRef Name="TCTIPO_Tipo" />
+      </Principal>
+      <Dependent Role="GBCLI_Clientes">
+        <PropertyRef Name="CLTCLI_SegmentoCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMORD_Moradas_GBCLI_Clientes">
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBMORD_Moradas" Role="GBMORD_Moradas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCLI_Clientes">
+        <PropertyRef Name="CLNCLI_NrCliente" />
+      </Principal>
+      <Dependent Role="GBMORD_Moradas">
+        <PropertyRef Name="MONCLI_NumeroCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVDP_MovimentosContasDepositosPrazo_GBCLI_Clientes">
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBMVDP_MovimentosContasDepositosPrazo" Role="GBMVDP_MovimentosContasDepositosPrazo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCLI_Clientes">
+        <PropertyRef Name="CLNCLI_NrCliente" />
+      </Principal>
+      <Dependent Role="GBMVDP_MovimentosContasDepositosPrazo">
+        <PropertyRef Name="MPNCLI_NumeroCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LTNCLI_GBLTIT_LigacaoClientesEntidades_GBCLI_Clientes">
+    <End Type="CustomerAccountsModel.GBCLI_Clientes" Role="GBCLI_Clientes" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBLTIT_LigacaoClientesEntidades" Role="GBLTIT_LigacaoClientesEntidades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCLI_Clientes">
+        <PropertyRef Name="CLNCLI_NrCliente" />
+      </Principal>
+      <Dependent Role="GBLTIT_LigacaoClientesEntidades">
+        <PropertyRef Name="LTNCLI_NumeroCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COCOPA_GBCODOP_CodigosOperacao_GBCODOP_CodigosOperacao">
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCODOP_CodigosOperacao">
+        <PropertyRef Name="COCOPE_CodigoOperacao" />
+      </Principal>
+      <Dependent Role="GBCODOP_CodigosOperacao1">
+        <PropertyRef Name="COCOPA_CdgOperacaoAnulacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COMOEI_GBCODOP_CodigosOperacao_PMOEDA_Divisas">
+    <End Type="CustomerAccountsModel.PMOEDA_Divisas" Role="PMOEDA_Divisas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMOEDA_Divisas">
+        <PropertyRef Name="WMOED_CodigoDivisaIso" />
+      </Principal>
+      <Dependent Role="GBCODOP_CodigosOperacao">
+        <PropertyRef Name="COMOEI_MoedaIsencao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COMOEM_GBCODOP_CodigosOperacao_PMOEDA_Divisas">
+    <End Type="CustomerAccountsModel.PMOEDA_Divisas" Role="PMOEDA_Divisas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMOEDA_Divisas">
+        <PropertyRef Name="WMOED_CodigoDivisaIso" />
+      </Principal>
+      <Dependent Role="GBCODOP_CodigosOperacao">
+        <PropertyRef Name="COMOEM_MoedaMinimoMaximo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COMOEV_GBCODOP_CodigosOperacao_PMOEDA_Divisas">
+    <End Type="CustomerAccountsModel.PMOEDA_Divisas" Role="PMOEDA_Divisas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMOEDA_Divisas">
+        <PropertyRef Name="WMOED_CodigoDivisaIso" />
+      </Principal>
+      <Dependent Role="GBCODOP_CodigosOperacao">
+        <PropertyRef Name="COMOEV_MoedaDespesas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVCC_MovimentosContasCaucionadas_GBCODOP_CodigosOperacao">
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBMVCC_MovimentosContasCaucionadas" Role="GBMVCC_MovimentosContasCaucionadas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCODOP_CodigosOperacao">
+        <PropertyRef Name="COCOPE_CodigoOperacao" />
+      </Principal>
+      <Dependent Role="GBMVCC_MovimentosContasCaucionadas">
+        <PropertyRef Name="MUCOPE_CodigoOperacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVCO_MovimentosContasContabilisticas_GBCODOP_CodigosOperacao">
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBMVCO_MovimentosContasContabilisticas" Role="GBMVCO_MovimentosContasContabilisticas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCODOP_CodigosOperacao">
+        <PropertyRef Name="COCOPE_CodigoOperacao" />
+      </Principal>
+      <Dependent Role="GBMVCO_MovimentosContasContabilisticas">
+        <PropertyRef Name="MRCOPE_CodigoOperacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVCR_MovimentosContasCredito_GBCODOP_CodigosOperacao">
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBMVCR_MovimentosContasCredito" Role="GBMVCR_MovimentosContasCredito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCODOP_CodigosOperacao">
+        <PropertyRef Name="COCOPE_CodigoOperacao" />
+      </Principal>
+      <Dependent Role="GBMVCR_MovimentosContasCredito">
+        <PropertyRef Name="MCCOPE_CodigoOperacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVDO_MovimentosContasDepositosOrdem_GBCODOP_CodigosOperacao">
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBMVDO_MovimentosContasDepositosOrdem" Role="GBMVDO_MovimentosContasDepositosOrdem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCODOP_CodigosOperacao">
+        <PropertyRef Name="COCOPE_CodigoOperacao" />
+      </Principal>
+      <Dependent Role="GBMVDO_MovimentosContasDepositosOrdem">
+        <PropertyRef Name="MVCOPE_CodigoOperacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVDP_MovimentosContasDepositosPrazo_GBCODOP_CodigosOperacao">
+    <End Type="CustomerAccountsModel.GBCODOP_CodigosOperacao" Role="GBCODOP_CodigosOperacao" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBMVDP_MovimentosContasDepositosPrazo" Role="GBMVDP_MovimentosContasDepositosPrazo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCODOP_CodigosOperacao">
+        <PropertyRef Name="COCOPE_CodigoOperacao" />
+      </Principal>
+      <Dependent Role="GBMVDP_MovimentosContasDepositosPrazo">
+        <PropertyRef Name="MPCOPE_CodigoOperacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TTCRES_GBTIT_Entidade_GBCRES_CodigosResidencia">
+    <End Type="CustomerAccountsModel.GBCRES_CodigosResidencia" Role="GBCRES_CodigosResidencia" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBCRES_CodigosResidencia">
+        <PropertyRef Name="RECRES_CodigoResidencia" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTCRES_CodigoResidencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVDP_MovimentosContasDepositosPrazo_GBDOC_Documentos">
+    <End Type="CustomerAccountsModel.GBDOC_Documentos" Role="GBDOC_Documentos" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBMVDP_MovimentosContasDepositosPrazo" Role="GBMVDP_MovimentosContasDepositosPrazo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBDOC_Documentos">
+        <PropertyRef Name="DCTDOC_TipoDocumento" />
+      </Principal>
+      <Dependent Role="GBMVDP_MovimentosContasDepositosPrazo">
+        <PropertyRef Name="MPTDOC_TipoDocumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LTNTIT_GBLTIT_LigacaoClientesEntidades_GBTIT_Entidade">
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBLTIT_LigacaoClientesEntidades" Role="GBLTIT_LigacaoClientesEntidades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBTIT_Entidade">
+        <PropertyRef Name="TTNUMT_NrEntidade" />
+      </Principal>
+      <Dependent Role="GBLTIT_LigacaoClientesEntidades">
+        <PropertyRef Name="LTNTIT_NumeroEntidade" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LTRCLI_GBLTIT_LigacaoClientesEntidades_GBTRCLI_TiposRelacoesEntidadesClientes">
+    <End Type="CustomerAccountsModel.GBTRCLI_TiposRelacoesEntidadesClientes" Role="GBTRCLI_TiposRelacoesEntidadesClientes" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBLTIT_LigacaoClientesEntidades" Role="GBLTIT_LigacaoClientesEntidades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBTRCLI_TiposRelacoesEntidadesClientes">
+        <PropertyRef Name="RTRCLI_RelacaoComCliente" />
+      </Principal>
+      <Dependent Role="GBLTIT_LigacaoClientesEntidades">
+        <PropertyRef Name="LTRCLI_RelacaoCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMORD_Moradas_GBNATR_NaturezasContas">
+    <End Type="CustomerAccountsModel.GBNATR_NaturezasContas" Role="GBNATR_NaturezasContas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBMORD_Moradas" Role="GBMORD_Moradas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBNATR_NaturezasContas">
+        <PropertyRef Name="NTNATR_Natureza" />
+      </Principal>
+      <Dependent Role="GBMORD_Moradas">
+        <PropertyRef Name="MONATR_Natureza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMORD_Moradas_GBTIT_Entidade">
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBMORD_Moradas" Role="GBMORD_Moradas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBTIT_Entidade">
+        <PropertyRef Name="TTNUMT_NrEntidade" />
+      </Principal>
+      <Dependent Role="GBMORD_Moradas">
+        <PropertyRef Name="MONTIT_NumeroEntidade" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVCO_MovimentosContasContabilisticas_GBTIT_Entidade">
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBMVCO_MovimentosContasContabilisticas" Role="GBMVCO_MovimentosContasContabilisticas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBTIT_Entidade">
+        <PropertyRef Name="TTNUMT_NrEntidade" />
+      </Principal>
+      <Dependent Role="GBMVCO_MovimentosContasContabilisticas">
+        <PropertyRef Name="MRNTIT_NrEntidadeParaNota" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVDO_MovimentosContasDepositosOrdem_PMOEDA_Divisas">
+    <End Type="CustomerAccountsModel.PMOEDA_Divisas" Role="PMOEDA_Divisas" Multiplicity="1" />
+    <End Type="CustomerAccountsModel.GBMVDO_MovimentosContasDepositosOrdem" Role="GBMVDO_MovimentosContasDepositosOrdem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMOEDA_Divisas">
+        <PropertyRef Name="WMOED_CodigoDivisaIso" />
+      </Principal>
+      <Dependent Role="GBMVDO_MovimentosContasDepositosOrdem">
+        <PropertyRef Name="MVMOET_MoedaTransaccao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVDP_MovimentosContasDepositosPrazo_GBNATR_NaturezasContas">
+    <End Type="CustomerAccountsModel.GBNATR_NaturezasContas" Role="GBNATR_NaturezasContas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBMVDP_MovimentosContasDepositosPrazo" Role="GBMVDP_MovimentosContasDepositosPrazo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBNATR_NaturezasContas">
+        <PropertyRef Name="NTNATR_Natureza" />
+      </Principal>
+      <Dependent Role="GBMVDP_MovimentosContasDepositosPrazo">
+        <PropertyRef Name="MPNATR_Natureza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBMVDP_MovimentosContasDepositosPrazo_PMOEDA_Divisas">
+    <End Type="CustomerAccountsModel.PMOEDA_Divisas" Role="PMOEDA_Divisas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBMVDP_MovimentosContasDepositosPrazo" Role="GBMVDP_MovimentosContasDepositosPrazo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMOEDA_Divisas">
+        <PropertyRef Name="WMOED_CodigoDivisaIso" />
+      </Principal>
+      <Dependent Role="GBMVDP_MovimentosContasDepositosPrazo">
+        <PropertyRef Name="MPMOED_Moeda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBTTPROF_GBTIT_Entidade_PPROF_Profissoes">
+    <End Type="CustomerAccountsModel.PPROF_Profissoes" Role="PPROF_Profissoes" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPROF_Profissoes">
+        <PropertyRef Name="PPRPROF_CodigoProfissao" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="GBTTPROF_Profissao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GBTTTIPIDF_GBTIT_Entidade_PTIDD_TiposIdentificacao">
+    <End Type="CustomerAccountsModel.PTIDD_TiposIdentificacao" Role="PTIDD_TiposIdentificacao" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PTIDD_TiposIdentificacao">
+        <PropertyRef Name="PTITP_TipoIdentificacao" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="GBTTTIPIDF_TipoIdentificacaoFiscal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TTACTP_GBTIT_Entidade_PACTP_ActividadeProfissional">
+    <End Type="CustomerAccountsModel.PACTP_ActividadeProfissional" Role="PACTP_ActividadeProfissional" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PACTP_ActividadeProfissional">
+        <PropertyRef Name="PACTV_Actividade" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTACTP_ActividadeProfissional" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TTECIV_GBTIT_Entidade_PESTC_EstadoCivil">
+    <End Type="CustomerAccountsModel.PESTC_EstadoCivil" Role="PESTC_EstadoCivil" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PESTC_EstadoCivil">
+        <PropertyRef Name="EECIV_EstadoCivil" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTECIV_EstadoCivil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TTHABL_GBTIT_Entidade_PHBLT_HabilitacoesLiterarias">
+    <End Type="CustomerAccountsModel.PHBLT_HabilitacoesLiterarias" Role="PHBLT_HabilitacoesLiterarias" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PHBLT_HabilitacoesLiterarias">
+        <PropertyRef Name="PHBTP_Habilitacoes" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTHABL_Habilitacoes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TTMOED_GBTIT_Entidade_PMOEDA_Divisas">
+    <End Type="CustomerAccountsModel.PMOEDA_Divisas" Role="PMOEDA_Divisas" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMOEDA_Divisas">
+        <PropertyRef Name="WMOED_CodigoDivisaIso" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTMOED_MoedaCsra" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TTNAC_GBTIT_Entidade_PPAIS_Paises">
+    <End Type="CustomerAccountsModel.PPAIS_Paises" Role="PPAIS_Paises" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPAIS_Paises">
+        <PropertyRef Name="ACPAI_CodigoPais" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTNAC_Nacionalidade" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TTPAIS_GBTIT_Entidade_PPAIS_Paises">
+    <End Type="CustomerAccountsModel.PPAIS_Paises" Role="PPAIS_Paises" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PPAIS_Paises">
+        <PropertyRef Name="ACPAI_CodigoPais" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTPAIS_CodigoPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TTRCAS_GBTIT_Entidade_PREGC_RegimesCasamento">
+    <End Type="CustomerAccountsModel.PREGC_RegimesCasamento" Role="PREGC_RegimesCasamento" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PREGC_RegimesCasamento">
+        <PropertyRef Name="CRCAS_RegimeCasamento" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTRCAS_RegimeCasamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TTTIDE_GBTIT_Entidade_PTIDD_TiposIdentificacao">
+    <End Type="CustomerAccountsModel.PTIDD_TiposIdentificacao" Role="PTIDD_TiposIdentificacao" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PTIDD_TiposIdentificacao">
+        <PropertyRef Name="PTITP_TipoIdentificacao" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTTIDE_TipoIdentificacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TTTPEN_GBTIT_Entidade_GBTPENT_TiposEntidades">
+    <End Type="CustomerAccountsModel.GBTPENT_TiposEntidades" Role="GBTPENT_TiposEntidades" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.GBTIT_Entidade" Role="GBTIT_Entidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GBTPENT_TiposEntidades">
+        <PropertyRef Name="NITPEN_TipoEntidade" />
+      </Principal>
+      <Dependent Role="GBTIT_Entidade">
+        <PropertyRef Name="TTTPEN_TipoEntidade" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PPRACTV_PPROF_Profissoes_PACTP_ActividadeProfissional">
+    <End Type="CustomerAccountsModel.PACTP_ActividadeProfissional" Role="PACTP_ActividadeProfissional" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.PPROF_Profissoes" Role="PPROF_Profissoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PACTP_ActividadeProfissional">
+        <PropertyRef Name="PACTV_Actividade" />
+      </Principal>
+      <Dependent Role="PPROF_Profissoes">
+        <PropertyRef Name="PPRACTV_CdgActividadeValidos" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ERCAV_PESTC_EstadoCivil_PREGC_RegimesCasamento">
+    <End Type="CustomerAccountsModel.PREGC_RegimesCasamento" Role="PREGC_RegimesCasamento" Multiplicity="0..1" />
+    <End Type="CustomerAccountsModel.PESTC_EstadoCivil" Role="PESTC_EstadoCivil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PREGC_RegimesCasamento">
+        <PropertyRef Name="CRCAS_RegimeCasamento" />
+      </Principal>
+      <Dependent Role="PESTC_EstadoCivil">
+        <PropertyRef Name="ERCAV_RegimesCasamentoValidos" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

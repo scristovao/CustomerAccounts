@@ -32,5 +32,9 @@ namespace CustomerAccountsPortal.Models
         public string GBMOUSCR_UtilizadorCriacao { get; set; }
         public Nullable<int> GBMODTCR_DataCriacao { get; set; }
         public Nullable<int> GBMOHOCR_HoraCriacao { get; set; }
+    
+        public virtual GBCLI_Clientes GBCLI_Clientes { get; set; }
+        public virtual GBNATR_NaturezasContas GBNATR_NaturezasContas { get; set; }
+        public virtual GBTIT_Entidade GBTIT_Entidade { get; set; }
     }
 }

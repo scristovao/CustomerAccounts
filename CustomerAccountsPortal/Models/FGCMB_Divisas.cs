@@ -24,5 +24,8 @@ namespace CustomerAccountsPortal.Models
         public Nullable<int> CBDATG_DataDeGravacao { get; set; }
         public Nullable<int> CBHORA_HoraDeGravacao { get; set; }
         public string CBUSGR_UtilizadorGravacao { get; set; }
+    
+        public virtual FGTCOT_TiposCotacao FGTCOT_TiposCotacao { get; set; }
+        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
     }
 }

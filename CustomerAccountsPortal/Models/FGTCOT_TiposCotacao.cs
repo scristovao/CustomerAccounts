@@ -14,10 +14,22 @@ namespace CustomerAccountsPortal.Models
     
     public partial class FGTCOT_TiposCotacao
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public FGTCOT_TiposCotacao()
+        {
+            this.FGCMB_Divisas = new HashSet<FGCMB_Divisas>();
+            this.FGGCOT_GeracaoCotacoes = new HashSet<FGGCOT_GeracaoCotacoes>();
+        }
+    
         public string TOTCOT_TipoCotacao { get; set; }
         public string TODCOT_Descritivo { get; set; }
         public string TODSC_DisponivelModuloSc { get; set; }
         public string TOINDC_IndicadorCotacao { get; set; }
         public string FGTORECCV_RecolheCâmbioCompraVenda { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<FGCMB_Divisas> FGCMB_Divisas { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<FGGCOT_GeracaoCotacoes> FGGCOT_GeracaoCotacoes { get; set; }
     }
 }

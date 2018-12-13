@@ -14,7 +14,19 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PREGC_RegimesCasamento
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public PREGC_RegimesCasamento()
+        {
+            this.GBTIT_Entidade = new HashSet<GBTIT_Entidade>();
+            this.PESTC_EstadoCivil = new HashSet<PESTC_EstadoCivil>();
+        }
+    
         public string CRCAS_RegimeCasamento { get; set; }
         public string CDCAS_Descritivo { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GBTIT_Entidade> GBTIT_Entidade { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PESTC_EstadoCivil> PESTC_EstadoCivil { get; set; }
     }
 }

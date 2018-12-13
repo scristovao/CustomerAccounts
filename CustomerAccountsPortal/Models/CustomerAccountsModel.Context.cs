@@ -61,5 +61,6 @@ namespace CustomerAccountsPortal.Models
         public virtual DbSet<PPROF_Profissoes> PPROF_Profissoes { get; set; }
         public virtual DbSet<PREGC_RegimesCasamento> PREGC_RegimesCasamento { get; set; }
         public virtual DbSet<PTIDD_TiposIdentificacao> PTIDD_TiposIdentificacao { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

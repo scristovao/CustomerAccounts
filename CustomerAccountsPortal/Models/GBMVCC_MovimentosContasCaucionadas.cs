@@ -48,5 +48,8 @@ namespace CustomerAccountsPortal.Models
         public Nullable<decimal> MUTOTV_TotalValores { get; set; }
         public string MUCDEV_CodigoDevolucao { get; set; }
         public string MUOBS_Observacoes { get; set; }
+    
+        public virtual GBCCC_ContasCaucionadas GBCCC_ContasCaucionadas { get; set; }
+        public virtual GBCODOP_CodigosOperacao GBCODOP_CodigosOperacao { get; set; }
     }
 }

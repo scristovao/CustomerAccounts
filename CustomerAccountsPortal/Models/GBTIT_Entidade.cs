@@ -14,6 +14,14 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBTIT_Entidade
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public GBTIT_Entidade()
+        {
+            this.GBLTIT_LigacaoClientesEntidades = new HashSet<GBLTIT_LigacaoClientesEntidades>();
+            this.GBMORD_Moradas = new HashSet<GBMORD_Moradas>();
+            this.GBMVCO_MovimentosContasContabilisticas = new HashSet<GBMVCO_MovimentosContasContabilisticas>();
+        }
+    
         public int TTNUMT_NrEntidade { get; set; }
         public string TTTIPT_EmpresaOuParticular { get; set; }
         public string TTNOMT_NomeEntidade { get; set; }
@@ -62,5 +70,24 @@ namespace CustomerAccountsPortal.Models
         public string TTTPEN_TipoEntidade { get; set; }
         public string TTBLOQ_ComBloqueios { get; set; }
         public string GBTTALER_ComAlertas { get; set; }
+    
+        public virtual GBCRES_CodigosResidencia GBCRES_CodigosResidencia { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GBLTIT_LigacaoClientesEntidades> GBLTIT_LigacaoClientesEntidades { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GBMORD_Moradas> GBMORD_Moradas { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GBMVCO_MovimentosContasContabilisticas> GBMVCO_MovimentosContasContabilisticas { get; set; }
+        public virtual PPROF_Profissoes PPROF_Profissoes { get; set; }
+        public virtual PTIDD_TiposIdentificacao PTIDD_TiposIdentificacao { get; set; }
+        public virtual PACTP_ActividadeProfissional PACTP_ActividadeProfissional { get; set; }
+        public virtual PESTC_EstadoCivil PESTC_EstadoCivil { get; set; }
+        public virtual PHBLT_HabilitacoesLiterarias PHBLT_HabilitacoesLiterarias { get; set; }
+        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
+        public virtual PPAIS_Paises PPAIS_Paises { get; set; }
+        public virtual PPAIS_Paises PPAIS_Paises1 { get; set; }
+        public virtual PREGC_RegimesCasamento PREGC_RegimesCasamento { get; set; }
+        public virtual PTIDD_TiposIdentificacao PTIDD_TiposIdentificacao1 { get; set; }
+        public virtual GBTPENT_TiposEntidades GBTPENT_TiposEntidades { get; set; }
     }
 }

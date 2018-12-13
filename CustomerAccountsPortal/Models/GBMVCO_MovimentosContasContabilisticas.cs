@@ -51,5 +51,8 @@ namespace CustomerAccountsPortal.Models
         public Nullable<int> MRNSCR_NrSeqContaRelacionada { get; set; }
         public Nullable<long> GBMRCONTA_NrConta { get; set; }
         public string MRGRPP_GrupoPrecario { get; set; }
+    
+        public virtual GBCODOP_CodigosOperacao GBCODOP_CodigosOperacao { get; set; }
+        public virtual GBTIT_Entidade GBTIT_Entidade { get; set; }
     }
 }

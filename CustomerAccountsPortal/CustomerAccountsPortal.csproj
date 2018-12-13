@@ -261,6 +261,9 @@
     <Compile Include="Models\PTIDD_TiposIdentificacao.cs">
       <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>CustomerAccountsModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

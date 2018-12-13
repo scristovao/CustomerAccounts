@@ -14,13 +14,13 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMVDP_MovimentosContasDepositosPrazo
     {
-        public decimal MPNDOC_NumeroDocumento { get; set; }
+        public int MPNDOC_NumeroDocumento { get; set; }
         public Nullable<decimal> MPBAL_Balcao { get; set; }
-        public Nullable<decimal> MPNCLI_NumeroCliente { get; set; }
-        public Nullable<decimal> MPNATR_Natureza { get; set; }
+        public Nullable<int> MPNCLI_NumeroCliente { get; set; }
+        public Nullable<int> MPNATR_Natureza { get; set; }
         public Nullable<decimal> MPNSEQ_NumeroSequencial { get; set; }
-        public Nullable<decimal> MPTDOC_TipoDocumento { get; set; }
-        public Nullable<decimal> MPCOPE_CodigoOperacao { get; set; }
+        public Nullable<int> MPTDOC_TipoDocumento { get; set; }
+        public Nullable<int> MPCOPE_CodigoOperacao { get; set; }
         public Nullable<decimal> MPVLR_ValorMovimento { get; set; }
         public Nullable<decimal> MPSLDI_SaldoIncremento { get; set; }
         public Nullable<decimal> MPSALD_SaldoAposMovimento { get; set; }
@@ -59,5 +59,11 @@ namespace CustomerAccountsPortal.Models
         public Nullable<decimal> MPTXPE_TaxaPenalizacao { get; set; }
         public Nullable<decimal> MPTXM_TaxaMobilizacao { get; set; }
         public string MPOBS_Observacoes { get; set; }
+    
+        public virtual GBCLI_Clientes GBCLI_Clientes { get; set; }
+        public virtual GBCODOP_CodigosOperacao GBCODOP_CodigosOperacao { get; set; }
+        public virtual GBDOC_Documentos GBDOC_Documentos { get; set; }
+        public virtual GBNATR_NaturezasContas GBNATR_NaturezasContas { get; set; }
+        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
     }
 }
