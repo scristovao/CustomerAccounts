@@ -14,10 +14,11 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCDP_ContasDepositosPrazo
     {
-        public int DPNSEQ_NrSequencial { get; set; }
+        public long ID_ContasDepositosPrazo { get; set; }
         public Nullable<int> DPBAL_Balcao { get; set; }
         public Nullable<int> DPNCLI_NrCliente { get; set; }
         public Nullable<int> DPNATR_Natureza { get; set; }
+        public Nullable<int> DPNSEQ_NrSequencial { get; set; }
         public string DPCCAP_CodigoCapitalizacao { get; set; }
         public Nullable<decimal> DPSLD_Saldo { get; set; }
         public Nullable<int> DPDTIN_DataInicio { get; set; }
@@ -67,9 +68,5 @@ namespace CustomerAccountsPortal.Models
         public Nullable<decimal> DPSPDN_SpreadNegociado { get; set; }
         public Nullable<decimal> DPTAE_UltimaTaeCalculada { get; set; }
         public Nullable<int> DPDTTA_DataUltimaTAE { get; set; }
-    
-        public virtual GBCLI_Clientes GBCLI_Clientes { get; set; }
-        public virtual GBNATR_NaturezasContas GBNATR_NaturezasContas { get; set; }
-        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
     }
 }

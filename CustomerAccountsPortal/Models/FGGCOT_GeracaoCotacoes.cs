@@ -14,7 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class FGGCOT_GeracaoCotacoes
     {
-        public int CJMOED_CJTCOT { get; set; }
+        public long ID_GeracaoCotacoes { get; set; }
         public string CJMOEB_MoedaBase { get; set; }
         public string CJMOED_Moeda { get; set; }
         public string CJTCOT_TipoCotacao { get; set; }
@@ -24,6 +24,5 @@ namespace CustomerAccountsPortal.Models
         public string CJVARV_VariacaoParaVenda { get; set; }
     
         public virtual FGTCOT_TiposCotacao FGTCOT_TiposCotacao { get; set; }
-        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
     }
 }

@@ -14,17 +14,11 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCDO_ContasDepositosOrdem
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public GBCDO_ContasDepositosOrdem()
-        {
-            this.GBCCC_ContasCaucionadas = new HashSet<GBCCC_ContasCaucionadas>();
-            this.GBCCR_ContasCredito = new HashSet<GBCCR_ContasCredito>();
-        }
-    
-        public int DONSEQ_NrSequencial { get; set; }
+        public long ID_ContasDepositosOrdem { get; set; }
         public int DOBAL_Balcao { get; set; }
         public int DONCLI_NrCliente { get; set; }
         public int DONATR_Natureza { get; set; }
+        public int DONSEQ_NrSequencial { get; set; }
         public Nullable<decimal> DOSLD_Saldo { get; set; }
         public Nullable<decimal> DOSLDV_SaldoPorDataValor { get; set; }
         public Nullable<int> DONDDESC_DiasDescobertoSaldo { get; set; }
@@ -82,13 +76,5 @@ namespace CustomerAccountsPortal.Models
         public string DOCLCP_ClasseComponente { get; set; }
         public string DOCCAS_CanalSubscricao { get; set; }
         public string DOUSRS_UtilizadorSubscricao { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCCC_ContasCaucionadas> GBCCC_ContasCaucionadas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCCR_ContasCredito> GBCCR_ContasCredito { get; set; }
-        public virtual GBCLI_Clientes GBCLI_Clientes { get; set; }
-        public virtual GBNATR_NaturezasContas GBNATR_NaturezasContas { get; set; }
-        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
     }
 }

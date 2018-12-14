@@ -14,13 +14,14 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMVCR_MovimentosContasCredito
     {
-        public int MCNDOC_NumeroDocumento { get; set; }
+        public long ID_MovimentosContasCredito { get; set; }
         public int MCBAL_Balcao { get; set; }
         public int MCNCLI_NumeroCliente { get; set; }
         public int MCNATR_Natureza { get; set; }
         public int MCNSEQ_NumeroSequencial { get; set; }
         public int MCTDOC_TipoDocumento { get; set; }
         public int MCCOPE_CodigoOperacao { get; set; }
+        public int MCNDOC_NumeroDocumento { get; set; }
         public decimal MCVLR_ValorMovimento { get; set; }
         public Nullable<decimal> MCSALD_SaldoAposMovimento { get; set; }
         public string MCUSER_LancadoPor { get; set; }
@@ -48,8 +49,5 @@ namespace CustomerAccountsPortal.Models
         public Nullable<long> MCAUTR_Autorizacao { get; set; }
         public string MCTBON_TipoBonificacao { get; set; }
         public string MCOBS_Observacoes { get; set; }
-    
-        public virtual GBCCR_ContasCredito GBCCR_ContasCredito { get; set; }
-        public virtual GBCODOP_CodigosOperacao GBCODOP_CodigosOperacao { get; set; }
     }
 }

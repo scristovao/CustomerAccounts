@@ -14,18 +14,10 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBDOC_Documentos
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public GBDOC_Documentos()
-        {
-            this.GBMVDP_MovimentosContasDepositosPrazo = new HashSet<GBMVDP_MovimentosContasDepositosPrazo>();
-        }
-    
+        public long ID_Documentos { get; set; }
         public int DCTDOC_TipoDocumento { get; set; }
         public int DCNDOC_Documento { get; set; }
         public string DCSITU_SituacaoDocumento { get; set; }
         public int DCANOI_Ano { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVDP_MovimentosContasDepositosPrazo> GBMVDP_MovimentosContasDepositosPrazo { get; set; }
     }
 }

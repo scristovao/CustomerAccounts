@@ -23,6 +23,26 @@ namespace CustomerAccountsPortal.Models
         }
     
         public int TTNUMT_NrEntidade { get; set; }
+        public string TTMAE_NomeMae { get; set; }
+        public string TTENTP_EntidadePatronal { get; set; }
+        public string TTFUCA_FuncaoOuCargo { get; set; }
+        public Nullable<int> TTDTAD_DataAdmissao { get; set; }
+        public string TTTSOC_TipoSociedade { get; set; }
+        public string TTCAE_CodigoActividadeEconomica { get; set; }
+        public string GBTTCAESC_CodigoActividadeEconomicaSecundario { get; set; }
+        public Nullable<int> TTDTCT_DataConstituicao { get; set; }
+        public Nullable<int> TTDTPB_DataPublicacao { get; set; }
+        public string TTSEDE_DomicilioOuSede { get; set; }
+        public Nullable<long> TTCSRA_CapitalSocialOuRendimentoAnual { get; set; }
+        public string TTMOED_MoedaCsra { get; set; }
+        public string TTVINC_VinculoComOutras { get; set; }
+        public Nullable<long> TTNCTR_NrCentralRisco { get; set; }
+        public string TTCRES_CodigoResidencia { get; set; }
+        public string TTCST_CodigoSectorial { get; set; }
+        public string TTPAIS_CodigoPais { get; set; }
+        public string TTTPEN_TipoEntidade { get; set; }
+        public string TTBLOQ_ComBloqueios { get; set; }
+        public string GBTTALER_ComAlertas { get; set; }
         public string TTTIPT_EmpresaOuParticular { get; set; }
         public string TTNOMT_NomeEntidade { get; set; }
         public string TTNOME_NomeSemTitulo { get; set; }
@@ -50,26 +70,6 @@ namespace CustomerAccountsPortal.Models
         public string TTECIV_EstadoCivil { get; set; }
         public string TTRCAS_RegimeCasamento { get; set; }
         public string TTPAI_NomePai { get; set; }
-        public string TTMAE_NomeMae { get; set; }
-        public string TTENTP_EntidadePatronal { get; set; }
-        public string TTFUCA_FuncaoOuCargo { get; set; }
-        public Nullable<int> TTDTAD_DataAdmissao { get; set; }
-        public string TTTSOC_TipoSociedade { get; set; }
-        public string TTCAE_CodigoActividadeEconomica { get; set; }
-        public string GBTTCAESC_CodigoActividadeEconomicaSecundario { get; set; }
-        public Nullable<int> TTDTCT_DataConstituicao { get; set; }
-        public Nullable<int> TTDTPB_DataPublicacao { get; set; }
-        public string TTSEDE_DomicilioOuSede { get; set; }
-        public Nullable<long> TTCSRA_CapitalSocialOuRendimentoAnual { get; set; }
-        public string TTMOED_MoedaCsra { get; set; }
-        public string TTVINC_VinculoComOutras { get; set; }
-        public Nullable<long> TTNCTR_NrCentralRisco { get; set; }
-        public string TTCRES_CodigoResidencia { get; set; }
-        public string TTCST_CodigoSectorial { get; set; }
-        public string TTPAIS_CodigoPais { get; set; }
-        public string TTTPEN_TipoEntidade { get; set; }
-        public string TTBLOQ_ComBloqueios { get; set; }
-        public string GBTTALER_ComAlertas { get; set; }
     
         public virtual GBCRES_CodigosResidencia GBCRES_CodigosResidencia { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -83,9 +83,6 @@ namespace CustomerAccountsPortal.Models
         public virtual PACTP_ActividadeProfissional PACTP_ActividadeProfissional { get; set; }
         public virtual PESTC_EstadoCivil PESTC_EstadoCivil { get; set; }
         public virtual PHBLT_HabilitacoesLiterarias PHBLT_HabilitacoesLiterarias { get; set; }
-        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
-        public virtual PPAIS_Paises PPAIS_Paises { get; set; }
-        public virtual PPAIS_Paises PPAIS_Paises1 { get; set; }
         public virtual PREGC_RegimesCasamento PREGC_RegimesCasamento { get; set; }
         public virtual PTIDD_TiposIdentificacao PTIDD_TiposIdentificacao1 { get; set; }
         public virtual GBTPENT_TiposEntidades GBTPENT_TiposEntidades { get; set; }

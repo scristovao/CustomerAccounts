@@ -14,16 +14,11 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCCC_ContasCaucionadas
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public GBCCC_ContasCaucionadas()
-        {
-            this.GBMVCC_MovimentosContasCaucionadas = new HashSet<GBMVCC_MovimentosContasCaucionadas>();
-        }
-    
-        public int CCNSEQ_NrSequencial { get; set; }
+        public long ID_ContasCaucionadas { get; set; }
         public int CCBAL_Balcao { get; set; }
         public int CCNCLI_NrCliente { get; set; }
         public int CCNATR_Natureza { get; set; }
+        public int CCNSEQ_NrSequencial { get; set; }
         public Nullable<decimal> CCSLD_Saldo { get; set; }
         public Nullable<decimal> CCSLDV_SaldoPorDataValor { get; set; }
         public Nullable<int> CCNDDESC_DiasDescobertoSaldo { get; set; }
@@ -106,11 +101,7 @@ namespace CustomerAccountsPortal.Models
         public string CCMAPI_ModoAplicIndexante { get; set; }
         public string CCMAIN_ModoAplicIndexNeg { get; set; }
     
-        public virtual GBCDO_ContasDepositosOrdem GBCDO_ContasDepositosOrdem { get; set; }
-        public virtual GBCLI_Clientes GBCLI_Clientes { get; set; }
         public virtual GBNATR_NaturezasContas GBNATR_NaturezasContas { get; set; }
-        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVCC_MovimentosContasCaucionadas> GBMVCC_MovimentosContasCaucionadas { get; set; }
+        public virtual GBCLI_Clientes GBCLI_Clientes { get; set; }
     }
 }

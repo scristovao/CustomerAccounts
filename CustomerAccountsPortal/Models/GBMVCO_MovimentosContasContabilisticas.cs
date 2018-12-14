@@ -14,7 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMVCO_MovimentosContasContabilisticas
     {
-        public int MRNDOC_NumeroDocumento { get; set; }
+        public long ID_MovimentosContasContabilisticas { get; set; }
         public int MRBALC_BalcaoCcb { get; set; }
         public string MRCCB_ContaContabilistica { get; set; }
         public Nullable<int> MRBAL_Balcao { get; set; }
@@ -23,6 +23,7 @@ namespace CustomerAccountsPortal.Models
         public Nullable<int> MRNSEQ_NumeroSequencial { get; set; }
         public int MRTDOC_TipoDocumento { get; set; }
         public int MRCOPE_CodigoOperacao { get; set; }
+        public int MRNDOC_NumeroDocumento { get; set; }
         public decimal MRVLR_ValorMovimento { get; set; }
         public Nullable<decimal> MRSALD_SaldoAposMovimento { get; set; }
         public string MRUSER_LancadoPor { get; set; }
@@ -52,7 +53,6 @@ namespace CustomerAccountsPortal.Models
         public Nullable<long> GBMRCONTA_NrConta { get; set; }
         public string MRGRPP_GrupoPrecario { get; set; }
     
-        public virtual GBCODOP_CodigosOperacao GBCODOP_CodigosOperacao { get; set; }
         public virtual GBTIT_Entidade GBTIT_Entidade { get; set; }
     }
 }

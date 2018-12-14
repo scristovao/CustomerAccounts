@@ -25,7 +25,7 @@ namespace CustomerAccountsPortal.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<FGCMB_Divisas> FGCMB_Divisas { get; set; }
+        public virtual DbSet<FGCMB_Cambios> FGCMB_Cambios { get; set; }
         public virtual DbSet<FGGCOT_GeracaoCotacoes> FGGCOT_GeracaoCotacoes { get; set; }
         public virtual DbSet<FGTCOT_TiposCotacao> FGTCOT_TiposCotacao { get; set; }
         public virtual DbSet<GBCCC_ContasCaucionadas> GBCCC_ContasCaucionadas { get; set; }
@@ -62,5 +62,6 @@ namespace CustomerAccountsPortal.Models
         public virtual DbSet<PREGC_RegimesCasamento> PREGC_RegimesCasamento { get; set; }
         public virtual DbSet<PTIDD_TiposIdentificacao> PTIDD_TiposIdentificacao { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<CTMOV_MovimentosAM> CTMOV_MovimentosAM { get; set; }
     }
 }

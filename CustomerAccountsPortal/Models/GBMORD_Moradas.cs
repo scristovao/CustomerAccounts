@@ -14,9 +14,10 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMORD_Moradas
     {
-        public int MONSEQ_NumeroSequencial { get; set; }
+        public long ID_Moradas { get; set; }
         public Nullable<int> MONCLI_NumeroCliente { get; set; }
         public Nullable<int> MONATR_Natureza { get; set; }
+        public Nullable<int> MONSEQ_NumeroSequencial { get; set; }
         public string MOTMOR_TipoMorada { get; set; }
         public Nullable<int> MONTIT_NumeroEntidade { get; set; }
         public string MOMORD_Morada { get; set; }

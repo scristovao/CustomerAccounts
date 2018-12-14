@@ -14,16 +14,9 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PPAIS_Paises
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PPAIS_Paises()
-        {
-            this.GBCLI_Clientes = new HashSet<GBCLI_Clientes>();
-            this.GBTIT_Entidade = new HashSet<GBTIT_Entidade>();
-            this.GBTIT_Entidade1 = new HashSet<GBTIT_Entidade>();
-        }
-    
-        public string ACPAI_CodigoPais { get; set; }
+        public int ID_Paises { get; set; }
         public string ASPAI_SiglaPais { get; set; }
+        public string ACPAI_CodigoPais { get; set; }
         public Nullable<int> ANPAI_NumeroPais { get; set; }
         public string ADPAI_DescricaoPais { get; set; }
         public string AINDI_IndicativoInternacional { get; set; }
@@ -37,12 +30,5 @@ namespace CustomerAccountsPortal.Models
         public string AUSDE_UtilizadorDesactivacao { get; set; }
         public Nullable<int> ADTDE_DataDesactivacao { get; set; }
         public Nullable<int> AHODE_HoraDesactivacao { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCLI_Clientes> GBCLI_Clientes { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBTIT_Entidade> GBTIT_Entidade { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBTIT_Entidade> GBTIT_Entidade1 { get; set; }
     }
 }

@@ -14,12 +14,13 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCCO_ContasContabilisticas
     {
-        public int CSNSEQ_NrSequencial { get; set; }
+        public long ID_ContasContabilisticas { get; set; }
         public int CSBALC_BalcaoContaContab { get; set; }
         public string CSCCB_ContaContabilistica { get; set; }
         public Nullable<int> CSBAL_Balcao { get; set; }
         public Nullable<int> CSNCLI_NrCliente { get; set; }
         public Nullable<int> CSNATR_Natureza { get; set; }
+        public Nullable<int> CSNSEQ_NrSequencial { get; set; }
         public Nullable<decimal> CSSLD_Saldo { get; set; }
         public string CSMCX_CaixasMovimentam { get; set; }
         public string CSMTRF_TransferencMovimentam { get; set; }
@@ -42,8 +43,5 @@ namespace CustomerAccountsPortal.Models
         public string CSCLCP_ClasseComponente { get; set; }
         public string CSCCAS_CanalSubscricao { get; set; }
         public string CSUSRS_UtilizadorSubscricao { get; set; }
-    
-        public virtual GBCLI_Clientes GBCLI_Clientes { get; set; }
-        public virtual GBNATR_NaturezasContas GBNATR_NaturezasContas { get; set; }
     }
 }

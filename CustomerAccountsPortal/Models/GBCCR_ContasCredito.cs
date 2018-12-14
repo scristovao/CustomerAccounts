@@ -14,16 +14,11 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCCR_ContasCredito
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public GBCCR_ContasCredito()
-        {
-            this.GBMVCR_MovimentosContasCredito = new HashSet<GBMVCR_MovimentosContasCredito>();
-        }
-    
-        public int CRNSEQ_NrSequencial { get; set; }
+        public long ID_ContasCredito { get; set; }
         public int CRBAL_Balcao { get; set; }
         public int CRNCLI_NrCliente { get; set; }
         public int CRNATR_Natureza { get; set; }
+        public int CRNSEQ_NrSequencial { get; set; }
         public int CRNPRO_NrProposta { get; set; }
         public string CRTCRE_TipoCredito { get; set; }
         public string CRLCRE_LinhaCredito { get; set; }
@@ -94,11 +89,5 @@ namespace CustomerAccountsPortal.Models
         public Nullable<decimal> CRTAE_UltimaTaeCalculada { get; set; }
         public Nullable<decimal> CRTAEG_UltimaTaegCalculada { get; set; }
         public Nullable<int> CRDTTA_DataUltimaTae { get; set; }
-    
-        public virtual GBCDO_ContasDepositosOrdem GBCDO_ContasDepositosOrdem { get; set; }
-        public virtual GBCLI_Clientes GBCLI_Clientes { get; set; }
-        public virtual GBNATR_NaturezasContas GBNATR_NaturezasContas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVCR_MovimentosContasCredito> GBMVCR_MovimentosContasCredito { get; set; }
     }
 }

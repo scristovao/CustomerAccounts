@@ -14,18 +14,8 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBCODOP_CodigosOperacao
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public GBCODOP_CodigosOperacao()
-        {
-            this.GBCODOP_CodigosOperacao1 = new HashSet<GBCODOP_CodigosOperacao>();
-            this.GBMVCC_MovimentosContasCaucionadas = new HashSet<GBMVCC_MovimentosContasCaucionadas>();
-            this.GBMVCO_MovimentosContasContabilisticas = new HashSet<GBMVCO_MovimentosContasContabilisticas>();
-            this.GBMVCR_MovimentosContasCredito = new HashSet<GBMVCR_MovimentosContasCredito>();
-            this.GBMVDO_MovimentosContasDepositosOrdem = new HashSet<GBMVDO_MovimentosContasDepositosOrdem>();
-            this.GBMVDP_MovimentosContasDepositosPrazo = new HashSet<GBMVDP_MovimentosContasDepositosPrazo>();
-        }
-    
-        public int COCOPE_CodigoOperacao { get; set; }
+        public long ID_CodigosOperacao { get; set; }
+        public Nullable<int> COCOPE_CodigoOperacao { get; set; }
         public Nullable<int> COCOPA_CdgOperacaoAnulacao { get; set; }
         public Nullable<int> COTDOC_TipoDocumento { get; set; }
         public string CODESC_DescritivoCdgOper { get; set; }
@@ -81,22 +71,5 @@ namespace CustomerAccountsPortal.Models
         public Nullable<int> CODTSI_DataSituacao { get; set; }
         public Nullable<int> COHOSI_HoraSituacao { get; set; }
         public string GBCOCRMOV_ComRestricoesMov { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCODOP_CodigosOperacao> GBCODOP_CodigosOperacao1 { get; set; }
-        public virtual GBCODOP_CodigosOperacao GBCODOP_CodigosOperacao2 { get; set; }
-        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
-        public virtual PMOEDA_Divisas PMOEDA_Divisas1 { get; set; }
-        public virtual PMOEDA_Divisas PMOEDA_Divisas2 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVCC_MovimentosContasCaucionadas> GBMVCC_MovimentosContasCaucionadas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVCO_MovimentosContasContabilisticas> GBMVCO_MovimentosContasContabilisticas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVCR_MovimentosContasCredito> GBMVCR_MovimentosContasCredito { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVDO_MovimentosContasDepositosOrdem> GBMVDO_MovimentosContasDepositosOrdem { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVDP_MovimentosContasDepositosPrazo> GBMVDP_MovimentosContasDepositosPrazo { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 12/14/2018 17:46:26
+-- Date Created: 12/14/2018 17:59:14
 -- Generated from EDMX file: C:\Users\sonia.cristovao\source\repos\CustomerAccountsPortal\CustomerAccountsPortal\Models\CustomerAccountsModel.edmx
 -- --------------------------------------------------
 
@@ -1219,6 +1219,43 @@ CREATE TABLE [dbo].[sysdiagrams] (
 );
 GO
 
+-- Creating table 'CTMOV_MovimentosAM'
+CREATE TABLE [dbo].[CTMOV_MovimentosAM] (
+    [ID_MovimentosAM] bigint  NOT NULL,
+    [MVPLN_Plano] varchar(7)  NULL,
+    [MVCNTA_Conta] varchar(13)  NULL,
+    [MVDTMV_DataMovimento] int  NULL,
+    [MVAREA_Area] int  NULL,
+    [MVDOCN_Documento] int  NULL,
+    [MVDTDC_DataDocumento] int  NULL,
+    [MVNSEQ_NumeroSequencia] int  NULL,
+    [MVDBCR_DebitoCredito] varchar(1)  NULL,
+    [MVVLR_ValorDoMovimento] decimal(10,2)  NULL,
+    [MVCOPE_CodigoOperacao] int  NULL,
+    [MVDEXT_NrDocExterno] varchar(11)  NULL,
+    [MVDDEX_Descritivo] varchar(30)  NULL,
+    [MVUSER_UtilizadorGravacao] varchar(10)  NULL,
+    [MVHORA_HoraGravacao] int  NULL,
+    [MVDTGR_DataGravacao] int  NULL,
+    [MVETRB_EstacaoGravacao] varchar(10)  NULL,
+    [MVACUD_AcumuladoDebito] decimal(10,2)  NULL,
+    [MVACUC_AcumuladoCredito] decimal(10,2)  NULL,
+    [MVRLMV_TipoMovimento] varchar(1)  NULL,
+    [MVPEST_Estorno] varchar(1)  NULL,
+    [MVTIVA_TipoDeIva] varchar(2)  NULL,
+    [MVTMIV_TipoMovIva] varchar(1)  NULL,
+    [MVNFC_NumeroContribuinte] int  NULL,
+    [MVTXIR_TaxaIrs] decimal(5,3)  NULL,
+    [MVDFPR_ParmMovRefProv] varchar(1)  NULL,
+    [MVSEQO_SequenciaOrigem] int  NULL,
+    [MVTPME_OrigemMovimento] varchar(1)  NULL,
+    [MVRFME_ReferenciaMovimento] varchar(10)  NULL,
+    [CTMVUSRDE_UtilizadorDesactivacao] varchar(10)  NULL,
+    [CTMVDTDE_DataDeDesactivacao] datetime  NULL,
+    [CTMVHODE_HoraDeDesactivacao] datetime  NULL
+);
+GO
+
 -- --------------------------------------------------
 -- Creating all PRIMARY KEY constraints
 -- --------------------------------------------------
@@ -1443,6 +1480,12 @@ GO
 ALTER TABLE [dbo].[sysdiagrams]
 ADD CONSTRAINT [PK_sysdiagrams]
     PRIMARY KEY CLUSTERED ([diagram_id] ASC);
+GO
+
+-- Creating primary key on [ID_MovimentosAM] in table 'CTMOV_MovimentosAM'
+ALTER TABLE [dbo].[CTMOV_MovimentosAM]
+ADD CONSTRAINT [PK_CTMOV_MovimentosAM]
+    PRIMARY KEY CLUSTERED ([ID_MovimentosAM] ASC);
 GO
 
 -- --------------------------------------------------

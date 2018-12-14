@@ -17,7 +17,7 @@ namespace CustomerAccountsPortal.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public FGTCOT_TiposCotacao()
         {
-            this.FGCMB_Divisas = new HashSet<FGCMB_Divisas>();
+            this.FGCMB_Cambios = new HashSet<FGCMB_Cambios>();
             this.FGGCOT_GeracaoCotacoes = new HashSet<FGGCOT_GeracaoCotacoes>();
         }
     
@@ -28,7 +28,7 @@ namespace CustomerAccountsPortal.Models
         public string FGTORECCV_RecolheCâmbioCompraVenda { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<FGCMB_Divisas> FGCMB_Divisas { get; set; }
+        public virtual ICollection<FGCMB_Cambios> FGCMB_Cambios { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FGGCOT_GeracaoCotacoes> FGGCOT_GeracaoCotacoes { get; set; }
     }

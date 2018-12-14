@@ -18,12 +18,7 @@ namespace CustomerAccountsPortal.Models
         public GBNATR_NaturezasContas()
         {
             this.GBCCC_ContasCaucionadas = new HashSet<GBCCC_ContasCaucionadas>();
-            this.GBCCO_ContasContabilisticas = new HashSet<GBCCO_ContasContabilisticas>();
-            this.GBCCR_ContasCredito = new HashSet<GBCCR_ContasCredito>();
-            this.GBCDO_ContasDepositosOrdem = new HashSet<GBCDO_ContasDepositosOrdem>();
-            this.GBCDP_ContasDepositosPrazo = new HashSet<GBCDP_ContasDepositosPrazo>();
             this.GBMORD_Moradas = new HashSet<GBMORD_Moradas>();
-            this.GBMVDP_MovimentosContasDepositosPrazo = new HashSet<GBMVDP_MovimentosContasDepositosPrazo>();
         }
     
         public int NTNATR_Natureza { get; set; }
@@ -37,16 +32,6 @@ namespace CustomerAccountsPortal.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GBCCC_ContasCaucionadas> GBCCC_ContasCaucionadas { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCCO_ContasContabilisticas> GBCCO_ContasContabilisticas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCCR_ContasCredito> GBCCR_ContasCredito { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCDO_ContasDepositosOrdem> GBCDO_ContasDepositosOrdem { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCDP_ContasDepositosPrazo> GBCDP_ContasDepositosPrazo { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GBMORD_Moradas> GBMORD_Moradas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVDP_MovimentosContasDepositosPrazo> GBMVDP_MovimentosContasDepositosPrazo { get; set; }
     }
 }

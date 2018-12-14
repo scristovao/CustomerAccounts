@@ -14,22 +14,14 @@ namespace CustomerAccountsPortal.Models
     
     public partial class PMOEDA_Divisas
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PMOEDA_Divisas()
-        {
-            this.FGCMB_Divisas = new HashSet<FGCMB_Divisas>();
-            this.FGGCOT_GeracaoCotacoes = new HashSet<FGGCOT_GeracaoCotacoes>();
-            this.GBCCC_ContasCaucionadas = new HashSet<GBCCC_ContasCaucionadas>();
-            this.GBCDO_ContasDepositosOrdem = new HashSet<GBCDO_ContasDepositosOrdem>();
-            this.GBCDP_ContasDepositosPrazo = new HashSet<GBCDP_ContasDepositosPrazo>();
-            this.GBCODOP_CodigosOperacao = new HashSet<GBCODOP_CodigosOperacao>();
-            this.GBCODOP_CodigosOperacao1 = new HashSet<GBCODOP_CodigosOperacao>();
-            this.GBCODOP_CodigosOperacao2 = new HashSet<GBCODOP_CodigosOperacao>();
-            this.GBMVDO_MovimentosContasDepositosOrdem = new HashSet<GBMVDO_MovimentosContasDepositosOrdem>();
-            this.GBMVDP_MovimentosContasDepositosPrazo = new HashSet<GBMVDP_MovimentosContasDepositosPrazo>();
-            this.GBTIT_Entidade = new HashSet<GBTIT_Entidade>();
-        }
-    
+        public long ID_Divisas { get; set; }
+        public string WSITU_Situacao { get; set; }
+        public string WUSCR_UtilizadorCriacao { get; set; }
+        public Nullable<int> WDTCR_DataCriacao { get; set; }
+        public Nullable<int> WHOCR_HoraCriacao { get; set; }
+        public string WUSDE_UtilizadorDesactivacao { get; set; }
+        public Nullable<int> WDTDE_DataDesactivacao { get; set; }
+        public Nullable<int> WHODE_HoraDesactivacao { get; set; }
         public string WMOED_CodigoDivisaIso { get; set; }
         public Nullable<int> WNMOE_CodigoIso { get; set; }
         public string WDESC_DesignacaoDivisa { get; set; }
@@ -58,35 +50,5 @@ namespace CustomerAccountsPortal.Models
         public string WGEUR_MoedaInTerceiraFaseUem { get; set; }
         public Nullable<int> WDENTMIN_DataEntradaMoedaIn { get; set; }
         public string WTARRMIN_MetodoArredondMoedaIn { get; set; }
-        public string WSITU_Situacao { get; set; }
-        public string WUSCR_UtilizadorCriacao { get; set; }
-        public Nullable<int> WDTCR_DataCriacao { get; set; }
-        public Nullable<int> WHOCR_HoraCriacao { get; set; }
-        public string WUSDE_UtilizadorDesactivacao { get; set; }
-        public Nullable<int> WDTDE_DataDesactivacao { get; set; }
-        public Nullable<int> WHODE_HoraDesactivacao { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<FGCMB_Divisas> FGCMB_Divisas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<FGGCOT_GeracaoCotacoes> FGGCOT_GeracaoCotacoes { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCCC_ContasCaucionadas> GBCCC_ContasCaucionadas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCDO_ContasDepositosOrdem> GBCDO_ContasDepositosOrdem { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCDP_ContasDepositosPrazo> GBCDP_ContasDepositosPrazo { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCODOP_CodigosOperacao> GBCODOP_CodigosOperacao { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCODOP_CodigosOperacao> GBCODOP_CodigosOperacao1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBCODOP_CodigosOperacao> GBCODOP_CodigosOperacao2 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVDO_MovimentosContasDepositosOrdem> GBMVDO_MovimentosContasDepositosOrdem { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBMVDP_MovimentosContasDepositosPrazo> GBMVDP_MovimentosContasDepositosPrazo { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GBTIT_Entidade> GBTIT_Entidade { get; set; }
     }
 }

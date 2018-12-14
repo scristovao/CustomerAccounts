@@ -12,9 +12,9 @@ namespace CustomerAccountsPortal.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class FGCMB_Divisas
+    public partial class FGCMB_Cambios
     {
-        public int CBDATC_CBTCOT_CBMOED { get; set; }
+        public long ID_Cambios { get; set; }
         public Nullable<int> CBDATC_DataCotacao { get; set; }
         public string CBTCOT_TipoCotacao { get; set; }
         public string CBMOED_Moeda { get; set; }
@@ -26,6 +26,5 @@ namespace CustomerAccountsPortal.Models
         public string CBUSGR_UtilizadorGravacao { get; set; }
     
         public virtual FGTCOT_TiposCotacao FGTCOT_TiposCotacao { get; set; }
-        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
     }
 }

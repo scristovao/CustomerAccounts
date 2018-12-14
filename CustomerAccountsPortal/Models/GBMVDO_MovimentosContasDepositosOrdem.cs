@@ -14,12 +14,7 @@ namespace CustomerAccountsPortal.Models
     
     public partial class GBMVDO_MovimentosContasDepositosOrdem
     {
-        public int MVNDOC_NumeroDocumento { get; set; }
-        public int MVBAL_Balcao { get; set; }
-        public int MVNCLI_NumeroCliente { get; set; }
-        public int MVNATR_Natureza { get; set; }
-        public int MVTDOC_TipoDocumento { get; set; }
-        public int MVCOPE_CodigoOperacao { get; set; }
+        public long ID_MovimentosContasDepositosOrdem { get; set; }
         public decimal MVVLR_ValorQueAfectaConta { get; set; }
         public string MVMOED_MoedaQueAfectaConta { get; set; }
         public decimal MVVLRT_ValorTransaccao { get; set; }
@@ -51,8 +46,12 @@ namespace CustomerAccountsPortal.Models
         public string MVCDEV_CodigoDevolucao { get; set; }
         public decimal MVVLRE_ValorParaExtracto { get; set; }
         public string MVOBS_Observacoes { get; set; }
-    
-        public virtual GBCODOP_CodigosOperacao GBCODOP_CodigosOperacao { get; set; }
-        public virtual PMOEDA_Divisas PMOEDA_Divisas { get; set; }
+        public int MVNDOC_NumeroDocumento { get; set; }
+        public int MVTDOC_TipoDocumento { get; set; }
+        public int MVCOPE_CodigoOperacao { get; set; }
+        public int MVBAL_Balcao { get; set; }
+        public int MVNCLI_NumeroCliente { get; set; }
+        public int MVNATR_Natureza { get; set; }
+        public int MVNSEQ_NumeroSequencial { get; set; }
     }
 }
